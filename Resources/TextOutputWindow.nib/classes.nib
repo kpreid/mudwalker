@@ -1,0 +1,53 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            CLASS = MWConcreteLinkable; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {config = id; }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {CLASS = MWInputTextView; LANGUAGE = ObjC; SUPERCLASS = NSTextView; }, 
+        {CLASS = MWOutputTextView; LANGUAGE = ObjC; SUPERCLASS = NSTextView; }, 
+        {
+            CLASS = MWOutputToolbarController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {windowController = id; }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            ACTIONS = {
+                mwCloseConnectionHard = id; 
+                mwCloseConnectionNice = id; 
+                mwOpenConnection = id; 
+                mwSendPing = id; 
+                mwUnlinkWindow = id; 
+            }; 
+            CLASS = MWOutputWinController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {terminalPane = MWTerminalPane; }; 
+            SUPERCLASS = NSWindowController; 
+        }, 
+        {
+            CLASS = MWTerminalPane; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {delegate = id; }; 
+            SUPERCLASS = MWConcreteLinkable; 
+        }, 
+        {
+            ACTIONS = {mwClearScrollback = id; }; 
+            CLASS = MWTextOutputWinController; 
+            LANGUAGE = ObjC; 
+            SUPERCLASS = MWOutputWinController; 
+        }, 
+        {
+            ACTIONS = {autoScrollLock = id; mwClearScrollback = id; }; 
+            CLASS = MWTextTerminalPane; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {mainScrollView = NSScrollView; mainTextView = MWOutputTextView; }; 
+            SUPERCLASS = MWTerminalPane; 
+        }, 
+        {CLASS = MySound; LANGUAGE = ObjC; SUPERCLASS = Sound; }
+    ); 
+    IBVersion = 1; 
+}

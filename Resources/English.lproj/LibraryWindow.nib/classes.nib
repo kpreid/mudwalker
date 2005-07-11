@@ -1,0 +1,14 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {mwForgetLibraryItem = id; mwOpenConnection = id; mwOpenServerInfo = id; }; 
+            CLASS = MWLibraryWindowController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {libOutline = NSOutlineView; libScroller = NSScrollView; }; 
+            SUPERCLASS = NSWindowController; 
+        }, 
+        {CLASS = MWURLFormatter; LANGUAGE = ObjC; SUPERCLASS = NSFormatter; }
+    ); 
+    IBVersion = 1; 
+}

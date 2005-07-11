@@ -1,0 +1,110 @@
+{
+    IBClasses = (
+        {
+            ACTIONS = {
+                autoScrollLock = id; 
+                centerSelectionInVisibleArea = id; 
+                insertTab = id; 
+                insertTabIgnoringFieldEditor = id; 
+                mwClearScrollback = id; 
+                mwCloseConnectionHard = id; 
+                mwCloseConnectionNice = id; 
+                mwInspectFilters = id; 
+                mwNewTerminal = id; 
+                mwOpenConnection = id; 
+                mwOpenDocumentNotebook = id; 
+                mwOpenDocumentSettings = id; 
+                mwOpenServerHelp = id; 
+                mwOpenServerInfo = id; 
+                mwPrepareConnection = id; 
+                mwResetPrompt = id; 
+                mwSendPing = id; 
+                mwUnlinkWindow = id; 
+                myAction = id; 
+                newConnectionDocument = id; 
+                newTextDocument = id; 
+                runToolbarCustomizationPalette = id; 
+                toggleShowsControlCharacters = id; 
+                toggleToolbarShown = id; 
+            }; 
+            CLASS = FirstResponder; 
+            LANGUAGE = ObjC; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            ACTIONS = {
+                disableKeyMacros = id; 
+                disableSound = id; 
+                disableSpeech = id; 
+                newConnectionDocument = id; 
+                newTextDocument = id; 
+                showAppConfigWindow = id; 
+                showLibraryWindow = id; 
+                showLicense = id; 
+                showLinkTraceConsole = id; 
+                showMudWalkerWebSite = id; 
+                showPreferencesWindow = id; 
+                showTextInput = id; 
+                showTriggerEnablePanel = id; 
+                synchronizeDefaults = id; 
+            }; 
+            CLASS = MWAppDelegate; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                globalCommandMenu = NSMenu; 
+                libraryMenu = NSMenu; 
+                terminalAccountMenu = NSMenu; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            ACTIONS = {
+                cInputFollowsChanged = id; 
+                cInputKeepChanged = id; 
+                cInputPersistsChanged = id; 
+                cSmoothScrollChanged = id; 
+            }; 
+            CLASS = MWPreferencesWinController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                cInputFollows = NSButton; 
+                cInputKeep = NSButton; 
+                cInputPersists = NSButton; 
+                cSmoothScroll = NSButton; 
+            }; 
+            SUPERCLASS = NSWindowController; 
+        }, 
+        {
+            ACTIONS = {
+                findNext = id; 
+                findNextOnce = id; 
+                findPrevious = id; 
+                gotoPerform = id; 
+                gotoPerformOnce = id; 
+                replaceAll = id; 
+                replaceAndFind = id; 
+                replaceFound = id; 
+                showGotoLineControls = id; 
+                useSelectionForFind = id; 
+            }; 
+            CLASS = MWTextFindController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                findField = NSTextField; 
+                findNextBtn = MWValidatedButton; 
+                findPrevBtn = MWValidatedButton; 
+                gotoBtn = NSButton; 
+                gotoField = NSTextField; 
+                gotoModeRadio = NSMatrix; 
+                ignoreCaseBtn = NSButton; 
+                replaceAllBtn = MWValidatedButton; 
+                replaceAndFindBtn = MWValidatedButton; 
+                replaceBtn = MWValidatedButton; 
+                replaceField = NSTextField; 
+                replaceInSelectionBtn = NSButton; 
+            }; 
+            SUPERCLASS = NSWindowController; 
+        }
+    ); 
+    IBVersion = 1; 
+}

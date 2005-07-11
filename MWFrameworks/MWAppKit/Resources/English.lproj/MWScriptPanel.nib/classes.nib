@@ -1,0 +1,23 @@
+{
+    IBClasses = (
+        {
+            ACTIONS = {controlWasChangedByUser = id; cvaReset = id; cvaUpdateFromConfig = id; }; 
+            CLASS = FirstResponder; 
+            LANGUAGE = ObjC; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            ACTIONS = {changeLanguage = id; }; 
+            CLASS = MWScriptPanelController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                errorView = NSTextView; 
+                languagePopUp = NSPopUpButton; 
+                revertButton = MWValidatedButton; 
+                saveButton = MWValidatedButton; 
+            }; 
+            SUPERCLASS = NSWindowController; 
+        }
+    ); 
+    IBVersion = 1; 
+}

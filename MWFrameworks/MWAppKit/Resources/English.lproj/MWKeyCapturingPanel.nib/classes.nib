@@ -1,0 +1,21 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {cancelButton = id; okButton = id; }; 
+            CLASS = MWKeyCapturingPanel; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {displayField = NSTextField; futureContentView = NSView; }; 
+            SUPERCLASS = NSPanel; 
+        }, 
+        {
+            ACTIONS = {cancelButton = id; okButton = id; }; 
+            CLASS = MWKeyCapturingWinController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {displayField = NSTextField; }; 
+            SUPERCLASS = NSWindowController; 
+        }, 
+        {CLASS = NSObject; LANGUAGE = ObjC; }
+    ); 
+    IBVersion = 1; 
+}

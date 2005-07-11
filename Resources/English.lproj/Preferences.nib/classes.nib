@@ -1,0 +1,47 @@
+{
+    IBClasses = (
+        {
+            ACTIONS = {
+                mwCloseConnectionHard = id; 
+                mwCloseConnectionNice = id; 
+                mwInspectFilters = id; 
+                mwNewTerminal = id; 
+                mwOpenConnection = id; 
+                mwOpenDocumentSettings = id; 
+                mwOpenServerHelp = id; 
+                mwOpenServerInfo = id; 
+                mwSendPing = id; 
+                mwUnlinkWindow = id; 
+                runToolbarCustomizationPalette = id; 
+                toggleToolbarShown = id; 
+            }; 
+            CLASS = FirstResponder; 
+            LANGUAGE = ObjC; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            ACTIONS = {showLibraryWindow = id; showTextInput = id; }; 
+            CLASS = MWAppDelegate; 
+            LANGUAGE = ObjC; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            ACTIONS = {
+                cScriptLanguageChanged = id; 
+                cScrollLockColorChanged = id; 
+                cStartupActionChanged = id; 
+                cSwitchesChanged = id; 
+            }; 
+            CLASS = MWPreferencesWinController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                cScriptLanguage = NSPopUpButton; 
+                cScrollLockColor = NSColorWell; 
+                cStartupAction = NSMatrix; 
+                cSwitches = NSMatrix; 
+            }; 
+            SUPERCLASS = NSWindowController; 
+        }
+    ); 
+    IBVersion = 1; 
+}

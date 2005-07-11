@@ -1,0 +1,57 @@
+{
+  /* Source: http://www.iana.org/assignments/character-sets */
+  /* This is not a complete mapping for all OSX supports. Expansions welcome. */
+
+  "ANSI_X3.4-1968" = 1;
+  "iso-ir-6" = 1;
+  "ANSI_X3.4-1986" = 1;
+  "ISO_646.irv:1991" = 1;
+  "ASCII" = 1;
+  "ISO646-US" = 1;
+  "US-ASCII" = 1;
+  "us" = 1;
+  "IBM367" = 1;
+  "cp367" = 1;
+  
+  "ISO-2022-JP" = 21;
+ 
+  "ISO_8859-1:1987" = 5;
+  "iso-ir-100" = 5;
+  "ISO_8859-1" = 5;
+  "ISO-8859-1" = 5;
+  "latin1" = 5;
+  "l1" = 5;
+  "IBM819" = 5;
+  "CP819" = 5;
+  
+  "ISO_8859-2:1987" = 9;
+  "iso-ir-101" = 9;
+  "ISO_8859-2" = 9;
+  "ISO-8859-2" = 9;
+  "latin2" = 9;
+  "l2" = 9;
+  
+  "ISO-10646-UCS-2" = 10;
+  "Unicode" = 10;
+  
+  "macintosh" = 30;
+  "mac" = 30;
+  
+  "UTF-8" = 4;
+  
+  "Shift_JIS" = 8;
+  "MS_Kanji" = 8;
+  
+  "Extended_UNIX_Code_Packed_Format_for_Japanese" = 3;
+  "EUC-JP" = 3;
+  
+  "ISO-8859-2-Windows-Latin-2" = 15;
+  
+  "Adobe-Symbol-Encoding" = 6; /* this correct? */
+  
+  "windows-1250" = 15;
+  "windows-1251" = 11;
+  "windows-1252" = 12;
+  "windows-1253" = 13;
+  "windows-1254" = 14;
+}

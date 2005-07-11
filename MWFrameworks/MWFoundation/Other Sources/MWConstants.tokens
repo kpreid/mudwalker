@@ -1,0 +1,38 @@
+/*\  
+ * MudWalker Source
+ * Copyright 2001-2004 Kevin Reid.
+ * This source code and related files are distributed under the MIT License, as described in the document named "License.txt" which should be provided with this source distribution.
+ * 
+ * Declarations of string constants. Each T(x) is expanded into a declaration of a variable with the name x pointing to a constant NSString with the contents x.
+\*/
+
+T(MWANSIBrightnessAttribute);
+T(MWANSIUnderlineAttribute);
+T(MWANSIBlinkingAttribute);
+T(MWANSIInverseAttribute);
+T(MWANSIForegroundAttribute);
+T(MWANSIBackgroundAttribute);
+T(MWDisplayProportionalAttribute);
+T(MWRoleAttribute);
+
+T(MWEchoRole);
+T(MWLocalRole);
+T(MWPromptRole);
+T(MWPasswordRole);
+T(MWStatusRole);
+
+// gah, this is leftovers from a bad idea. ought to phase out use of these constants
+T(MWConfigureTelnetPromptTimeout);
+
+T(MWLinkableTraceNotification);
+T(MWLinkTraceNotification);
+T(MWLinkChangedNotification);
+T(MWConfigSupplierChangedNotification);
+T(MWInputPromptChangedNotification);
+
+T(MWLayoutSubviewAdded);
+T(MWLayoutSubviewRemoved);
+T(MWLayoutSubviewSizeChanged);
+T(MWLayoutAttributesChanged);
+
+T(MWConfigTreeFragmentPboardType);

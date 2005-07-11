@@ -1,0 +1,42 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {CLASS = MWCustomBindingsTextView; LANGUAGE = ObjC; SUPERCLASS = NSTextView; }, 
+        {CLASS = MWFontSelectorView; LANGUAGE = ObjC; SUPERCLASS = NSControl; }, 
+        {
+            CLASS = MWGenericTableViewDataSource; 
+            LANGUAGE = ObjC; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            CLASS = MWGraphView; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {dataSource = id; }; 
+            SUPERCLASS = NSView; 
+        }, 
+        {CLASS = MWLayoutView; LANGUAGE = ObjC; SUPERCLASS = NSView; }, 
+        {CLASS = MWLinearLayoutView; LANGUAGE = ObjC; SUPERCLASS = MWLayoutView; }, 
+        {
+            ACTIONS = {keyCapture = id; }; 
+            CLASS = MWMiscTestController; 
+            LANGUAGE = ObjC; 
+            SUPERCLASS = NSWindowController; 
+        }, 
+        {
+            ACTIONS = {autoScrollLock = id; }; 
+            CLASS = MWOutputTextView; 
+            LANGUAGE = ObjC; 
+            SUPERCLASS = MWCustomBindingsTextView; 
+        }, 
+        {
+            CLASS = MWTGraphViewWinController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {graphView = MWGraphView; }; 
+            SUPERCLASS = NSWindowController; 
+        }, 
+        {CLASS = MWURLFormatter; LANGUAGE = ObjC; SUPERCLASS = NSFormatter; }, 
+        {CLASS = MWValidatedButton; LANGUAGE = ObjC; SUPERCLASS = NSButton; }, 
+        {CLASS = NSObject; LANGUAGE = ObjC; }
+    ); 
+    IBVersion = 1; 
+}

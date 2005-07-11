@@ -1,0 +1,119 @@
+  * things related to publicity:
+    http://www.opensource.org/docs/certification_mark.php
+    http://submit.macsoftware.apple.com/usupdate/upindex.lasso
+    http://www.apple.com/downloads/macosx/submit/submit.html
+    Agora
+    rec.games.mud.?
+    dmoz
+
+See MudWalker Help/ref/config.html for a list of config keys.
+
+### ### Blurbs that have been used:
+
+For Mac OS X. Scripting, compact windows, ANSI color, logging, Library, clickable URLs, plugin support, open source.
+  * http://www.aww-mud.org/forced.php?forced=http://www.aww-mud.org/inc/clients/clients.php
+    They're the third Google result for "osx mud client" as of 2003-09-14, and they offered a nice 'add a link' interface, so I did.
+    2003-09-18: The link is gone. I wonder why.
+
+MudWalker is an in-development MUD client for Mac OS X. Written in Cocoa, it supports telnet, MCP, ANSI color, and TWin protocols; supports extended character sets including Unicode and Windows encodings; automatic login scripts and automatic logging; and numerous other features. As well, full source code is available. 
+  * http://www.hsoi.com/mud/clients/
+  This blurb was written by Hsoi, IIRC.
+
+### ### To do before a release:
+
+* Update version numbers in target info and InfoPlist.strings
+  * MW application
+  * Frameworks
+  * Plugins
+* Clean all targets
+* Build style to Deployment
+* Do build
+* Use result for a while
+* Copy source and app to disk images
+* Remove TestRun plugin from disk image copy of app
+* Copy to web site local copy
+* CVS commit
+
+### ### License/copyright notes:
+
+don't forget to update copyright dates. header on each source file and at top of License.txt
+
+### ### Overall architecture:
+
+<need to put something here>
+
+### ### Miscellaneous programming notes:
+
+Scripts expect an argument of _MWScriptResultHint, which may currently be either "return" or "outward".
+
+Do not use 'genstrings', as many of the strings used in MudWalker are not specified in NSLocalizedString() macros.
+
+Not all Resources/ are in the "App Resources" group, many are gathered with the relevant source code.
+
+### ### Directory tree for support files:
+
+Library/Application Support/MudWalker/ (or Contents/Resources/)
+  CGMud/
+    Images/
+    Sounds/
+  MSP/
+  Plugins/
+
+
+### ### Standard source code header:
+
+In .h files, place notes about the purpose of the class/file on the last line of the block. In .m files, delete the two empty lines unless there are significant notes about the implementation.
+
+/*\  
+ * MudWalker Source
+ * Copyright 2001-2004 Kevin Reid.
+ * This source code and related files are distributed under the MIT License, as described in the document named "License.txt" which should be provided with this source distribution.
+ * 
+ * 
+\*/
+
+### ### Miscellaneous notes discarded from todo list:
+
+  * Document structure needs to be completely extensible. In particular, we need arbitrarily complex structures that can be partially revertable (undo support).
+    * Approach: Generalize MWDocumentSettings and MWDocumentElements into a 'tracked configuration tree' class set. Document should be a single dictionary-type which contains Characters and such as root elements.
+      * Observation: It's OK to modify an element of an undoable structure without its knowledge if the element itself tracks undos.
+    * Must lose fallthrough capability :(
+    * Refactor character editor into a MWGenericOrderedDictionaryEditingController (whew) which manages the listbox, add/delete, cut/paste, drag/drop, etc.. It will be used for triggers, channels.
+
+Disadvantages of the real-tree approach:
+  * Complex structure
+  * Removing a node leaves the removed object existant and with possible references to it. Possibility of inconsistent undo
+  
+Alternate approach:
+  * Config entries are stored in a flat dictionary with the keys being their *paths*, in file-system-like approach.
+  * Paths are real objects, so that they can be efficiently manipulated.
+  * Each directory is represented by a dictionary entry containing an array (ordered collection) of its child items.
+Advantages:
+  * Fallthrough for default config values is trivial, just lookup the paths in the default config dict.
+  * Ordering is provided for all directories, which makes it easier to provide a human editing interface.
+Disadvantages:
+  * Key lookup may be expensive due to complex path objects.
+  * Duplicate info, in the form of the directory lookup
+  
+  
+  
+* Create view for editing scripts. Many approaches, some problems:
+  * Popup editor in other window
+    + Large editing space
+    + Easy to make work
+    - Focus issues
+    - Weird
+  * Text view with extra controls around
+    + Simple, direct UI
+    - Space-filling
+    - Difficult to make archive into nibs properly.
+  * Subclassed text view with popup controls and language watermark
+    + No archive problems
+    - Nib makers have to add their own scrollview?
+  * Script config view adapter with normal text view
+    + No archiving or construction issues
+    - No way to add language info easily
+  * Subclassed text field and formatter with scrollable field editor
+    + Useful field UI, can use control adapter
+    - No archive issues
+    - Don't know how to successfully stuff the field editor in a scroll view.

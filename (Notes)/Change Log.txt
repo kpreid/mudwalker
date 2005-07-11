@@ -1,0 +1,661 @@
+Key:
+  * release or other public interaction
+  - change
+
+2004-07-28 kpreid
+  - Added speak() to Lua plugin.
+2004-07-27 kpreid
+  - Created MWTriggerEnablePanelWinController, added an instance of it to MWAppDelegate. This window is a straightforward imitation of Rapscallion's trigger palettes.
+2004-06-16 kpreid
+  - More work on moving MWTextOutputWinController's functionality to MWTextTerminalPane.
+2003-12-09 kpreid
+  - Added call to -setLinkTextAttributes: for text terminal so that 10.3's new feature doesn't override our own attribute management.
+  - Revisions to menu bar: updated to match 10.3 menu templates; World menu removed (incorporated into File and Terminal menus).
+2003-12-06 kpreid
+  - Fixed broken Remove from Library actions in LibraryWindow.nib.
+2003-12-04 kpreid
+  - MWTelnetFilter now knows it doesn't want option 34 LINEMODE.
+  - MWTelnetFilter now reports names of options it 'hasn't heard of', if available.
+2003-12-03 kpreid
+  - Now doing development on 10.3.
+  - Removed MWLinkableObject macro and made <MWLinkable> imply <NSObject>.
+2003-10-29 kpreid
+  - All account selection menus now have checkmarks by the current account.
+  - Script CVAs now tolerate values that aren't MWScripts.
+2003-10-25 kpreid
+  - Failure to load plugins in the normal search path is now non-fatal.
+2003-10-14 kpreid
+  - Created MWLibraryMenuController.
+  - MWMudLibrary is now explicitly passed the NSUserDefaults instance to use.
+  - File menu now has a submenu containing Library entries.
+2003-10-10 kpreid
+  - Fixed bug that GIW's window position was incorrectly restored across quit if its toolbar was visible.
+  - Library window now uses the action method names mwOpenConnection:/mwOpenServerInfo: so we get menu item reuse
+2003-10-09 kpreid
+  - Made open-map-window menu item work.
+  - Map relayout much improved.
+  - Map continuously relayouts until it has settled down.
+  - Map scale/range controls keep center of view area stable.
+2003-10-06 kpreid
+  - Added menu item (not yet implemented) to open map window.
+  - Created MWMockLinkable for unit tests, derived from MWTriggerFilterTest_StubLinkable.
+2003-10-05 kpreid
+  - Removed full-screen terminal window support.
+2003-09-08 kpreid
+  - Fixed bug: MWTriggerFilter completely ignored disabling of aliases. Apparently an empty ObjCUnit ExpectationGroup silently does nothing if it has no expectations and gets an actual object.
+2003-08-26 kpreid
+  - Created MWTextTerminalPane
+  - Now moving code from MWTextOutputWinController to MWTextTerminalPane
+2003-08-?  kpreid
+  - Made Delete key work to delete items from library.
+2003-08-03 kpreid
+  - Fixed bug that Library wouldn't remember URLs from non-saved documents.
+  - Fixed bug that address-entry window wouldn't show the URL from existing config.
+2003-08-02 kpreid
+  - Fixed Tools/Disable * menu items not getting checkmarks.
+  - MWConnectionDocument implements validation for server info/help.
+  - Wrote some unit tests for MWAppRegistry in preparation for removing it.
+  - Removed MWConfigure(Login|Logout)Script constants.
+  - Removed MWAppRegistry. Its methods are now a category on MWRegistry implemented in MWConfigPane.[hm].
+2003-07-22 kpreid
+  * Released 0.3.0.
+2003-07-21 kpreid
+  - Added alias feature to MWTriggerFilter and config pane for it.
+  - Changed version numbers to 0.3.0.
+  - Fixed incorrect path for default logout script config entry.
+  - Fixed bug causing display color set popup menu to become disabled.
+2003-07-20 kpreid
+  - Script edit panel's buttons are now disabled when appropriate.
+2003-07-19 kpreid
+  - New config key: ConfirmServerURLOpenRequests, boolean, which is used by the dns-com-awns-displayurl implementation.
+  - Created config documentation file.
+  - Replaced IANAEncodings.plist with CFStringConvertEncodingToNSStringEncoding(CFStringConvertIANACharSetNameToEncoding(...)) (whew)
+  - All file and toolbar icons are now defined in SVG.
+  - Slight redesign of toolbar icons.
+  - Script edit panel is constrained to the screen.
+2003-07-18 kpreid
+  - New class: MWConfigScriptTextFieldAdapter. Also extracted a common superclass for it with MWConfigScriptTextViewAdapter.
+  - MWTriggerFilter: Substitute, make-link, and direct-to-channel run scripts to get their parameters
+  - Documentation updated with new script features
+2003-07-17 kpreid
+  - Added soundNamed() Lua C-function
+  - Added playSound() in mw_init.lua
+  - MWScriptContexts now NSLog()s debug messages
+2003-07-15 kpreid
+  - Added MWDefaultScriptLanguageIdentifier default, used by MWConfigScriptTextViewAdapter.
+  - MW application sets it to SubstitutedLua if the plugin is available.
+  - Added popup menu to preferences window to set it.
+2003-07-13 kpreid
+  - Changed MWTriggerFilter's login/logout scripts to be MWScript objects, and the config keys are now without the MWConfigure prefix
+  - Changed MWConnectionConfigPane.nib to match
+  - New syntax for SubstitutedLua language: @@stmt $$expr $(ex pr)$
+  - Old login script format is converted to new format.
+2003-07-11 kpreid
+  - Lua:
+    - Exposed ObjC method config
+    - Exposed ObjC method objectAtPath:
+    - Added function to create MWConfigPath objects
+2003-07-04 kpreid
+  - Library address items now open the most recently used document when double-clicked, instead of the one whose name is alphabetically first.
+2003-06-28 kpreid
+  - Created MWMCPConfigPane, added options to disable MCP support or mapping window.
+2003-06-26 kpreid
+  - Created TestRun plugin, which runs unit tests in the MW executable.
+  - Started implementing MWSubstitutedLuaLanguage, with unit tests.
+  - Got some of MWSubstitutedLuaLanguage working.
+  - Added -compiledForm and -setCompiledForm: to MWScript.
+  - Better error reporting in Lua plugin.
+2003-06-24 kpreid
+  - Added -[MWRegistry(MWScriptLanguage) registerScriptLanguage:].
+  - Created MWSubstitutedLuaLanguage.
+2003-06-03 kpreid
+  - Renamed MWSendIdentityLanguage to MWIdentityLanguage, due to planned changes.
+  - Fixed bug causing OWC toolbar Settings button to be disabled.
+  - There is now an account selection submenu in the Terminal menu.
+2003-06-02 kpreid
+  - If an account which is selected in a terminal is deleted, the terminal now acts exactly as if no account is selected (and if that account is recreated, the terminal will again be using it)
+2003-05-31 kpreid
+  - Fixed account popup menu not showing up in default toolbar configuration.
+  - Cancelling reconnect produces a message.
+2003-05-26 kpreid
+  - No MCP line escaping done on send if MCP is not active
+2003-05-27 kpreid
+  - Our Lua C-functions now catch Cocoa exceptions and rethrow as Lua.
+  - Library item name and web site address are editable.
+  - Global input window now forwards performClose: and performMiniaturize: to the main window.
+  - MWToken no longer has weird -isEqual: behavior.
+  - MWToken has tests.
+  - MWToken* names are now actual token objects.
+2003-05-26 kpreid
+  - Various updates to the help, including new scripting documentation.
+  - Changed "Find Previous" keyboard equivalent to Cmd-Shift-G to match HIG.
+  - Removed unimplemented "New Terminal of Type" menu.
+2003-05-24 kpreid
+  - Created MWSendIdentity language.
+  - Created MWHas[Mutable]Config protocols.
+  - Lua plugin loads mw_init.lua.
+2003-05-23 kpreid
+  - Implemented syntax error checking for Lua plugin.
+  - Made MWScriptPanelController work.
+  - Mutation methods on MWConfigTree inappropriately declared insertIndex as unsigned int instead of int, causing ordering mishaps in copied trees. Fixed.
+  - Triggers pass regex captures into scripts.
+  - Fixed bug where zero-length trigger pattern caused infinite loop.
+2003-05-22 kpreid
+  - Fixed bug where MWTelnetFilter kept data in its line buffer after disconnection.
+2003-05-18 kpreid
+  - Created MWScriptPanelController.
+  - Removed tab view and unimplemented controls from linkable inspector.
+2003-05-15 kpreid
+  - Created MWConfigScriptTextViewAdapter.
+  - Added script field to trigger config pane.
+  - Triggers can invoke scripts.
+  - Fixed bug where documents inside the user's home directory could not be opened from the Library.
+  - Changed version numbers to 0.2.3a1.
+  * Sent current source to John Laxson.
+2003-05-14 kpreid
+  - Created MWScript, MWScriptLanguage, and MWScriptContexts.
+  - Created Lua plugin.
+2003-05-11 kpreid
+  - Created color set config pane and MWColorWellsConfigViewAdapter
+  - Config view adapters no longer blink green unless they actually change the setting.
+  - Removed ColorBrightColor setting.
+  - MCP mapping window goes away when the MCP filter does.
+  - Added -participatesInVersionNegotiation method to MCP packages to eliminate the special case in negotiation for mcp and mcp-negotiate messages
+  - Completely redesigned library. Library now has no categories, and automatically remembers addresses entered. Saved documents get entered in library and merged with address list.
+  - New /ServerInfo/WebSite and HelpWebSite config keys, which dns-com-awns-serverinfo sets.
+  - Removed lpServer[Info|Help]URL probe methods.
+  - Menu items for opening server's web site moved from Terminal to World.
+  - Web site info is autocopied into library.
+2003-05-10 kpreid
+  - Added blank-on-send and blank-on-receive telnet prompt options.
+  - Added ReceivePromptShow and ReceivePromptShowDifferent OWC prompt options.
+  - In progress: implementing color sets
+  - Added MWPopupRepresentedObjectConfigViewAdapter
+2003-05-09 kpreid
+  - Output window titles now include character name.
+  - Now a setting to show input prompt at end of output window.
+  - Input history and prompt are now stored in 'external input manager' objects. Among other things, this means that windows each have their own input history now.
+  - Linkables' -receive:fromLinkFor: now returns a BOOL indicating whether the received object has been 'handled' or not. This allows better use of inheritance.
+  - Removed -receiveObject: method from MWOutputWinController and subclasses; replaced with -receive:fromLinkFor:
+2003-05-08 kpreid
+  - Added missing \n's to trace messages from MWTelnetFilter.
+  - Added input config pane.
+  - Moved local echo preference into config.
+2003-05-06 kpreid
+  - Fixed small bugs in ANSI color handling.
+2003-04-03 kpreid
+  - Added reconnection options to connection config pane.
+  - Various changes to connection class API to make semantics better defined.
+  - Connections implement auto-reconnect.
+  - Config view adapters now will create intermediate directories.
+  - Output window controller enables disconnect toolbar button if connection is in-progress or waiting to reconnect.
+  - MWDocumentSettingsWinController now operates on the application-wide config if opened without a document.
+  - Menu item and action in MWAppDelegate to open such a window.
+  - Implemented saving of app-level config into NSUserDefaults.
+  - Fixed bug that prevented GIW from saving font choices.
+  - Fixed bug that prevented entering of dead-key combinations in GIW.
+2003-03-31 kpreid
+  - Fixed MWMCPMappingWinController -centerHere: not considering changed range factor.
+  - Fixed MWCFSocketConnection not handling failure of CFSocketConnectToAddress() properly.
+2003-02-03 kpreid
+  - Various variable type problems fixed due to gcc 3 warnings.
+  - Tried to make MWApplication handle presave hook cancel better.
+  - Fixed IANAEncodings.plist to have ; instead of , between items.
+  - Disabled Python plugin.
+  - Changed version number to 0.2.2.
+  * Released 0.2.2.
+2002-12-06 kpreid
+  - Added Known Problems list to the help.
+  - Changed version number to 0.2.1.
+  * Released 0.2.1.
+2002-12-02 kpreid
+  - Fixed bug that caused increasingly long hangs on autoswitch to password input mode.
+2002-12-01 kpreid
+  - Fixed MCP bugs:
+    - : and * no longer considered OK for unquoted-string.
+    - Sending a MCP message with an empty argument sends empty string instead of quoted empty string
+    - mcp-negotiate shouldn't send '-can' for the 'mcp' package.
+    - single-line values containing \n in sent messages mangle the message
+  - Created MWKeyCapturingWinController and related files.
+  - Text output window resets its prompt when disconnected.
+  - Routine for opening library window upon startup if no windows are visible now ignores windows that cannot become main (e.g. panels).
+  - Fixed bug in MWANSIColorFilter that prevented attributes from being applied to the beginning of lines.
+  - Exiting full-screen mode now restores the window frame properly. 
+2002-10-11 kpreid
+  - Fixed bug that MWURLLaunchRequest windows weren't closing when OK was clicked.
+  * Release 0.2
+2002-10-07 kpreid
+  - Account config pane converted to use config adapters.
+  - Changed all version numbers to 0.2.
+2002-10-06 kpreid
+  - Trigger and display config panes converted to use config adapters.
+  - Various problems with control adapters and font selectors in nibs fixed.
+2002-10-05 kpreid
+  - dns-com-awns-displayurl now checks with the user before opening the URL.
+2002-10-04 kpreid
+  - Changed telnet config pane over to control adapters.
+  - Titles of windows for unsaved documents are updated when Address setting is changed.
+  - Combo box in address entry window for new documents is updated when config changes.
+  - Values in sent MCP messages are not quoted unless necessary.
+2002-10-03 kpreid
+  - Linkable inspectors are now automatically opened when linkables report errors.
+  - Fixed bug that was causing TWin windows to not go away properly when the connection is closed (and would have affected other MCP cord types too).
+  - Got IB palette working.
+  - MWConfigViewAdapters may now be (almost) entirely configured from IB. This means that config panes can be created with essentially no code. (Hmm: User-created config panes?)
+2002-10-02 kpreid
+  - Created MWConfigViewAdapter and subclasses. 
+  - Converted connection config pane to use adapters.
+  - Tried to set up MWAppKit IB palette, hit framework-location issues. Grr.
+2002-10-01 kpreid
+  - Color well in preferences for color of scroll-lock indicator rectangle.
+  - Preference window uses one NSMatrix for all the miscellaneous boolean options.
+2002-09-30 kpreid
+  - Created MWFontSelectorView in MWAppKit.
+  - Reorganized Display config pane and added font selectors.
+  - MWConfigDirectoryEditPane supports display/edit of inherited items
+  - New connection documents now open with address entry windows instead of full config windows, and menu items to open the shared address entry window have been removed.
+  - Trigger config pane now actually has options for triggers.
+  - MWTriggerFilter supports configurable triggers.
+2002-09-29 kpreid
+  - Key macros are now configurable per-document and handled by a -[NSApplication sendEvent:] hook rather than the global input window.
+  - tkmootag parsing works now. This means MOO help text can be viewed with hypertext links!
+2002-09-28 kpreid
+  - MCP now does not catch incoming lines starting with '#$#' or '#$"' unless MCP support has been previously determined or the line starts with '#$#mcp '.
+  - MCP now discards outgoing MCP messages unless MCP support has been previously determined.
+  - MCP now discards as malformed incoming messages with duplicate keywords.
+2002-09-27 kpreid
+  - Fixed up some [[ retain] autorelease]ing accessors.
+  - Conversion of MCP message data into text for sending is now handled by the MWMCPMessage class instead of MWMCProtocolFilter.
+2002-09-26 kpreid
+  - Rewrote MCP implementation so that packages are classes which are instantiated when support is negotiated, instead of being categories on the MCP filter.
+2002-09-25 kpreid
+  - Library outline provides click-and-wait for editing.
+2002-09-23 kpreid
+  - Implemented dns-com-awns-visual, to display automatic maps using MWGraphView.
+  - Added -mwSetCharactersToBeSkippedToEmptySet to NSScanner since character set creation is apparently expensive.
+2002-09-22 kpreid
+  - Got MWGraphView to working condition.
+2002-09-21 kpreid
+  - Added key equivalents for add and delete buttons in Account config pane nib.
+  - Created MWImageAndTextCell based on ImageAndTextCell from Apple sample code.
+  - Library uses MWImageAndTextCell to display appropriate icons.
+  - Library has more sensible dragging-out behavior.
+2002-09-18 kpreid
+  - Moved global-config stuff from MWAppDelegate to MWRegistry.
+  - MWGenericTableViewDataSource allows dragging out as tab-separated text.
+  - -[MWToken(MWTWinAdditions) asTWinSExpression] checks for valid symbol characters.
+  - Fixed every instance of [ copy] without [ autorelease] and a few other refcount problems.
+2002-09-16 kpreid
+  - When a TWin event is sent, the window is marked 'edited' until the server acks the event.
+  - MCP message names and keys are now lowercased upon receiving.
+2002-09-15 kpreid
+  - TWin ListBox widgets get horizontal scroll bars if any of the items are wider than the box.
+2002-09-13 kpreid
+  - Changed all the places that used [NSFont userFixedPitchFontOfSize:9] except for OWC status bars to use TextFontMonospaced key from global config.
+  - TWin TypeOut and TextEdit widgets get properly sized to 80x25 characters in their font.
+2002-09-12 kpreid
+  - Fixed bug with uses of MWOutputTextView other than in windows using the GIW.
+  - Output windows create their own local config trees.
+  - Implemented some replacements in MWTriggerFilter login/logout scripts, like <username>, <password>, <lt>, etc.
+2002-09-11 kpreid
+  - Made MWDisplayConfigPane for controls from Appearance tab plus scrollback length.
+  - Completion of conversion to config:
+    - Disabled mirror-settings-in-config code.
+    - Connection documents no longer have a settings object.
+    - Document settings window only manages config panes.
+    - Removed MWDocumentSettings class.
+  - Wrote tests for some of MWNSStringAdditions
+2002-09-10 kpreid
+  - Added mwOpenConnection: action method to MWConnectionDocument.
+  - MWDocumentSettingsWinController sets up key loop properly for config panes.
+  - MCP cord handlers are given the config of the MCP filter
+  - TWin TypeOut widgets use the scrollback size set in the document
+2002-09-07 kpreid
+  - Made MWConnectionConfigPane for address, autoconnect, log(in|out) scripts.
+  - MWURLFormatter is pickier, requiring scheme and host parts.
+2002-09-06 kpreid
+  - MWAppRegistry's external interface for preference panes is now based on 'scope' bitmasks.
+  - MWAppRegistry sorts registered preference panes by name.
+2002-09-06 kpreid
+  - Converted output window controllers to config, except for MWTextOutputWinController's font-setting stuff (which is Bad anyway)
+2002-09-05 kpreid
+  - Converted all linkable classes to tree configuration interface. Deleted relevant methods from MWLinkable protocol.
+  - Created MWTelnetConfigPane.
+  - Added 'config parent' parameter to MWConfigPane so that control-based config can display the default values.
+2002-09-04 kpreid
+  - Added config: argument in buildFiltersForInnermost:... and MWLink buildFilterChain:... so that linkables can get to the new config system.
+  - Added MWAppDelegate -globalConfig, just returns an empty config tree for now.
+  - MWConnectionDocument -config returns a stacker of global config and document config.
+  - all changes to document settings now get mirrored in the config.
+2002-09-03 kpreid
+  - MWLinkable protocol now includes -setConfig: and -config for config suppliers.
+  - MWTriggerFilter should now use config, not settings, for the test channel regex.
+  - MWConnectionDocument calls setConfig: on filters it creates
+  - Fixed bug where restoring a config tree from a saved document didn't disable undo registration
+2002-09-01 kpreid
+  - Library supports editing of 'personal' entries. Much still needed, such as adding/deleting, reordering, editing strings-file categories, make double-click work again.
+2002-08-30 kpreid
+  - Found that config trees weren't restoring properly after encoding. Fixed. Connection documents have been confirmed to save their config trees (apparently) correctly.
+  - Disabled MWConnectionDocument's characters component.
+  - MWDocumentSettingsWinController now properly calls preference panes' shouldUnselect.
+  - Moved common config-directory-editing code into a new superclass of MWAccountConfigPane, MWConfigDirectoryEditPane.
+  - Implemented drag and drop for MWConfigDirectoryEditPane's list box.
+  - Commented out all references to MWDocumentElements and removed it from target.
+2002-08-29 kpreid
+  - Fixed a few more bugs in MWConfigTree.
+  - Converted character list to use MWConfigTree (as a relatively harmless test case).
+  - Moving character list into a config pane.
+  - Nearly lost all of today's work to a PB bug which deleted all files on disk. Managed to recover all pieces from morning's backup tape and files open in memory.
+2002-08-28 kpreid
+  - Trying out ObjcUnit testing framework. Writing tests for MWConfigTree.
+  - Many MWConfigTree bugs found thanks to tests. Coding and copying implemented.
+  - Added MWConfigStacker and <MWConfigSupplier>.
+  - MWConnectionDocument now contains, saves, and loads a config tree. Isn't used for anything yet.
+2002-08-27 kpreid
+  - MWConnectionDocument no longer tries loading documents as XML plists (since that caused a crash on 10.2).
+2002-08-24 kpreid
+  - Added GURL Apple Event support to make a connection document for the URL.
+  - Added a method in MWAppDelegate to replace all instances of "make document and set URL setting".
+2002-08-19 kpreid
+  - Added TWin TypeOut widget support.
+2002-08-03 kpreid
+  - Added TWin Image widget support.
+2002-07-30 kpreid
+  - Subtle undo tracking bug hopefully solved for remote editing window.
+2002-07-25 kpreid
+  - Think I found the hang problem. Remote editing window controllers and text holders were getting over-retained. Fixed. Also, added a fake retain for the WCs so they stick around till closed by the user.
+2002-07-24 kpreid
+  - Added a missing observer removal in case it was causing the increasingly-long-hangs problem.
+2002-07-21 kpreid
+  - Added a recursion check in MWOutputTextView's input redirection handling.
+2002-07-16 kpreid
+  - Wrote a little bit more documentation, sigh.
+  - Output window frame autosaves should include window group now.
+  - Created new, more sensible, output window titling system.
+  - Hidden default for the number of ¥s in password replacement.
+2002-07-15 kpreid
+  - Found random-actions-cause-undo-manager-entries bug. Tip: Don't call -[NSTextView shouldChangeTextInRange:replacementString:] unless you're actually going to change the text.
+  - Added goto line/character function to MWTextFindController and its window.
+  - Added -[NSString mwCharacterRangeForLineNumbers:] and -[NSString mwLineNumbersForCharacterRange:].
+2002-07-11 kpreid
+  - Fixed bug in outgoing Telnet IAC escaping that would cause parts of lines to be duplicated.
+2002-07-10 kpreid
+  - registerUserInterfaceCommand: no longer has a 'validateSelector' argument since it wasn't implemented and would be difficult to.
+2002-07-08 kpreid
+  - Fixed bug that global input window would sometimes not fade properly when overlapping target window
+  - Character popup menu was broken.
+  - TWin windows set useOptimizedDrawing:YES.
+2002-07-02 kpreid
+  - Obscured passwords in text output window no longer match length of the actual password.
+2002-06-28 kpreid
+  - MWOutputTextView now returns YES for acceptsFirstMouse:
+2002-06-27 kpreid
+  - MWConnectionDocument: added trick to delay effect of makeWindowControllers to allow decisions to be made after document creation
+2002-06-25 kpreid
+  - TWin: Moved some hardcoded data into new resource file TWinWidgetData.plist
+2002-06-22 kpreid
+  - 'Find Previous' menu item was mistakenly connected to findNext: action
+  - Added code to make sure text documents' windows' text views are the windows' first responder.
+  - TWin radio buttons get set properly on initial opening of the form.
+2002-06-20 kpreid
+  - Created MWConfigTree and MWConfigPath, new classes to be used for a configuration system which should work out better than the previous plan for hierarchical nodes.
+2002-06-18 kpreid
+  - MWLocalizedStringHere() now searches superclasses' string tables as well. Several related localized string utility functions added.
+  - Non-URL links in MWTextOutputWinController text view are sent out the outward link. This is a 'hook' for arbitrary hyperlink creation.
+2002-06-11 kpreid
+  - Preference to not ask about logout upon application quit.
+  - MWOutputWinController probes its link for lpConnectionQualification: to be a string to describe the use of this specific window more clearly - eg a channel.
+2002-06-15 kpreid
+  - Added code for generic capabilities and additional UI commands to MWRegistry.
+  - Application adds plugin-registered UI commands in context 'global' to the Tools menu.
+2002-06-14 kpreid
+  - Changed MWLibraryCategoryStrings's read-only test to use NSFileManager's -isWritableFileAtPath:
+2002-06-08 kpreid
+  - TWin Radio widget, upon being changed, now correctly sends the name of the RadioButton rather than its title.
+2002-06-01 kpreid
+  - Cleanups, reformatting, and optimization in MWTextOutputWinController -adjustAttributedString.
+  - Trigger filter no longer matches :// with no scheme part.
+  - Global input window now chooses its alpha based on actual coverage of the target window, rather than whether it is considered full-screen or not.
+2002-05-31 kpreid
+  - Disabled opening of Library when all other windows are closed.
+2002-05-13 kpreid
+  - MWTextOutputWinController
+    - no longer sets the (regular) window title on every received line, saving a lot of time.
+    - eliminated an unnecessary copy in -receiveObject:
+2002-05-08 kpreid
+  - Output windows don't cascade if they have a saved frame.
+  - Turned off cascading for input panel to fix the saved-frame-not-restored-correctly problem.
+2002-05-07 kpreid
+  - Implemented output window groups.
+2002-05-06 kpreid
+  - Global input window no longer grabs the focus whenever its target changes.
+2002-05-03 kpreid
+  - Removed "Use DNS Cache" function.
+  - Useless-as-yet stuff:
+    - Created MWConfigNode protocol.
+    - Renamed MWPreferencePane to MWConfigPane.
+    - MWDocumentSettings <MWConfigNode>
+2002-05-02 kpreid
+  - Miscellaneous cleanups in TWin
+2002-05-01 kpreid
+  - Added hooks for refreshing a remote text holder; found out that dns-org-mud-moo-simpleedit can't support it.
+  - Fixed validation of remote text window's toolbar so import and export will work.
+2002-04-30 kpreid
+  - Miscellaneous cleanups in TWin widget creation.
+  - Added -stringWithCharactersFromSet:escapedBy: to NSString to replace the MCP and TWin escaping routines.
+2002-04-29 kpreid
+  - Changed MCP cord implementation to use extra links on the MCP filter object, rather than a specialized interface.
+  - Fixed up linkable user description model.
+  - TWin: implemented radio buttons.
+2002-04-27 kpreid
+  - Global input window won't blink (fade one step) when switching targets.
+  - Improved URL matcher in MWTriggerFilter.
+2002-04-26 kpreid
+  - Global input window's title reflects its target.
+  - Wrote method to properly escape strings for TWin events.
+  - Converted TWin form processor to use generic s-expression parser, thereby eliminating duplicate code and some parsing bugs.
+  - Linkable inspector window uses a MWOutputTextView for tracing.
+  - Output window will close after logout triggered by sheet triggered by close box click.
+2002-04-23 kpreid
+  - Fixed bug in global input window that it would not properly record in history any command reused from history.
+2002-04-22 kpreid
+  - MWToolbars.h moved to MWAppKit
+  - Scroll Lock toolbar item actually works
+  - TWin: TypeIn widgets can be invoked; set events no longer lose certain whitespace
+2002-04-21 kpreid
+  - Nib files have been moved in PB groups to be next to their window controllers.
+  - Untitled documents with addresses (e.g. created by Connect By Address...) now get the address displayed as the output window title.
+  - All bundle identifiers changed to org.cubik.mudwalker.*
+  - Fixed incorrect validation of Disconnect toolbar item
+2002-04-20 kpreid
+  - MWTelnetFilter translates ^G
+2002-04-15 kpreid
+  - Library categories renamed to have "Source: ..." to make it clearer what they are.
+  - All CGMud message parsing/generation now done by MWCGMudMessage.
+2002-04-14 kpreid
+  - Global input window doesn't lose current input when you go to the history 
+  - MWRemoteTextHolder specifies 9pt fixed-pitch font rather than default (system font).
+2002-04-13 kpreid
+  - Quit process is resumed after executing a logout script.
+2002-04-12 kpreid
+  - Text OWC won't trim scrollback during scroll lock.
+2002-04-10 kpreid
+  - Expansion of OSA scripting suite; still need to implement and test it.
+2002-04-08 kpreid
+  - OSA support is working again. Still need to make it useful...
+  - Wrote beginnings of MWGraphView.
+  - Scroll Lock function key and F14 toggle Scroll Lock mode.
+  * Sent copy to Bruce somewhere along this time, and Jay (?) too.
+2002-04-07 kpreid
+  - Fixed bug in TWin that it would send spurious set events for table views.
+  - Implemented TWin checkboxes.
+  - Had some trouble with reentrancy problems on closing a TWin window. really ought to move to using links instead of custom cord API, since links make it a solved problem.
+  - MWCFSocketConnection queues outgoing data during connection properly.
+  - New method -[MWConnectionDocument defaultOutputWindowClass].
+  - MWConnectionDocument -makeWindowControllers opens the settings window if there is no default output window class known.
+2002-04-06 kpreid
+  - Library should no longer open if MW is launched with a document.
+  - -[NSString componentsSeparatedByLineTerminators] no longer loses a single-character unterminated final line.
+  - Fixed bug in MCP implementation where the charset simpleChars (spec grammar element '<simple-char>') was missing several characters.
+2002-04-05 kpreid
+  - New 'Local Echo' preference
+  - Library window closes on outline action only if new windows were actually opened
+  - Global input window uses the category method on NSString.
+  - MWRemoteTextHolder now tracks dirty state properly.
+  - Localized strings for MWRemoteTextHolder's save dialog added
+  - Created exception report window, but didn't implement use of it yet.
+  - MWSocketConnection is now known as MWBSDSocketConnection isa MWTCPConnection isa MWAbstractConnection.
+  - MWBSDSocketConnection won't send a spurious connected token if the connection failed.
+  - New MWCFSocketConnection. Advantage is that it has no polling.
+  - Fixed crash bug in MWTriggerFilter.
+  - MWTextOutputWinController puts the (( )) around MWLocalRole strings instead of them being hardcoded
+  - Moved localized strings for socket status and errors into MudWalker.framework.
+  - MWTextOutputWinController: \n between lines in text storage gets attributes of the following line, thus reducing the number of attribute changes for more efficient  and compact storage
+  - Local echo strings are prefixed by prompts
+2002-04-04 kpreid
+  - Experienced a strange bug where output text views sometimes didn't scroll to the bottom. Couldn't find the problem, and it stopped happening.
+  - Added "Reset Prompt" action.
+  - Text output window should handle partial lines better.
+2002-04-03 kpreid
+  - TWin: proper parsing of size attributes, window size gets changed when appropriate.
+2002-04-02 kpreid
+  - MWSocketConnection polls in more run loop modes.
+  - Tweaks in TWin.
+2002-03-30 kpreid
+  - Created MWBackground tool, which doesn't do anything yet.
+  - Standard plugin search/load moved to framework.
+  - Data objects MWLineString, MWLineData, and MWToken should default to being passed by copy over a DO connection.
+2002-03-29 kpreid
+  - Quit with active connections presents a common modal 'what do you want to do?' instead of opening a sheet on every terminal.
+  - Unsaved documents no longer get all the same frame positions for new terminal windows.
+2002-03-21 kpreid
+  - Changes to the scheme handling API.
+2002-03-20 kpreid
+  - Added exception reporter hook to MWRegistry.
+2002-03-19 kpreid
+  - Replaced MWConnectionDocument's -newOutputWindowOfClass: with -outputWindowOfClass:group:reuse:connect:display:.
+  - Added MWTeeFilter and MWLogger. No UI for them yet.
+2002-03-18 kpreid
+  - Added a category method on NSString, -componentsSeparatedByLineTerminators.
+  - Used this method to make the MCP remote editor split lines for sending properly.
+  - Basic implementation of Telnet CHARSET option - will ACCEPT the charset currently in use, but not switch charsets.
+  - New "Prepare Connection" function which sets up links but doesn't connect.
+  - Can open a window inside MW to view global link trace info, instead of recompiling with printfs.
+  - Changed API for plugins building filter chains to work with arbitrary <MWLinkable>s instead of MWOutputWinController.
+  - Implemented optional DNS cache.
+2002-03-17 kpreid
+  - MWLink rewritten to fix retain bugs, make it more robust in the face of threading and exceptions, and eliminate the icky BOOL return from -registerLink:forName:. 
+  - Added warnings to find out if there are still places where NSStrings get passed around.
+  - Changed some stuff to consistently use MWLineStrings, particularly MCP.
+  - Created MWCustomBindingsTextView which both MWInputTextView and MWOutputTextView inherit from, to provide consistent handling for shift-return, history controls, etc.
+  - Global input window now keeps away from sheets attached to the main window.
+2002-03-16 kpreid
+  - Further work on manual.
+  - Set up "Disable Sound/Key Macros/Speech" options. Implemented disabling of key macros.
+2002-03-15 kpreid
+  - Moved MWOutputTextView, MWValidatedButton, and MWURLFormatter to MWAppKit.
+  - Lighter default color for links.
+  - Registry is now a class defined in the framework, rather than a protocol implemented in the application.
+2002-03-14 kpreid
+  - Implementing NSPreferencePane loading in the document settings window. This will be used to allow plugins to present custom document settings.
+  - Moved some of the stuff in MudWalker.framework to the new 'MWAppKit.framework'. This enables MudWalker.framework to be used without AppKit.framework, for non-GUI apps.
+  - Fixed MWDocumentSettingsWinController's control mapping to use MWKeyFromObjectIdentity(c) instead of [c description].
+2002-03-13 kpreid
+  - Added 'New Connection', 'New Text Document', and 'Connect By Address...' menu items.
+  - Created MWAddressEntryWinController.
+  - Changing Mud Library to have its categories as real objects, for more flexibility and OO-ness.
+  - Mud Library is gradually being renamed to just Library.
+  - Library looks in /Library/Application Support/MudWalker/Library.strings now. Still need to support proper search path access.
+2002-03-12 kpreid
+  - MWOutputTextView makes use of the layout manager's delegate connection to provide automatic scroll-to-end upon completion of layout. This eliminates the need for the ugly NSScrollView addition for scrolling after a delay. MWTextOutputWinController and the CGMud plugin now use this feature.
+  - New "MudWalker Web Site" menu item.
+  - Scroll Lock is handled by MWOutputTextView.
+2002-03-11 kpreid
+  - GUI OWC has another link inward of it, the 'custom controller'. This feature allows proper separation of GUI management from protocol management, and proper behavior upon unlinking the GUI window; it should also make it possible to use GUI OWCs for TWin.
+  - CGMud plugin uses this system.
+2002-03-10 kpreid
+  - Added 'recent documents' category to library.
+  * New private release for Bruce.
+2002-03-08 kpreid
+  - TWin: Miscellaneous improvements to layout. NSTextField is still being too small for some reason.
+2002-03-06 kpreid
+  - MWOutputWinController overrides -synchronizeWindowTitleWithDocumentName to provide a name for documentless windows.
+  - MWInterpreterConsole implements -lpConnectionDescription:.
+2002-03-01 kpreid
+  - Find now working. No replace-all or fancy search options.
+  - Implemented license-display action.
+  - Created MWTextDocument and MWTextDocumentWinController.
+  - Renamed MWDocument to MWConnectionDocument.
+  - Renamed MWInputRedirectingTextView to MWOutputTextView to make it less confusing.
+  - Organized todo list into categories.
+  - Search path for custom resources is based on NSSearchPathForDirectoriesInDomains() rather than being hardcoded.
+  - -[MWAppDelegate pathForResourceFromSearchPath:] refuses to return paths for dot files, including '../'.
+2002-02-28 kpreid
+  - Subclassed NSApplication to provide a termination hook called *before* documents are saved. This will allow the provision of guaranteed confirmation of connection window closing.
+  - Added relevant methods to MWOutputWinController.
+  - Moved the code for creating a chain of filters from MWDocument to +[MWLink buildFilterChain:configuration:].
+  - Hopefully fixed bug where global input window's undo manager would become inconsistent due to history selection.
+  - lpUsefulConnection: semantics changed: returns the object which 'is' the connection.
+  - New probe method lpConnectionDescription: returns a description of what the connection is to, which is used for the window close confirmation sheet.
+  - Created MWTextFindController.
+  - MWGlobalInputWinController properly splits sent text into multiple MWLineStrings.
+2002-02-27 kpreid
+  - Added code so that text output windows get updated while minimized.
+  - Implemented a more general s-expression parser for TWin. Now using it for set-event parsing.
+2002-02-24 kpreid
+  - Problems with CGMud were due to the GUI OWC's nib file missing a connection. Fixed.
+  - MWSocketConnection picks up host/port from the configuration system instead of explicit accessors.
+2002-02-23 kpreid
+  - Input client protocol includes a method for word completion. Global input window uses it.
+  - MCP package dns-com-awns-rehash implemented.
+  - MWDocumentSettings no longer writes some keys in saved documents as archived objects.
+  - GUI output window no longer has the extra status bar, and the custom-area view is the same as the window content view. This has revealed some bugs/quirks in the CGMud implementation.
+2002-02-22 kpreid
+  - Document settings object is now a subclass of NSMutableDictionary. Default settings are kept in a global dictionary and faked into the individual document settngs.
+  - Output window controllers use the default settings object if they have no document.
+  - Python console working.
+  - Library window uses an outline.
+  - Automatic reconfiguration: filters watch for changes to the document settings and reconfigure themselves.
+2002-02-19 kpreid
+  - Trying to make a 'console' for the Python interpreter. Figured out that the problem is that MWTextOutputWinController can't handle not being associated with a document.
+  - Solving that problem.
+2002-02-18 kpreid
+  - Creating MWInputClient protocol in framework to allow plugins' windows to use the global input window and to separate the concepts of 'output window controller' vs 'uses global input window'.
+2002-02-17 kpreid
+  - Created Python plugin. Doesn't do anything useful yet.
+2002-02-15 kpreid
+  - CGMud regions now stored in each graphics view instead of the filter.
+  - Further improvements to TWin implementation.
+2002-02-14 kpreid
+  - TWin implementation significantly more complete. Layout works, buttons work, list boxes work, labels work, textedits work. Needs some refinement of parsing recieved set events.
+  - Fixed bug in MCP where a multiline message would not get received properly.
+2002-02-13 kpreid
+  - Moved framework into a separate project to enforce proper header separation.
+  - Removed all GUI commands.
+  - Sound support for CGMud.
+  - Code in MWInputTextView and MWInputRedirectingTextView cleaned up to have less dependence on matching particular key codes.
+2002-02-12 kpreid
+  - Output windows' titles indicate if they are unlinked.
+  - OneLineRequest windows close if unlinked.
+  - Scrollback line limit implemented.
+  - Tab key should toggle between input panel and output window.
+  - XML plist documents are almost useless since they can't directly store NSColor, NSFont, or NSURL. Going back to NSArchiver.
+  * Uploaded copy to web site, told Donna@Hesperian about it.
+2002-02-10 kpreid
+  - MSP implementation looks in search path for sounds.
+2002-01-19 kpreid
+  - Implemented search path function, in plugin registry object.
+2002-01-18 kpreid
+  - Documents should now be saved in XML plist format.
+  - Little bit of TWin layout work.
+  - Multiple URLs will be matched on the same line.
+2002-01-16 kpreid
+  - Disabled MCP plugin compilation temporarily to let other things get done.
+  - Added full-screen mode.
+  - Added MWGenericTableViewDataSource.
+2002-01-14 kpreid
+  - MWMCPPackageTWin.m: inserted names of classes for appropriate layout views (not yet implemented). MW won't compile now.
+2002-01-13 kpreid
+  - MWTextOutputWinController: Changed all occurences of clearScrollback: to mwClearScrollback:. The menu item will work now, and the toolbar item will be validated properly.
+  - MWTextOutputWinController: Implemented scroll lock.
+  - MWCGMudProtocolFilter-Effects.m: Changed all effects handlers to use efParam macros.

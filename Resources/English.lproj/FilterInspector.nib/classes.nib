@@ -1,0 +1,25 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {CLASS = MWCustomBindingsTextView; LANGUAGE = ObjC; SUPERCLASS = NSTextView; }, 
+        {
+            ACTIONS = {mwBrowserAction = id; }; 
+            CLASS = MWLinkableInspectorWinController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                cLinkBrowser = NSBrowser; 
+                cTraceScrollView = NSScrollView; 
+                cTraceText = MWOutputTextView; 
+            }; 
+            SUPERCLASS = NSWindowController; 
+        }, 
+        {
+            ACTIONS = {autoScrollLock = id; }; 
+            CLASS = MWOutputTextView; 
+            LANGUAGE = ObjC; 
+            SUPERCLASS = MWCustomBindingsTextView; 
+        }, 
+        {CLASS = NSObject; LANGUAGE = ObjC; }
+    ); 
+    IBVersion = 1; 
+}

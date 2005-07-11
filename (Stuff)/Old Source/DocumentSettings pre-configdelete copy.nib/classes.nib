@@ -1,0 +1,36 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {paneChosen = id; settingColorWellChanged = id; settingControlChanged = id; }; 
+            CLASS = MWDocumentSettingsWinController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                cAddress = NSView; 
+                cAutoConnect = NSView; 
+                cCharEncoding = NSPopUpButton; 
+                cColorBrightBold = NSView; 
+                cColorBrightColor = NSView; 
+                cColorSetAdd = NSView; 
+                cColorSetPopup = NSView; 
+                cColorSetRemove = NSView; 
+                cColorsContainer = NSView; 
+                cLineEnding = NSView; 
+                cLineIndent = NSSlider; 
+                cLoginScript = NSTextView; 
+                cLogoutScript = NSTextView; 
+                cPromptTimeout = NSTextField; 
+                cScrollbackLength = NSView; 
+                dSplitDelegate = id; 
+                dURLFormatter = id; 
+                paneContainer = NSView; 
+                paneList = NSTableView; 
+                paneSplit = NSSplitView; 
+            }; 
+            SUPERCLASS = NSWindowController; 
+        }, 
+        {CLASS = MWURLFormatter; LANGUAGE = ObjC; SUPERCLASS = NSFormatter; }, 
+        {CLASS = MWUncontractableBox; LANGUAGE = ObjC; SUPERCLASS = NSBox; }
+    ); 
+    IBVersion = 1; 
+}

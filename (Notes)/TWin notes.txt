@@ -1,0 +1,21 @@
+...should move this file into comments in the TWin source
+
+--- Layout algorithm
+
+* Data each view needs:
+  * Cached size/stretch/shrink
+  * Hard sizes
+
+* Upon any significant change (attributes changed, subviews changed):
+  * Recompute my preferred sizes based on my subviews' size
+  * If I'm the window content view:
+    * Tell myself to perform physical layout
+    * Resize window to fit me
+  * Else:
+    * Tell superview I've changed
+
+* physical layout:
+  * Size myself according to the computed preferred size
+  * Resize my subviews according to my actual size
+  * Tell each subview to do the same
+

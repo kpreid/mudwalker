@@ -1,0 +1,53 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {cColorChanged = id; }; 
+            CLASS = MWColorSetConfigPane; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {cColorsContainer = NSView; ccDirectory = NSTableView; }; 
+            SUPERCLASS = MWConfigDirectoryEditPane; 
+        }, 
+        {
+            CLASS = MWColorWellsConfigViewAdapter; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {viewContainingColorWells = NSView; }; 
+            SUPERCLASS = MWConfigViewAdapter; 
+        }, 
+        {
+            ACTIONS = {dirAddItem = id; dirDeleteItems = id; }; 
+            CLASS = MWConfigDirectoryEditPane; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                cDetailAdapterContainer = NSView; 
+                cDirectory = NSTableView; 
+                cFirstDetailControl = NSView; 
+                cRemoveButton = NSButton; 
+            }; 
+            SUPERCLASS = MWConfigPane; 
+        }, 
+        {
+            CLASS = MWConfigPane; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {configTarget = id; }; 
+            SUPERCLASS = NSPreferencePane; 
+        }, 
+        {
+            CLASS = MWTableViewForDirectoryEdit; 
+            LANGUAGE = ObjC; 
+            SUPERCLASS = NSTableView; 
+        }, 
+        {
+            CLASS = NSPreferencePane; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                "_firstKeyView" = NSView; 
+                "_initialKeyView" = NSView; 
+                "_lastKeyView" = NSView; 
+                "_window" = NSWindow; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }
+    ); 
+    IBVersion = 1; 
+}

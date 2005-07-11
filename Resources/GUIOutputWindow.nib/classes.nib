@@ -1,0 +1,41 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            CLASS = MWGUIOutputWinController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {customContainer = NSView; }; 
+            SUPERCLASS = MWOutputWinController; 
+        }, 
+        {
+            CLASS = MWOutputToolbarController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {windowController = id; }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            ACTIONS = {
+                mwCloseConnectionHard = id; 
+                mwCloseConnectionNice = id; 
+                mwFullScreenToggle = id; 
+                mwInspectFilters = id; 
+                mwOpenConnection = id; 
+                mwOpenServerHelp = id; 
+                mwOpenServerInfo = id; 
+                mwSelectCharacter = id; 
+                mwSendPing = id; 
+                mwUnlinkWindow = id; 
+            }; 
+            CLASS = MWOutputWinController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                tbCharacterMenu = NSMenu; 
+                tbCharacterPopUp = NSPopUpButton; 
+                tbCharacterView = NSView; 
+            }; 
+            SUPERCLASS = NSWindowController; 
+        }, 
+        {CLASS = MySound; LANGUAGE = ObjC; SUPERCLASS = Sound; }
+    ); 
+    IBVersion = 1; 
+}

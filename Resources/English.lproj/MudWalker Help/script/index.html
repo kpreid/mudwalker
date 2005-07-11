@@ -1,0 +1,120 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html401/strict.dtd">
+<html><head>
+  <title>MudWalker Scripting</title>
+  <meta name="Keywords" content="MudWalker,script,scripts,scripting,Lua,Python,language,send,print,trigger,triggers">
+</head><body>
+<h1>MudWalker Scripting</h1>
+
+<p>MudWalker currently offers Lua as an embedded language for scripts in triggers, etc.</p>
+
+<h2>Script Languages</h2>
+
+<p>Anywhere you can enter a script in MudWalker, there will be a choice of script languages. The following languages are provided with MudWalker (others may be added by plugins):</p>
+
+<dl>
+<dt>Literal Text</dt>
+<dd>Returns or sends exactly the text you enter in the script field.</dd>
+<dt>Lua</dt>
+<dd><a href="http://www.lua.org/">Lua</a> source code. See below for details on the Lua interface.</dd>
+<dt>Lua (in substitution)</dt>
+<dd>Lua source code embedded in plain text. Deliberately imitative of <cite><a href="http://www.rapscallion.co.uk/">Rapscallion</a></cite>'s script language.
+
+  <p>Lines starting with <code>@@</code> are treated as Lua code. Other lines become <code>send('...')</code> statements, where <code>...</code> is the text of the line. Lua expressions may be inserted in such lines by the syntaxes <code>$$<var>expr</var></code> or <code>$(<var>expr</var>)$</code>. <code>$$</code> expressions end at the first space character.</p>
+</dd>
+
+<h2>Triggers</h2>
+
+<p>Triggers pass the strings captured by parentheses in the match pattern to the script in numeric keys <code>1</code>..<code>n</code>, and the complete matched line as <code>0</code>. The trigger filter itself is passed in as <code>linkable</code>.</p>
+
+<h2>Aliases</h2>
+
+<p>The complete typed line is at numeric key <code>0</code>, and the line without the alias name is <code>1</code>.</p>
+
+<h2>Lua Usage</h2>
+
+<p>See <a href="http://www.lua.org/docs.html">the documentation</a> at <a href="http://www.lua.org/">www.lua.org</a> for information on the Lua language itself.</p>
+
+<p>Short description: <code>send(str)</code> to send a line to the server, <code>message(str)</code> to send a line to your terminal.</p>
+
+<p>Arguments for the script are available in the 'arg' table.</p>
+
+<p>Example:</p>
+
+<pre>local who = arg[1]
+if who ~= "Jerk" then
+  message("Greeting " .. who)
+  send("say Hi, " .. who .. "!")
+end</pre>
+
+<p>The same example, but using the substitution syntax:</p>
+
+<pre>@@local who = arg[1]
+@@if who ~= "Jerk" then
+  @@message("Greeting " .. who)
+  say Hi, $(who)$!
+@@end</pre>
+
+<h2>Lua Details</h2>
+
+<h3>Builtin Functions</h3>
+
+<p>MudWalker makes the following builtin functions available in the Lua namespace:</p>
+
+<ul>
+  <li>all functions from the <code>string</code>, <code>table</code>, and <code>math</code> libraries
+  <li>all functions from the <code>base</code> library except:
+  <ul>
+    <li><code>print</code>
+    <li><code>loadfile</code>
+    <li><code>dofile</code>
+    <li><code>loadstring</code>
+    <li><code>require</code>
+  </ul>
+  <li><code>print(str)</code> - print a message to the script debug window.
+  <li><code>new_lineString(<var>str[, role]</var>)</code> - creates a <code>MWLineString object.</code>
+  <li><code>configPath(<var>str, str, ...</var>)</code> - returns a <code>MWConfigPath object with the specified components.</code>
+  <li><code>soundNamed(<var>name</var>)</code> - returns a system sound, e.g. <code>soundNamed('Sosumi')</code>.</li>
+</ul>
+
+<h3>Builtin Methods</h3>
+
+<p>The following methods are callable on applicable objects:</p>
+
+<dl>
+<dt><code>:config()</code></dt>
+<dd>Objective-C <code>config</code>. Usually used on <code>arg.linkable</code>, where it returns the configuration object the trigger filter is using.</dd>
+<dt><code>:link_send(<var>obj, linkName</var>)</code></dt>
+<dd>Objective-C <code>send:toLinkFor:</code>. Usually used on <code>arg.linkable</code>.</dd>
+<dt><code>:objectAtPath(<var>path</var>)</code></dt>
+<dd>Objective-C <code>objectAtPath:</code>. Usually used on <code>arg.linkable:config()</code>, where it returns the value for the given configuration path.</dd>
+</dl>
+
+<p><!--FIXME-->(To be written: explanations of what MWLineString and MWConfigPath are.)</p>
+
+<h3>Convenience Functions</h3>
+
+<p>Also, the file <a href="../../../../PlugIns/Lua.mwplug/Contents/Resources/mw_init.lua"><code>mw_init.lua</code></a> inside the Lua plugin in the MudWalker application package is executed when a new Lua interpreter is set up. It defines useful functions based on the primitives above:</p>
+
+<dl>
+<dt><code>send(<var>obj[, link]</var>)</code></dt>
+<dd>
+  <p>Sends <var>obj</var> <code>inward</code> (to your terminal window) or <code>outward</code> (to the server), depending on <var>link</var> (which defaults to "outward").</p>
+  <p>If <var>obj</var> is a string, converts it to a MWLineString.</p>
+</dd>
+<dt><code>message(<var>str</var>)</code></dt>
+<dd>
+  <p>Sends a message to your terminal, marked as being such (rather than text from the server). Exactly equivalent to:</p>
+  <blockquote><code>arg.linkable:link_send(new_lineString(str, "MWLocalRole"), "inward")</code></blockquote>
+</dd>
+<dt><code>playSound(<var>name</var>)</code></dt>
+<dd>
+  <p>Plays the named system sound. Exactly equivalent to:</p>
+  <blockquote><code>arg.linkable:link_send(soundNamed(name), "inward")</code></blockquote>
+</dl>
+
+<hr>
+<p class="navigation-footer">
+  <a href="../index.html">Table of Contents</a>
+</p>
+
+</body></html>

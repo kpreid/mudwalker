@@ -1,0 +1,10 @@
+CGCharacterNamePrompt = "Enter character name: ";
+CGCharacterPasswordPrompt = "Enter character password: ";
+
+CGSinglePlayerInUse = "Single-player game is in use.";
+CGCharCreationDenied = "Character creation not allowed.";
+CGConfirmCharCreation = "Create this character?";
+CGCharLoginSuccessful = "Logged in.";
+
+"MWCGMudProtocolFilter" = "CGMud Protocol Filter";
+"MWCGMudGUIController" = "CGMud GUI Controller";

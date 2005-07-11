@@ -1,0 +1,6 @@
+In the original version of this, the various tag types *were* the enum
+types, but in many places I *want* them to occupy only 1 byte of
+storage. There is no portable way to do this in C. Sigh. So, I've made
+them all 'unsigned char', and rely on the fact that the original
+language protected me against enum member misuse, so the only problems
+will be those that I make after this conversion to C.

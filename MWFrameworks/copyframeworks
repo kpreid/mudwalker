@@ -1,0 +1,8 @@
+#!/bin/sh
+if [ "$ACTION" = "" ]; then
+  if [ -e ~/"Library/Frameworks/MudWalker.framework" ]; then
+    rm -r ~/"Library/Frameworks/MudWalker.framework" ~/"Library/Frameworks/MWAppKit.framework"
+  fi
+  mkdir -p ~/"Library/Frameworks"
+  cp -pR "$SYMROOT/MudWalker.framework" "$SYMROOT/MWAppKit.framework" ~/"Library/Frameworks"
+fi

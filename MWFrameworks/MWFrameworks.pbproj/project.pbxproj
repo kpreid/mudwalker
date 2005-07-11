@@ -1,0 +1,3806 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 39;
+	objects = {
+		013A5151010123ACC0A80001 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			path = MWConstants.h;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		013A5153010123D0C0A80001 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.objc;
+			path = MWConstants.m;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+//010
+//011
+//012
+//013
+//014
+//100
+//101
+//102
+//103
+//104
+		1058C7A7FEA54F5311CA2CBB = {
+			fallbackIsa = PBXFileReference;
+			isa = PBXFrameworkReference;
+			lastKnownFileType = wrapper.framework;
+			name = Cocoa.framework;
+			path = /System/Library/Frameworks/Cocoa.framework;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+//100
+//101
+//102
+//103
+//104
+//190
+//191
+//192
+//193
+//194
+		19C28FB0FE9D524F11CA2CBB = {
+			children = (
+				F5ECD288021AC01701A80004,
+				F5E70BB001C5335801A80004,
+				F55C41920241631B01A80004,
+				F57A0252031FD2CF01A80004,
+				F55418270280A8AD01A80004,
+				F568144602798ABA01A80004,
+			);
+			isa = PBXGroup;
+			name = Products;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+//190
+//191
+//192
+//193
+//194
+//2A0
+//2A1
+//2A2
+//2A3
+//2A4
+		2A37F4A9FDCFA73011CA2CEA = {
+			buildSettings = {
+			};
+			buildStyles = (
+				4A9504D0FFE6A4CB11CA0CBA,
+				4A9504D1FFE6A4CB11CA0CBA,
+			);
+			hasScannedForEncodings = 1;
+			isa = PBXProject;
+			mainGroup = 2A37F4AAFDCFA73011CA2CEA;
+			projectDirPath = "";
+			targets = (
+				F55E85150248415F01A80004,
+				F5E70BB101C5335901A80004,
+				F55C41930241631B01A80004,
+				F57A0253031FD2CF01A80004,
+				F5ECD28A021AC01701A80004,
+				F55418280280A8AD01A80004,
+				F568144802798ABA01A80004,
+				F56F0407034F3F8E01A80004,
+			);
+		};
+		2A37F4AAFDCFA73011CA2CEA = {
+			children = (
+				2BA1004E06DFAAC70019EC02,
+				F5600FC602BCC94A01A80004,
+				F55C419A0241649A01A80004,
+				F5ECD285021AC01701A80004,
+				F55C419E0241659A01A80004,
+				F57A0251031FD29901A80004,
+				F568144502798A6901A80004,
+				2BF83714057B80D300BF4147,
+				2A37F4C3FDCFA73011CA2CEA,
+				19C28FB0FE9D524F11CA2CBB,
+			);
+			isa = PBXGroup;
+			name = mudclient;
+			path = "";
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		2A37F4C3FDCFA73011CA2CEA = {
+			children = (
+				1058C7A7FEA54F5311CA2CBB,
+				F55EE6EA0242E54401A80004,
+				2A37F4C5FDCFA73011CA2CEA,
+				2A37F4C4FDCFA73011CA2CEA,
+				F5623AC2025E314E01A80004,
+				F56C596A031D23F801A80004,
+				F508711B034B5F1901A80004,
+			);
+			isa = PBXGroup;
+			name = Frameworks;
+			path = "";
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		2A37F4C4FDCFA73011CA2CEA = {
+			fallbackIsa = PBXFileReference;
+			isa = PBXFrameworkReference;
+			lastKnownFileType = wrapper.framework;
+			name = AppKit.framework;
+			path = /System/Library/Frameworks/AppKit.framework;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		2A37F4C5FDCFA73011CA2CEA = {
+			fallbackIsa = PBXFileReference;
+			isa = PBXFrameworkReference;
+			lastKnownFileType = wrapper.framework;
+			name = Foundation.framework;
+			path = /System/Library/Frameworks/Foundation.framework;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+//2A0
+//2A1
+//2A2
+//2A3
+//2A4
+//2B0
+//2B1
+//2B2
+//2B3
+//2B4
+		2B1A5FAE0532410400A80004 = {
+			fileEncoding = 4;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			path = MWMockLinkable.h;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		2B1A5FAF0532410400A80004 = {
+			fileEncoding = 4;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.objc;
+			path = MWMockLinkable.m;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		2B1A5FB00532410400A80004 = {
+			fileRef = 2B1A5FAE0532410400A80004;
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					Public,
+				);
+			};
+		};
+		2B1A5FB10532410400A80004 = {
+			fileRef = 2B1A5FAF0532410400A80004;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		2B1EB71A0680BA7700942DC2 = {
+			fileEncoding = 4;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			path = MWTerminalPane.h;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		2B1EB71B0680BA7700942DC2 = {
+			fileEncoding = 4;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.objc;
+			path = MWTerminalPane.m;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		2B1EB71C0680BA7700942DC2 = {
+			fileRef = 2B1EB71A0680BA7700942DC2;
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					Public,
+				);
+			};
+		};
+		2B1EB71D0680BA7700942DC2 = {
+			fileRef = 2B1EB71B0680BA7700942DC2;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		2B20DD4A04A8C90D00A80004 = {
+			fileEncoding = 4;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.objc;
+			path = MWScriptLanguage.m;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		2B20DD4B04A8C90D00A80004 = {
+			fileRef = 2B20DD4A04A8C90D00A80004;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		2B41D54F04DC1BED00A80004 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.objc;
+			path = MWAppRegistryTest.m;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		2B41D55004DC1BED00A80004 = {
+			fileRef = 2B41D54F04DC1BED00A80004;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		2B914F9E047EC05F00A80004 = {
+			fileEncoding = 4;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			path = MWHasConfig.h;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		2B914F9F047EC05F00A80004 = {
+			fileRef = 2B914F9E047EC05F00A80004;
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					Public,
+				);
+			};
+		};
+		2B914FA0047FB56800A80004 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			path = MWIdentityLanguage.h;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		2B914FA1047FB56800A80004 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.objc;
+			path = MWIdentityLanguage.m;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		2B914FA2047FB56800A80004 = {
+			fileRef = 2B914FA0047FB56800A80004;
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					Public,
+				);
+			};
+		};
+		2B914FA3047FB56800A80004 = {
+			fileRef = 2B914FA1047FB56800A80004;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		2BA1004E06DFAAC70019EC02 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = text;
+			name = "README before building.txt";
+			path = "/Volumes/Alpha/h1/Documents/DevX/MudWalker/README before building.txt";
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		2BE5409C0477BE2900A80004 = {
+			children = (
+				2BE5409D0477BE2900A80004,
+			);
+			isa = PBXVariantGroup;
+			name = MWScriptPanel.nib;
+			path = "";
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		2BE5409D0477BE2900A80004 = {
+			isa = PBXFileReference;
+			lastKnownFileType = wrapper.nib;
+			name = English;
+			path = MWAppKit/Resources/English.lproj/MWScriptPanel.nib;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		2BE5409E0477BE2900A80004 = {
+			fileRef = 2BE5409C0477BE2900A80004;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		2BE5409F0477BEB200A80004 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.objc;
+			path = MWScriptPanelController.m;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		2BE540A00477BEB200A80004 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			path = MWScriptPanelController.h;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		2BE540A10477BEB200A80004 = {
+			fileRef = 2BE5409F0477BEB200A80004;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		2BE540A20477BEB200A80004 = {
+			fileRef = 2BE540A00477BEB200A80004;
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+				);
+			};
+		};
+		2BEA74350484063400A80004 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.objc;
+			path = MWTokenTest.m;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		2BEA74360484063400A80004 = {
+			fileRef = 2BEA74350484063400A80004;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		2BF0312604CB146900A80004 = {
+			fileEncoding = 4;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.objc;
+			path = MWConfigScriptTextViewAdapterTest.m;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		2BF0312704CB146900A80004 = {
+			fileRef = 2BF0312604CB146900A80004;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		2BF836F7057B805500BF4147 = {
+			containerPortal = 2A37F4A9FDCFA73011CA2CEA;
+			isa = PBXContainerItemProxy;
+			proxyType = 1;
+			remoteGlobalIDString = F5E70BB101C5335901A80004;
+			remoteInfo = MWFoundation;
+		};
+		2BF836F8057B805500BF4147 = {
+			containerPortal = 2A37F4A9FDCFA73011CA2CEA;
+			isa = PBXContainerItemProxy;
+			proxyType = 1;
+			remoteGlobalIDString = F55418280280A8AD01A80004;
+			remoteInfo = "Test MWFoundation";
+		};
+		2BF836F9057B805500BF4147 = {
+			containerPortal = 2A37F4A9FDCFA73011CA2CEA;
+			isa = PBXContainerItemProxy;
+			proxyType = 1;
+			remoteGlobalIDString = F5E70BB101C5335901A80004;
+			remoteInfo = MWFoundation;
+		};
+		2BF836FA057B805500BF4147 = {
+			containerPortal = 2A37F4A9FDCFA73011CA2CEA;
+			isa = PBXContainerItemProxy;
+			proxyType = 1;
+			remoteGlobalIDString = F55C41930241631B01A80004;
+			remoteInfo = MWAppKit;
+		};
+		2BF836FB057B805500BF4147 = {
+			containerPortal = 2A37F4A9FDCFA73011CA2CEA;
+			isa = PBXContainerItemProxy;
+			proxyType = 1;
+			remoteGlobalIDString = F568144802798ABA01A80004;
+			remoteInfo = "Test MWAppKit";
+		};
+		2BF836FC057B805500BF4147 = {
+			containerPortal = 2A37F4A9FDCFA73011CA2CEA;
+			isa = PBXContainerItemProxy;
+			proxyType = 1;
+			remoteGlobalIDString = F56F0407034F3F8E01A80004;
+			remoteInfo = "Copy Frameworks";
+		};
+		2BF836FD057B805500BF4147 = {
+			containerPortal = 2A37F4A9FDCFA73011CA2CEA;
+			isa = PBXContainerItemProxy;
+			proxyType = 1;
+			remoteGlobalIDString = F5E70BB101C5335901A80004;
+			remoteInfo = MWFoundation;
+		};
+		2BF836FE057B805500BF4147 = {
+			containerPortal = 2A37F4A9FDCFA73011CA2CEA;
+			isa = PBXContainerItemProxy;
+			proxyType = 1;
+			remoteGlobalIDString = F5ECD28A021AC01701A80004;
+			remoteInfo = LookupHandler;
+		};
+		2BF836FF057B805500BF4147 = {
+			containerPortal = 2A37F4A9FDCFA73011CA2CEA;
+			isa = PBXContainerItemProxy;
+			proxyType = 1;
+			remoteGlobalIDString = F55C41930241631B01A80004;
+			remoteInfo = MWAppKit;
+		};
+		2BF83700057B805500BF4147 = {
+			containerPortal = 2A37F4A9FDCFA73011CA2CEA;
+			isa = PBXContainerItemProxy;
+			proxyType = 1;
+			remoteGlobalIDString = F57A0253031FD2CF01A80004;
+			remoteInfo = "MWAppKit Palette";
+		};
+		2BF83701057B805500BF4147 = {
+			containerPortal = 2A37F4A9FDCFA73011CA2CEA;
+			isa = PBXContainerItemProxy;
+			proxyType = 1;
+			remoteGlobalIDString = F56F0407034F3F8E01A80004;
+			remoteInfo = "Copy Frameworks";
+		};
+		2BF83714057B80D300BF4147 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = text.script.sh;
+			path = copyframeworks;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		2BFF6B940472702800A80004 = {
+			children = (
+				2BFF6BA2047293B600A80004,
+				2B20DD4A04A8C90D00A80004,
+				2BFF6B970472738100A80004,
+				2BFF6B980472738100A80004,
+				2BFF6B950472706D00A80004,
+				2BFF6BA70472AB9300A80004,
+				2BFF6BA80472AB9300A80004,
+				2B914FA0047FB56800A80004,
+				2B914FA1047FB56800A80004,
+			);
+			isa = PBXGroup;
+			name = Scripting;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		2BFF6B950472706D00A80004 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.objc;
+			path = MWScriptTest.m;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		2BFF6B960472706D00A80004 = {
+			fileRef = 2BFF6B950472706D00A80004;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		2BFF6B970472738100A80004 = {
+			fileEncoding = 4;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			path = MWScript.h;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		2BFF6B980472738100A80004 = {
+			fileEncoding = 4;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.objc;
+			path = MWScript.m;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		2BFF6B990472738100A80004 = {
+			fileRef = 2BFF6B970472738100A80004;
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					Public,
+				);
+			};
+		};
+		2BFF6B9A0472738100A80004 = {
+			fileRef = 2BFF6B980472738100A80004;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		2BFF6BA2047293B600A80004 = {
+			fileEncoding = 4;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = MWScriptLanguage.h;
+			path = MWFoundation/Sources/MWScriptLanguage.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		2BFF6BA4047293E000A80004 = {
+			fileRef = 2BFF6BA2047293B600A80004;
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					Public,
+				);
+			};
+		};
+		2BFF6BA70472AB9300A80004 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			path = MWScriptContexts.h;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		2BFF6BA80472AB9300A80004 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.objc;
+			path = MWScriptContexts.m;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		2BFF6BA90472AB9300A80004 = {
+			fileRef = 2BFF6BA70472AB9300A80004;
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					Public,
+				);
+			};
+		};
+		2BFF6BAA0472AB9300A80004 = {
+			fileRef = 2BFF6BA80472AB9300A80004;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+//2B0
+//2B1
+//2B2
+//2B3
+//2B4
+//4A0
+//4A1
+//4A2
+//4A3
+//4A4
+		4A9504D0FFE6A4CB11CA0CBA = {
+			buildRules = (
+			);
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				OPTIMIZATION_CFLAGS = "-O0";
+				ZERO_LINK = YES;
+			};
+			isa = PBXBuildStyle;
+			name = Development;
+		};
+		4A9504D1FFE6A4CB11CA0CBA = {
+			buildRules = (
+			);
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				ZERO_LINK = NO;
+			};
+			isa = PBXBuildStyle;
+			name = Deployment;
+		};
+//4A0
+//4A1
+//4A2
+//4A3
+//4A4
+//F50
+//F51
+//F52
+//F53
+//F54
+		F501337301C861EA01A80004 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			path = MWBSDSocketConnection.h;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		F501337401C861EA01A80004 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.objc;
+			path = MWBSDSocketConnection.m;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		F501337501C861EA01A80004 = {
+			fileRef = F501337301C861EA01A80004;
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					Public,
+				);
+			};
+		};
+		F501337601C861EA01A80004 = {
+			fileRef = F501337401C861EA01A80004;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5081C9201E0D4CC01A80004 = {
+			fileRef = F565AA9901CBA81601A80004;
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					Private,
+				);
+			};
+		};
+		F508710C034AAE8901A80004 = {
+			children = (
+				F508710D034AB11B01A80004,
+				F508710E034AB11B01A80004,
+				2BF0312604CB146900A80004,
+				2BE540A00477BEB200A80004,
+				2BE5409F0477BEB200A80004,
+				2BE5409C0477BE2900A80004,
+			);
+			isa = PBXGroup;
+			name = "Config View Adapters";
+			path = "";
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		F508710D034AB11B01A80004 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			path = MWConfigViewAdapter.h;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		F508710E034AB11B01A80004 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.objc;
+			path = MWConfigViewAdapter.m;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		F5087111034B1F7D01A80004 = {
+			fileRef = F508710D034AB11B01A80004;
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					Public,
+				);
+			};
+		};
+		F5087112034B1F7D01A80004 = {
+			fileRef = F508710E034AB11B01A80004;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5087113034B5CAA01A80004 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = text.plist.xml;
+			path = palette.table;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		F5087114034B5CAA01A80004 = {
+			isa = PBXFileReference;
+			lastKnownFileType = wrapper.nib;
+			path = MWAppKitPaletteNib.nib;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		F5087115034B5CAA01A80004 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.objc;
+			path = MWAppKitPalette.m;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		F5087116034B5CAA01A80004 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			path = MWAppKitPalette.h;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		F5087117034B5CAA01A80004 = {
+			fileRef = F5087116034B5CAA01A80004;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5087118034B5CAA01A80004 = {
+			fileRef = F5087113034B5CAA01A80004;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5087119034B5CAA01A80004 = {
+			fileRef = F5087114034B5CAA01A80004;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F508711A034B5CAA01A80004 = {
+			fileRef = F5087115034B5CAA01A80004;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F508711B034B5F1901A80004 = {
+			fallbackIsa = PBXFileReference;
+			isa = PBXFrameworkReference;
+			lastKnownFileType = wrapper.framework;
+			name = InterfaceBuilder.framework;
+			path = /System/Library/Frameworks/InterfaceBuilder.framework;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		F508711C034B5F1901A80004 = {
+			fileRef = F508711B034B5F1901A80004;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F508711D034B61AC01A80004 = {
+			isa = PBXFileReference;
+			lastKnownFileType = image.icns;
+			path = MWAppKitPaletteIcon.icns;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		F508711E034B61AC01A80004 = {
+			fileRef = F508711D034B61AC01A80004;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F508711F034B620601A80004 = {
+			fileRef = F55C41920241631B01A80004;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5087120034B620601A80004 = {
+			fileRef = F5E70BB001C5335801A80004;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5087121034B625201A80004 = {
+			fileRef = 1058C7A7FEA54F5311CA2CBB;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F519B9680348DDB901A80004 = {
+			children = (
+				F56027490246250D01A80004,
+				F560274A0246250D01A80004,
+				F57DDA59032FADA301A80004,
+				F569DAD702E76C7B01A80004,
+				F569DAD802E76C7B01A80004,
+				F5C7E7AC03479E0F01A80004,
+			);
+			isa = PBXGroup;
+			name = "String & Scanner";
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		F519B9690348F87801A80004 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.objc;
+			path = MWURLFormatterTest.m;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		F519B96B0348FC4F01A80004 = {
+			fileRef = F519B9690348F87801A80004;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F51C88D101C536FF01A80004 = {
+			children = (
+				F55EE6DC024293B301A80004,
+				F55EE6DD024293B301A80004,
+				F556D05F0333733F01A80004,
+				F567087502C2114201A80004,
+				F51C88E901C53A8801A80004,
+				F5D2D9E5018857F901A80004,
+				F56C596D031D291301A80004,
+				F5623AC4025E351101A80004,
+				F519B9680348DDB901A80004,
+				F5462721032AE20E01A80004,
+				F5462722032AE20E01A80004,
+				F519B9690348F87801A80004,
+				2BFF6B940472702800A80004,
+			);
+			isa = PBXGroup;
+			path = Classes;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		F51C88D201C536FF01A80004 = {
+			children = (
+				F51C88F601C578C001A80004,
+				013A5151010123ACC0A80001,
+				013A5153010123D0C0A80001,
+				F565AA9901CBA81601A80004,
+			);
+			isa = PBXGroup;
+			path = "Other Sources";
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		F51C88D401C536FF01A80004 = {
+			fileRef = 013A5151010123ACC0A80001;
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					Public,
+				);
+			};
+		};
+		F51C88D601C536FF01A80004 = {
+			fileRef = 013A5153010123D0C0A80001;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F51C88E301C53A3301A80004 = {
+			fileRef = F5D2D9E6018858A601A80004;
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					Public,
+				);
+			};
+		};
+		F51C88E401C53A3301A80004 = {
+			fileRef = F56979E501B9377C01A80004;
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					Public,
+				);
+			};
+		};
+		F51C88E501C53A3301A80004 = {
+			fileRef = F5790AE001BA834A01A80004;
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					Public,
+				);
+			};
+		};
+		F51C88E601C53A3301A80004 = {
+			fileRef = F5D2D9EA018859CE01A80004;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F51C88E701C53A3301A80004 = {
+			fileRef = F56979E601B9377C01A80004;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F51C88E801C53A3301A80004 = {
+			fileRef = F5790AE101BA834A01A80004;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F51C88E901C53A8801A80004 = {
+			children = (
+				F51C88EA01C53C2201A80004,
+				F51C88EB01C53C2201A80004,
+				F51C88EC01C53C2201A80004,
+				F51C88ED01C53C2201A80004,
+				F51C88EE01C53C2201A80004,
+				F51C88EF01C53C2201A80004,
+				2BEA74350484063400A80004,
+			);
+			isa = PBXGroup;
+			name = "Data Types";
+			path = "";
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		F51C88EA01C53C2201A80004 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			path = MWLineData.h;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		F51C88EB01C53C2201A80004 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.objc;
+			path = MWLineData.m;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		F51C88EC01C53C2201A80004 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			path = MWLineString.h;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		F51C88ED01C53C2201A80004 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.objc;
+			path = MWLineString.m;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		F51C88EE01C53C2201A80004 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			path = MWToken.h;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		F51C88EF01C53C2201A80004 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.objc;
+			path = MWToken.m;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		F51C88F001C53C2201A80004 = {
+			fileRef = F51C88EE01C53C2201A80004;
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					Public,
+				);
+			};
+		};
+		F51C88F101C53C2201A80004 = {
+			fileRef = F51C88EC01C53C2201A80004;
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					Public,
+				);
+			};
+		};
+		F51C88F201C53C2201A80004 = {
+			fileRef = F51C88EA01C53C2201A80004;
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					Public,
+				);
+			};
+		};
+		F51C88F301C53C2201A80004 = {
+			fileRef = F51C88EF01C53C2201A80004;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F51C88F401C53C2201A80004 = {
+			fileRef = F51C88ED01C53C2201A80004;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F51C88F501C53C2201A80004 = {
+			fileRef = F51C88EB01C53C2201A80004;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F51C88F601C578C001A80004 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			path = MWUtilities.h;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		F51C88F701C578C001A80004 = {
+			fileRef = F51C88F601C578C001A80004;
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					Public,
+				);
+			};
+		};
+		F529E9CA01C66D5B01A80004 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			path = MWPlugin.h;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		F529E9CD01C6C20301A80004 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			path = MudWalker.h;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		F529E9CE01C6C20401A80004 = {
+			fileRef = F529E9CD01C6C20301A80004;
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					Public,
+				);
+			};
+		};
+		F5462721032AE20E01A80004 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			path = MWURLFormatter.h;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		F5462722032AE20E01A80004 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.objc;
+			path = MWURLFormatter.m;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		F5462723032AE20E01A80004 = {
+			fileRef = F5462721032AE20E01A80004;
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					Public,
+				);
+			};
+		};
+		F5462724032AE20E01A80004 = {
+			fileRef = F5462722032AE20E01A80004;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F554181A0280952901A80004 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.objc;
+			path = MWFoundationTestMain.m;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		F55418270280A8AD01A80004 = {
+			explicitFileType = "compiled.mach-o.executable";
+			fallbackIsa = PBXFileReference;
+			isa = PBXExecutableFileReference;
+			path = "Test MWFoundation";
+			refType = 3;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F55418280280A8AD01A80004 = {
+			buildPhases = (
+				F554182A0280A8AD01A80004,
+				F554182B0280A8AD01A80004,
+				F554182D0280A8AD01A80004,
+				F554182F0280A8AD01A80004,
+			);
+			buildSettings = {
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = "Test MWFoundation";
+				REZ_EXECUTABLE = YES;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = "-Werror -Wall -Wmost -Wunknown-pragmas -Wpointer-arith -Wno-cast-qual -Wcast-align -Wwrite-strings -Wno-strict-prototypes  -Wno-redundant-decls -Wnested-externs -Winline";
+			};
+			dependencies = (
+				F55418290280A8AD01A80004,
+			);
+			isa = PBXToolTarget;
+			name = "Test MWFoundation";
+			productInstallPath = /usr/local/bin;
+			productName = "Test MWFoundation";
+			productReference = F55418270280A8AD01A80004;
+		};
+		F55418290280A8AD01A80004 = {
+			isa = PBXTargetDependency;
+			target = F5E70BB101C5335901A80004;
+			targetProxy = 2BF836FD057B805500BF4147;
+		};
+		F554182A0280A8AD01A80004 = {
+			buildActionMask = 2147483647;
+			files = (
+			);
+			isa = PBXHeadersBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F554182B0280A8AD01A80004 = {
+			buildActionMask = 2147483647;
+			files = (
+				F554182C0280A8AD01A80004,
+				F56C596F031D294401A80004,
+				F56C597A031DA2F501A80004,
+				F57DDA5A032FADA301A80004,
+				F556D0600333733F01A80004,
+				F5C7E7AE03479E3B01A80004,
+				F519B96B0348FC4F01A80004,
+				2BFF6B960472706D00A80004,
+				2BEA74360484063400A80004,
+			);
+			isa = PBXSourcesBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F554182C0280A8AD01A80004 = {
+			fileRef = F554181A0280952901A80004;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F554182D0280A8AD01A80004 = {
+			buildActionMask = 2147483647;
+			files = (
+				F554182E0280A8AD01A80004,
+				F56C596C031D23F801A80004,
+				F56C5976031D560E01A80004,
+			);
+			isa = PBXFrameworksBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F554182E0280A8AD01A80004 = {
+			fileRef = F5E70BB001C5335801A80004;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F554182F0280A8AD01A80004 = {
+			buildActionMask = 2147483647;
+			files = (
+			);
+			isa = PBXRezBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F556D05F0333733F01A80004 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.objc;
+			path = MWRegistryTest.m;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		F556D0600333733F01A80004 = {
+			fileRef = F556D05F0333733F01A80004;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F558C95F01F65BEC01A80004 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			path = MWGenericTableViewDataSource.h;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		F558C96001F65BEC01A80004 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.objc;
+			path = MWGenericTableViewDataSource.m;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		F558C96301F66C6601A80004 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			path = MWLayoutView.h;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		F558C96401F66C6601A80004 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.objc;
+			path = MWLayoutView.m;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		F55C41920241631B01A80004 = {
+			explicitFileType = wrapper.framework;
+			fallbackIsa = PBXFileReference;
+			isa = PBXFrameworkReference;
+			path = MWAppKit.framework;
+			refType = 3;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F55C41930241631B01A80004 = {
+			buildPhases = (
+				F55C41940241631B01A80004,
+				F55C41960241631B01A80004,
+				F55C41970241631B01A80004,
+				F55C41980241631B01A80004,
+			);
+			buildSettings = {
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_SEARCH_PATHS = "";
+				FRAMEWORK_VERSION = A;
+				INSTALL_PATH = "@executable_path/../Frameworks";
+				OPTIMIZATION_CFLAGS = "-O3";
+				OTHER_CFLAGS = "-DBUILDING_MUDWALKER_APPKIT";
+				OTHER_LDFLAGS = "-seg1addr 0x31000000";
+				OTHER_LIBTOOL_FLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRINCIPAL_CLASS = "";
+				PRODUCT_NAME = MWAppKit;
+				SECTORDER_FLAGS = "";
+				SKIP_INSTALL = YES;
+				WARNING_CFLAGS = "-Werror -Wall -Wmost -Wunknown-pragmas -Wpointer-arith -Wno-cast-qual -Wcast-align -Wwrite-strings -Wno-strict-prototypes  -Wno-redundant-decls -Wnested-externs -Winline";
+				WRAPPER_EXTENSION = framework;
+			};
+			dependencies = (
+				F56478870241A08501A80004,
+			);
+			isa = PBXFrameworkTarget;
+			name = MWAppKit;
+			productInstallPath = "@executable_path/../Frameworks";
+			productName = MWAppKit;
+			productReference = F55C41920241631B01A80004;
+			productSettingsXML = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>
+<!DOCTYPE plist PUBLIC \"-//Apple Computer//DTD PLIST 1.0//EN\" \"http://www.apple.com/DTDs/PropertyList-1.0.dtd\">
+<plist version=\"1.0\">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleExecutable</key>
+	<string>MWAppKit</string>
+	<key>CFBundleGetInfoString</key>
+	<string>0.3.1</string>
+	<key>CFBundleIconFile</key>
+	<string></string>
+	<key>CFBundleIdentifier</key>
+	<string>org.cubik.mudwalker.appkit</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string></string>
+	<key>CFBundlePackageType</key>
+	<string>FMWK</string>
+	<key>CFBundleShortVersionString</key>
+	<string>0.3.1</string>
+	<key>CFBundleSignature</key>
+	<string>MWal</string>
+	<key>CFBundleVersion</key>
+	<string>0.3.1</string>
+</dict>
+</plist>
+";
+		};
+		F55C41940241631B01A80004 = {
+			buildActionMask = 2147483647;
+			files = (
+				F55C41A00241660901A80004,
+				F564788A0241A54B01A80004,
+				F564788B0241A54B01A80004,
+				F55EE6D6024246EF01A80004,
+				F55EE6D8024246EF01A80004,
+				F55EE6E70242E19401A80004,
+				F55F619F0245147701A80004,
+				F56860BA0258CD3201A80004,
+				F55F29B60274384C01A80004,
+				F56814560279AB1E01A80004,
+				F57FD28802E47E5401A80004,
+				F5CF515D02E9E43E01A80004,
+				F5707F5903269A6701A80004,
+				F59B316D0330C86701A80004,
+				F569D932033D135501A80004,
+				F56B531D033D639901A80004,
+				F56B5321033D641701A80004,
+				F5C7E7B40348889301A80004,
+				F5087111034B1F7D01A80004,
+				F56C5B27034DF19C01A80004,
+				F57838FF039C2F6A01A80004,
+				F5783905039C312201A80004,
+				F5783909039C37C501A80004,
+				F578390B039C38F401A80004,
+				2BE540A20477BEB200A80004,
+				2B1EB71C0680BA7700942DC2,
+			);
+			isa = PBXHeadersBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F55C41960241631B01A80004 = {
+			buildActionMask = 2147483647;
+			files = (
+				F56A42A6032E745801A80004,
+				F5707F6203269D3601A80004,
+				F56C5B2B034DF1D701A80004,
+				F5783900039C2F6A01A80004,
+				2BE5409E0477BE2900A80004,
+			);
+			isa = PBXResourcesBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F55C41970241631B01A80004 = {
+			buildActionMask = 2147483647;
+			files = (
+				F564788C0241A54B01A80004,
+				F564788D0241A54B01A80004,
+				F564788E0241A54B01A80004,
+				F55EE6D9024246EF01A80004,
+				F55EE6DA024246EF01A80004,
+				F55EE6E80242E19401A80004,
+				F55F61A00245147701A80004,
+				F56860BB0258CD3201A80004,
+				F56814570279AB1F01A80004,
+				F57FD28902E47E5401A80004,
+				F5CF515E02E9E43E01A80004,
+				F5707F5A03269A6701A80004,
+				F569D933033D135501A80004,
+				F56B531E033D639901A80004,
+				F56B5322033D641701A80004,
+				F5C7E7B50348889301A80004,
+				F5087112034B1F7D01A80004,
+				F56C5B28034DF19C01A80004,
+				F5783902039C2F6B01A80004,
+				F5783906039C312201A80004,
+				F578390A039C37C501A80004,
+				2BE540A10477BEB200A80004,
+				2B1EB71D0680BA7700942DC2,
+			);
+			isa = PBXSourcesBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F55C41980241631B01A80004 = {
+			buildActionMask = 2147483647;
+			files = (
+				F55C419C0241649A01A80004,
+				F55C419D0241649A01A80004,
+				F55EE6EB0242E54401A80004,
+			);
+			isa = PBXFrameworksBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F55C419A0241649A01A80004 = {
+			children = (
+				F529E9CD01C6C20301A80004,
+				F51C88D101C536FF01A80004,
+				F570FC580221735D01A80004,
+				F51C88D201C536FF01A80004,
+				F57CD1DF027DCC0B01A80004,
+				F554181A0280952901A80004,
+			);
+			isa = PBXGroup;
+			name = "MW Foundation";
+			path = MWFoundation;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		F55C419B0241649A01A80004 = {
+			fileRef = 2A37F4C5FDCFA73011CA2CEA;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F55C419C0241649A01A80004 = {
+			fileRef = F5E70BB001C5335801A80004;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F55C419D0241649A01A80004 = {
+			fileRef = 1058C7A7FEA54F5311CA2CBB;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F55C419E0241659A01A80004 = {
+			children = (
+				F55C419F0241660901A80004,
+				F56478880241A37701A80004,
+				F5707F5603269A5401A80004,
+			);
+			isa = PBXGroup;
+			name = "MW AppKit";
+			path = MWAppKit;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		F55C419F0241660901A80004 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			path = MWAppKit.h;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		F55C41A00241660901A80004 = {
+			fileRef = F55C419F0241660901A80004;
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					Public,
+				);
+			};
+		};
+		F55D1B8201C3B68901A80004 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			path = MWToolbars.h;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		F55E850D02479C4301A80004 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			path = MWTeeFilter.h;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		F55E850E02479C4301A80004 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.objc;
+			path = MWTeeFilter.m;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		F55E850F02479C4301A80004 = {
+			fileRef = F55E850D02479C4301A80004;
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					Public,
+				);
+			};
+		};
+		F55E851002479C4301A80004 = {
+			fileRef = F55E850E02479C4301A80004;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F55E8511024822D801A80004 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			path = MWLogger.h;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		F55E8512024822D801A80004 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.objc;
+			path = MWLogger.m;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		F55E8513024822D801A80004 = {
+			fileRef = F55E8511024822D801A80004;
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					Public,
+				);
+			};
+		};
+		F55E8514024822D801A80004 = {
+			fileRef = F55E8512024822D801A80004;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F55E85150248415F01A80004 = {
+			buildPhases = (
+			);
+			buildSettings = {
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "Build Most";
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = "-Wmost -Wno-four-char-constants -Wno-unknown-pragmas";
+			};
+			dependencies = (
+				F55E85160248418101A80004,
+				F55E85170248418101A80004,
+				F56C5B13034CD9ED01A80004,
+				F57A0259031FE47C01A80004,
+				F56C5B12034CD9ED01A80004,
+				F56F0409034F426A01A80004,
+			);
+			isa = PBXAggregateTarget;
+			name = "Build All";
+			productName = "Build All";
+		};
+		F55E85160248418101A80004 = {
+			isa = PBXTargetDependency;
+			target = F5E70BB101C5335901A80004;
+			targetProxy = 2BF836F9057B805500BF4147;
+		};
+		F55E85170248418101A80004 = {
+			isa = PBXTargetDependency;
+			target = F55C41930241631B01A80004;
+			targetProxy = 2BF836FF057B805500BF4147;
+		};
+		F55EAAB50263BEC801A80004 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			path = MWNSFileHandleConnection.h;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		F55EAAB60263BEC801A80004 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.objc;
+			path = MWNSFileHandleConnection.m;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		F55EAAB70263BEC801A80004 = {
+			fileRef = F55EAAB50263BEC801A80004;
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					Public,
+				);
+			};
+		};
+		F55EAAB80263BEC801A80004 = {
+			fileRef = F55EAAB60263BEC801A80004;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F55EE6D0024246EE01A80004 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.objc;
+			path = MWOutputTextView.m;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		F55EE6D1024246EE01A80004 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			path = MWValidatedButton.h;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		F55EE6D3024246EE01A80004 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.objc;
+			path = MWValidatedButton.m;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		F55EE6D5024246EE01A80004 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			path = MWOutputTextView.h;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		F55EE6D6024246EF01A80004 = {
+			fileRef = F55EE6D1024246EE01A80004;
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					Public,
+				);
+			};
+		};
+		F55EE6D8024246EF01A80004 = {
+			fileRef = F55EE6D5024246EE01A80004;
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					Public,
+				);
+			};
+		};
+		F55EE6D9024246EF01A80004 = {
+			fileRef = F55EE6D0024246EE01A80004;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F55EE6DA024246EF01A80004 = {
+			fileRef = F55EE6D3024246EE01A80004;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F55EE6DC024293B301A80004 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			path = MWRegistry.h;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		F55EE6DD024293B301A80004 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.objc;
+			path = MWRegistry.m;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		F55EE6DE024293B301A80004 = {
+			fileRef = F55EE6DC024293B301A80004;
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					Public,
+				);
+			};
+		};
+		F55EE6DF024293B301A80004 = {
+			fileRef = F55EE6DD024293B301A80004;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F55EE6E0024299A401A80004 = {
+			fileRef = F529E9CA01C66D5B01A80004;
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					Public,
+				);
+			};
+		};
+		F55EE6E50242E19401A80004 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			path = MWConfigPane.h;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		F55EE6E60242E19401A80004 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.objc;
+			path = MWConfigPane.m;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		F55EE6E70242E19401A80004 = {
+			fileRef = F55EE6E50242E19401A80004;
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					Public,
+				);
+			};
+		};
+		F55EE6E80242E19401A80004 = {
+			fileRef = F55EE6E60242E19401A80004;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F55EE6EA0242E54401A80004 = {
+			fallbackIsa = PBXFileReference;
+			isa = PBXFrameworkReference;
+			lastKnownFileType = wrapper.framework;
+			name = PreferencePanes.framework;
+			path = /System/Library/Frameworks/PreferencePanes.framework;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		F55EE6EB0242E54401A80004 = {
+			fileRef = F55EE6EA0242E54401A80004;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F55F29B60274384C01A80004 = {
+			fileRef = F55D1B8201C3B68901A80004;
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					Public,
+				);
+			};
+		};
+		F55F619D0245147701A80004 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			path = MWCustomBindingsTextView.h;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		F55F619E0245147701A80004 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.objc;
+			path = MWCustomBindingsTextView.m;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		F55F619F0245147701A80004 = {
+			fileRef = F55F619D0245147701A80004;
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					Public,
+				);
+			};
+		};
+		F55F61A00245147701A80004 = {
+			fileRef = F55F619E0245147701A80004;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5600FC602BCC94A01A80004 = {
+			children = (
+				F5600FC702BCC94A01A80004,
+				F5600FC802BCC94A01A80004,
+				F5600FC902BCC94A01A80004,
+			);
+			isa = PBXGroup;
+			name = "(Notes)";
+			path = "../(Notes)";
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		F5600FC702BCC94A01A80004 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = text;
+			path = "To Do.txt";
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		F5600FC802BCC94A01A80004 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = text;
+			path = "Change Log.txt";
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		F5600FC902BCC94A01A80004 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = text;
+			path = "Architecture & Other Notes.txt";
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		F56027490246250D01A80004 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			path = MWNSStringAdditions.h;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		F560274A0246250D01A80004 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.objc;
+			path = MWNSStringAdditions.m;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		F560274B0246250D01A80004 = {
+			fileRef = F56027490246250D01A80004;
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					Public,
+				);
+			};
+		};
+		F560274C0246250D01A80004 = {
+			fileRef = F560274A0246250D01A80004;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5623AC2025E314E01A80004 = {
+			fallbackIsa = PBXFileReference;
+			isa = PBXFrameworkReference;
+			lastKnownFileType = wrapper.framework;
+			name = CoreFoundation.framework;
+			path = /System/Library/Frameworks/CoreFoundation.framework;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		F5623AC3025E314E01A80004 = {
+			fileRef = F5623AC2025E314E01A80004;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5623AC4025E351101A80004 = {
+			children = (
+				F5623AC5025E351101A80004,
+				F5623AC6025E351201A80004,
+				F55EAAB50263BEC801A80004,
+				F55EAAB60263BEC801A80004,
+				F5623AC9025E37EE01A80004,
+				F5623ACA025E37EE01A80004,
+				F501337301C861EA01A80004,
+				F501337401C861EA01A80004,
+				F5623ACD025E4B6B01A80004,
+				F5623ACE025E4B6B01A80004,
+			);
+			isa = PBXGroup;
+			name = Connections;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		F5623AC5025E351101A80004 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			path = MWAbstractConnection.h;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		F5623AC6025E351201A80004 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.objc;
+			path = MWAbstractConnection.m;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		F5623AC7025E351201A80004 = {
+			fileRef = F5623AC5025E351101A80004;
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					Public,
+				);
+			};
+		};
+		F5623AC8025E351201A80004 = {
+			fileRef = F5623AC6025E351201A80004;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5623AC9025E37EE01A80004 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			path = MWTCPConnection.h;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		F5623ACA025E37EE01A80004 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.objc;
+			path = MWTCPConnection.m;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		F5623ACB025E37EE01A80004 = {
+			fileRef = F5623AC9025E37EE01A80004;
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					Public,
+				);
+			};
+		};
+		F5623ACC025E37EE01A80004 = {
+			fileRef = F5623ACA025E37EE01A80004;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5623ACD025E4B6B01A80004 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			path = MWCFSocketConnection.h;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		F5623ACE025E4B6B01A80004 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.objc;
+			path = MWCFSocketConnection.m;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		F5623ACF025E4B6B01A80004 = {
+			fileRef = F5623ACD025E4B6B01A80004;
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					Public,
+				);
+			};
+		};
+		F5623AD0025E4B6B01A80004 = {
+			fileRef = F5623ACE025E4B6B01A80004;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5623AD1025E809F01A80004 = {
+			fileEncoding = 10;
+			isa = PBXFileReference;
+			lastKnownFileType = text.plist.strings;
+			lineEnding = 0;
+			name = Localizable.strings;
+			path = English.lproj/Localizable.strings;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		F56478870241A08501A80004 = {
+			isa = PBXTargetDependency;
+			target = F5E70BB101C5335901A80004;
+			targetProxy = 2BF836F7057B805500BF4147;
+		};
+		F56478880241A37701A80004 = {
+			children = (
+				F566A465033E2D0001A80004,
+				F508710C034AAE8901A80004,
+				F566A464033E2D0001A80004,
+				F569602601ED4FFE01A80004,
+				2B41D54F04DC1BED00A80004,
+				F5783903039C312201A80004,
+				F5783904039C312201A80004,
+				F570FC590221745101A80004,
+				F57838FB039C2F6A01A80004,
+				F57838FA039C2F6A01A80004,
+				F57838FC039C2F6A01A80004,
+				F56860B80258CD3101A80004,
+				F56860B90258CD3101A80004,
+				2B1EB71A0680BA7700942DC2,
+				2B1EB71B0680BA7700942DC2,
+				F55D1B8201C3B68901A80004,
+				F56C5B26034DF19C01A80004,
+				F56C5B25034DF19C01A80004,
+				F56C5B29034DF1D601A80004,
+			);
+			isa = PBXGroup;
+			path = Sources;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		F564788A0241A54B01A80004 = {
+			fileRef = F575109401C082E701A80004;
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					Public,
+				);
+			};
+		};
+		F564788B0241A54B01A80004 = {
+			fileRef = F558C95F01F65BEC01A80004;
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					Public,
+				);
+			};
+		};
+		F564788C0241A54B01A80004 = {
+			fileRef = F558C96401F66C6601A80004;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F564788D0241A54B01A80004 = {
+			fileRef = F575109501C082E701A80004;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F564788E0241A54B01A80004 = {
+			fileRef = F558C96001F65BEC01A80004;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F565AA9901CBA81601A80004 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = text;
+			path = MWConstants.tokens;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		F566A464033E2D0001A80004 = {
+			children = (
+				F558C95F01F65BEC01A80004,
+				F558C96001F65BEC01A80004,
+				F5CF515B02E9E43E01A80004,
+				F5CF515C02E9E43E01A80004,
+			);
+			isa = PBXGroup;
+			name = "Controllers & Data Sources";
+			path = "";
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		F566A465033E2D0001A80004 = {
+			children = (
+				F55EE6E50242E19401A80004,
+				F55EE6E60242E19401A80004,
+				F56B531B033D639901A80004,
+				F56B531C033D639901A80004,
+				F56B531F033D641701A80004,
+				F56B5320033D641701A80004,
+				F5707F5703269A6701A80004,
+				F5707F5803269A6701A80004,
+				F56A42A5032E745801A80004,
+			);
+			isa = PBXGroup;
+			name = "Config Panes";
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		F566A466033E360B01A80004 = {
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F566A467033E360B01A80004,
+				F566A468033E360B01A80004,
+			);
+			isa = PBXCopyFilesBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F566A467033E360B01A80004 = {
+			fileRef = F5E70BB001C5335801A80004;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F566A468033E360B01A80004 = {
+			fileRef = F55C41920241631B01A80004;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F567087102C210C801A80004 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			path = MWConfigTree.h;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		F567087202C210C801A80004 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.objc;
+			path = MWConfigTree.m;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		F567087302C210C801A80004 = {
+			fileRef = F567087102C210C801A80004;
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					Public,
+				);
+			};
+		};
+		F567087402C210C801A80004 = {
+			fileRef = F567087202C210C801A80004;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F567087502C2114201A80004 = {
+			children = (
+				F56C5974031D4C9701A80004,
+				2B914F9E047EC05F00A80004,
+				F567087102C210C801A80004,
+				F567087202C210C801A80004,
+				F56C596E031D294401A80004,
+				F56C597B031DA6BD01A80004,
+				F56C597C031DA6BD01A80004,
+				F56C5977031D5D1701A80004,
+				F567087602C2197301A80004,
+				F567087702C2197301A80004,
+			);
+			isa = PBXGroup;
+			name = Configuration;
+			path = "";
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		F567087602C2197301A80004 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			path = MWConfigPath.h;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		F567087702C2197301A80004 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.objc;
+			path = MWConfigPath.m;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		F567087802C2197301A80004 = {
+			fileRef = F567087602C2197301A80004;
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					Public,
+				);
+			};
+		};
+		F567087902C2197301A80004 = {
+			fileRef = F567087702C2197301A80004;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F568144502798A6901A80004 = {
+			children = (
+				F568145102798E5601A80004,
+				F568145402798FC601A80004,
+				F578390E039D02C201A80004,
+				F578390F039D02C201A80004,
+				F56814580279B7AA01A80004,
+				F56814590279B7AA01A80004,
+			);
+			isa = PBXGroup;
+			name = "MW AppKit Tests";
+			path = "Test MWAppKit";
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		F568144602798ABA01A80004 = {
+			explicitFileType = wrapper.application;
+			fallbackIsa = PBXFileReference;
+			isa = PBXApplicationReference;
+			path = "Test MWAppKit.app";
+			refType = 3;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F568144802798ABA01A80004 = {
+			buildPhases = (
+				F568144A02798ABA01A80004,
+				F568144B02798ABA01A80004,
+				F568144C02798ABA01A80004,
+				F568144D02798ABA01A80004,
+				F566A466033E360B01A80004,
+			);
+			buildSettings = {
+				OPTIMIZATION_CFLAGS = "-O0";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = "Test MWAppKit";
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = "-Werror -Wall -Wmost -Wunknown-pragmas -Wpointer-arith -Wno-cast-qual -Wcast-align -Wwrite-strings -Wno-strict-prototypes  -Wno-redundant-decls -Wnested-externs -Winline";
+				WRAPPER_EXTENSION = app;
+			};
+			dependencies = (
+				F568144902798ABA01A80004,
+			);
+			isa = PBXApplicationTarget;
+			name = "Test MWAppKit";
+			productInstallPath = "$(USER_APPS_DIR)";
+			productName = "Test MWAppKit";
+			productReference = F568144602798ABA01A80004;
+			productSettingsXML = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>
+<!DOCTYPE plist PUBLIC \"-//Apple Computer//DTD PLIST 1.0//EN\" \"http://www.apple.com/DTDs/PropertyList-1.0.dtd\">
+<plist version=\"1.0\">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleExecutable</key>
+	<string>Test MWAppKit</string>
+	<key>CFBundleGetInfoString</key>
+	<string>0.3.1</string>
+	<key>CFBundleIconFile</key>
+	<string></string>
+	<key>CFBundleIdentifier</key>
+	<string>org.cubik.mudwalker.appkit.test</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string></string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>0.3.1</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleVersion</key>
+	<string>0.3.1</string>
+	<key>NSMainNibFile</key>
+	<string>MainMenu.nib</string>
+	<key>NSPrincipalClass</key>
+	<string>NSApplication</string>
+</dict>
+</plist>
+";
+		};
+		F568144902798ABA01A80004 = {
+			isa = PBXTargetDependency;
+			target = F55C41930241631B01A80004;
+			targetProxy = 2BF836FA057B805500BF4147;
+		};
+		F568144A02798ABA01A80004 = {
+			buildActionMask = 2147483647;
+			files = (
+				F568145A0279B7AA01A80004,
+				F5783910039D02C201A80004,
+			);
+			isa = PBXHeadersBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F568144B02798ABA01A80004 = {
+			buildActionMask = 2147483647;
+			files = (
+				F568145502798FC701A80004,
+			);
+			isa = PBXResourcesBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F568144C02798ABA01A80004 = {
+			buildActionMask = 2147483647;
+			files = (
+				F568145202798E5601A80004,
+				F568145B0279B7AA01A80004,
+				F5783911039D02C201A80004,
+				2BF0312704CB146900A80004,
+				2B41D55004DC1BED00A80004,
+			);
+			isa = PBXSourcesBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F568144D02798ABA01A80004 = {
+			buildActionMask = 2147483647;
+			files = (
+				F5783912039D076D01A80004,
+				F568145002798B3F01A80004,
+				F568145302798E7B01A80004,
+				F56C596B031D23F801A80004,
+			);
+			isa = PBXFrameworksBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F568145002798B3F01A80004 = {
+			fileRef = F55C41920241631B01A80004;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F568145102798E5601A80004 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.objc;
+			path = ApplicationMain.m;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		F568145202798E5601A80004 = {
+			fileRef = F568145102798E5601A80004;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F568145302798E7B01A80004 = {
+			fileRef = 1058C7A7FEA54F5311CA2CBB;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F568145402798FC601A80004 = {
+			isa = PBXFileReference;
+			lastKnownFileType = wrapper.nib;
+			path = MainMenu.nib;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		F568145502798FC701A80004 = {
+			fileRef = F568145402798FC601A80004;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F56814560279AB1E01A80004 = {
+			fileRef = F5A5892E02622B5B01A80004;
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					Public,
+				);
+			};
+		};
+		F56814570279AB1F01A80004 = {
+			fileRef = F5A5892F02622B5B01A80004;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F56814580279B7AA01A80004 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			path = MWTGraphViewWinController.h;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		F56814590279B7AA01A80004 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.objc;
+			path = MWTGraphViewWinController.m;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		F568145A0279B7AA01A80004 = {
+			fileRef = F56814580279B7AA01A80004;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F568145B0279B7AA01A80004 = {
+			fileRef = F56814590279B7AA01A80004;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F56860B80258CD3101A80004 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			path = MWNSTextStorageAdditions.h;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		F56860B90258CD3101A80004 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.objc;
+			path = MWNSTextStorageAdditions.m;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		F56860BA0258CD3201A80004 = {
+			fileRef = F56860B80258CD3101A80004;
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					Public,
+				);
+			};
+		};
+		F56860BB0258CD3201A80004 = {
+			fileRef = F56860B90258CD3101A80004;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F569602601ED4FFE01A80004 = {
+			children = (
+				F55F619D0245147701A80004,
+				F55F619E0245147701A80004,
+				F55EE6D5024246EE01A80004,
+				F55EE6D0024246EE01A80004,
+				F569D930033D135501A80004,
+				F569D931033D135501A80004,
+				F5783907039C37C401A80004,
+				F5783908039C37C401A80004,
+				F5A5892E02622B5B01A80004,
+				F5A5892F02622B5B01A80004,
+				F558C96301F66C6601A80004,
+				F558C96401F66C6601A80004,
+				F575109401C082E701A80004,
+				F575109501C082E701A80004,
+				F55EE6D1024246EE01A80004,
+				F55EE6D3024246EE01A80004,
+				F57FD28602E47E5401A80004,
+				F57FD28702E47E5401A80004,
+				F5C7E7B20348889301A80004,
+				F5C7E7B30348889301A80004,
+			);
+			isa = PBXGroup;
+			name = "Misc Views";
+			path = "";
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		F56979E501B9377C01A80004 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			path = MWConcreteLinkable.h;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		F56979E601B9377C01A80004 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.objc;
+			path = MWConcreteLinkable.m;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		F569D930033D135501A80004 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			path = MWImageAndTextCell.h;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		F569D931033D135501A80004 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.objc;
+			path = MWImageAndTextCell.m;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		F569D932033D135501A80004 = {
+			fileRef = F569D930033D135501A80004;
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					Public,
+				);
+			};
+		};
+		F569D933033D135501A80004 = {
+			fileRef = F569D931033D135501A80004;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F569DAD702E76C7B01A80004 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			path = MWNSScannerAdditions.h;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		F569DAD802E76C7B01A80004 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.objc;
+			path = MWNSScannerAdditions.m;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		F569DAD902E76C7C01A80004 = {
+			fileRef = F569DAD702E76C7B01A80004;
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					Public,
+				);
+			};
+		};
+		F569DADA02E76C7C01A80004 = {
+			fileRef = F569DAD802E76C7B01A80004;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F56A42A5032E745801A80004 = {
+			children = (
+				F5707F5B03269A7401A80004,
+			);
+			isa = PBXVariantGroup;
+			name = MWRawConfigPane.nib;
+			path = MWAppKit/Resources;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		F56A42A6032E745801A80004 = {
+			fileRef = F56A42A5032E745801A80004;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F56B531B033D639901A80004 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			path = MWConfigDirectoryEditPane.h;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		F56B531C033D639901A80004 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.objc;
+			path = MWConfigDirectoryEditPane.m;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		F56B531D033D639901A80004 = {
+			fileRef = F56B531B033D639901A80004;
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					Public,
+				);
+			};
+		};
+		F56B531E033D639901A80004 = {
+			fileRef = F56B531C033D639901A80004;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F56B531F033D641701A80004 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			path = MWTableViewForDirectoryEdit.h;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		F56B5320033D641701A80004 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.objc;
+			path = MWTableViewForDirectoryEdit.m;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		F56B5321033D641701A80004 = {
+			fileRef = F56B531F033D641701A80004;
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					Public,
+				);
+			};
+		};
+		F56B5322033D641701A80004 = {
+			fileRef = F56B5320033D641701A80004;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F56C596A031D23F801A80004 = {
+			fallbackIsa = PBXFileReference;
+			isa = PBXFrameworkReference;
+			lastKnownFileType = wrapper.framework;
+			name = ObjcUnit.framework;
+			path = /Library/Frameworks/ObjcUnit.framework;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		F56C596B031D23F801A80004 = {
+			fileRef = F56C596A031D23F801A80004;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F56C596C031D23F801A80004 = {
+			fileRef = F56C596A031D23F801A80004;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F56C596D031D291301A80004 = {
+			children = (
+				F55E8511024822D801A80004,
+				F55E8512024822D801A80004,
+				F55E850D02479C4301A80004,
+				F55E850E02479C4301A80004,
+				2B1A5FAE0532410400A80004,
+				2B1A5FAF0532410400A80004,
+			);
+			isa = PBXGroup;
+			name = "Link Fittings";
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		F56C596E031D294401A80004 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.objc;
+			path = MWConfigTreeTest.m;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		F56C596F031D294401A80004 = {
+			fileRef = F56C596E031D294401A80004;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F56C5974031D4C9701A80004 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			path = MWConfigSupplier.h;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		F56C5975031D4C9701A80004 = {
+			fileRef = F56C5974031D4C9701A80004;
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					Public,
+				);
+			};
+		};
+		F56C5976031D560E01A80004 = {
+			fileRef = 2A37F4C5FDCFA73011CA2CEA;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F56C5977031D5D1701A80004 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.objc;
+			path = MWConfigStackerTest.m;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		F56C597A031DA2F501A80004 = {
+			fileRef = F56C5977031D5D1701A80004;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F56C597B031DA6BD01A80004 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			path = MWConfigStacker.h;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		F56C597C031DA6BD01A80004 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.objc;
+			path = MWConfigStacker.m;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		F56C597D031DA6BD01A80004 = {
+			fileRef = F56C597B031DA6BD01A80004;
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					Public,
+				);
+			};
+		};
+		F56C597E031DA6BD01A80004 = {
+			fileRef = F56C597C031DA6BD01A80004;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F56C5B12034CD9ED01A80004 = {
+			isa = PBXTargetDependency;
+			target = F568144802798ABA01A80004;
+			targetProxy = 2BF836FB057B805500BF4147;
+		};
+		F56C5B13034CD9ED01A80004 = {
+			isa = PBXTargetDependency;
+			target = F57A0253031FD2CF01A80004;
+			targetProxy = 2BF83700057B805500BF4147;
+		};
+		F56C5B14034CE81101A80004 = {
+			isa = PBXFileReference;
+			lastKnownFileType = wrapper.nib;
+			path = MWConfigViewAdapterInspectorNib.nib;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		F56C5B15034CE81201A80004 = {
+			fileRef = F56C5B14034CE81101A80004;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F56C5B16034CE86E01A80004 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			path = MWConfigViewAdapterInspector.h;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		F56C5B17034CE86E01A80004 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.objc;
+			path = MWConfigViewAdapterInspector.m;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		F56C5B18034CE86E01A80004 = {
+			fileRef = F56C5B16034CE86E01A80004;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F56C5B19034CE86E01A80004 = {
+			fileRef = F56C5B17034CE86E01A80004;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F56C5B1F034D19F601A80004 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = text;
+			path = MWConfigViewAdapter.ibclassdescription;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		F56C5B20034D19F601A80004 = {
+			fileRef = F56C5B1F034D19F601A80004;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F56C5B25034DF19C01A80004 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.objc;
+			path = MWURLLaunchRequest.m;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		F56C5B26034DF19C01A80004 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			path = MWURLLaunchRequest.h;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		F56C5B27034DF19C01A80004 = {
+			fileRef = F56C5B26034DF19C01A80004;
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					Public,
+				);
+			};
+		};
+		F56C5B28034DF19C01A80004 = {
+			fileRef = F56C5B25034DF19C01A80004;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F56C5B29034DF1D601A80004 = {
+			children = (
+				F56C5B2A034DF1D601A80004,
+			);
+			isa = PBXVariantGroup;
+			name = MWURLLaunchRequest.nib;
+			path = "";
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		F56C5B2A034DF1D601A80004 = {
+			isa = PBXFileReference;
+			lastKnownFileType = wrapper.nib;
+			name = English;
+			path = MWAppKit/Resources/English.lproj/MWURLLaunchRequest.nib;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		F56C5B2B034DF1D701A80004 = {
+			fileRef = F56C5B29034DF1D601A80004;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F56F0407034F3F8E01A80004 = {
+			buildArgumentsString = "copyframeworks $ACTION";
+			buildPhases = (
+			);
+			buildSettings = {
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "Copy Frameworks";
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = "-Wmost -Wno-four-char-constants -Wno-unknown-pragmas";
+			};
+			buildToolPath = /bin/sh;
+			buildWorkingDirectory = "";
+			dependencies = (
+			);
+			isa = PBXLegacyTarget;
+			name = "Copy Frameworks";
+			passBuildSettingsInEnvironment = 1;
+			productName = "Copy Frameworks";
+		};
+		F56F0408034F426A01A80004 = {
+			isa = PBXTargetDependency;
+			target = F56F0407034F3F8E01A80004;
+			targetProxy = 2BF83701057B805500BF4147;
+		};
+		F56F0409034F426A01A80004 = {
+			isa = PBXTargetDependency;
+			target = F56F0407034F3F8E01A80004;
+			targetProxy = 2BF836FC057B805500BF4147;
+		};
+		F5707F5603269A5401A80004 = {
+			children = (
+				F5707F6003269D3601A80004,
+			);
+			isa = PBXGroup;
+			path = Resources;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		F5707F5703269A6701A80004 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			path = MWRawConfigPane.h;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		F5707F5803269A6701A80004 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.objc;
+			path = MWRawConfigPane.m;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		F5707F5903269A6701A80004 = {
+			fileRef = F5707F5703269A6701A80004;
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					Public,
+				);
+			};
+		};
+		F5707F5A03269A6701A80004 = {
+			fileRef = F5707F5803269A6701A80004;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5707F5B03269A7401A80004 = {
+			isa = PBXFileReference;
+			lastKnownFileType = wrapper.nib;
+			name = MWRawConfigPane.nib;
+			path = English.lproj/MWRawConfigPane.nib;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		F5707F6003269D3601A80004 = {
+			children = (
+				F5707F6103269D3601A80004,
+			);
+			isa = PBXVariantGroup;
+			name = Localizable.strings;
+			path = "";
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		F5707F6103269D3601A80004 = {
+			fileEncoding = 10;
+			isa = PBXFileReference;
+			lastKnownFileType = text.plist.strings;
+			lineEnding = 0;
+			name = English;
+			path = English.lproj/Localizable.strings;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		F5707F6203269D3601A80004 = {
+			fileRef = F5707F6003269D3601A80004;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F570FC580221735D01A80004 = {
+			children = (
+				F529E9CA01C66D5B01A80004,
+			);
+			isa = PBXGroup;
+			name = Protocols;
+			path = Sources;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		F570FC590221745101A80004 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			path = MWExtInput.h;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		F575109401C082E701A80004 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			path = MWLinearLayoutView.h;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		F575109501C082E701A80004 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.objc;
+			path = MWLinearLayoutView.m;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		F57838FA039C2F6A01A80004 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.objc;
+			path = MWKeyCapturingPanel.m;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		F57838FB039C2F6A01A80004 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			path = MWKeyCapturingPanel.h;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		F57838FC039C2F6A01A80004 = {
+			children = (
+				F57838FD039C2F6A01A80004,
+			);
+			isa = PBXVariantGroup;
+			name = MWKeyCapturingPanel.nib;
+			path = "";
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		F57838FD039C2F6A01A80004 = {
+			isa = PBXFileReference;
+			lastKnownFileType = wrapper.nib;
+			name = English;
+			path = MWAppKit/Resources/English.lproj/MWKeyCapturingPanel.nib;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		F57838FF039C2F6A01A80004 = {
+			fileRef = F57838FB039C2F6A01A80004;
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					Public,
+				);
+			};
+		};
+		F5783900039C2F6A01A80004 = {
+			fileRef = F57838FC039C2F6A01A80004;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5783902039C2F6B01A80004 = {
+			fileRef = F57838FA039C2F6A01A80004;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5783903039C312201A80004 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			path = MWAppUtilities.h;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		F5783904039C312201A80004 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.objc;
+			path = MWAppUtilities.m;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		F5783905039C312201A80004 = {
+			fileRef = F5783903039C312201A80004;
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					Public,
+				);
+			};
+		};
+		F5783906039C312201A80004 = {
+			fileRef = F5783904039C312201A80004;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5783907039C37C401A80004 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			path = MWKeyCodeCell.h;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		F5783908039C37C401A80004 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.objc;
+			path = MWKeyCodeCell.m;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		F5783909039C37C501A80004 = {
+			fileRef = F5783907039C37C401A80004;
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					Public,
+				);
+			};
+		};
+		F578390A039C37C501A80004 = {
+			fileRef = F5783908039C37C401A80004;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F578390B039C38F401A80004 = {
+			fileRef = F558C96301F66C6601A80004;
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					Public,
+				);
+			};
+		};
+		F578390E039D02C201A80004 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			path = MWMiscTestController.h;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		F578390F039D02C201A80004 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.objc;
+			path = MWMiscTestController.m;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		F5783910039D02C201A80004 = {
+			fileRef = F578390E039D02C201A80004;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5783911039D02C201A80004 = {
+			fileRef = F578390F039D02C201A80004;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5783912039D076D01A80004 = {
+			fileRef = F5E70BB001C5335801A80004;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5790AE001BA834A01A80004 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			path = MWLinkPruner.h;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		F5790AE101BA834A01A80004 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.objc;
+			path = MWLinkPruner.m;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		F57A0251031FD29901A80004 = {
+			children = (
+				F5087116034B5CAA01A80004,
+				F5087115034B5CAA01A80004,
+				F5087113034B5CAA01A80004,
+				F5087114034B5CAA01A80004,
+				F508711D034B61AC01A80004,
+				F56C5B16034CE86E01A80004,
+				F56C5B17034CE86E01A80004,
+				F56C5B14034CE81101A80004,
+				F56C5B1F034D19F601A80004,
+			);
+			isa = PBXGroup;
+			name = "MW AppKit Palette";
+			path = "MWAppKit Palette";
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		F57A0252031FD2CF01A80004 = {
+			explicitFileType = wrapper.cfbundle;
+			fallbackIsa = PBXFileReference;
+			isa = PBXBundleReference;
+			path = "MWAppKit Palette.palette";
+			refType = 3;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F57A0253031FD2CF01A80004 = {
+			buildPhases = (
+				F57A0254031FD2CF01A80004,
+				F57A0255031FD2CF01A80004,
+				F57A0256031FD2CF01A80004,
+				F57A0257031FD2CF01A80004,
+			);
+			buildSettings = {
+				INSTALL_PATH = "$(HOME)/Developer/Palettes";
+				OPTIMIZATION_CFLAGS = "-O1";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "-bundle";
+				OTHER_REZFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = "MWAppKit Palette";
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = "-Werror -Wall -Wmost -Wunknown-pragmas -Wpointer-arith -Wno-cast-qual -Wcast-align -Wwrite-strings -Wno-strict-prototypes  -Wno-redundant-decls -Wnested-externs -Winline";
+				WRAPPER_EXTENSION = palette;
+			};
+			dependencies = (
+				F56F0408034F426A01A80004,
+			);
+			isa = PBXBundleTarget;
+			name = "MWAppKit Palette";
+			productInstallPath = "$(HOME)/Developer/Palettes";
+			productName = "MWAppKit Palette";
+			productReference = F57A0252031FD2CF01A80004;
+			productSettingsXML = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>
+<!DOCTYPE plist PUBLIC \"-//Apple Computer//DTD PLIST 1.0//EN\" \"http://www.apple.com/DTDs/PropertyList-1.0.dtd\">
+<plist version=\"1.0\">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleExecutable</key>
+	<string></string>
+	<key>CFBundleGetInfoString</key>
+	<string>MudWalker v0.3.1</string>
+	<key>CFBundleIconFile</key>
+	<string></string>
+	<key>CFBundleIdentifier</key>
+	<string>org.cubik.mudwalker.appkit.ibpalette</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string></string>
+	<key>CFBundlePackageType</key>
+	<string>BNDL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>0.3.1</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleVersion</key>
+	<string>0.3.1</string>
+</dict>
+</plist>
+";
+		};
+		F57A0254031FD2CF01A80004 = {
+			buildActionMask = 2147483647;
+			files = (
+				F5087117034B5CAA01A80004,
+				F56C5B18034CE86E01A80004,
+			);
+			isa = PBXHeadersBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F57A0255031FD2CF01A80004 = {
+			buildActionMask = 2147483647;
+			files = (
+				F5087118034B5CAA01A80004,
+				F5087119034B5CAA01A80004,
+				F508711E034B61AC01A80004,
+				F56C5B15034CE81201A80004,
+				F56C5B20034D19F601A80004,
+			);
+			isa = PBXResourcesBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F57A0256031FD2CF01A80004 = {
+			buildActionMask = 2147483647;
+			files = (
+				F508711A034B5CAA01A80004,
+				F56C5B19034CE86E01A80004,
+			);
+			isa = PBXSourcesBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F57A0257031FD2CF01A80004 = {
+			buildActionMask = 2147483647;
+			files = (
+				F508711C034B5F1901A80004,
+				F508711F034B620601A80004,
+				F5087120034B620601A80004,
+				F5087121034B625201A80004,
+			);
+			isa = PBXFrameworksBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F57A0259031FE47C01A80004 = {
+			isa = PBXTargetDependency;
+			target = F55418280280A8AD01A80004;
+			targetProxy = 2BF836F8057B805500BF4147;
+		};
+		F57CD1DF027DCC0B01A80004 = {
+			children = (
+				F5623AD1025E809F01A80004,
+			);
+			isa = PBXVariantGroup;
+			name = Localizable.strings;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		F57CD1E0027DCC0B01A80004 = {
+			fileRef = F57CD1DF027DCC0B01A80004;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F57DDA59032FADA301A80004 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.objc;
+			path = MWNSStringAdditionsTest.m;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		F57DDA5A032FADA301A80004 = {
+			fileRef = F57DDA59032FADA301A80004;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F57FD28602E47E5401A80004 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			path = MWURLLoadingImageView.h;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		F57FD28702E47E5401A80004 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.objc;
+			path = MWURLLoadingImageView.m;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		F57FD28802E47E5401A80004 = {
+			fileRef = F57FD28602E47E5401A80004;
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					Public,
+				);
+			};
+		};
+		F57FD28902E47E5401A80004 = {
+			fileRef = F57FD28702E47E5401A80004;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F59B316D0330C86701A80004 = {
+			fileRef = F570FC590221745101A80004;
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					Public,
+				);
+			};
+		};
+		F5A5892E02622B5B01A80004 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			path = MWGraphView.h;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		F5A5892F02622B5B01A80004 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.objc;
+			path = MWGraphView.m;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		F5C7E7AC03479E0F01A80004 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.objc;
+			path = MWNSScannerAdditionsTest.m;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		F5C7E7AE03479E3B01A80004 = {
+			fileRef = F5C7E7AC03479E0F01A80004;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5C7E7B20348889301A80004 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			path = MWFontSelectorView.h;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		F5C7E7B30348889301A80004 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.objc;
+			path = MWFontSelectorView.m;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		F5C7E7B40348889301A80004 = {
+			fileRef = F5C7E7B20348889301A80004;
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					Public,
+				);
+			};
+		};
+		F5C7E7B50348889301A80004 = {
+			fileRef = F5C7E7B30348889301A80004;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5CF515B02E9E43E01A80004 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			path = MWToolbarController.h;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		F5CF515C02E9E43E01A80004 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.objc;
+			path = MWToolbarController.m;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		F5CF515D02E9E43E01A80004 = {
+			fileRef = F5CF515B02E9E43E01A80004;
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					Public,
+				);
+			};
+		};
+		F5CF515E02E9E43E01A80004 = {
+			fileRef = F5CF515C02E9E43E01A80004;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5D2D9E5018857F901A80004 = {
+			children = (
+				F5D2D9E6018858A601A80004,
+				F5D2D9EA018859CE01A80004,
+				F56979E501B9377C01A80004,
+				F56979E601B9377C01A80004,
+				F5790AE001BA834A01A80004,
+				F5790AE101BA834A01A80004,
+			);
+			isa = PBXGroup;
+			name = "Link Basics";
+			path = "";
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		F5D2D9E6018858A601A80004 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			path = MWLink.h;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		F5D2D9EA018859CE01A80004 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.objc;
+			path = MWLink.m;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		F5E70BB001C5335801A80004 = {
+			explicitFileType = wrapper.framework;
+			fallbackIsa = PBXFileReference;
+			isa = PBXFrameworkReference;
+			path = MudWalker.framework;
+			refType = 3;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F5E70BB101C5335901A80004 = {
+			buildPhases = (
+				F5E70BB201C5335901A80004,
+				F5E70BB401C5335901A80004,
+				F5E70BB301C5335901A80004,
+				F5E70BB501C5335901A80004,
+				F5ECD292021AC08101A80004,
+			);
+			buildSettings = {
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				HEADER_SEARCH_PATHS = "";
+				INSTALL_PATH = "@executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = "-DBUILDING_MUDWALKER_FRAMEWORK";
+				OTHER_LDFLAGS = "-seg1addr 0x29000000";
+				OTHER_LIBTOOL_FLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRINCIPAL_CLASS = "";
+				PRODUCT_NAME = MudWalker;
+				SECTORDER_FLAGS = "";
+				SKIP_INSTALL = YES;
+				WARNING_CFLAGS = "-Werror -Wall -Wmost -Wunknown-pragmas -Wpointer-arith -Wno-cast-qual -Wcast-align -Wwrite-strings -Wno-strict-prototypes  -Wno-redundant-decls -Wnested-externs -Winline";
+				WRAPPER_EXTENSION = framework;
+			};
+			dependencies = (
+				F5ECD289021AC01701A80004,
+			);
+			isa = PBXFrameworkTarget;
+			name = MWFoundation;
+			productInstallPath = "@executable_path/../Frameworks";
+			productName = MWFramework;
+			productReference = F5E70BB001C5335801A80004;
+			productSettingsXML = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>
+<!DOCTYPE plist PUBLIC \"-//Apple Computer//DTD PLIST 1.0//EN\" \"http://www.apple.com/DTDs/PropertyList-1.0.dtd\">
+<plist version=\"1.0\">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleExecutable</key>
+	<string>MudWalker</string>
+	<key>CFBundleGetInfoString</key>
+	<string>0.3.1</string>
+	<key>CFBundleIconFile</key>
+	<string></string>
+	<key>CFBundleIdentifier</key>
+	<string>org.cubik.mudwalker.framework</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string></string>
+	<key>CFBundlePackageType</key>
+	<string>FMWK</string>
+	<key>CFBundleShortVersionString</key>
+	<string>0.3.1</string>
+	<key>CFBundleSignature</key>
+	<string>MWal</string>
+	<key>CFBundleVersion</key>
+	<string>0.3.1</string>
+</dict>
+</plist>
+";
+		};
+		F5E70BB201C5335901A80004 = {
+			buildActionMask = 2147483647;
+			files = (
+				F529E9CE01C6C20401A80004,
+				F51C88E301C53A3301A80004,
+				F51C88E401C53A3301A80004,
+				F51C88E501C53A3301A80004,
+				F51C88F001C53C2201A80004,
+				F51C88F101C53C2201A80004,
+				F51C88F201C53C2201A80004,
+				F501337501C861EA01A80004,
+				F55EE6DE024293B301A80004,
+				F560274B0246250D01A80004,
+				F55E850F02479C4301A80004,
+				F55E8513024822D801A80004,
+				F5623AC7025E351201A80004,
+				F5623ACB025E37EE01A80004,
+				F55EE6E0024299A401A80004,
+				F51C88D401C536FF01A80004,
+				F51C88F701C578C001A80004,
+				F5081C9201E0D4CC01A80004,
+				F5623ACF025E4B6B01A80004,
+				F55EAAB70263BEC801A80004,
+				F567087302C210C801A80004,
+				F567087802C2197301A80004,
+				F569DAD902E76C7C01A80004,
+				F56C5975031D4C9701A80004,
+				F56C597D031DA6BD01A80004,
+				F5462723032AE20E01A80004,
+				2BFF6B990472738100A80004,
+				2BFF6BA4047293E000A80004,
+				2BFF6BA90472AB9300A80004,
+				2B914F9F047EC05F00A80004,
+				2B914FA2047FB56800A80004,
+				2B1A5FB00532410400A80004,
+			);
+			isa = PBXHeadersBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5E70BB301C5335901A80004 = {
+			buildActionMask = 2147483647;
+			files = (
+				F57CD1E0027DCC0B01A80004,
+			);
+			isa = PBXResourcesBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5E70BB401C5335901A80004 = {
+			buildActionMask = 2147483647;
+			files = (
+				F51C88D601C536FF01A80004,
+				F51C88E601C53A3301A80004,
+				F51C88E701C53A3301A80004,
+				F51C88E801C53A3301A80004,
+				F51C88F301C53C2201A80004,
+				F51C88F401C53C2201A80004,
+				F51C88F501C53C2201A80004,
+				F501337601C861EA01A80004,
+				F55EE6DF024293B301A80004,
+				F560274C0246250D01A80004,
+				F55E851002479C4301A80004,
+				F55E8514024822D801A80004,
+				F5623AC8025E351201A80004,
+				F5623ACC025E37EE01A80004,
+				F5623AD0025E4B6B01A80004,
+				F55EAAB80263BEC801A80004,
+				F567087402C210C801A80004,
+				F567087902C2197301A80004,
+				F569DADA02E76C7C01A80004,
+				F56C597E031DA6BD01A80004,
+				F5462724032AE20E01A80004,
+				2BFF6B9A0472738100A80004,
+				2BFF6BAA0472AB9300A80004,
+				2B914FA3047FB56800A80004,
+				2B20DD4B04A8C90D00A80004,
+				2B1A5FB10532410400A80004,
+			);
+			isa = PBXSourcesBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5E70BB501C5335901A80004 = {
+			buildActionMask = 2147483647;
+			files = (
+				F55C419B0241649A01A80004,
+				F5623AC3025E314E01A80004,
+			);
+			isa = PBXFrameworksBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5ECD285021AC01701A80004 = {
+			children = (
+				F5ECD286021AC01701A80004,
+				F5ECD287021AC01701A80004,
+			);
+			isa = PBXGroup;
+			path = LookupHandler;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		F5ECD286021AC01701A80004 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			path = LookupHandler.h;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		F5ECD287021AC01701A80004 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.objc;
+			path = LookupHandler.m;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		F5ECD288021AC01701A80004 = {
+			explicitFileType = "compiled.mach-o.executable";
+			fallbackIsa = PBXFileReference;
+			isa = PBXExecutableFileReference;
+			path = LookupHandler;
+			refType = 3;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F5ECD289021AC01701A80004 = {
+			isa = PBXTargetDependency;
+			target = F5ECD28A021AC01701A80004;
+			targetProxy = 2BF836FE057B805500BF4147;
+		};
+		F5ECD28A021AC01701A80004 = {
+			buildPhases = (
+				F5ECD28B021AC01701A80004,
+				F5ECD28D021AC01701A80004,
+				F5ECD28F021AC01701A80004,
+				F5ECD290021AC01701A80004,
+			);
+			buildSettings = {
+				OPTIMIZATION_CFLAGS = "-O3";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = LookupHandler;
+				REZ_EXECUTABLE = YES;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = "-Werror -Wall -Wmost -Wunknown-pragmas -Wpointer-arith -Wbad-function-cast -Wno-cast-qual -Wcast-align -Wwrite-strings -Wno-strict-prototypes  -Wno-redundant-decls -Wnested-externs -Winline";
+			};
+			dependencies = (
+			);
+			isa = PBXToolTarget;
+			name = LookupHandler;
+			productInstallPath = /usr/local/bin;
+			productName = LookupHandler;
+			productReference = F5ECD288021AC01701A80004;
+		};
+		F5ECD28B021AC01701A80004 = {
+			buildActionMask = 2147483647;
+			files = (
+				F5ECD28C021AC01701A80004,
+			);
+			isa = PBXHeadersBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5ECD28C021AC01701A80004 = {
+			fileRef = F5ECD286021AC01701A80004;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5ECD28D021AC01701A80004 = {
+			buildActionMask = 2147483647;
+			files = (
+				F5ECD28E021AC01701A80004,
+			);
+			isa = PBXSourcesBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5ECD28E021AC01701A80004 = {
+			fileRef = F5ECD287021AC01701A80004;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5ECD28F021AC01701A80004 = {
+			buildActionMask = 2147483647;
+			files = (
+			);
+			isa = PBXFrameworksBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5ECD290021AC01701A80004 = {
+			buildActionMask = 2147483647;
+			files = (
+			);
+			isa = PBXRezBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5ECD292021AC08101A80004 = {
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 6;
+			files = (
+				F5ECD293021AC08101A80004,
+			);
+			isa = PBXCopyFilesBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5ECD293021AC08101A80004 = {
+			fileRef = F5ECD288021AC01701A80004;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+	};
+	rootObject = 2A37F4A9FDCFA73011CA2CEA;
+}

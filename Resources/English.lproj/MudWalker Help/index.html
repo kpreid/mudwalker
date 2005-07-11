@@ -1,0 +1,131 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html401/strict.dtd">
+<html><head>
+  <title>MudWalker Help</title>
+  <meta name="AppleTitle" CONTENT="MudWalker Help">
+  <meta name="AppleIcon" CONTENT="mwapp.icns">
+</head><body>
+<h1>MudWalker Help</h1>
+
+<p>There isn't much here. My excuse: I don't know what documentation would be <em>useful</em>, rather than simply clutter that restates the obvious.</p>
+
+<p>So: the only information you'll find here is what I've written because I either felt it specifically needed documenting or was requested. If there is something you need help with, or feel needs further documentation, feel free to ask on the <a href="http://mudwalker.cubik.org/">MudWalker mailing list</a>, or contact me by one of the methods listed on my <a href="http://homepage.mac.com/kpreid/#contact">web site</a>.</p>
+
+<address>&mdash; Kevin Reid</address>
+
+<h2>Reference</h2>
+
+<ul>
+  <li><a href="ref/menus.html">Menu Bar</a>
+  <li><a href="ref/keybindings.html">Keyboard Commands</a>
+  <li><a href="ref/config.html">Configuration</a>
+  <li><a href="script/index.html">Scripting</a>
+</ul>  
+
+<h2>Known Problems</h2>
+
+<ul>
+  <li>Logs of all sessions are automatically saved into <code>Library/Logs/MudWalker Log <var>document-name</var>.txt</code>. This is not configurable.</li>
+  <li>The "Expert Editor" settings pane doesn't actually allow editing anything.</li>
+  <li>The "Key Macros" settings pane does not provide a nice way to specify keystrokes.</li>
+</ul>
+
+<h2>Implementation Note</h2>
+
+<p>Connection documents are saved as serialized objects using <a href="http://developer.apple.com/techpubs/macosx/Cocoa/Reference/Foundation/ObjC_classic/Classes/NSArchiver.html">NSArchiver</a>. This means, for example, you can read a document using <a href="http://www.fscript.org">F-Script</a> and examine or modify it.</p>
+
+<h2>License and Acknowledgements</h2>
+
+<p>The following license applies to all original components of MudWalker:</p>
+
+<blockquote>
+<p>Copyright &copy; 2001-2004, Kevin Reid</p>
+
+<p>Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:</p>
+
+</p>The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.</p>
+
+<!-- does this have to be uppercase? -->
+<p>THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>
+</blockquote>
+
+<p>MudWalker uses <a href="http://www.pcre.org/">the PCRE library</a>:</p>
+
+<blockquote>
+     Regular expression support is provided by the PCRE library package</a>,
+     which is open source software, written by Philip Hazel, and copyright
+     by the University of Cambridge, England.
+</blockquote>
+
+<p>MudWalker uses <a href="http://www.pcre.org/">the Lua library</a>:</p>
+
+<blockquote>
+<p>
+Copyright &copy; 2003 Tecgraf, PUC-Rio.
+</p><p>
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+</p><p>
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+</p><p>
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.  IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+</p>
+</blockquote>
+
+<!--
+
+<h2>Basic</h2>
+
+<ul>
+  <li><a href="basic/getting.html">Getting Started</a>
+  <li><a href="basic/useful.html">#Useful Functions</a>
+  <li><a href="basic/faq.html">#Miscellaneous Answers</a>
+</ul>
+
+<h2>Advanced</h2>
+
+<ul>
+  <li><a href="advinfo/concepts.html">#Concept Introduction</a>
+  <li><a href="advinfo/filters.html">#Filters</a>
+  <li><a href="advinfo/scripting.html">#Scripting</a>
+  <li><a href="advinfo/plugins.html">#Plugins</a>
+  <li><a href="advinfo/tech.html">Technical Details</a>
+  <li><a href="advinfo/trouble.html">Troubleshooting</a>
+</ul>
+
+<h2>Reference</h2>
+
+<ul>
+  <li><a href="ref/windows/prefs.html">#Preferences</a>
+  <li><a href="ref/doccon.html">#Connection Documents</a>
+  <li><a href="ref/windows/termgen.html">#Terminals</a>
+  <li><a href="ref/scripting.html">#Scripting</a>
+  <li><a href="ref/menus.html">Menu Bar</a>
+  <li><a href="ref/keybindings.html">Keyboard</a>
+  <li><a href="ref/windows/index.html">#All Windows</a>
+</ul>  
+
+<h2>Programming</h2>
+
+<ul>
+  <li><a href="prog/arch.html">#Architecture</a>
+  <li><a href="prog/plugins.html">#Plugin API</a>
+  <li><a href="prog/filters.html">#Filter Classes</a>
+</ul>
+
+-->
+
+</body></html>

@@ -1,0 +1,27 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {
+                mwCloseConnectionHard = id; 
+                mwCloseConnectionNice = id; 
+                mwInspectFilters = id; 
+                mwOpenConnection = id; 
+                mwOpenServerHelp = id; 
+                mwOpenServerInfo = id; 
+                mwSelectCharacter = id; 
+                mwSendPing = id; 
+                mwUnlinkWindow = id; 
+            }; 
+            CLASS = MWOutputWinController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                tbCharacterMenu = NSMenu; 
+                tbCharacterPopUp = NSPopUpButton; 
+                tbCharacterView = NSView; 
+            }; 
+            SUPERCLASS = NSWindowController; 
+        }
+    ); 
+    IBVersion = 1; 
+}

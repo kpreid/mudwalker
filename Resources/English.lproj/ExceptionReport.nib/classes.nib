@@ -1,0 +1,26 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {
+                excBugReport = id; 
+                excCopyInfo = id; 
+                excIgnore = id; 
+                excSaveAll = id; 
+                excSaveAndQuit = id; 
+            }; 
+            CLASS = MWExceptionReportWinController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                excCaughtBecause = NSTextField; 
+                excCaughtBy = NSTextField; 
+                excCaughtFrom = NSTextField; 
+                excName = NSTextField; 
+                excReason = NSTextField; 
+                excUserInfo = NSTextField; 
+            }; 
+            SUPERCLASS = NSWindowController; 
+        }
+    ); 
+    IBVersion = 1; 
+}

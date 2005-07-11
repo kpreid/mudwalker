@@ -1,0 +1,41 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            CLASS = MWConfigPane; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {configTarget = id; }; 
+            SUPERCLASS = NSPreferencePane; 
+        }, 
+        {
+            CLASS = MWConfigPopupRepresentedObjectAdapter; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {control = NSPopUpButton; }; 
+            SUPERCLASS = MWConfigViewAdapter; 
+        }, 
+        {
+            ACTIONS = {cColorChanged = id; }; 
+            CLASS = MWDisplayConfigPane; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                cColorSetAdapter = MWConfigViewAdapter; 
+                cColorSetPopup = NSPopUpButton; 
+                cColorsContainer = NSView; 
+            }; 
+            SUPERCLASS = MWConfigPane; 
+        }, 
+        {CLASS = MWFontSelectorView; LANGUAGE = ObjC; SUPERCLASS = NSControl; }, 
+        {
+            CLASS = NSPreferencePane; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                "_firstKeyView" = NSView; 
+                "_initialKeyView" = NSView; 
+                "_lastKeyView" = NSView; 
+                "_window" = NSWindow; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }
+    ); 
+    IBVersion = 1; 
+}

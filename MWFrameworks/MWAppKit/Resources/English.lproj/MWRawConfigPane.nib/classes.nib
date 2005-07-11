@@ -1,0 +1,24 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {CLASS = MWConfigPane; LANGUAGE = ObjC; SUPERCLASS = NSPreferencePane; }, 
+        {
+            CLASS = MWRawConfigPane; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {outline = NSOutlineView; }; 
+            SUPERCLASS = MWConfigPane; 
+        }, 
+        {
+            CLASS = NSPreferencePane; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                _firstKeyView = NSView; 
+                _initialKeyView = NSView; 
+                _lastKeyView = NSView; 
+                _window = NSWindow; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }
+    ); 
+    IBVersion = 1; 
+}

@@ -1,0 +1,34 @@
+{
+  TextExtraSizes = {
+    Button      = "{28, 11}";
+    RadioButton = "{28,  5}";
+    Checkbox    = "{28,  5}";
+    Label       = "{10,  0}";
+    TypeIn      = "{ 6,  6}";
+  };
+  ClassMap = {
+    Button      = MWTWinButton;
+    Checkbox    = MWTWinButton;
+    RadioButton = MWTWinButton;
+    Radio = MWTWinShapeView;
+    Shape = MWTWinShapeView;
+    Fill  = MWTWinShapeView;
+    HBox = MWTWinLinearLayoutView;
+    VBox = MWTWinLinearLayoutView;
+    Space =     MWTWinSpaceView;
+    Separator = MWTWinSpaceView;
+    Image = MWTWinImageView;
+    
+    Window = __Special__;
+    Label  = __Special__;
+    TypeIn = __Special__;
+    Tabbed = __Special__;
+    Tab    = __Special__;
+    
+    ListBox  = (Scroll, MWDataSourceRetainingTableView);
+    TextEdit = (Scroll, NSTextView);
+    TypeOut  = (Scroll, MWOutputTextView);
+    
+    /* Frame, MenuBar, MenuCheckbox, MenuButton, MenuSeparator, Numeric */
+  };
+}

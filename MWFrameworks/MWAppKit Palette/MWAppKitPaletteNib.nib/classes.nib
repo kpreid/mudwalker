@@ -1,0 +1,97 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            CLASS = MWAppKitPalette; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {urlFormatterProxy = NSView; }; 
+            SUPERCLASS = IBPalette; 
+        }, 
+        {
+            CLASS = MWConfigControlAdapter; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {control = NSControl; }; 
+            SUPERCLASS = MWConfigViewAdapter; 
+        }, 
+        {
+            CLASS = MWConfigPopupRepresentedObjectAdapter; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {control = NSPopUpButton; }; 
+            SUPERCLASS = MWConfigViewAdapter; 
+        }, 
+        {
+            CLASS = MWConfigPopupTagAdapter; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {control = NSPopUpButton; }; 
+            SUPERCLASS = MWConfigViewAdapter; 
+        }, 
+        {
+            CLASS = MWConfigPopupTagLookupAdapter; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {control = NSPopUpButton; }; 
+            SUPERCLASS = MWConfigViewAdapter; 
+        }, 
+        {
+            CLASS = MWConfigScriptTextFieldAdapter; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {control = NSTextField; }; 
+            SUPERCLASS = MWConfigScriptViewAdapter; 
+        }, 
+        {
+            CLASS = MWConfigScriptTextViewAdapter; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {control = NSTextView; }; 
+            SUPERCLASS = MWConfigScriptViewAdapter; 
+        }, 
+        {
+            CLASS = MWConfigScriptViewAdapter; 
+            LANGUAGE = ObjC; 
+            SUPERCLASS = MWConfigViewAdapter; 
+        }, 
+        {
+            CLASS = MWConfigTextViewAdapter; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {control = NSTextView; }; 
+            SUPERCLASS = MWConfigViewAdapter; 
+        }, 
+        {
+            ACTIONS = {controlWasChangedByUser = id; }; 
+            CLASS = MWConfigViewAdapter; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {configPane = id; }; 
+            SUPERCLASS = NSView; 
+        }, 
+        {CLASS = MWCustomBindingsTextView; LANGUAGE = ObjC; SUPERCLASS = NSTextView; }, 
+        {CLASS = MWFontSelectorView; LANGUAGE = ObjC; SUPERCLASS = NSControl; }, 
+        {
+            CLASS = MWGenericTableViewDataSource; 
+            LANGUAGE = ObjC; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            CLASS = MWGraphView; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {dataSource = id; }; 
+            SUPERCLASS = NSView; 
+        }, 
+        {CLASS = MWImageAndTextCell; LANGUAGE = ObjC; SUPERCLASS = NSTextFieldCell; }, 
+        {CLASS = MWLayoutView; LANGUAGE = ObjC; SUPERCLASS = NSView; }, 
+        {CLASS = MWLinearLayoutView; LANGUAGE = ObjC; SUPERCLASS = MWLayoutView; }, 
+        {
+            ACTIONS = {autoScrollLock = id; }; 
+            CLASS = MWOutputTextView; 
+            LANGUAGE = ObjC; 
+            SUPERCLASS = MWCustomBindingsTextView; 
+        }, 
+        {
+            CLASS = MWTableViewForDirectoryEdit; 
+            LANGUAGE = ObjC; 
+            SUPERCLASS = NSTableView; 
+        }, 
+        {CLASS = MWToolbarController; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {CLASS = MWURLLoadingImageView; LANGUAGE = ObjC; SUPERCLASS = NSImageView; }, 
+        {CLASS = MWValidatedButton; LANGUAGE = ObjC; SUPERCLASS = NSButton; }, 
+        {CLASS = NSObject; LANGUAGE = ObjC; }
+    ); 
+    IBVersion = 1; 
+}

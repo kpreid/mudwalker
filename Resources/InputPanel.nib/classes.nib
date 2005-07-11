@@ -1,0 +1,27 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {CLASS = MWGlobalInputPanel; LANGUAGE = ObjC; SUPERCLASS = NSPanel; }, 
+        {
+            ACTIONS = {
+                enterPassword = id; 
+                mwModeMain = id; 
+                mwModePassword = id; 
+                selectHistoryFirst = id; 
+                selectHistoryLast = id; 
+                selectHistoryNext = id; 
+                selectHistoryPrev = id; 
+            }; 
+            CLASS = MWGlobalInputWinController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                inputTabs = NSTabView; 
+                inputTextView = NSTextView; 
+                passwordField = NSSecureTextField; 
+            }; 
+            SUPERCLASS = NSWindowController; 
+        }, 
+        {CLASS = MWInputTextView; LANGUAGE = ObjC; SUPERCLASS = NSTextView; }
+    ); 
+    IBVersion = 1; 
+}

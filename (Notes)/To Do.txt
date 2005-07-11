@@ -1,0 +1,168 @@
+### ### Work in progress:
+  * Convert OWCs to panes
+
+### ### Confirmed bugs:
+  * Color set config pane should have popup menu like display config.
+  * On Panther, URL spring icons in menu are sometimes upside down.
+  * Library window silently fails if a remembered document doesn't exist.
+  * Script panel doesn't go away when window containing script view loses key.
+  * GIW, when in follow mode and it's squashed onto the dock:
+    * gets resized a pixel taller when the terminal is resized
+    * forgets its proper relative position to the terminal window
+  * Updating of output window text attributes is slow. Fixes:
+    * Make it faster (ha)
+    * Make it run in the background
+    * Wait, but is the slowness really due to text system relayouting? If so, then backgrounding won't help
+      * Quick check, seems to be not true, but we should apply Sampler anyway
+
+### User-requested new features:
+  * Selectable logging directory.
+  * Command link script should be run at link click time, not when the trigger matches.
+  * Key macro pane should allow capturing a keystroke
+  * Timing in scripts (tickers, delays, time functions)
+  * More charset support in Lua scripting
+    * UTF-8 would break character indexing, but is that a serious problem?
+    * Preference?
+  * Howard-via-Bruce:
+    * Default example trigger - direction-links
+    * Better obviousness of usage of login script system
+  * Subroutines for scripts
+  * Color/style highlighting on trigger matches.
+  * Map window:
+    * Click on nodes to move (ook, pathfinding? send 'walk to'? only work for adjacent rooms?).
+    * Keyboard command to open map window.
+      * Add keyboard-equivalent support to userInterfaceCommand system.
+  * Automatic scroll lock when scrolled away from bottom
+  * Client-to-client chat mode
+    * Do we really want to do this
+    * IM-style or micro-mud-server style?
+  * Trigger clippings.
+    * Means: Use serialized form (just like a connection doc) as clipping data.
+  * Cmd-[123] to switch connection windows.
+
+### ### User-visible missing functionality:
+  * Documentation:
+    * Trigger pattern syntax (PCRE)
+    * plugin search path
+  * Local editors silently fail when corresponding MCP filter goes away
+    * Unchanged editors should do one of:
+      * Vanish
+      * Disable their Save buttons, indicate (unlinked)
+    * Add hook for confirmation before unlinking/disconnecting for unsaved editors
+  * Toolbar icons:
+    * clear scrollback
+    * MCP plugin's local editor
+    * MCP mapping window
+  * No way to commit changes to a script text view except changing focus by mouse or obscure control-tab.
+    * Should commit when window loses key?
+  * Config directory pane should support ways to pick initial key for key-matters data (key macros)
+  * Key macro pane should present friendlier descriptions and allow capturing a keystroke
+  * Autologout should consider a window in the process of reconnecting, or triggered so by logout script, to be OK to close.
+  * Scripting:
+    * Script text field adapters should open script panel as soon as the field is clicked, not when user types.
+    * Some pointer to the documentation for scripting from script editors, such as a (?) button.
+    * Figure out what to do about advice text in accounts pane given multiple language support. (Make it a MWRegistry-registered capability? Tell user to choose substituted-Lua?)
+  * Raw config pane doesn't allow editing.
+  * If focus gets on a status bar field in text OWC, typing does nothing.
+  * Shift Left/Shift Right are unimplemented.
+
+### ### Cleanups/refactoring:
+  * Lua interface should have generic implementation of lua->objc method mapping.
+  * Eliminate MWLayoutView, since it is not really all that useful by itself and its presence makes the TWin code confusing
+    * Move its code into its subclasses
+    * Simplify result
+  * Make MWTokens interned to speed up equality checks
+  * Make link names MWTokens 
+    * Feels right
+    * More efficient -receive:fromLinkFor: dispatching if tokens are interned
+  * Move DNS lookup code into a separate class instead of embedding it in MWTCPConnection, and make sure the API encourages not using cached names unless failure.
+
+### ### Improvements:
+  * Log files should be locked (use additional name in case of conflict) to avoid loss of data.
+  * MSP (see below for details)
+  * Scripting:
+    * Convenient per-window variables/state
+    * Have Lua interpreter namespace erased before every script execution so we don't get funny results
+  * Raw config pane
+    * needs more sensible type column that doesn't show random concrete class names
+    * editability
+  * MSP:
+    * Config for disabling
+    * Downloading of sounds
+    * Prompt user (non-focus-stealingly!) upon first MSP event about enabling
+  * Find panel:
+    * Invoking goto-line function ought to copy current line number into panel.
+  * Move specific OWC classes into loose controllers that can work with their views to be panes in a OWC. benefits:
+    * Text OWC implementation less monolithic
+    * Each loose controller becomes a MWConcreteLinkable, solving the two-implementations-of-linking problem.
+    * CGMud GUI text pane, TWin TypeOuts can use text OWC features
+    * Look carefully at GUI window's 'custom controller'. Can this completely eliminate any reason to have the GUI window?
+    * subtleties:
+      * MWOneLineRequest OWC closes itself after sending one line. This implies panes should be able to request closing of their windows? Is [[self window] close] good enough?
+      * OneLineRequest and GUI OWCs have custom window titles.
+  * TWin widget delegate dependency issue
+    * Make stub delegates to handle message passing.
+    * To avoid twin interface overwriting delegate setting, create widget-factory class system and skip delegate for table view factory.
+  * Mapping: Replace dictionary per room with custom class - dictionary lookups are relatively slow.
+
+### ### Uncertain/obscure bugs:
+  * Theoretical! If the map has multiple unconnected subgraphs then one of them won't ever appear, since we're reluctant to assign arbitrary positions. Solution: Hide/show, show only the current subgraph.
+    * Or: Multiple distinct coordinate spaces. Create a new space for any unconnected room(s). Merge spaces (using crosslink's exit offset) when an exit is discovered.
+  * Cancelling the multiwindow logout question doesn't notify system.
+  * Figure out why prompt timeout sometimes triggers when it shouldn't (mainly in receiving large blocks of text).
+  * Make CFSocket connection able to distinguish between connection failure and EOF.
+
+### ### New features:
+  * Allow scripts to execute from key macros. Maybe merge key macros and aliases.
+  * Allow user entry of web-site fields in document config.
+  * GIW:
+    * should indicate current history index, or at least whether it's at the end.
+    * Preference to use a (independently selectable) script language in the GIW.
+    * searchable and reviewable history list
+  * Display text window size in characters when resizing, like Terminal.app does
+  * Triggers/Scripting:
+    * Categories for triggers, displayed as outline directories in config pane
+      * Ordering issue options:
+        * Ordering is forced to match categories.
+        * Ordering is independent of categories, and there is a UI toggle for category-order/config-order
+        * Ordering is independent, and categories appear more than once as necessary.
+    * Send prefixes and continuation match for channels
+    * Text styling, highlighting via triggers
+    * Speech and dock-bounce notifications
+  * ANSI autodetect response: http://www.kanga.nu/archives/MUD-Dev-L/1998Q3/msg00391.php
+  * For config directory UI (triggers etc), ability to copy up and down the inheritance tree.
+
+### ### Really minor things:
+  * Icon for .mwplug files.
+
+### ### Possible new features:
+  * Scripting:
+    * Syntax highlighting
+      * Same hook as for syntax error report (pass in original attributed string?)
+      * Highlight syntax error locationss too
+    * Popup menu in trigger config to add/edit playSound()
+  * have 'indeterminate' mode for prompt timeout. disable if we ever receive a GA.
+  * 'Rerun login script' command.
+  * Logging:
+    * Choice of info in output format
+    * Off switch
+    * Selectable location, with option to datestamp log files. (Malicious document problem here--overwriting important files)
+  * TWin:
+    * Support menus, Frame, Numeric, Separator
+  * Text input in output window (no GIW)
+  * Transparent SSH connections, direct and port-forwarding.
+  * Inline HTML support (Pueblo extensions?) (implemented with new WebKit framework?).
+ * MXP support.
+  * MCCP (compression) support.
+  * Local shell connection
+  * To support potentially-dangerous features in documents, store hashes of saved documents in defaults db and warn user if a document is opened that doesn't match a known hash.
+  * Command-line version of MW app (i.e. to make use of MCP/telnet implementations, triggers, etc)
+  * For display config pane, a command to open a terminal window and display a test-pattern that demonstrates all color combinations.
+  * Automatic scroll lock - scroll lock is enabled if user scrolls away from bottom, as Terminal and tkMOO do. Also notification when new data arrives while scrolled away.
+  * Configurable ^G sound
+  * Menu command for opening new terminal with particular account chosen.
+  * Make OSA support more useful
+  * Test/fix MWNSFileHandleConnection
+  * Command to delete all line breaks from input window (poor man's @|)
+  * Undo support in library, particularly for deletion.
+  * Notify user in-GUI if a plugin fails to load.

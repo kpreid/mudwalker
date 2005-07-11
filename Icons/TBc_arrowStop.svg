@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="us-ascii" standalone="yes"?>
+<!--<?xml-stylesheet href="TBstyle.css" type="text/css"?>-->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" width="32px" height="32px" viewBox="0 0 32 32">
+
+<g transform="translate(-2 0)">
+<path fill="#D00" stroke="#700" stroke-width="1.2" stroke-linejoin="round" d="
+  M
+  3 12 L
+  17 12
+  17  8
+  29 16
+  17 24
+  17 20
+  3 20
+  Z
+"/>
+</g>
+<rect fill="#D00" stroke="#700" stroke-width="1.2" stroke-linejoin="round"
+  width="3" height="16"
+  x="27" y="8"
+/>
+
+</svg>

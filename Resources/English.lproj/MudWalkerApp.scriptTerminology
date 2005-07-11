@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist SYSTEM "file://localhost/System/Library/DTDs/PropertyList.dtd">
+<plist version="0.9">
+<dict>
+	<key>Classes</key>
+	<dict>
+		<key>MWConnectionDocument</key>
+		<dict>
+			<key>Description</key>
+			<string>Document containing information for connecting to a MUD server</string>
+			<key>Name</key>
+			<string>connection document</string>
+			<key>PluralName</key>
+			<string>connection documents</string>
+			<key>ToManyRelationships</key>
+			<dict>
+				<key>terminals</key>
+				<dict>
+					<key>Name</key>
+					<string>terminals</string>
+				</dict>
+			</dict>
+			<key>ToOneRelationships</key>
+			<dict>
+				<key>settings</key>
+				<dict>
+					<key>Name</key>
+					<string>settings</string>
+				</dict>
+			</dict>
+		</dict>
+		<key>MWDocumentSettings</key>
+		<dict>
+			<key>Attributes</key>
+			<dict>
+				<key>Address</key>
+				<dict>
+					<key>Description</key>
+					<string>URL of the server to connect to</string>
+					<key>Name</key>
+					<string>address</string>
+				</dict>
+				<key>AutoConnect</key>
+				<dict>
+					<key>Description</key>
+					<string>Whether to open a connection upon opening a terminal window</string>
+					<key>Name</key>
+					<string>auto-connect</string>
+				</dict>
+				<key>CharEncoding</key>
+				<dict>
+					<key>Description</key>
+					<string></string>
+					<key>Name</key>
+					<string>text encoding</string>
+				</dict>
+				<key>ColorBrightBold</key>
+				<dict>
+					<key>Description</key>
+					<string></string>
+					<key>Name</key>
+					<string>use bold for bright</string>
+				</dict>
+				<key>ColorBrightColor</key>
+				<dict>
+					<key>Description</key>
+					<string></string>
+					<key>Name</key>
+					<string>use color for bright</string>
+				</dict>
+				<key>Colors</key>
+				<dict>
+					<key>Description</key>
+					<string>An array of the colors used in a text output window</string>
+					<key>Name</key>
+					<string>colors</string>
+					<key>Number</key>
+					<string>plural</string>
+				</dict>
+				<key>LineEnding</key>
+				<dict>
+					<key>Description</key>
+					<string>Line ending used for sending text</string>
+					<key>Name</key>
+					<string>line ending</string>
+				</dict>
+				<key>MWConfigureLoginScript</key>
+				<dict>
+					<key>Description</key>
+					<string></string>
+					<key>Name</key>
+					<string>login script</string>
+				</dict>
+				<key>MWConfigureTelnetPromptTimeout</key>
+				<dict>
+					<key>Description</key>
+					<string></string>
+					<key>Name</key>
+					<string>Telnet prompt timeout</string>
+				</dict>
+				<key>ScrollbackCharacters</key>
+				<dict>
+					<key>Description</key>
+					<string>Minimum number of characters to keep in a text window's scrollback.</string>
+					<key>Name</key>
+					<string>scrollback length</string>
+				</dict>
+			</dict>
+			<key>Name</key>
+			<string>document settings</string>
+			<key>PluralName</key>
+			<string>documents' settings</string>
+		</dict>
+		<key>MWOutputWinController</key>
+		<dict>
+			<key>Name</key>
+			<string>terminal</string>
+			<key>PluralName</key>
+			<string>terminals</string>
+			<key>Attributes</key>
+			<dict>
+				<key>outwardLinkable</key>
+				<dict>
+					<key>Name</key>
+					<string>outward filter</string>
+				</dict>
+			</dict>
+		</dict>
+		<key>MWTextDocument</key>
+		<dict>
+			<key>Description</key>
+			<string>Document containing editable text.</string>
+			<key>Name</key>
+			<string>text document</string>
+			<key>PluralName</key>
+			<string>text documents</string>
+			<key>Attributes</key>
+			<dict>
+				<key>textStorage</key>
+				<dict>
+					<key>Name</key>
+					<string>text</string>
+				</dict>
+			</dict>
+		</dict>
+	</dict>
+	<key>Commands</key>
+	<dict>
+		<key>OpenConnection</key>
+		<dict>
+			<key>Name</key>
+			<string>open connection</string>
+		</dict>
+		<key>CloseConnection</key>
+		<dict>
+			<key>Name</key>
+			<string>close connection</string>
+		</dict>
+		<key>SendObject</key>
+		<dict>
+			<key>Name</key>
+			<string>send object</string>
+			<key>Arguments</key>
+			<dict>
+				<key>data</key>
+				<dict>
+					<key>Name</key>
+					<string>data</string>
+				</dict>
+			</dict>
+		</dict>
+		<key>GetURL</key>
+		<dict>
+			<key>Name</key>
+			<string>connect to URL</string>
+		</dict>
+	</dict>
+	<key>Name</key>
+	<string>MudWalker Application Suite</string>
+</dict>
+</plist>

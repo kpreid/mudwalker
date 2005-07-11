@@ -1,0 +1,37 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {
+                findNext = id; 
+                findNextOnce = id; 
+                findPrevious = id; 
+                gotoPerform = id; 
+                gotoPerformOnce = id; 
+                replaceAll = id; 
+                replaceAndFind = id; 
+                replaceFound = id; 
+                useSelectionForFind = id; 
+            }; 
+            CLASS = MWTextFindController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                findField = NSTextField; 
+                findNextBtn = MWValidatedButton; 
+                findPrevBtn = MWValidatedButton; 
+                gotoBtn = NSButton; 
+                gotoField = NSTextField; 
+                gotoModeRadio = NSMatrix; 
+                ignoreCaseBtn = NSButton; 
+                replaceAllBtn = MWValidatedButton; 
+                replaceAndFindBtn = MWValidatedButton; 
+                replaceBtn = MWValidatedButton; 
+                replaceField = NSTextField; 
+                replaceInSelectionBtn = NSButton; 
+            }; 
+            SUPERCLASS = NSWindowController; 
+        }, 
+        {CLASS = MWValidatedButton; LANGUAGE = ObjC; SUPERCLASS = NSButton; }
+    ); 
+    IBVersion = 1; 
+}

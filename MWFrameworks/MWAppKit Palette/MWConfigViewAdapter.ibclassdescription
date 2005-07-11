@@ -1,0 +1,9 @@
+{
+  MWConfigViewAdapter = {
+    SuperClass = NSObject;
+    Attributes = {
+      basePath = {};
+      relativePath = {};
+    };
+  };
+}

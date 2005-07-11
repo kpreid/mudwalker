@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="us-ascii" standalone="yes"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" width="128px" height="128px" viewBox="0 0 128 128">
+
+<desc>MudWalker document icon</desc>
+
+<defs>
+  <style type="text/css">
+    .splat { 
+      stroke: black;
+      stroke-width: 1.2;
+      stroke-linejoin: round;
+    }
+  </style>
+  <g id="document">
+    <path fill="url(#docfill)" stroke="black" stroke-width="2" d="
+      M 
+      19 3 L
+      86 3 
+      108 25
+      108 119
+      19 119 
+      Z
+    "/>
+    <path fill="#784400" class="splat" d="
+            M  48  21 C  52  23
+       60  23  56  27 C  52  31
+       59  32  59  35 C  59  40
+       66  49  62  55 C  48  59
+       46  46  44  50 C  42  57
+       23  41  24  31 C  25  19
+       38  24  48  21 Z
+    "/>
+    <path fill="#a87844" class="splat" d="
+            M 108  40 C 108  65
+      112  90 108  90 C 100  85
+      110  65 105  65 C 100  65
+       90  64  88  60 C  84  52
+       58  35  64  35 C  70  35
+       73  23  76  23 C  79  23
+       96  23  96  23 C  86  43
+      108  40 108  40 Z
+    "/>
+    <path fill="#a87844" class="splat" d="
+            M  24  90 C  64  60
+       90  80  90  80 C  90  80
+       90  89  95  87 C 100  85
+       93 110  63 110 C  63 110
+       64  80  54  80 C  44  80
+       19  95  24  90 Z
+    "/>
+    <path fill="url(#tabfill)" stroke="black" stroke-width="2" stroke-linejoin="bevel" d="
+      M 
+      86 3 L
+      108 25
+      86 25
+      Z
+    "/>
+  </g>
+  <filter id="shadow" filterUnits="userSpaceOnUse">
+    <feGaussianBlur in="SourceAlpha" stdDeviation="2" result="blur"/>
+    <feComponentTransfer in="blur" result="shadow">
+      <feFuncA type="linear" slope="1.5"/>
+    </feComponentTransfer>
+    <feOffset in="shadow" dx="0" dy="1"/>
+  </filter>
+  <radialGradient id="docfill" cx="100%" cy="75%" r="100%" fx="0%">
+    <stop offset="0%" stop-color="#009700"/>
+    <stop offset="60%" stop-color="#FDD3D3"/>
+    <stop offset="70%" stop-color="#C2957E"/>
+    <stop offset="100%" stop-color="#009700"/>
+  </radialGradient>
+  <linearGradient id="tabfill" x1="0%" y1="100%" x2="50%" y2="0%">
+    <stop offset="0%" stop-color="#009700"/>
+    <stop offset="50%" stop-color="#A3FBA3"/>
+  </linearGradient>
+</defs>
+
+<g transform="translate(0, 2)">
+  <use filter="url(#shadow)" xlink:href="#document" opacity="0.7"/>
+  <use xlink:href="#document"/>
+</g>
+
+</svg>

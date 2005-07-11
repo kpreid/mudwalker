@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist SYSTEM "file://localhost/System/Library/DTDs/PropertyList.dtd">
+<plist version="0.9">
+<dict>
+  <!-- a subclass of IBPalette -->
+  <key>Class</key>
+  <string>MWAppKitPalette</string>
+
+  <key>NibFile</key>
+  <string>MWAppKitPaletteNib</string>
+
+  <!-- a tiff file name for icon used for palette -->
+  <key>Icon</key>
+  <string>MWAppKitPaletteIcon</string>
+
+  <!-- Tool Tips string for the palette icon -->
+  <key>ToolTips</key>
+  <string>MudWalker</string>
+
+  <!-- a list of class names exported from palette to IB -->
+  <key>ExportClasses</key>
+  <array>
+    <string>MWURLFormatter</string>
+    <string>MWConfigViewAdapter</string>
+    <string>MWConfigControlAdapter</string>
+    <string>MWConfigTextViewAdapter</string>
+    <string>MWConfigPopupTagAdapter</string>
+    <string>MWConfigPopupTagLookupAdapter</string>
+    <string>MWConfigPopupRepresentedObjectAdapter</string>
+    <string>MWConfigScriptViewAdapter</string>
+    <string>MWConfigScriptTextViewAdapter</string>
+    <string>MWConfigScriptTextFieldAdapter</string>
+    <string>MWGraphView</string>
+    <string>MWValidatedButton</string>
+  </array>
+
+  <key>ExportImages</key>
+  <array>
+  </array>
+
+  <key>ExportSounds</key>
+  <array>
+  </array>
+
+</dict>
+</plist>

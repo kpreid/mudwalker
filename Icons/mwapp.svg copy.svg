@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="us-ascii" standalone="yes"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" width="128px" height="128px" viewBox="0 0 128 128">
+
+<desc>MudWalker application icon</desc>
+
+<defs>
+  <style type="text/css">
+  </style>
+  <g id="boot">
+    <path fill="#005600" stroke="black" stroke-width="2" d="
+            M  64  14 C  58  20
+       72  64  72  76 C  72  86
+       38  73  28  75 C  18  76
+        7  95   9 107 C  24 126
+      110 113 119  90 C 119  85
+      111  88 113  70 C 115  52
+      110  20 103  10 Z
+    "/>
+    <path fill="none" stroke="black" stroke-width="5" d="
+             M  8   107 C 24 126
+      100 115 120.5  90
+    "/>
+    <ellipse transform="translate(83.75, 15) rotate(-5)"
+      fill="#003100" stroke="black" stroke-width="2" rx="21.25" ry="9"/>
+  </g>
+  <filter id="shadow" filterUnits="userSpaceOnUse">
+    <feGaussianBlur in="SourceAlpha" stdDeviation="2" result="blur"/>
+    <feOffset in="blur" dx="0" dy="6"/>
+  </filter>
+  <filter id="mask" filterUnits="userSpaceOnUse">
+    <feOffset in="SourceAlpha" dx="0" dy="128"/>
+  </filter>
+</defs>
+
+<use filter="url(#shadow)" xlink:href="#boot" opacity="0.7"/>
+<use xlink:href="#boot"/>
+<path fill="#a87844" stroke="black" stroke-width="1.2" d="
+        M  75  58 C  73  38
+   74  56  82  49 C  83  47
+   91  65  91  51 C  92  36
+   95  28  98  48 C 100  68
+  100  63  93  65 C  80  67
+   80  80  81  70 C  82  60
+   77  68  75  58
+"/>
+<path fill="#784400" stroke="black" stroke-width="1.2" d="
+        M 74  90 C 74  73
+   87  78 89  95 C 91 110
+   90 110 82 111 C 74 112
+   71 126 71 116 C 71 106
+   58 116 56 106 C 54  96
+   57  93 57  93 C 57  93
+   74 108 74  90
+"/>
+<path fill="#a87844" stroke="black" stroke-width="1.2" d="
+        M 29  85 C 39  73
+   45 115 34 116 C 23 117
+   21 130 21 112 C 21  94
+   19  95 29  85
+"/>
+
+</svg>

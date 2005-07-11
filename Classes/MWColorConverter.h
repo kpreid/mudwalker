@@ -1,0 +1,30 @@
+#import <Foundation/Foundation.h>
+@class NSString;
+
+#define MWCOLOR_GROUP 10
+#define MWCOLOR_GROUP_NORMAL  0 * MWCOLOR_GROUP
+#define MWCOLOR_GROUP_BRIGHT  1 * MWCOLOR_GROUP
+#define MWCOLOR_GROUP_DIM     2 * MWCOLOR_GROUP
+#define MWCOLOR_GROUP_SPECIAL 3 * MWCOLOR_GROUP
+#define MWCOLOR_GROUPS 4
+#define MWCOLOR_MAXINDEX MWCOLOR_GROUPS * MWCOLOR_GROUP
+
+#define MWCOLOR_SP_LOCAL MWCOLOR_GROUP_SPECIAL + 0
+#define MWCOLOR_SP_ECHO MWCOLOR_GROUP_SPECIAL + 1
+#define MWCOLOR_SP_LINK MWCOLOR_GROUP_SPECIAL + 2
+
+#define MWCOLOR_INDEX_BLACK 0
+#define MWCOLOR_INDEX_RED 1
+#define MWCOLOR_INDEX_GREEN 2
+#define MWCOLOR_INDEX_YELLOW 3
+#define MWCOLOR_INDEX_BLUE 4
+#define MWCOLOR_INDEX_PURPLE 5
+#define MWCOLOR_INDEX_CYAN 6
+#define MWCOLOR_INDEX_WHITE 7
+#define MWCOLOR_INDEX_DFORE 8
+#define MWCOLOR_INDEX_DBACK 9
+
+id MWTestColorConverter(void);
+NSDictionary * MWColorDictionaryFromArray(NSArray *oldColorArray);
+NSString *MWColorNameForIndex(int index);
+int MWColorIndexForName(NSString *name);
