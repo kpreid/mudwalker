@@ -2,6 +2,8 @@
   * Convert OWCs to panes
 
 ### ### Confirmed bugs:
+  * The help nowhere mentions what the trigger match language is (PCRE), nor includes a 'getting started' guide to triggers, nor documentation of the checkbox options.
+  * Nathaniel Bailey: ANSI color is being misinterpreted somehow such that what should be bright??-on-dark?? yellow is bright yellow on bright yellow
   * Color set config pane should have popup menu like display config.
   * On Panther, URL spring icons in menu are sometimes upside down.
   * Library window silently fails if a remembered document doesn't exist.
@@ -14,6 +16,7 @@
     * Make it run in the background
     * Wait, but is the slowness really due to text system relayouting? If so, then backgrounding won't help
       * Quick check, seems to be not true, but we should apply Sampler anyway
+  * Alias argument text all goes into arg[1] and is not split.
 
 ### User-requested new features:
   * Selectable logging directory.
@@ -39,6 +42,11 @@
   * Trigger clippings.
     * Means: Use serialized form (just like a connection doc) as clipping data.
   * Cmd-[123] to switch connection windows.
+  * Trigger palette:
+    * Way to toggle all triggers (I'd do option-click on the boxes)
+    * Way to open the editing window for a trigger (suggested double-click)
+  * Way to disable inherited keyboard macros, e.g. disable checkboxes like for triggers.
+  * Gag-line or gag-matched-text option for triggers.
 
 ### ### User-visible missing functionality:
   * Documentation:
@@ -151,6 +159,7 @@
     * Support menus, Frame, Numeric, Separator
   * Text input in output window (no GIW)
   * Transparent SSH connections, direct and port-forwarding.
+  * TLS/SSL layering for telnet connections.
   * Inline HTML support (Pueblo extensions?) (implemented with new WebKit framework?).
  * MXP support.
   * MCCP (compression) support.

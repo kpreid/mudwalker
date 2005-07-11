@@ -2,6 +2,12 @@ Key:
   * release or other public interaction
   - change
 
+2005-06-17 kpreid
+  - Fixed memory leak in MWConfigPath -stringRepresentation.
+2004-08-27 kpreid
+  - Added documentation for speak().
+2004-08-26 kpreid
+  * Changed version numbers to 0.3.1 and made disk images.
 2004-07-28 kpreid
   - Added speak() to Lua plugin.
 2004-07-27 kpreid
