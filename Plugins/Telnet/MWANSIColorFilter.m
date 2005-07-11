@@ -44,15 +44,18 @@ enum Brightness { Dim = -1, Normal, Bright };
     if ([obj isKindOfClass:[MWLineString class]]) {
       NSMutableAttributedString *s = [[obj attributedString] mutableCopy];
       [self attributify:s];
-      [self send:[MWLineString lineStringWithAttributedString:s role:[obj role]] toLinkFor:@"inward"];
+      [self send:[MWLineString lineStringWithAttributedString:[[s copy] autorelease] role:[obj role]] toLinkFor:@"inward"];
+      [s release];
     } else if ([obj isKindOfClass:[NSAttributedString class]]) {
       NSMutableAttributedString *s = [obj mutableCopy];
       [self attributify:s];
       [self send:[[s copy] autorelease] toLinkFor:@"inward"];
+      [s release];
     } else if ([obj isKindOfClass:[NSString class]]) {
       NSMutableAttributedString *s = [[[NSMutableAttributedString alloc] initWithString:obj attributes:[NSDictionary dictionary]] autorelease];
       [self attributify:s];
       [self send:[[s copy] autorelease] toLinkFor:@"inward"];
+      [s release];
     } else {
       [self send:obj toLinkFor:@"inward"];
     }

@@ -152,6 +152,8 @@ static MWConfigPath *singleEmptyPath = nil;
         // old code
         [rbuf appendString:[[[[c componentsSeparatedByString:@"%"] componentsJoinedByString:@"%25"] componentsSeparatedByString:@"/"] componentsJoinedByString:@"%2f"]];
       }
+      
+      [cScan release];
     }
     stringRep = [rbuf copyWithZone:[self zone]];
   }
