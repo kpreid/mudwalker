@@ -23,6 +23,7 @@
 #define IM_LAST 1
 
 static NSString *MWGlobalInputWindowFontDefaultKey = @"MWGlobalInputWindowFontDefault";
+static NSString *MWGlobalInputWindowContinuousSpellCheckingKey = @"MWGlobalInputWindowContinuousSpellChecking";
 
 @interface MWGlobalInputWinController (Private)
 
@@ -59,10 +60,20 @@ static NSString *MWGlobalInputWindowFontDefaultKey = @"MWGlobalInputWindowFontDe
 }
 
 - (void)dealloc {
-  NSFont *inputFont = [[inputTextView typingAttributes] objectForKey:NSFontAttributeName];
 
-  [[NSUserDefaults standardUserDefaults] setObject: [NSArray arrayWithObjects:[inputFont fontName], [NSNumber numberWithFloat: [inputFont pointSize]], nil] forKey:MWGlobalInputWindowFontDefaultKey];
-  [[NSUserDefaults standardUserDefaults] synchronize]; // needed as this apparently happens after the regular sync
+  { NSUserDefaults *const ud = [NSUserDefaults standardUserDefaults];
+
+    NSFont *const inputFont = [[inputTextView typingAttributes] objectForKey:NSFontAttributeName];
+    [ud setObject: [NSArray arrayWithObjects:[inputFont fontName], 
+                   [NSNumber numberWithFloat: [inputFont pointSize]], 
+                   nil]
+        forKey:MWGlobalInputWindowFontDefaultKey];
+
+    [ud setObject:[NSNumber numberWithBool:[inputTextView isContinuousSpellCheckingEnabled]] 
+        forKey:MWGlobalInputWindowContinuousSpellCheckingKey];
+  
+    [ud synchronize]; // needed as this apparently happens after the regular sync
+  }
 
   [[NSNotificationCenter defaultCenter] removeObserver:self];
 
@@ -84,11 +95,12 @@ static NSString *MWGlobalInputWindowFontDefaultKey = @"MWGlobalInputWindowFontDe
   }
 
   {
-    NSArray *fontInfo = [[NSUserDefaults standardUserDefaults] objectForKey:MWGlobalInputWindowFontDefaultKey];
-    NSFont *inputFont;
-  
-    inputFont = [NSFont fontWithName: fontInfo ? [fontInfo objectAtIndex:0] : @"Monaco"
-      size: fontInfo ? [[fontInfo objectAtIndex:1] floatValue] : 11.0];
+    NSUserDefaults *const ud = [NSUserDefaults standardUserDefaults];
+    NSArray *const fontInfo = [ud objectForKey:MWGlobalInputWindowFontDefaultKey];
+    NSFont *const inputFont = 
+      [NSFont
+        fontWithName: fontInfo ? [fontInfo objectAtIndex:0] : @"Monaco"
+        size: fontInfo ? [[fontInfo objectAtIndex:1] floatValue] : 11.0];
   
     [inputTextView setTypingAttributes:[NSDictionary dictionaryWithObjectsAndKeys:
       inputFont, NSFontAttributeName,
@@ -96,6 +108,7 @@ static NSString *MWGlobalInputWindowFontDefaultKey = @"MWGlobalInputWindowFontDe
     ]];
     [inputTextView setRichText:NO];
     [inputTextView setAllowsUndo:YES];
+    [inputTextView setContinuousSpellCheckingEnabled:[ud boolForKey:MWGlobalInputWindowContinuousSpellCheckingKey]];
   }
   
   [passwordField setNextKeyView:passwordField];
