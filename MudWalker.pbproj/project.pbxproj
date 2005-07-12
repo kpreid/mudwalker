@@ -1179,6 +1179,12 @@
 			settings = {
 			};
 		};
+		2B61F35908845A9B00C74FB0 = {
+			fileRef = 2A37F4C5FDCFA73011CA2CEA;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
 		2B66313804AB7A1100A80004 = {
 			fileEncoding = 4;
 			isa = PBXFileReference;
@@ -1329,12 +1335,6 @@
 		};
 		2B79034804AE6BB500A80004 = {
 			fileRef = 2B79034604AE6BB500A80004;
-			isa = PBXBuildFile;
-			settings = {
-			};
-		};
-		2B79C96606B81EE300F0EF42 = {
-			fileRef = 1058C7A7FEA54F5311CA2CBB;
 			isa = PBXBuildFile;
 			settings = {
 			};
@@ -2535,7 +2535,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2BFF6BB50472BB1E00A80004,
-				2B79C96606B81EE300F0EF42,
+				2B61F35908845A9B00C74FB0,
 				2BFF6BBF0472BB6100A80004,
 				2BFF6BC00472BB6100A80004,
 			);

@@ -151,7 +151,6 @@ static int myLua_speak(lua_State *L) {
   static NSMutableDictionary *voicesByNameCache = nil;
   
   // NSClassFromString is used so that this bundle does not depend on AppKit at link time.
-  // Oops - but we need the NSVoiceName constant. Oh well.
   Class const lNSSpeechSynthesizer = NSClassFromString(@"NSSpeechSynthesizer");
   
   NSString *voice;
@@ -172,7 +171,7 @@ static int myLua_speak(lua_State *L) {
         if (!(voice = [voicesByNameCache objectForKey:voiceName])) {
           MWenumerate([[lNSSpeechSynthesizer availableVoices] objectEnumerator], NSString *, someVoiceId) {
             //NSLog(@"%@ %@", someVoiceId, [lNSSpeechSynthesizer attributesForVoice:someVoiceId]);
-            if ([[[lNSSpeechSynthesizer attributesForVoice:someVoiceId] objectForKey:NSVoiceName] isEqualToString:voiceName]) {
+            if ([[[lNSSpeechSynthesizer attributesForVoice:someVoiceId] objectForKey:/* NSVoiceName */ @"VoiceName"] isEqualToString:voiceName]) {
               voice = someVoiceId;
               [voicesByNameCache setObject:someVoiceId forKey:voiceName];
               break;
