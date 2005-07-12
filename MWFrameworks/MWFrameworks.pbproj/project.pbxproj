@@ -6,17 +6,17 @@
 	objectVersion = 39;
 	objects = {
 		013A5151010123ACC0A80001 = {
-			expectedFileType = sourcecode.c.h;
 			fileEncoding = 30;
 			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
 			path = MWConstants.h;
 			refType = 4;
 			sourceTree = "<group>";
 		};
 		013A5153010123D0C0A80001 = {
-			expectedFileType = sourcecode.c.objc;
 			fileEncoding = 30;
 			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.objc;
 			path = MWConstants.m;
 			refType = 4;
 			sourceTree = "<group>";
@@ -32,9 +32,9 @@
 //103
 //104
 		1058C7A7FEA54F5311CA2CBB = {
-			expectedFileType = wrapper.framework;
 			fallbackIsa = PBXFileReference;
 			isa = PBXFrameworkReference;
+			lastKnownFileType = wrapper.framework;
 			name = Cocoa.framework;
 			path = /System/Library/Frameworks/Cocoa.framework;
 			refType = 0;
@@ -122,7 +122,7 @@
 				2A37F4C5FDCFA73011CA2CEA,
 				2A37F4C4FDCFA73011CA2CEA,
 				F5623AC2025E314E01A80004,
-				F56C596A031D23F801A80004,
+				2BE5B77A088311290006D1B3,
 				F508711B034B5F1901A80004,
 			);
 			isa = PBXGroup;
@@ -132,18 +132,18 @@
 			sourceTree = "<group>";
 		};
 		2A37F4C4FDCFA73011CA2CEA = {
-			expectedFileType = wrapper.framework;
 			fallbackIsa = PBXFileReference;
 			isa = PBXFrameworkReference;
+			lastKnownFileType = wrapper.framework;
 			name = AppKit.framework;
 			path = /System/Library/Frameworks/AppKit.framework;
 			refType = 0;
 			sourceTree = "<absolute>";
 		};
 		2A37F4C5FDCFA73011CA2CEA = {
-			expectedFileType = wrapper.framework;
 			fallbackIsa = PBXFileReference;
 			isa = PBXFrameworkReference;
+			lastKnownFileType = wrapper.framework;
 			name = Foundation.framework;
 			path = /System/Library/Frameworks/Foundation.framework;
 			refType = 0;
@@ -160,17 +160,17 @@
 //2B3
 //2B4
 		2B1A5FAE0532410400A80004 = {
-			expectedFileType = sourcecode.c.h;
 			fileEncoding = 4;
 			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
 			path = MWMockLinkable.h;
 			refType = 4;
 			sourceTree = "<group>";
 		};
 		2B1A5FAF0532410400A80004 = {
-			expectedFileType = sourcecode.c.objc;
 			fileEncoding = 4;
 			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.objc;
 			path = MWMockLinkable.m;
 			refType = 4;
 			sourceTree = "<group>";
@@ -191,17 +191,17 @@
 			};
 		};
 		2B1EB71A0680BA7700942DC2 = {
-			expectedFileType = sourcecode.c.h;
 			fileEncoding = 4;
 			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
 			path = MWTerminalPane.h;
 			refType = 4;
 			sourceTree = "<group>";
 		};
 		2B1EB71B0680BA7700942DC2 = {
-			expectedFileType = sourcecode.c.objc;
 			fileEncoding = 4;
 			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.objc;
 			path = MWTerminalPane.m;
 			refType = 4;
 			sourceTree = "<group>";
@@ -222,9 +222,9 @@
 			};
 		};
 		2B20DD4A04A8C90D00A80004 = {
-			expectedFileType = sourcecode.c.objc;
 			fileEncoding = 4;
 			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.objc;
 			path = MWScriptLanguage.m;
 			refType = 4;
 			sourceTree = "<group>";
@@ -236,9 +236,9 @@
 			};
 		};
 		2B41D54F04DC1BED00A80004 = {
-			expectedFileType = sourcecode.c.objc;
 			fileEncoding = 30;
 			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.objc;
 			path = MWAppRegistryTest.m;
 			refType = 4;
 			sourceTree = "<group>";
@@ -250,9 +250,9 @@
 			};
 		};
 		2B914F9E047EC05F00A80004 = {
-			expectedFileType = sourcecode.c.h;
 			fileEncoding = 4;
 			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
 			path = MWHasConfig.h;
 			refType = 4;
 			sourceTree = "<group>";
@@ -267,17 +267,17 @@
 			};
 		};
 		2B914FA0047FB56800A80004 = {
-			expectedFileType = sourcecode.c.h;
 			fileEncoding = 30;
 			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
 			path = MWIdentityLanguage.h;
 			refType = 4;
 			sourceTree = "<group>";
 		};
 		2B914FA1047FB56800A80004 = {
-			expectedFileType = sourcecode.c.objc;
 			fileEncoding = 30;
 			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.objc;
 			path = MWIdentityLanguage.m;
 			refType = 4;
 			sourceTree = "<group>";
@@ -298,9 +298,9 @@
 			};
 		};
 		2BA1004E06DFAAC70019EC02 = {
-			expectedFileType = text;
 			fileEncoding = 30;
 			isa = PBXFileReference;
+			lastKnownFileType = text;
 			name = "README before building.txt";
 			path = "/Volumes/Alpha/h1/Documents/DevX/MudWalker/README before building.txt";
 			refType = 0;
@@ -317,8 +317,8 @@
 			sourceTree = "<group>";
 		};
 		2BE5409D0477BE2900A80004 = {
-			expectedFileType = wrapper.nib;
 			isa = PBXFileReference;
+			lastKnownFileType = wrapper.nib;
 			name = English;
 			path = MWAppKit/Resources/English.lproj/MWScriptPanel.nib;
 			refType = 2;
@@ -331,17 +331,17 @@
 			};
 		};
 		2BE5409F0477BEB200A80004 = {
-			expectedFileType = sourcecode.c.objc;
 			fileEncoding = 30;
 			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.objc;
 			path = MWScriptPanelController.m;
 			refType = 4;
 			sourceTree = "<group>";
 		};
 		2BE540A00477BEB200A80004 = {
-			expectedFileType = sourcecode.c.h;
 			fileEncoding = 30;
 			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
 			path = MWScriptPanelController.h;
 			refType = 4;
 			sourceTree = "<group>";
@@ -360,10 +360,30 @@
 				);
 			};
 		};
+		2BE5B77A088311290006D1B3 = {
+			isa = PBXFileReference;
+			lastKnownFileType = wrapper.framework;
+			name = ObjcUnit.framework;
+			path = /Library/Frameworks/ObjcUnit.framework;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		2BE5B77B088311290006D1B3 = {
+			fileRef = 2BE5B77A088311290006D1B3;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		2BE5B77C088311290006D1B3 = {
+			fileRef = 2BE5B77A088311290006D1B3;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
 		2BEA74350484063400A80004 = {
-			expectedFileType = sourcecode.c.objc;
 			fileEncoding = 30;
 			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.objc;
 			path = MWTokenTest.m;
 			refType = 4;
 			sourceTree = "<group>";
@@ -375,9 +395,9 @@
 			};
 		};
 		2BF0312604CB146900A80004 = {
-			expectedFileType = sourcecode.c.objc;
 			fileEncoding = 4;
 			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.objc;
 			path = MWConfigScriptTextViewAdapterTest.m;
 			refType = 4;
 			sourceTree = "<group>";
@@ -466,9 +486,9 @@
 			remoteInfo = "Copy Frameworks";
 		};
 		2BF83714057B80D300BF4147 = {
-			expectedFileType = text.script.sh;
 			fileEncoding = 30;
 			isa = PBXFileReference;
+			lastKnownFileType = text.script.sh;
 			path = copyframeworks;
 			refType = 4;
 			sourceTree = "<group>";
@@ -491,9 +511,9 @@
 			sourceTree = "<group>";
 		};
 		2BFF6B950472706D00A80004 = {
-			expectedFileType = sourcecode.c.objc;
 			fileEncoding = 30;
 			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.objc;
 			path = MWScriptTest.m;
 			refType = 4;
 			sourceTree = "<group>";
@@ -505,17 +525,17 @@
 			};
 		};
 		2BFF6B970472738100A80004 = {
-			expectedFileType = sourcecode.c.h;
 			fileEncoding = 4;
 			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
 			path = MWScript.h;
 			refType = 4;
 			sourceTree = "<group>";
 		};
 		2BFF6B980472738100A80004 = {
-			expectedFileType = sourcecode.c.objc;
 			fileEncoding = 4;
 			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.objc;
 			path = MWScript.m;
 			refType = 4;
 			sourceTree = "<group>";
@@ -536,9 +556,9 @@
 			};
 		};
 		2BFF6BA2047293B600A80004 = {
-			expectedFileType = sourcecode.c.h;
 			fileEncoding = 4;
 			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
 			name = MWScriptLanguage.h;
 			path = MWFoundation/Sources/MWScriptLanguage.h;
 			refType = 2;
@@ -554,17 +574,17 @@
 			};
 		};
 		2BFF6BA70472AB9300A80004 = {
-			expectedFileType = sourcecode.c.h;
 			fileEncoding = 30;
 			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
 			path = MWScriptContexts.h;
 			refType = 4;
 			sourceTree = "<group>";
 		};
 		2BFF6BA80472AB9300A80004 = {
-			expectedFileType = sourcecode.c.objc;
 			fileEncoding = 30;
 			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.objc;
 			path = MWScriptContexts.m;
 			refType = 4;
 			sourceTree = "<group>";
@@ -631,17 +651,17 @@
 //F53
 //F54
 		F501337301C861EA01A80004 = {
-			expectedFileType = sourcecode.c.h;
 			fileEncoding = 30;
 			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
 			path = MWBSDSocketConnection.h;
 			refType = 4;
 			sourceTree = "<group>";
 		};
 		F501337401C861EA01A80004 = {
-			expectedFileType = sourcecode.c.objc;
 			fileEncoding = 30;
 			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.objc;
 			path = MWBSDSocketConnection.m;
 			refType = 4;
 			sourceTree = "<group>";
@@ -686,17 +706,17 @@
 			sourceTree = "<group>";
 		};
 		F508710D034AB11B01A80004 = {
-			expectedFileType = sourcecode.c.h;
 			fileEncoding = 30;
 			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
 			path = MWConfigViewAdapter.h;
 			refType = 4;
 			sourceTree = "<group>";
 		};
 		F508710E034AB11B01A80004 = {
-			expectedFileType = sourcecode.c.objc;
 			fileEncoding = 30;
 			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.objc;
 			path = MWConfigViewAdapter.m;
 			refType = 4;
 			sourceTree = "<group>";
@@ -717,32 +737,32 @@
 			};
 		};
 		F5087113034B5CAA01A80004 = {
-			expectedFileType = text.plist.xml;
 			fileEncoding = 30;
 			isa = PBXFileReference;
+			lastKnownFileType = text.plist.xml;
 			path = palette.table;
 			refType = 4;
 			sourceTree = "<group>";
 		};
 		F5087114034B5CAA01A80004 = {
-			expectedFileType = wrapper.nib;
 			isa = PBXFileReference;
+			lastKnownFileType = wrapper.nib;
 			path = MWAppKitPaletteNib.nib;
 			refType = 4;
 			sourceTree = "<group>";
 		};
 		F5087115034B5CAA01A80004 = {
-			expectedFileType = sourcecode.c.objc;
 			fileEncoding = 30;
 			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.objc;
 			path = MWAppKitPalette.m;
 			refType = 4;
 			sourceTree = "<group>";
 		};
 		F5087116034B5CAA01A80004 = {
-			expectedFileType = sourcecode.c.h;
 			fileEncoding = 30;
 			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
 			path = MWAppKitPalette.h;
 			refType = 4;
 			sourceTree = "<group>";
@@ -772,9 +792,9 @@
 			};
 		};
 		F508711B034B5F1901A80004 = {
-			expectedFileType = wrapper.framework;
 			fallbackIsa = PBXFileReference;
 			isa = PBXFrameworkReference;
+			lastKnownFileType = wrapper.framework;
 			name = InterfaceBuilder.framework;
 			path = /System/Library/Frameworks/InterfaceBuilder.framework;
 			refType = 0;
@@ -787,8 +807,8 @@
 			};
 		};
 		F508711D034B61AC01A80004 = {
-			expectedFileType = image.icns;
 			isa = PBXFileReference;
+			lastKnownFileType = image.icns;
 			path = MWAppKitPaletteIcon.icns;
 			refType = 4;
 			sourceTree = "<group>";
@@ -832,9 +852,9 @@
 			sourceTree = "<group>";
 		};
 		F519B9690348F87801A80004 = {
-			expectedFileType = sourcecode.c.objc;
 			fileEncoding = 30;
 			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.objc;
 			path = MWURLFormatterTest.m;
 			refType = 4;
 			sourceTree = "<group>";
@@ -955,49 +975,49 @@
 			sourceTree = "<group>";
 		};
 		F51C88EA01C53C2201A80004 = {
-			expectedFileType = sourcecode.c.h;
 			fileEncoding = 30;
 			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
 			path = MWLineData.h;
 			refType = 4;
 			sourceTree = "<group>";
 		};
 		F51C88EB01C53C2201A80004 = {
-			expectedFileType = sourcecode.c.objc;
 			fileEncoding = 30;
 			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.objc;
 			path = MWLineData.m;
 			refType = 4;
 			sourceTree = "<group>";
 		};
 		F51C88EC01C53C2201A80004 = {
-			expectedFileType = sourcecode.c.h;
 			fileEncoding = 30;
 			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
 			path = MWLineString.h;
 			refType = 4;
 			sourceTree = "<group>";
 		};
 		F51C88ED01C53C2201A80004 = {
-			expectedFileType = sourcecode.c.objc;
 			fileEncoding = 30;
 			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.objc;
 			path = MWLineString.m;
 			refType = 4;
 			sourceTree = "<group>";
 		};
 		F51C88EE01C53C2201A80004 = {
-			expectedFileType = sourcecode.c.h;
 			fileEncoding = 30;
 			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
 			path = MWToken.h;
 			refType = 4;
 			sourceTree = "<group>";
 		};
 		F51C88EF01C53C2201A80004 = {
-			expectedFileType = sourcecode.c.objc;
 			fileEncoding = 30;
 			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.objc;
 			path = MWToken.m;
 			refType = 4;
 			sourceTree = "<group>";
@@ -1048,9 +1068,9 @@
 			};
 		};
 		F51C88F601C578C001A80004 = {
-			expectedFileType = sourcecode.c.h;
 			fileEncoding = 30;
 			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
 			path = MWUtilities.h;
 			refType = 4;
 			sourceTree = "<group>";
@@ -1065,17 +1085,17 @@
 			};
 		};
 		F529E9CA01C66D5B01A80004 = {
-			expectedFileType = sourcecode.c.h;
 			fileEncoding = 30;
 			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
 			path = MWPlugin.h;
 			refType = 4;
 			sourceTree = "<group>";
 		};
 		F529E9CD01C6C20301A80004 = {
-			expectedFileType = sourcecode.c.h;
 			fileEncoding = 30;
 			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
 			path = MudWalker.h;
 			refType = 4;
 			sourceTree = "<group>";
@@ -1090,17 +1110,17 @@
 			};
 		};
 		F5462721032AE20E01A80004 = {
-			expectedFileType = sourcecode.c.h;
 			fileEncoding = 30;
 			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
 			path = MWURLFormatter.h;
 			refType = 4;
 			sourceTree = "<group>";
 		};
 		F5462722032AE20E01A80004 = {
-			expectedFileType = sourcecode.c.objc;
 			fileEncoding = 30;
 			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.objc;
 			path = MWURLFormatter.m;
 			refType = 4;
 			sourceTree = "<group>";
@@ -1121,15 +1141,15 @@
 			};
 		};
 		F554181A0280952901A80004 = {
-			expectedFileType = sourcecode.c.objc;
 			fileEncoding = 30;
 			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.objc;
 			path = MWFoundationTestMain.m;
 			refType = 4;
 			sourceTree = "<group>";
 		};
 		F55418270280A8AD01A80004 = {
-			expectedFileType = "compiled.mach-o.executable";
+			explicitFileType = "compiled.mach-o.executable";
 			fallbackIsa = PBXFileReference;
 			isa = PBXExecutableFileReference;
 			path = "Test MWFoundation";
@@ -1144,6 +1164,7 @@
 				F554182F0280A8AD01A80004,
 			);
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = /Users/kpreid/Library/Frameworks;
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = "";
 				OTHER_REZFLAGS = "";
@@ -1200,8 +1221,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				F554182E0280A8AD01A80004,
-				F56C596C031D23F801A80004,
 				F56C5976031D560E01A80004,
+				2BE5B77B088311290006D1B3,
 			);
 			isa = PBXFrameworksBuildPhase;
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1220,9 +1241,9 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		F556D05F0333733F01A80004 = {
-			expectedFileType = sourcecode.c.objc;
 			fileEncoding = 30;
 			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.objc;
 			path = MWRegistryTest.m;
 			refType = 4;
 			sourceTree = "<group>";
@@ -1234,39 +1255,39 @@
 			};
 		};
 		F558C95F01F65BEC01A80004 = {
-			expectedFileType = sourcecode.c.h;
 			fileEncoding = 30;
 			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
 			path = MWGenericTableViewDataSource.h;
 			refType = 4;
 			sourceTree = "<group>";
 		};
 		F558C96001F65BEC01A80004 = {
-			expectedFileType = sourcecode.c.objc;
 			fileEncoding = 30;
 			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.objc;
 			path = MWGenericTableViewDataSource.m;
 			refType = 4;
 			sourceTree = "<group>";
 		};
 		F558C96301F66C6601A80004 = {
-			expectedFileType = sourcecode.c.h;
 			fileEncoding = 30;
 			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
 			path = MWLayoutView.h;
 			refType = 4;
 			sourceTree = "<group>";
 		};
 		F558C96401F66C6601A80004 = {
-			expectedFileType = sourcecode.c.objc;
 			fileEncoding = 30;
 			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.objc;
 			path = MWLayoutView.m;
 			refType = 4;
 			sourceTree = "<group>";
 		};
 		F55C41920241631B01A80004 = {
-			expectedFileType = wrapper.framework;
+			explicitFileType = wrapper.framework;
 			fallbackIsa = PBXFileReference;
 			isa = PBXFrameworkReference;
 			path = MWAppKit.framework;
@@ -1467,9 +1488,9 @@
 			sourceTree = "<group>";
 		};
 		F55C419F0241660901A80004 = {
-			expectedFileType = sourcecode.c.h;
 			fileEncoding = 30;
 			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
 			path = MWAppKit.h;
 			refType = 4;
 			sourceTree = "<group>";
@@ -1484,25 +1505,25 @@
 			};
 		};
 		F55D1B8201C3B68901A80004 = {
-			expectedFileType = sourcecode.c.h;
 			fileEncoding = 30;
 			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
 			path = MWToolbars.h;
 			refType = 4;
 			sourceTree = "<group>";
 		};
 		F55E850D02479C4301A80004 = {
-			expectedFileType = sourcecode.c.h;
 			fileEncoding = 30;
 			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
 			path = MWTeeFilter.h;
 			refType = 4;
 			sourceTree = "<group>";
 		};
 		F55E850E02479C4301A80004 = {
-			expectedFileType = sourcecode.c.objc;
 			fileEncoding = 30;
 			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.objc;
 			path = MWTeeFilter.m;
 			refType = 4;
 			sourceTree = "<group>";
@@ -1523,17 +1544,17 @@
 			};
 		};
 		F55E8511024822D801A80004 = {
-			expectedFileType = sourcecode.c.h;
 			fileEncoding = 30;
 			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
 			path = MWLogger.h;
 			refType = 4;
 			sourceTree = "<group>";
 		};
 		F55E8512024822D801A80004 = {
-			expectedFileType = sourcecode.c.objc;
 			fileEncoding = 30;
 			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.objc;
 			path = MWLogger.m;
 			refType = 4;
 			sourceTree = "<group>";
@@ -1587,17 +1608,17 @@
 			targetProxy = 2BF836FF057B805500BF4147;
 		};
 		F55EAAB50263BEC801A80004 = {
-			expectedFileType = sourcecode.c.h;
 			fileEncoding = 30;
 			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
 			path = MWNSFileHandleConnection.h;
 			refType = 4;
 			sourceTree = "<group>";
 		};
 		F55EAAB60263BEC801A80004 = {
-			expectedFileType = sourcecode.c.objc;
 			fileEncoding = 30;
 			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.objc;
 			path = MWNSFileHandleConnection.m;
 			refType = 4;
 			sourceTree = "<group>";
@@ -1618,33 +1639,33 @@
 			};
 		};
 		F55EE6D0024246EE01A80004 = {
-			expectedFileType = sourcecode.c.objc;
 			fileEncoding = 30;
 			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.objc;
 			path = MWOutputTextView.m;
 			refType = 4;
 			sourceTree = "<group>";
 		};
 		F55EE6D1024246EE01A80004 = {
-			expectedFileType = sourcecode.c.h;
 			fileEncoding = 30;
 			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
 			path = MWValidatedButton.h;
 			refType = 4;
 			sourceTree = "<group>";
 		};
 		F55EE6D3024246EE01A80004 = {
-			expectedFileType = sourcecode.c.objc;
 			fileEncoding = 30;
 			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.objc;
 			path = MWValidatedButton.m;
 			refType = 4;
 			sourceTree = "<group>";
 		};
 		F55EE6D5024246EE01A80004 = {
-			expectedFileType = sourcecode.c.h;
 			fileEncoding = 30;
 			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
 			path = MWOutputTextView.h;
 			refType = 4;
 			sourceTree = "<group>";
@@ -1680,17 +1701,17 @@
 			};
 		};
 		F55EE6DC024293B301A80004 = {
-			expectedFileType = sourcecode.c.h;
 			fileEncoding = 30;
 			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
 			path = MWRegistry.h;
 			refType = 4;
 			sourceTree = "<group>";
 		};
 		F55EE6DD024293B301A80004 = {
-			expectedFileType = sourcecode.c.objc;
 			fileEncoding = 30;
 			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.objc;
 			path = MWRegistry.m;
 			refType = 4;
 			sourceTree = "<group>";
@@ -1720,17 +1741,17 @@
 			};
 		};
 		F55EE6E50242E19401A80004 = {
-			expectedFileType = sourcecode.c.h;
 			fileEncoding = 30;
 			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
 			path = MWConfigPane.h;
 			refType = 4;
 			sourceTree = "<group>";
 		};
 		F55EE6E60242E19401A80004 = {
-			expectedFileType = sourcecode.c.objc;
 			fileEncoding = 30;
 			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.objc;
 			path = MWConfigPane.m;
 			refType = 4;
 			sourceTree = "<group>";
@@ -1751,9 +1772,9 @@
 			};
 		};
 		F55EE6EA0242E54401A80004 = {
-			expectedFileType = wrapper.framework;
 			fallbackIsa = PBXFileReference;
 			isa = PBXFrameworkReference;
+			lastKnownFileType = wrapper.framework;
 			name = PreferencePanes.framework;
 			path = /System/Library/Frameworks/PreferencePanes.framework;
 			refType = 0;
@@ -1775,17 +1796,17 @@
 			};
 		};
 		F55F619D0245147701A80004 = {
-			expectedFileType = sourcecode.c.h;
 			fileEncoding = 30;
 			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
 			path = MWCustomBindingsTextView.h;
 			refType = 4;
 			sourceTree = "<group>";
 		};
 		F55F619E0245147701A80004 = {
-			expectedFileType = sourcecode.c.objc;
 			fileEncoding = 30;
 			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.objc;
 			path = MWCustomBindingsTextView.m;
 			refType = 4;
 			sourceTree = "<group>";
@@ -1818,41 +1839,41 @@
 			sourceTree = SOURCE_ROOT;
 		};
 		F5600FC702BCC94A01A80004 = {
-			expectedFileType = text;
 			fileEncoding = 30;
 			isa = PBXFileReference;
+			lastKnownFileType = text;
 			path = "To Do.txt";
 			refType = 4;
 			sourceTree = "<group>";
 		};
 		F5600FC802BCC94A01A80004 = {
-			expectedFileType = text;
 			fileEncoding = 30;
 			isa = PBXFileReference;
+			lastKnownFileType = text;
 			path = "Change Log.txt";
 			refType = 4;
 			sourceTree = "<group>";
 		};
 		F5600FC902BCC94A01A80004 = {
-			expectedFileType = text;
 			fileEncoding = 30;
 			isa = PBXFileReference;
+			lastKnownFileType = text;
 			path = "Architecture & Other Notes.txt";
 			refType = 4;
 			sourceTree = "<group>";
 		};
 		F56027490246250D01A80004 = {
-			expectedFileType = sourcecode.c.h;
 			fileEncoding = 30;
 			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
 			path = MWNSStringAdditions.h;
 			refType = 4;
 			sourceTree = "<group>";
 		};
 		F560274A0246250D01A80004 = {
-			expectedFileType = sourcecode.c.objc;
 			fileEncoding = 30;
 			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.objc;
 			path = MWNSStringAdditions.m;
 			refType = 4;
 			sourceTree = "<group>";
@@ -1873,9 +1894,9 @@
 			};
 		};
 		F5623AC2025E314E01A80004 = {
-			expectedFileType = wrapper.framework;
 			fallbackIsa = PBXFileReference;
 			isa = PBXFrameworkReference;
+			lastKnownFileType = wrapper.framework;
 			name = CoreFoundation.framework;
 			path = /System/Library/Frameworks/CoreFoundation.framework;
 			refType = 0;
@@ -1906,17 +1927,17 @@
 			sourceTree = "<group>";
 		};
 		F5623AC5025E351101A80004 = {
-			expectedFileType = sourcecode.c.h;
 			fileEncoding = 30;
 			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
 			path = MWAbstractConnection.h;
 			refType = 4;
 			sourceTree = "<group>";
 		};
 		F5623AC6025E351201A80004 = {
-			expectedFileType = sourcecode.c.objc;
 			fileEncoding = 30;
 			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.objc;
 			path = MWAbstractConnection.m;
 			refType = 4;
 			sourceTree = "<group>";
@@ -1937,17 +1958,17 @@
 			};
 		};
 		F5623AC9025E37EE01A80004 = {
-			expectedFileType = sourcecode.c.h;
 			fileEncoding = 30;
 			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
 			path = MWTCPConnection.h;
 			refType = 4;
 			sourceTree = "<group>";
 		};
 		F5623ACA025E37EE01A80004 = {
-			expectedFileType = sourcecode.c.objc;
 			fileEncoding = 30;
 			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.objc;
 			path = MWTCPConnection.m;
 			refType = 4;
 			sourceTree = "<group>";
@@ -1968,17 +1989,17 @@
 			};
 		};
 		F5623ACD025E4B6B01A80004 = {
-			expectedFileType = sourcecode.c.h;
 			fileEncoding = 30;
 			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
 			path = MWCFSocketConnection.h;
 			refType = 4;
 			sourceTree = "<group>";
 		};
 		F5623ACE025E4B6B01A80004 = {
-			expectedFileType = sourcecode.c.objc;
 			fileEncoding = 30;
 			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.objc;
 			path = MWCFSocketConnection.m;
 			refType = 4;
 			sourceTree = "<group>";
@@ -1999,9 +2020,9 @@
 			};
 		};
 		F5623AD1025E809F01A80004 = {
-			expectedFileType = text.plist.strings;
 			fileEncoding = 10;
 			isa = PBXFileReference;
+			lastKnownFileType = text.plist.strings;
 			lineEnding = 0;
 			name = Localizable.strings;
 			path = English.lproj/Localizable.strings;
@@ -2077,9 +2098,9 @@
 			};
 		};
 		F565AA9901CBA81601A80004 = {
-			expectedFileType = text;
 			fileEncoding = 30;
 			isa = PBXFileReference;
+			lastKnownFileType = text;
 			path = MWConstants.tokens;
 			refType = 4;
 			sourceTree = "<group>";
@@ -2138,17 +2159,17 @@
 			};
 		};
 		F567087102C210C801A80004 = {
-			expectedFileType = sourcecode.c.h;
 			fileEncoding = 30;
 			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
 			path = MWConfigTree.h;
 			refType = 4;
 			sourceTree = "<group>";
 		};
 		F567087202C210C801A80004 = {
-			expectedFileType = sourcecode.c.objc;
 			fileEncoding = 30;
 			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.objc;
 			path = MWConfigTree.m;
 			refType = 4;
 			sourceTree = "<group>";
@@ -2188,17 +2209,17 @@
 			sourceTree = "<group>";
 		};
 		F567087602C2197301A80004 = {
-			expectedFileType = sourcecode.c.h;
 			fileEncoding = 30;
 			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
 			path = MWConfigPath.h;
 			refType = 4;
 			sourceTree = "<group>";
 		};
 		F567087702C2197301A80004 = {
-			expectedFileType = sourcecode.c.objc;
 			fileEncoding = 30;
 			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.objc;
 			path = MWConfigPath.m;
 			refType = 4;
 			sourceTree = "<group>";
@@ -2234,7 +2255,7 @@
 			sourceTree = "<group>";
 		};
 		F568144602798ABA01A80004 = {
-			expectedFileType = wrapper.application;
+			explicitFileType = wrapper.application;
 			fallbackIsa = PBXFileReference;
 			isa = PBXApplicationReference;
 			path = "Test MWAppKit.app";
@@ -2250,6 +2271,7 @@
 				F566A466033E360B01A80004,
 			);
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = /Users/kpreid/Library/Frameworks;
 				OPTIMIZATION_CFLAGS = "-O0";
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = "";
@@ -2342,7 +2364,7 @@
 				F5783912039D076D01A80004,
 				F568145002798B3F01A80004,
 				F568145302798E7B01A80004,
-				F56C596B031D23F801A80004,
+				2BE5B77C088311290006D1B3,
 			);
 			isa = PBXFrameworksBuildPhase;
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2354,9 +2376,9 @@
 			};
 		};
 		F568145102798E5601A80004 = {
-			expectedFileType = sourcecode.c.objc;
 			fileEncoding = 30;
 			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.objc;
 			path = ApplicationMain.m;
 			refType = 4;
 			sourceTree = "<group>";
@@ -2374,8 +2396,8 @@
 			};
 		};
 		F568145402798FC601A80004 = {
-			expectedFileType = wrapper.nib;
 			isa = PBXFileReference;
+			lastKnownFileType = wrapper.nib;
 			path = MainMenu.nib;
 			refType = 4;
 			sourceTree = "<group>";
@@ -2402,17 +2424,17 @@
 			};
 		};
 		F56814580279B7AA01A80004 = {
-			expectedFileType = sourcecode.c.h;
 			fileEncoding = 30;
 			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
 			path = MWTGraphViewWinController.h;
 			refType = 4;
 			sourceTree = "<group>";
 		};
 		F56814590279B7AA01A80004 = {
-			expectedFileType = sourcecode.c.objc;
 			fileEncoding = 30;
 			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.objc;
 			path = MWTGraphViewWinController.m;
 			refType = 4;
 			sourceTree = "<group>";
@@ -2430,17 +2452,17 @@
 			};
 		};
 		F56860B80258CD3101A80004 = {
-			expectedFileType = sourcecode.c.h;
 			fileEncoding = 30;
 			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
 			path = MWNSTextStorageAdditions.h;
 			refType = 4;
 			sourceTree = "<group>";
 		};
 		F56860B90258CD3101A80004 = {
-			expectedFileType = sourcecode.c.objc;
 			fileEncoding = 30;
 			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.objc;
 			path = MWNSTextStorageAdditions.m;
 			refType = 4;
 			sourceTree = "<group>";
@@ -2490,33 +2512,33 @@
 			sourceTree = "<group>";
 		};
 		F56979E501B9377C01A80004 = {
-			expectedFileType = sourcecode.c.h;
 			fileEncoding = 30;
 			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
 			path = MWConcreteLinkable.h;
 			refType = 4;
 			sourceTree = "<group>";
 		};
 		F56979E601B9377C01A80004 = {
-			expectedFileType = sourcecode.c.objc;
 			fileEncoding = 30;
 			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.objc;
 			path = MWConcreteLinkable.m;
 			refType = 4;
 			sourceTree = "<group>";
 		};
 		F569D930033D135501A80004 = {
-			expectedFileType = sourcecode.c.h;
 			fileEncoding = 30;
 			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
 			path = MWImageAndTextCell.h;
 			refType = 4;
 			sourceTree = "<group>";
 		};
 		F569D931033D135501A80004 = {
-			expectedFileType = sourcecode.c.objc;
 			fileEncoding = 30;
 			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.objc;
 			path = MWImageAndTextCell.m;
 			refType = 4;
 			sourceTree = "<group>";
@@ -2537,17 +2559,17 @@
 			};
 		};
 		F569DAD702E76C7B01A80004 = {
-			expectedFileType = sourcecode.c.h;
 			fileEncoding = 30;
 			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
 			path = MWNSScannerAdditions.h;
 			refType = 4;
 			sourceTree = "<group>";
 		};
 		F569DAD802E76C7B01A80004 = {
-			expectedFileType = sourcecode.c.objc;
 			fileEncoding = 30;
 			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.objc;
 			path = MWNSScannerAdditions.m;
 			refType = 4;
 			sourceTree = "<group>";
@@ -2584,17 +2606,17 @@
 			};
 		};
 		F56B531B033D639901A80004 = {
-			expectedFileType = sourcecode.c.h;
 			fileEncoding = 30;
 			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
 			path = MWConfigDirectoryEditPane.h;
 			refType = 4;
 			sourceTree = "<group>";
 		};
 		F56B531C033D639901A80004 = {
-			expectedFileType = sourcecode.c.objc;
 			fileEncoding = 30;
 			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.objc;
 			path = MWConfigDirectoryEditPane.m;
 			refType = 4;
 			sourceTree = "<group>";
@@ -2615,17 +2637,17 @@
 			};
 		};
 		F56B531F033D641701A80004 = {
-			expectedFileType = sourcecode.c.h;
 			fileEncoding = 30;
 			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
 			path = MWTableViewForDirectoryEdit.h;
 			refType = 4;
 			sourceTree = "<group>";
 		};
 		F56B5320033D641701A80004 = {
-			expectedFileType = sourcecode.c.objc;
 			fileEncoding = 30;
 			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.objc;
 			path = MWTableViewForDirectoryEdit.m;
 			refType = 4;
 			sourceTree = "<group>";
@@ -2645,27 +2667,6 @@
 			settings = {
 			};
 		};
-		F56C596A031D23F801A80004 = {
-			expectedFileType = file;
-			fallbackIsa = PBXFileReference;
-			isa = PBXFrameworkReference;
-			name = ObjcUnit.framework;
-			path = /Library/Frameworks/ObjcUnit.framework;
-			refType = 0;
-			sourceTree = "<absolute>";
-		};
-		F56C596B031D23F801A80004 = {
-			fileRef = F56C596A031D23F801A80004;
-			isa = PBXBuildFile;
-			settings = {
-			};
-		};
-		F56C596C031D23F801A80004 = {
-			fileRef = F56C596A031D23F801A80004;
-			isa = PBXBuildFile;
-			settings = {
-			};
-		};
 		F56C596D031D291301A80004 = {
 			children = (
 				F55E8511024822D801A80004,
@@ -2681,9 +2682,9 @@
 			sourceTree = "<group>";
 		};
 		F56C596E031D294401A80004 = {
-			expectedFileType = sourcecode.c.objc;
 			fileEncoding = 30;
 			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.objc;
 			path = MWConfigTreeTest.m;
 			refType = 4;
 			sourceTree = "<group>";
@@ -2695,9 +2696,9 @@
 			};
 		};
 		F56C5974031D4C9701A80004 = {
-			expectedFileType = sourcecode.c.h;
 			fileEncoding = 30;
 			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
 			path = MWConfigSupplier.h;
 			refType = 4;
 			sourceTree = "<group>";
@@ -2718,9 +2719,9 @@
 			};
 		};
 		F56C5977031D5D1701A80004 = {
-			expectedFileType = sourcecode.c.objc;
 			fileEncoding = 30;
 			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.objc;
 			path = MWConfigStackerTest.m;
 			refType = 4;
 			sourceTree = "<group>";
@@ -2732,17 +2733,17 @@
 			};
 		};
 		F56C597B031DA6BD01A80004 = {
-			expectedFileType = sourcecode.c.h;
 			fileEncoding = 30;
 			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
 			path = MWConfigStacker.h;
 			refType = 4;
 			sourceTree = "<group>";
 		};
 		F56C597C031DA6BD01A80004 = {
-			expectedFileType = sourcecode.c.objc;
 			fileEncoding = 30;
 			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.objc;
 			path = MWConfigStacker.m;
 			refType = 4;
 			sourceTree = "<group>";
@@ -2773,8 +2774,8 @@
 			targetProxy = 2BF83700057B805500BF4147;
 		};
 		F56C5B14034CE81101A80004 = {
-			expectedFileType = wrapper.nib;
 			isa = PBXFileReference;
+			lastKnownFileType = wrapper.nib;
 			path = MWConfigViewAdapterInspectorNib.nib;
 			refType = 4;
 			sourceTree = "<group>";
@@ -2786,17 +2787,17 @@
 			};
 		};
 		F56C5B16034CE86E01A80004 = {
-			expectedFileType = sourcecode.c.h;
 			fileEncoding = 30;
 			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
 			path = MWConfigViewAdapterInspector.h;
 			refType = 4;
 			sourceTree = "<group>";
 		};
 		F56C5B17034CE86E01A80004 = {
-			expectedFileType = sourcecode.c.objc;
 			fileEncoding = 30;
 			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.objc;
 			path = MWConfigViewAdapterInspector.m;
 			refType = 4;
 			sourceTree = "<group>";
@@ -2814,9 +2815,9 @@
 			};
 		};
 		F56C5B1F034D19F601A80004 = {
-			expectedFileType = text;
 			fileEncoding = 30;
 			isa = PBXFileReference;
+			lastKnownFileType = text;
 			path = MWConfigViewAdapter.ibclassdescription;
 			refType = 4;
 			sourceTree = "<group>";
@@ -2828,17 +2829,17 @@
 			};
 		};
 		F56C5B25034DF19C01A80004 = {
-			expectedFileType = sourcecode.c.objc;
 			fileEncoding = 30;
 			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.objc;
 			path = MWURLLaunchRequest.m;
 			refType = 4;
 			sourceTree = "<group>";
 		};
 		F56C5B26034DF19C01A80004 = {
-			expectedFileType = sourcecode.c.h;
 			fileEncoding = 30;
 			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
 			path = MWURLLaunchRequest.h;
 			refType = 4;
 			sourceTree = "<group>";
@@ -2869,8 +2870,8 @@
 			sourceTree = "<group>";
 		};
 		F56C5B2A034DF1D601A80004 = {
-			expectedFileType = wrapper.nib;
 			isa = PBXFileReference;
+			lastKnownFileType = wrapper.nib;
 			name = English;
 			path = MWAppKit/Resources/English.lproj/MWURLLaunchRequest.nib;
 			refType = 2;
@@ -2902,9 +2903,6 @@
 			name = "Copy Frameworks";
 			passBuildSettingsInEnvironment = 1;
 			productName = "Copy Frameworks";
-			settingsToExpand = 0;
-			settingsToPassInEnvironment = 0;
-			settingsToPassOnCommandLine = 0;
 		};
 		F56F0408034F426A01A80004 = {
 			isa = PBXTargetDependency;
@@ -2926,17 +2924,17 @@
 			sourceTree = "<group>";
 		};
 		F5707F5703269A6701A80004 = {
-			expectedFileType = sourcecode.c.h;
 			fileEncoding = 30;
 			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
 			path = MWRawConfigPane.h;
 			refType = 4;
 			sourceTree = "<group>";
 		};
 		F5707F5803269A6701A80004 = {
-			expectedFileType = sourcecode.c.objc;
 			fileEncoding = 30;
 			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.objc;
 			path = MWRawConfigPane.m;
 			refType = 4;
 			sourceTree = "<group>";
@@ -2957,8 +2955,8 @@
 			};
 		};
 		F5707F5B03269A7401A80004 = {
-			expectedFileType = wrapper.nib;
 			isa = PBXFileReference;
+			lastKnownFileType = wrapper.nib;
 			name = MWRawConfigPane.nib;
 			path = English.lproj/MWRawConfigPane.nib;
 			refType = 4;
@@ -2975,9 +2973,9 @@
 			sourceTree = "<group>";
 		};
 		F5707F6103269D3601A80004 = {
-			expectedFileType = text.plist.strings;
 			fileEncoding = 10;
 			isa = PBXFileReference;
+			lastKnownFileType = text.plist.strings;
 			lineEnding = 0;
 			name = English;
 			path = English.lproj/Localizable.strings;
@@ -3001,41 +2999,41 @@
 			sourceTree = "<group>";
 		};
 		F570FC590221745101A80004 = {
-			expectedFileType = sourcecode.c.h;
 			fileEncoding = 30;
 			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
 			path = MWExtInput.h;
 			refType = 4;
 			sourceTree = "<group>";
 		};
 		F575109401C082E701A80004 = {
-			expectedFileType = sourcecode.c.h;
 			fileEncoding = 30;
 			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
 			path = MWLinearLayoutView.h;
 			refType = 4;
 			sourceTree = "<group>";
 		};
 		F575109501C082E701A80004 = {
-			expectedFileType = sourcecode.c.objc;
 			fileEncoding = 30;
 			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.objc;
 			path = MWLinearLayoutView.m;
 			refType = 4;
 			sourceTree = "<group>";
 		};
 		F57838FA039C2F6A01A80004 = {
-			expectedFileType = sourcecode.c.objc;
 			fileEncoding = 30;
 			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.objc;
 			path = MWKeyCapturingPanel.m;
 			refType = 4;
 			sourceTree = "<group>";
 		};
 		F57838FB039C2F6A01A80004 = {
-			expectedFileType = sourcecode.c.h;
 			fileEncoding = 30;
 			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
 			path = MWKeyCapturingPanel.h;
 			refType = 4;
 			sourceTree = "<group>";
@@ -3051,8 +3049,8 @@
 			sourceTree = "<group>";
 		};
 		F57838FD039C2F6A01A80004 = {
-			expectedFileType = wrapper.nib;
 			isa = PBXFileReference;
+			lastKnownFileType = wrapper.nib;
 			name = English;
 			path = MWAppKit/Resources/English.lproj/MWKeyCapturingPanel.nib;
 			refType = 2;
@@ -3080,17 +3078,17 @@
 			};
 		};
 		F5783903039C312201A80004 = {
-			expectedFileType = sourcecode.c.h;
 			fileEncoding = 30;
 			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
 			path = MWAppUtilities.h;
 			refType = 4;
 			sourceTree = "<group>";
 		};
 		F5783904039C312201A80004 = {
-			expectedFileType = sourcecode.c.objc;
 			fileEncoding = 30;
 			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.objc;
 			path = MWAppUtilities.m;
 			refType = 4;
 			sourceTree = "<group>";
@@ -3111,17 +3109,17 @@
 			};
 		};
 		F5783907039C37C401A80004 = {
-			expectedFileType = sourcecode.c.h;
 			fileEncoding = 30;
 			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
 			path = MWKeyCodeCell.h;
 			refType = 4;
 			sourceTree = "<group>";
 		};
 		F5783908039C37C401A80004 = {
-			expectedFileType = sourcecode.c.objc;
 			fileEncoding = 30;
 			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.objc;
 			path = MWKeyCodeCell.m;
 			refType = 4;
 			sourceTree = "<group>";
@@ -3151,17 +3149,17 @@
 			};
 		};
 		F578390E039D02C201A80004 = {
-			expectedFileType = sourcecode.c.h;
 			fileEncoding = 30;
 			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
 			path = MWMiscTestController.h;
 			refType = 4;
 			sourceTree = "<group>";
 		};
 		F578390F039D02C201A80004 = {
-			expectedFileType = sourcecode.c.objc;
 			fileEncoding = 30;
 			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.objc;
 			path = MWMiscTestController.m;
 			refType = 4;
 			sourceTree = "<group>";
@@ -3185,17 +3183,17 @@
 			};
 		};
 		F5790AE001BA834A01A80004 = {
-			expectedFileType = sourcecode.c.h;
 			fileEncoding = 30;
 			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
 			path = MWLinkPruner.h;
 			refType = 4;
 			sourceTree = "<group>";
 		};
 		F5790AE101BA834A01A80004 = {
-			expectedFileType = sourcecode.c.objc;
 			fileEncoding = 30;
 			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.objc;
 			path = MWLinkPruner.m;
 			refType = 4;
 			sourceTree = "<group>";
@@ -3219,7 +3217,7 @@
 			sourceTree = "<group>";
 		};
 		F57A0252031FD2CF01A80004 = {
-			expectedFileType = wrapper.cfbundle;
+			explicitFileType = wrapper.cfbundle;
 			fallbackIsa = PBXFileReference;
 			isa = PBXBundleReference;
 			path = "MWAppKit Palette.palette";
@@ -3345,9 +3343,9 @@
 			};
 		};
 		F57DDA59032FADA301A80004 = {
-			expectedFileType = sourcecode.c.objc;
 			fileEncoding = 30;
 			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.objc;
 			path = MWNSStringAdditionsTest.m;
 			refType = 4;
 			sourceTree = "<group>";
@@ -3359,17 +3357,17 @@
 			};
 		};
 		F57FD28602E47E5401A80004 = {
-			expectedFileType = sourcecode.c.h;
 			fileEncoding = 30;
 			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
 			path = MWURLLoadingImageView.h;
 			refType = 4;
 			sourceTree = "<group>";
 		};
 		F57FD28702E47E5401A80004 = {
-			expectedFileType = sourcecode.c.objc;
 			fileEncoding = 30;
 			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.objc;
 			path = MWURLLoadingImageView.m;
 			refType = 4;
 			sourceTree = "<group>";
@@ -3399,25 +3397,25 @@
 			};
 		};
 		F5A5892E02622B5B01A80004 = {
-			expectedFileType = sourcecode.c.h;
 			fileEncoding = 30;
 			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
 			path = MWGraphView.h;
 			refType = 4;
 			sourceTree = "<group>";
 		};
 		F5A5892F02622B5B01A80004 = {
-			expectedFileType = sourcecode.c.objc;
 			fileEncoding = 30;
 			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.objc;
 			path = MWGraphView.m;
 			refType = 4;
 			sourceTree = "<group>";
 		};
 		F5C7E7AC03479E0F01A80004 = {
-			expectedFileType = sourcecode.c.objc;
 			fileEncoding = 30;
 			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.objc;
 			path = MWNSScannerAdditionsTest.m;
 			refType = 4;
 			sourceTree = "<group>";
@@ -3429,17 +3427,17 @@
 			};
 		};
 		F5C7E7B20348889301A80004 = {
-			expectedFileType = sourcecode.c.h;
 			fileEncoding = 30;
 			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
 			path = MWFontSelectorView.h;
 			refType = 4;
 			sourceTree = "<group>";
 		};
 		F5C7E7B30348889301A80004 = {
-			expectedFileType = sourcecode.c.objc;
 			fileEncoding = 30;
 			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.objc;
 			path = MWFontSelectorView.m;
 			refType = 4;
 			sourceTree = "<group>";
@@ -3460,17 +3458,17 @@
 			};
 		};
 		F5CF515B02E9E43E01A80004 = {
-			expectedFileType = sourcecode.c.h;
 			fileEncoding = 30;
 			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
 			path = MWToolbarController.h;
 			refType = 4;
 			sourceTree = "<group>";
 		};
 		F5CF515C02E9E43E01A80004 = {
-			expectedFileType = sourcecode.c.objc;
 			fileEncoding = 30;
 			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.objc;
 			path = MWToolbarController.m;
 			refType = 4;
 			sourceTree = "<group>";
@@ -3506,23 +3504,23 @@
 			sourceTree = "<group>";
 		};
 		F5D2D9E6018858A601A80004 = {
-			expectedFileType = sourcecode.c.h;
 			fileEncoding = 30;
 			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
 			path = MWLink.h;
 			refType = 4;
 			sourceTree = "<group>";
 		};
 		F5D2D9EA018859CE01A80004 = {
-			expectedFileType = sourcecode.c.objc;
 			fileEncoding = 30;
 			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.objc;
 			path = MWLink.m;
 			refType = 4;
 			sourceTree = "<group>";
 		};
 		F5E70BB001C5335801A80004 = {
-			expectedFileType = wrapper.framework;
+			explicitFileType = wrapper.framework;
 			fallbackIsa = PBXFileReference;
 			isa = PBXFrameworkReference;
 			path = MudWalker.framework;
@@ -3693,23 +3691,23 @@
 			sourceTree = SOURCE_ROOT;
 		};
 		F5ECD286021AC01701A80004 = {
-			expectedFileType = sourcecode.c.h;
 			fileEncoding = 30;
 			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
 			path = LookupHandler.h;
 			refType = 4;
 			sourceTree = "<group>";
 		};
 		F5ECD287021AC01701A80004 = {
-			expectedFileType = sourcecode.c.objc;
 			fileEncoding = 30;
 			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.objc;
 			path = LookupHandler.m;
 			refType = 4;
 			sourceTree = "<group>";
 		};
 		F5ECD288021AC01701A80004 = {
-			expectedFileType = "compiled.mach-o.executable";
+			explicitFileType = "compiled.mach-o.executable";
 			fallbackIsa = PBXFileReference;
 			isa = PBXExecutableFileReference;
 			path = LookupHandler;

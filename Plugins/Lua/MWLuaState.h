@@ -7,8 +7,7 @@
 \*/
 
 #import <Foundation/Foundation.h>
-
-typedef struct lua_State lua_State;
+#include "lua.h"
 
 @class MWScriptContexts;
 
