@@ -302,9 +302,9 @@
 			isa = PBXFileReference;
 			lastKnownFileType = text;
 			name = "README before building.txt";
-			path = "/Volumes/Alpha/h1/Documents/DevX/MudWalker/README before building.txt";
-			refType = 0;
-			sourceTree = "<absolute>";
+			path = "../README before building.txt";
+			refType = 4;
+			sourceTree = "<group>";
 		};
 		2BE5409C0477BE2900A80004 = {
 			children = (
