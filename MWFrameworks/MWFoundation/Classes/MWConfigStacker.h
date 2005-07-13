@@ -1,6 +1,6 @@
 /*\  
  * MudWalker Source
- * Copyright 2001-2004 Kevin Reid.
+ * Copyright 2001-2005 Kevin Reid.
  * This source code and related files are distributed under the MIT License, as described in the document named "License.txt" which should be provided with this source distribution.
  * 
  * MWConfigStacker provides the ability to view multiple MWConfigSuppliers as one, allowing 'inheritance' of configuration values. Each stacker holds two suppliers. To stack more levels, use a chain of stackers.

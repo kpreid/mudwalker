@@ -1,6 +1,6 @@
 /*\  
  * MudWalker Source
- * Copyright 2001-2004 Kevin Reid.
+ * Copyright 2001-2005 Kevin Reid.
  * This source code and related files are distributed under the MIT License, as described in the document named "License.txt" which should be provided with this source distribution.
  * 
  * A MWLineString is an attributed string which is a single line of text. It additionally has a 'role' value which is essentially another attribute, except that it can have a value even on a zero-length string. MWLineStrings should not contain any line-break characters (\n, \r, etc.).
