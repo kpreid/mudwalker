@@ -32,8 +32,7 @@
 //103
 //104
 		1058C7A7FEA54F5311CA2CBB = {
-			fallbackIsa = PBXFileReference;
-			isa = PBXFrameworkReference;
+			isa = PBXFileReference;
 			lastKnownFileType = wrapper.framework;
 			name = Cocoa.framework;
 			path = /System/Library/Frameworks/Cocoa.framework;
@@ -132,8 +131,7 @@
 			sourceTree = "<group>";
 		};
 		2A37F4C4FDCFA73011CA2CEA = {
-			fallbackIsa = PBXFileReference;
-			isa = PBXFrameworkReference;
+			isa = PBXFileReference;
 			lastKnownFileType = wrapper.framework;
 			name = AppKit.framework;
 			path = /System/Library/Frameworks/AppKit.framework;
@@ -141,8 +139,7 @@
 			sourceTree = "<absolute>";
 		};
 		2A37F4C5FDCFA73011CA2CEA = {
-			fallbackIsa = PBXFileReference;
-			isa = PBXFrameworkReference;
+			isa = PBXFileReference;
 			lastKnownFileType = wrapper.framework;
 			name = Foundation.framework;
 			path = /System/Library/Frameworks/Foundation.framework;
@@ -615,8 +612,6 @@
 //4A3
 //4A4
 		4A9504D0FFE6A4CB11CA0CBA = {
-			buildRules = (
-			);
 			buildSettings = {
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -630,8 +625,6 @@
 			name = Development;
 		};
 		4A9504D1FFE6A4CB11CA0CBA = {
-			buildRules = (
-			);
 			buildSettings = {
 				COPY_PHASE_STRIP = YES;
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
@@ -739,7 +732,7 @@
 		F5087113034B5CAA01A80004 = {
 			fileEncoding = 30;
 			isa = PBXFileReference;
-			lastKnownFileType = text.plist.xml;
+			lastKnownFileType = text.xml;
 			path = palette.table;
 			refType = 4;
 			sourceTree = "<group>";
@@ -792,8 +785,7 @@
 			};
 		};
 		F508711B034B5F1901A80004 = {
-			fallbackIsa = PBXFileReference;
-			isa = PBXFrameworkReference;
+			isa = PBXFileReference;
 			lastKnownFileType = wrapper.framework;
 			name = InterfaceBuilder.framework;
 			path = /System/Library/Frameworks/InterfaceBuilder.framework;
@@ -1150,8 +1142,7 @@
 		};
 		F55418270280A8AD01A80004 = {
 			explicitFileType = "compiled.mach-o.executable";
-			fallbackIsa = PBXFileReference;
-			isa = PBXExecutableFileReference;
+			isa = PBXFileReference;
 			path = "Test MWFoundation";
 			refType = 3;
 			sourceTree = BUILT_PRODUCTS_DIR;
@@ -1288,8 +1279,7 @@
 		};
 		F55C41920241631B01A80004 = {
 			explicitFileType = wrapper.framework;
-			fallbackIsa = PBXFileReference;
-			isa = PBXFrameworkReference;
+			isa = PBXFileReference;
 			path = MWAppKit.framework;
 			refType = 3;
 			sourceTree = BUILT_PRODUCTS_DIR;
@@ -1336,7 +1326,7 @@
 	<key>CFBundleExecutable</key>
 	<string>MWAppKit</string>
 	<key>CFBundleGetInfoString</key>
-	<string>0.3.1</string>
+	<string>0.3.2</string>
 	<key>CFBundleIconFile</key>
 	<string></string>
 	<key>CFBundleIdentifier</key>
@@ -1348,11 +1338,11 @@
 	<key>CFBundlePackageType</key>
 	<string>FMWK</string>
 	<key>CFBundleShortVersionString</key>
-	<string>0.3.1</string>
+	<string>0.3.2</string>
 	<key>CFBundleSignature</key>
 	<string>MWal</string>
 	<key>CFBundleVersion</key>
-	<string>0.3.1</string>
+	<string>0.3.2</string>
 </dict>
 </plist>
 ";
@@ -1772,8 +1762,7 @@
 			};
 		};
 		F55EE6EA0242E54401A80004 = {
-			fallbackIsa = PBXFileReference;
-			isa = PBXFrameworkReference;
+			isa = PBXFileReference;
 			lastKnownFileType = wrapper.framework;
 			name = PreferencePanes.framework;
 			path = /System/Library/Frameworks/PreferencePanes.framework;
@@ -1894,8 +1883,7 @@
 			};
 		};
 		F5623AC2025E314E01A80004 = {
-			fallbackIsa = PBXFileReference;
-			isa = PBXFrameworkReference;
+			isa = PBXFileReference;
 			lastKnownFileType = wrapper.framework;
 			name = CoreFoundation.framework;
 			path = /System/Library/Frameworks/CoreFoundation.framework;
@@ -2256,8 +2244,7 @@
 		};
 		F568144602798ABA01A80004 = {
 			explicitFileType = wrapper.application;
-			fallbackIsa = PBXFileReference;
-			isa = PBXApplicationReference;
+			isa = PBXFileReference;
 			path = "Test MWAppKit.app";
 			refType = 3;
 			sourceTree = BUILT_PRODUCTS_DIR;
@@ -2299,7 +2286,7 @@
 	<key>CFBundleExecutable</key>
 	<string>Test MWAppKit</string>
 	<key>CFBundleGetInfoString</key>
-	<string>0.3.1</string>
+	<string>0.3.2</string>
 	<key>CFBundleIconFile</key>
 	<string></string>
 	<key>CFBundleIdentifier</key>
@@ -2311,11 +2298,11 @@
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
-	<string>0.3.1</string>
+	<string>0.3.2</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleVersion</key>
-	<string>0.3.1</string>
+	<string>0.3.2</string>
 	<key>NSMainNibFile</key>
 	<string>MainMenu.nib</string>
 	<key>NSPrincipalClass</key>
@@ -3218,8 +3205,7 @@
 		};
 		F57A0252031FD2CF01A80004 = {
 			explicitFileType = wrapper.cfbundle;
-			fallbackIsa = PBXFileReference;
-			isa = PBXBundleReference;
+			isa = PBXFileReference;
 			path = "MWAppKit Palette.palette";
 			refType = 3;
 			sourceTree = BUILT_PRODUCTS_DIR;
@@ -3260,7 +3246,7 @@
 	<key>CFBundleExecutable</key>
 	<string></string>
 	<key>CFBundleGetInfoString</key>
-	<string>MudWalker v0.3.1</string>
+	<string>0.3.2</string>
 	<key>CFBundleIconFile</key>
 	<string></string>
 	<key>CFBundleIdentifier</key>
@@ -3272,11 +3258,11 @@
 	<key>CFBundlePackageType</key>
 	<string>BNDL</string>
 	<key>CFBundleShortVersionString</key>
-	<string>0.3.1</string>
+	<string>0.3.2</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleVersion</key>
-	<string>0.3.1</string>
+	<string>0.3.2</string>
 </dict>
 </plist>
 ";
@@ -3521,8 +3507,7 @@
 		};
 		F5E70BB001C5335801A80004 = {
 			explicitFileType = wrapper.framework;
-			fallbackIsa = PBXFileReference;
-			isa = PBXFrameworkReference;
+			isa = PBXFileReference;
 			path = MudWalker.framework;
 			refType = 3;
 			sourceTree = BUILT_PRODUCTS_DIR;
@@ -3570,7 +3555,7 @@
 	<key>CFBundleExecutable</key>
 	<string>MudWalker</string>
 	<key>CFBundleGetInfoString</key>
-	<string>0.3.1</string>
+	<string>0.3.2</string>
 	<key>CFBundleIconFile</key>
 	<string></string>
 	<key>CFBundleIdentifier</key>
@@ -3582,11 +3567,11 @@
 	<key>CFBundlePackageType</key>
 	<string>FMWK</string>
 	<key>CFBundleShortVersionString</key>
-	<string>0.3.1</string>
+	<string>0.3.2</string>
 	<key>CFBundleSignature</key>
 	<string>MWal</string>
 	<key>CFBundleVersion</key>
-	<string>0.3.1</string>
+	<string>0.3.2</string>
 </dict>
 </plist>
 ";
@@ -3708,8 +3693,7 @@
 		};
 		F5ECD288021AC01701A80004 = {
 			explicitFileType = "compiled.mach-o.executable";
-			fallbackIsa = PBXFileReference;
-			isa = PBXExecutableFileReference;
+			isa = PBXFileReference;
 			path = LookupHandler;
 			refType = 3;
 			sourceTree = BUILT_PRODUCTS_DIR;

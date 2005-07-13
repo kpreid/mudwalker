@@ -342,8 +342,7 @@
 //103
 //104
 		1058C7A7FEA54F5311CA2CBB = {
-			fallbackIsa = PBXFileReference;
-			isa = PBXFrameworkReference;
+			isa = PBXFileReference;
 			lastKnownFileType = wrapper.framework;
 			name = Cocoa.framework;
 			path = /System/Library/Frameworks/Cocoa.framework;
@@ -368,8 +367,7 @@
 //174
 		1758732AFF379DA111CA2CBB = {
 			explicitFileType = wrapper.application;
-			fallbackIsa = PBXFileReference;
-			isa = PBXApplicationReference;
+			isa = PBXFileReference;
 			path = MudWalker.app;
 			refType = 3;
 			sourceTree = BUILT_PRODUCTS_DIR;
@@ -557,8 +555,7 @@
 			sourceTree = "<group>";
 		};
 		2A37F4C5FDCFA73011CA2CEA = {
-			fallbackIsa = PBXFileReference;
-			isa = PBXFrameworkReference;
+			isa = PBXFileReference;
 			lastKnownFileType = wrapper.framework;
 			name = Foundation.framework;
 			path = /System/Library/Frameworks/Foundation.framework;
@@ -664,7 +661,7 @@
 	<key>CFBundleExecutable</key>
 	<string>MudWalker</string>
 	<key>CFBundleGetInfoString</key>
-	<string>MudWalker v0.3.1</string>
+	<string>MudWalker v0.3.2</string>
 	<key>CFBundleHelpBookFolder</key>
 	<string>MudWalker Help</string>
 	<key>CFBundleHelpBookName</key>
@@ -680,7 +677,7 @@
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
-	<string>0.3.1</string>
+	<string>0.3.2</string>
 	<key>CFBundleSignature</key>
 	<string>MWal</string>
 	<key>CFBundleURLTypes</key>
@@ -703,7 +700,7 @@
 		</dict>
 	</array>
 	<key>CFBundleVersion</key>
-	<string>0.3.1</string>
+	<string>0.3.2</string>
 	<key>NSAppleScriptEnabled</key>
 	<true/>
 	<key>NSMainNibFile</key>
@@ -1113,7 +1110,7 @@
 	<key>CFBundleExecutable</key>
 	<string>TestRun</string>
 	<key>CFBundleGetInfoString</key>
-	<string></string>
+	<string>0.3.2</string>
 	<key>CFBundleIconFile</key>
 	<string></string>
 	<key>CFBundleIdentifier</key>
@@ -1125,11 +1122,11 @@
 	<key>CFBundlePackageType</key>
 	<string>MWAp</string>
 	<key>CFBundleShortVersionString</key>
-	<string>0.3.1</string>
+	<string>0.3.2</string>
 	<key>CFBundleSignature</key>
 	<string>MWal</string>
 	<key>CFBundleVersion</key>
-	<string>0.3.1</string>
+	<string>0.3.2</string>
 	<key>NSPrincipalClass</key>
 	<string>MWAppTestRunner</string>
 </dict>
@@ -1138,8 +1135,7 @@
 		};
 		2B20DDB404AB664D00A80004 = {
 			explicitFileType = wrapper.cfbundle;
-			fallbackIsa = PBXFileReference;
-			isa = PBXBundleReference;
+			isa = PBXFileReference;
 			path = TestRun.mwplug;
 			refType = 3;
 			sourceTree = BUILT_PRODUCTS_DIR;
@@ -1215,8 +1211,7 @@
 		};
 		2B66313D04AB7C9900A80004 = {
 			explicitFileType = wrapper.framework;
-			fallbackIsa = PBXFileReference;
-			isa = PBXFrameworkReference;
+			isa = PBXFileReference;
 			name = ObjcUnit.framework;
 			path = /Library/Frameworks/ObjcUnit.framework;
 			refType = 0;
@@ -1485,8 +1480,7 @@
 		};
 		2B9511CF04C9F3D900A80004 = {
 			explicitFileType = "compiled.mach-o.executable";
-			fallbackIsa = PBXFileReference;
-			isa = PBXExecutableFileReference;
+			isa = PBXFileReference;
 			path = mw_icnstool;
 			refType = 3;
 			sourceTree = BUILT_PRODUCTS_DIR;
@@ -1528,8 +1522,7 @@
 			};
 		};
 		2B9511D804C9F7C500A80004 = {
-			fallbackIsa = PBXFileReference;
-			isa = PBXFrameworkReference;
+			isa = PBXFileReference;
 			lastKnownFileType = wrapper.framework;
 			name = Carbon.framework;
 			path = /System/Library/Frameworks/Carbon.framework;
@@ -1581,7 +1574,7 @@
 		2B9511FA04CA040B00A80004 = {
 			fileEncoding = 30;
 			isa = PBXFileReference;
-			lastKnownFileType = text.plist.xml;
+			lastKnownFileType = text.xml;
 			path = mwdoc.svg;
 			refType = 4;
 			sourceTree = "<group>";
@@ -1589,7 +1582,7 @@
 		2B9511FB04CA040B00A80004 = {
 			fileEncoding = 30;
 			isa = PBXFileReference;
-			lastKnownFileType = text.plist.xml;
+			lastKnownFileType = text.xml;
 			path = mwapp.svg;
 			refType = 4;
 			sourceTree = "<group>";
@@ -1688,7 +1681,7 @@
 		2B95125A04CA0F8800A80004 = {
 			fileEncoding = 30;
 			isa = PBXFileReference;
-			lastKnownFileType = text.plist.xml;
+			lastKnownFileType = text.xml;
 			path = TBtemplate.svg;
 			refType = 4;
 			sourceTree = "<group>";
@@ -1696,7 +1689,7 @@
 		2B95125B04CA0F8900A80004 = {
 			fileEncoding = 30;
 			isa = PBXFileReference;
-			lastKnownFileType = text.plist.xml;
+			lastKnownFileType = text.xml;
 			path = TBc_arrow.svg;
 			refType = 4;
 			sourceTree = "<group>";
@@ -1711,7 +1704,7 @@
 		2B95125D04CA101B00A80004 = {
 			fileEncoding = 30;
 			isa = PBXFileReference;
-			lastKnownFileType = text.plist.xml;
+			lastKnownFileType = text.xml;
 			path = TB_selectHistoryPrev.svg;
 			refType = 4;
 			sourceTree = "<group>";
@@ -1719,7 +1712,7 @@
 		2B95125F04CA1B1400A80004 = {
 			fileEncoding = 30;
 			isa = PBXFileReference;
-			lastKnownFileType = text.plist.xml;
+			lastKnownFileType = text.xml;
 			path = TBc_arrowStop.svg;
 			refType = 4;
 			sourceTree = "<group>";
@@ -1727,7 +1720,7 @@
 		2B95126004CA1C6600A80004 = {
 			fileEncoding = 30;
 			isa = PBXFileReference;
-			lastKnownFileType = text.plist.xml;
+			lastKnownFileType = text.xml;
 			path = TB_selectHistoryFirst.svg;
 			refType = 4;
 			sourceTree = "<group>";
@@ -1735,7 +1728,7 @@
 		2B95126104CA1C6600A80004 = {
 			fileEncoding = 30;
 			isa = PBXFileReference;
-			lastKnownFileType = text.plist.xml;
+			lastKnownFileType = text.xml;
 			path = TB_selectHistoryLast.svg;
 			refType = 4;
 			sourceTree = "<group>";
@@ -1743,7 +1736,7 @@
 		2B95126204CA1C6600A80004 = {
 			fileEncoding = 30;
 			isa = PBXFileReference;
-			lastKnownFileType = text.plist.xml;
+			lastKnownFileType = text.xml;
 			path = TB_selectHistoryNext.svg;
 			refType = 4;
 			sourceTree = "<group>";
@@ -1803,7 +1796,7 @@
 		2B95126B04CA221400A80004 = {
 			fileEncoding = 30;
 			isa = PBXFileReference;
-			lastKnownFileType = text.plist.xml;
+			lastKnownFileType = text.xml;
 			path = TB_mwModePassword.svg;
 			refType = 4;
 			sourceTree = "<group>";
@@ -1811,7 +1804,7 @@
 		2B95126C04CA221400A80004 = {
 			fileEncoding = 30;
 			isa = PBXFileReference;
-			lastKnownFileType = text.plist.xml;
+			lastKnownFileType = text.xml;
 			path = TB_mwModeMain.svg;
 			refType = 4;
 			sourceTree = "<group>";
@@ -1819,7 +1812,7 @@
 		2B95126F04CA30B500A80004 = {
 			fileEncoding = 30;
 			isa = PBXFileReference;
-			lastKnownFileType = text.plist.xml;
+			lastKnownFileType = text.xml;
 			path = TB_mwCloseConnectionHard.svg;
 			refType = 4;
 			sourceTree = "<group>";
@@ -1827,7 +1820,7 @@
 		2B95127004CA30B500A80004 = {
 			fileEncoding = 30;
 			isa = PBXFileReference;
-			lastKnownFileType = text.plist.xml;
+			lastKnownFileType = text.xml;
 			path = TB_mwOpenDocumentSettings.svg;
 			refType = 4;
 			sourceTree = "<group>";
@@ -1835,7 +1828,7 @@
 		2B95127104CA30B500A80004 = {
 			fileEncoding = 30;
 			isa = PBXFileReference;
-			lastKnownFileType = text.plist.xml;
+			lastKnownFileType = text.xml;
 			path = TB_mwCloseConnectionNice.svg;
 			refType = 4;
 			sourceTree = "<group>";
@@ -1843,7 +1836,7 @@
 		2B95127204CA30B500A80004 = {
 			fileEncoding = 30;
 			isa = PBXFileReference;
-			lastKnownFileType = text.plist.xml;
+			lastKnownFileType = text.xml;
 			path = TB_mwClearScrollback.svg;
 			refType = 4;
 			sourceTree = "<group>";
@@ -1851,7 +1844,7 @@
 		2B95127304CA30B500A80004 = {
 			fileEncoding = 30;
 			isa = PBXFileReference;
-			lastKnownFileType = text.plist.xml;
+			lastKnownFileType = text.xml;
 			path = TB_mwSendPing.svg;
 			refType = 4;
 			sourceTree = "<group>";
@@ -1859,7 +1852,7 @@
 		2B95127404CA30B500A80004 = {
 			fileEncoding = 30;
 			isa = PBXFileReference;
-			lastKnownFileType = text.plist.xml;
+			lastKnownFileType = text.xml;
 			path = TB_mwUnlinkWindow.svg;
 			refType = 4;
 			sourceTree = "<group>";
@@ -1867,7 +1860,7 @@
 		2B95127504CA30B500A80004 = {
 			fileEncoding = 30;
 			isa = PBXFileReference;
-			lastKnownFileType = text.plist.xml;
+			lastKnownFileType = text.xml;
 			path = TB_mwOpenConnection.svg;
 			refType = 4;
 			sourceTree = "<group>";
@@ -2586,7 +2579,7 @@
 	<key>CFBundleExecutable</key>
 	<string>Lua</string>
 	<key>CFBundleGetInfoString</key>
-	<string>0.3.1</string>
+	<string>0.3.2</string>
 	<key>CFBundleIconFile</key>
 	<string></string>
 	<key>CFBundleIdentifier</key>
@@ -2598,11 +2591,11 @@
 	<key>CFBundlePackageType</key>
 	<string>MWAp</string>
 	<key>CFBundleShortVersionString</key>
-	<string>0.3.1</string>
+	<string>0.3.2</string>
 	<key>CFBundleSignature</key>
 	<string>MWal</string>
 	<key>CFBundleVersion</key>
-	<string>0.3.1</string>
+	<string>0.3.2</string>
 	<key>NSPrincipalClass</key>
 	<string>MWLuaLanguage</string>
 </dict>
@@ -2611,8 +2604,7 @@
 		};
 		2BFF6BB40472B9AC00A80004 = {
 			explicitFileType = wrapper.cfbundle;
-			fallbackIsa = PBXFileReference;
-			isa = PBXBundleReference;
+			isa = PBXFileReference;
 			path = Lua.mwplug;
 			refType = 3;
 			sourceTree = BUILT_PRODUCTS_DIR;
@@ -2667,8 +2659,6 @@
 //4A3
 //4A4
 		4A9504D0FFE6A4CB11CA0CBA = {
-			buildRules = (
-			);
 			buildSettings = {
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -2682,8 +2672,6 @@
 			name = Development;
 		};
 		4A9504D1FFE6A4CB11CA0CBA = {
-			buildRules = (
-			);
 			buildSettings = {
 				COPY_PHASE_STRIP = YES;
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
@@ -2728,8 +2716,7 @@
 		};
 		F501337E01C863F301A80004 = {
 			explicitFileType = wrapper.cfbundle;
-			fallbackIsa = PBXFileReference;
-			isa = PBXBundleReference;
+			isa = PBXFileReference;
 			path = CGMud.mwplug;
 			refType = 3;
 			sourceTree = BUILT_PRODUCTS_DIR;
@@ -2775,7 +2762,7 @@
 	<key>CFBundleExecutable</key>
 	<string>CGMud</string>
 	<key>CFBundleGetInfoString</key>
-	<string>0.3.1</string>
+	<string>0.3.2</string>
 	<key>CFBundleIconFile</key>
 	<string></string>
 	<key>CFBundleIdentifier</key>
@@ -2787,11 +2774,11 @@
 	<key>CFBundlePackageType</key>
 	<string>MWAp</string>
 	<key>CFBundleShortVersionString</key>
-	<string>0.3.1</string>
+	<string>0.3.2</string>
 	<key>CFBundleSignature</key>
 	<string>MWal</string>
 	<key>CFBundleVersion</key>
-	<string>0.3.1</string>
+	<string>0.3.2</string>
 	<key>NSPrincipalClass</key>
 	<string>MWCGMudProtocolFilter</string>
 </dict>
@@ -3288,8 +3275,7 @@
 			};
 		};
 		F558C95801F5FA8101A80004 = {
-			fallbackIsa = PBXFileReference;
-			isa = PBXFrameworkReference;
+			isa = PBXFileReference;
 			lastKnownFileType = wrapper.framework;
 			name = ApplicationServices.framework;
 			path = /System/Library/Frameworks/ApplicationServices.framework;
@@ -3325,8 +3311,7 @@
 		};
 		F558CD9B01CFA58F01A80004 = {
 			explicitFileType = wrapper.cfbundle;
-			fallbackIsa = PBXFileReference;
-			isa = PBXBundleReference;
+			isa = PBXFileReference;
 			path = MCP.mwplug;
 			refType = 3;
 			sourceTree = BUILT_PRODUCTS_DIR;
@@ -3365,7 +3350,7 @@
 	<key>CFBundleExecutable</key>
 	<string>MCP</string>
 	<key>CFBundleGetInfoString</key>
-	<string>0.3.1</string>
+	<string>0.3.2</string>
 	<key>CFBundleIconFile</key>
 	<string></string>
 	<key>CFBundleIdentifier</key>
@@ -3377,11 +3362,11 @@
 	<key>CFBundlePackageType</key>
 	<string>MWAp</string>
 	<key>CFBundleShortVersionString</key>
-	<string>0.3.1</string>
+	<string>0.3.2</string>
 	<key>CFBundleSignature</key>
 	<string>MWal</string>
 	<key>CFBundleVersion</key>
-	<string>0.3.1</string>
+	<string>0.3.2</string>
 	<key>NSPrincipalClass</key>
 	<string>MWMCProtocolFilter</string>
 </dict>
@@ -3615,8 +3600,7 @@
 			sourceTree = "<group>";
 		};
 		F55C418C0240FC2001A80004 = {
-			fallbackIsa = PBXFileReference;
-			isa = PBXFrameworkReference;
+			isa = PBXFileReference;
 			lastKnownFileType = wrapper.framework;
 			name = PreferencePanes.framework;
 			path = /System/Library/Frameworks/PreferencePanes.framework;
@@ -3723,7 +3707,7 @@
 			fileEncoding = 4;
 			indentWidth = 3;
 			isa = PBXFileReference;
-			lastKnownFileType = text.plist.xml;
+			lastKnownFileType = text.xml;
 			lineEnding = 0;
 			path = MudWalkerApp.scriptSuite;
 			refType = 4;
@@ -3745,7 +3729,7 @@
 			fileEncoding = 4;
 			indentWidth = 3;
 			isa = PBXFileReference;
-			lastKnownFileType = text.plist.xml;
+			lastKnownFileType = text.xml;
 			lineEnding = 0;
 			name = MudWalkerApp.scriptTerminology;
 			path = English.lproj/MudWalkerApp.scriptTerminology;
@@ -4060,8 +4044,7 @@
 		};
 		F564788F0241A9A701A80004 = {
 			explicitFileType = wrapper.framework;
-			fallbackIsa = PBXFileReference;
-			isa = PBXFrameworkReference;
+			isa = PBXFileReference;
 			name = MWAppKit.framework;
 			path = MWFrameworks/build/MWAppKit.framework;
 			refType = 4;
@@ -4080,9 +4063,8 @@
 			};
 		};
 		F564D940023BEB1701A80004 = {
-			fallbackIsa = PBXFileReference;
 			includeInIndex = 0;
-			isa = PBXFolderReference;
+			isa = PBXFileReference;
 			lastKnownFileType = folder;
 			name = "MudWalker Help";
 			path = "English.lproj/MudWalker Help";
@@ -4347,9 +4329,8 @@
 			sourceTree = "<group>";
 		};
 		F569870701BD038C01A80004 = {
-			fallbackIsa = PBXFileReference;
 			includeInIndex = 0;
-			isa = PBXFolderReference;
+			isa = PBXFileReference;
 			lastKnownFileType = folder;
 			path = "(Stuff)";
 			refType = 4;
@@ -4662,8 +4643,7 @@
 			};
 		};
 		F57B158801F9B88E01A80004 = {
-			fallbackIsa = PBXFileReference;
-			isa = PBXFrameworkReference;
+			isa = PBXFileReference;
 			lastKnownFileType = wrapper.framework;
 			name = CoreFoundation.framework;
 			path = /System/Library/Frameworks/CoreFoundation.framework;
@@ -4792,8 +4772,7 @@
 		};
 		F58C4FD101C5170301A80004 = {
 			explicitFileType = wrapper.cfbundle;
-			fallbackIsa = PBXFileReference;
-			isa = PBXBundleReference;
+			isa = PBXFileReference;
 			path = Telnet.mwplug;
 			refType = 3;
 			sourceTree = BUILT_PRODUCTS_DIR;
@@ -4839,7 +4818,7 @@
 	<key>CFBundleExecutable</key>
 	<string>Telnet</string>
 	<key>CFBundleGetInfoString</key>
-	<string>0.3.1</string>
+	<string>0.3.2</string>
 	<key>CFBundleIconFile</key>
 	<string></string>
 	<key>CFBundleIdentifier</key>
@@ -4851,11 +4830,11 @@
 	<key>CFBundlePackageType</key>
 	<string>MWAp</string>
 	<key>CFBundleShortVersionString</key>
-	<string>0.3.1</string>
+	<string>0.3.2</string>
 	<key>CFBundleSignature</key>
 	<string>MWal</string>
 	<key>CFBundleVersion</key>
-	<string>0.3.1</string>
+	<string>0.3.2</string>
 	<key>NSPrincipalClass</key>
 	<string>MWTelnetFilter</string>
 </dict>
@@ -5210,8 +5189,7 @@
 		};
 		F5ADDEF4022046BD01A80004 = {
 			explicitFileType = wrapper.cfbundle;
-			fallbackIsa = PBXFileReference;
-			isa = PBXBundleReference;
+			isa = PBXFileReference;
 			path = Python.mwplug;
 			refType = 3;
 			sourceTree = BUILT_PRODUCTS_DIR;
@@ -5253,7 +5231,7 @@
 	<key>CFBundleExecutable</key>
 	<string>Python</string>
 	<key>CFBundleGetInfoString</key>
-	<string>0.3.1</string>
+	<string>0.3.2</string>
 	<key>CFBundleIconFile</key>
 	<string></string>
 	<key>CFBundleIdentifier</key>
@@ -5265,11 +5243,11 @@
 	<key>CFBundlePackageType</key>
 	<string>MWAp</string>
 	<key>CFBundleShortVersionString</key>
-	<string>0.3.1</string>
+	<string>0.3.2</string>
 	<key>CFBundleSignature</key>
 	<string>MWal</string>
 	<key>CFBundleVersion</key>
-	<string>0.3.1</string>
+	<string>0.3.2</string>
 	<key>NSPrincipalClass</key>
 	<string>MWPythonInterpreter</string>
 </dict>
@@ -5798,8 +5776,7 @@
 		};
 		F5ECD294021AC28C01A80004 = {
 			explicitFileType = wrapper.framework;
-			fallbackIsa = PBXFileReference;
-			isa = PBXFrameworkReference;
+			isa = PBXFileReference;
 			name = MudWalker.framework;
 			path = MWFrameworks/build/MudWalker.framework;
 			refType = 4;

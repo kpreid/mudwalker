@@ -2,6 +2,10 @@ Key:
   * release or other public interaction
   - change
 
+2005-07-13 kpreid
+  - Changed version numbers to 0.3.2.
+2005-07-12 kpreid
+  - continuousSpellChecking flag for GIW's text view is saved to defaults.
 2005-06-17 kpreid
   - Fixed memory leak in MWConfigPath -stringRepresentation.
 2004-08-27 kpreid
