@@ -153,13 +153,13 @@ static int myLua_speak(lua_State *L) {
   // NSClassFromString is used so that this bundle does not depend on AppKit at link time.
   Class const lNSSpeechSynthesizer = NSClassFromString(@"NSSpeechSynthesizer");
   
-  NSString *voice;
-  NSString *text;
+  NSString *voice = nil;
+  NSString *text = nil;
 
   int const n = lua_gettop(L);
   switch (n) {
     case 2: {
-      NSString *voiceName;
+      NSString *voiceName = nil;
 
       MWLuaExceptionConvert_BEGIN
         voiceName = MWObjectFromLuaStackIndex(L, 2);
