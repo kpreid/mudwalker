@@ -49,10 +49,35 @@
 - (void)setUp {
   config = [[MWConfigTree alloc] init];
   
-  [config addDirectoryAtPath:[MWConfigPath pathWithComponents:@"Triggers", @"test", nil] recurse:YES insertIndex:-1];
-  [config setObject:@"triggerer" atPath:[MWConfigPath pathWithComponents:@"Triggers", @"test", @"patterns", nil]];
-  [config setObject:[NSNumber numberWithBool:YES] atPath:[MWConfigPath pathWithComponents:@"Triggers", @"test", @"doSubstitute", nil]];
-  [config setObject:[[[MWScript alloc] initWithSource:@"triggered" languageIdentifier:@"BaseIdentity"] autorelease] atPath:[MWConfigPath pathWithComponents:@"Triggers", @"test", @"doSubstitute_replacement", nil]];
+  { NSString *const trigger = @"test";
+    [config addDirectoryAtPath:[MWConfigPath pathWithComponents:@"Triggers", trigger, nil] recurse:YES insertIndex:-1];
+    [config setObject:@"triggerer" atPath:[MWConfigPath pathWithComponents:@"Triggers", trigger, @"patterns", nil]];
+    [config setObject:[NSNumber numberWithBool:YES] atPath:[MWConfigPath pathWithComponents:@"Triggers", trigger, @"doSubstitute", nil]];
+    [config setObject:[[[MWScript alloc] initWithSource:@"triggered" languageIdentifier:@"BaseIdentity"] autorelease] atPath:[MWConfigPath pathWithComponents:@"Triggers", trigger, @"doSubstitute_replacement", nil]];
+  }
+  
+  { NSString *const trigger = @"arg-counter";
+    [config addDirectoryAtPath:[MWConfigPath pathWithComponents:@"Triggers", trigger, nil] recurse:YES insertIndex:-1];
+    [config 
+      setObject:@"^argtest ([^ ]*)$\n^argtest ([^ ]*) ([^ ]*)$\n^argtest ([^ ]*) ([^ ]*) ([^ ]*)$\n^argtest ([^ ]*) ([^ ]*) ([^ ]*) ([^ ]*)$"
+      atPath:[MWConfigPath pathWithComponents:@"Triggers", trigger, @"patterns", nil]];
+    [config 
+      setObject:[NSNumber numberWithBool:YES] 
+      atPath:[MWConfigPath pathWithComponents:@"Triggers", trigger, @"doSubstitute", nil]];
+    [config
+       setObject:[[[MWScript alloc] initWithSource:@"return tostring(arg.count) .. \" \" .. tostring(arg[2])" languageIdentifier:@"Lua"] autorelease] 
+       atPath:[MWConfigPath pathWithComponents:@"Triggers", trigger, @"doSubstitute_replacement", nil]];
+  }
+  
+  { NSString *const trigger = @"gagger";
+    [config addDirectoryAtPath:[MWConfigPath pathWithComponents:@"Triggers", trigger, nil] recurse:YES insertIndex:-1];
+    [config 
+      setObject:@"^gagb$"
+      atPath:[MWConfigPath pathWithComponents:@"Triggers", trigger, @"patterns", nil]];
+    [config 
+      setObject:[NSNumber numberWithBool:YES] 
+      atPath:[MWConfigPath pathWithComponents:@"Triggers", trigger, @"doGag", nil]];
+  }
   
   [config addDirectoryAtPath:[MWConfigPath pathWithComponents:@"Aliases", @"test1", nil] recurse:YES insertIndex:-1];
   [config setObject:@"shortalias" atPath:[MWConfigPath pathWithComponents:@"Aliases", @"test1", @"match", nil]];
@@ -113,6 +138,9 @@
   [insideEx verify]; [insideEx release]; insideEx = nil;
 }
 
+
+// --- Triggers ---
+
 - (void)testSubstituteTrigger {
   [insideEx addExpectedObject:[MWLineString lineStringWithString:@"triggered"]];
 
@@ -120,6 +148,29 @@
   
   [insideEx verify]; [insideEx release]; insideEx = nil;
 }
+
+- (void)testGagTrigger {
+  [insideEx addExpectedObject:[MWLineString lineStringWithString:@"gaga"]];
+  [insideEx addExpectedObject:[MWLineString lineStringWithString:@"gagc"]];
+
+  [stub send:[MWLineString lineStringWithString:@"gaga"] toLinkFor:@"outside"];
+  [stub send:[MWLineString lineStringWithString:@"gagb"] toLinkFor:@"outside"];
+  [stub send:[MWLineString lineStringWithString:@"gagc"] toLinkFor:@"outside"];
+  
+  [insideEx verify]; [insideEx release]; insideEx = nil;
+}
+
+- (void)testTriggerArgumentCount {
+  [insideEx addExpectedObject:[MWLineString lineStringWithString:@"3 bar"]];
+  
+  [stub send:[MWLineString lineStringWithString:@"argtest foo bar baz"] toLinkFor:@"outside"];
+  
+  // FIXME: is there a reason insideEx (only!) is being explicitly released in these tests?!
+  [insideEx verify]; [insideEx release]; insideEx = nil;
+}
+
+// --- Aliases ---
+
 
 - (void)testSimpleAlias {
   [outsideEx addExpectedObject:[MWLineString lineStringWithString:@"big long command string"]];

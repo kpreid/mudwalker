@@ -30,7 +30,7 @@
     * Default example trigger - direction-links
     * Better obviousness of usage of login script system
   * Subroutines for scripts
-  * Color/style highlighting on trigger matches.
+  * Color/style highlighting on trigger matches. (x2)
   * Map window:
     * Click on nodes to move (ook, pathfinding? send 'walk to'? only work for adjacent rooms?).
     * Keyboard command to open map window.
@@ -46,7 +46,8 @@
     * Way to toggle all triggers (I'd do option-click on the boxes)
     * Way to open the editing window for a trigger (suggested double-click)
   * Way to disable inherited keyboard macros, e.g. disable checkboxes like for triggers.
-  * Gag-line or gag-matched-text option for triggers.
+  * "Another ability Rapscallion has - to grab selection from the terminal window into a variable."
+  * Scriptable trigger enabling/disabling.
 
 ### ### User-visible missing functionality:
   * Documentation:

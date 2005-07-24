@@ -163,6 +163,7 @@ static NSCharacterSet *schemeCharacters, *urlEndTerminator, *urlEndChop;
       NSMutableDictionary *const scriptSendArguments = [NSMutableDictionary dictionaryWithObjectsAndKeys:
         self, @"linkable",
         @"outward", @"_MWScriptResultHint",
+        [NSNumber numberWithInt:1], @"count",
         str, [NSNumber numberWithInt:0],
         argstr, [NSNumber numberWithInt:1],
         nil
@@ -190,6 +191,7 @@ static NSCharacterSet *schemeCharacters, *urlEndTerminator, *urlEndChop;
   NSRange aRange;
     
   NSString *useChannel = nil;
+  BOOL lineGagged = NO;
   
   if ((aRange = [buf rangeOfString:@"!!SOUND("]).length || (aRange = [buf rangeOfString:@"!!MUSIC("]).length) {
     NSCharacterSet *spaceChars = [NSCharacterSet whitespaceCharacterSet];
@@ -347,6 +349,7 @@ static NSCharacterSet *schemeCharacters, *urlEndTerminator, *urlEndChop;
 
             NSMutableDictionary *const scriptBaseArguments = [NSMutableDictionary dictionaryWithObjectsAndKeys:
               self, @"linkable",
+              [NSNumber numberWithInt:re_numset - 1], @"count",
               nil
             ];
             
@@ -400,6 +403,9 @@ static NSCharacterSet *schemeCharacters, *urlEndTerminator, *urlEndChop;
             if ([[[self config] objectAtPath:[trigPath pathByAppendingComponent:@"doTerminate"]] boolValue])
               noMoreTriggers = YES;
 
+            if ([[[self config] objectAtPath:[trigPath pathByAppendingComponent:@"doGag"]] boolValue])
+              lineGagged = YES;
+
             if ([[[self config] objectAtPath:[trigPath pathByAppendingComponent:@"matchOncePerLine"]] boolValue])
               noMoreInLine = YES;
               
@@ -433,7 +439,7 @@ static NSCharacterSet *schemeCharacters, *urlEndTerminator, *urlEndChop;
   
   
   // Done with misc sub-line processing, now determine the destination of the complete line
-  {
+  if (!lineGagged) {
     MWLineString *ls = [MWLineString lineStringWithAttributedString:[[abuf copy] autorelease] role:role];
   
     if (useChannel) {
