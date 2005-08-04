@@ -122,12 +122,20 @@
   outsideEx = nil;
 }
 
+- (void)waitAndVerify {
+  [[NSRunLoop currentRunLoop] runUntilDate:[[NSDate date] addTimeInterval:0.5]];
+  [outsideEx verify]; 
+  [insideEx verify];
+  [outsideEx release]; outsideEx = nil;
+  [insideEx release]; insideEx = nil;
+}
+
 - (void)testPassthruOut {
   [outsideEx addExpectedObject:[MWLineString lineStringWithString:@"hi"]];
 
   [stub send:[MWLineString lineStringWithString:@"hi"] toLinkFor:@"inside"];
   
-  [outsideEx verify]; [outsideEx release]; outsideEx = nil;
+  [self waitAndVerify];
 }
 
 - (void)testPassthruIn {
@@ -135,7 +143,7 @@
 
   [stub send:[MWLineString lineStringWithString:@"hi"] toLinkFor:@"outside"];
   
-  [insideEx verify]; [insideEx release]; insideEx = nil;
+  [self waitAndVerify];
 }
 
 
@@ -157,7 +165,7 @@
   [stub send:[MWLineString lineStringWithString:@"gagb"] toLinkFor:@"outside"];
   [stub send:[MWLineString lineStringWithString:@"gagc"] toLinkFor:@"outside"];
   
-  [insideEx verify]; [insideEx release]; insideEx = nil;
+  [self waitAndVerify];
 }
 
 - (void)testTriggerArgumentCount {
@@ -165,8 +173,7 @@
   
   [stub send:[MWLineString lineStringWithString:@"argtest foo bar baz"] toLinkFor:@"outside"];
   
-  // FIXME: is there a reason insideEx (only!) is being explicitly released in these tests?!
-  [insideEx verify]; [insideEx release]; insideEx = nil;
+  [self waitAndVerify];
 }
 
 // --- Aliases ---
@@ -177,7 +184,7 @@
 
   [stub send:[MWLineString lineStringWithString:@"shortalias"] toLinkFor:@"inside"];
   
-  [outsideEx verify]; [outsideEx release]; outsideEx = nil;
+  [self waitAndVerify];
 }
 
 - (void)testWordAliasArg {
@@ -185,7 +192,7 @@
 
   [stub send:[MWLineString lineStringWithString:@"shortalias argstr"] toLinkFor:@"inside"];
   
-  [outsideEx verify]; [outsideEx release]; outsideEx = nil;
+  [self waitAndVerify];
 }
 
 - (void)testWordAliasNonarg {
@@ -193,7 +200,7 @@
 
   [stub send:[MWLineString lineStringWithString:@"shortaliasargstr"] toLinkFor:@"inside"];
   
-  [outsideEx verify]; [outsideEx release]; outsideEx = nil;
+  [self waitAndVerify];
 }
 
 - (void)testPunctAliasArg {
@@ -201,7 +208,7 @@
 
   [stub send:[MWLineString lineStringWithString:@"$@ argstr"] toLinkFor:@"inside"];
   
-  [outsideEx verify]; [outsideEx release]; outsideEx = nil;
+  [self waitAndVerify];
 }
 
 - (void)testAliasUseArgPunct {
@@ -209,7 +216,7 @@
 
   [stub send:[MWLineString lineStringWithString:@"\"argstr"] toLinkFor:@"inside"];
   
-  [outsideEx verify]; [outsideEx release]; outsideEx = nil;
+  [self waitAndVerify];
 }
 
 - (void)testAliasUseArgWord {
@@ -217,7 +224,7 @@
 
   [stub send:[MWLineString lineStringWithString:@"say argstr"] toLinkFor:@"inside"];
   
-  [outsideEx verify]; [outsideEx release]; outsideEx = nil;
+  [self waitAndVerify];
 }
 
 - (void)testAliasInactive {
@@ -227,7 +234,7 @@
 
   [stub send:[MWLineString lineStringWithString:@"shortalias"] toLinkFor:@"inside"];
   
-  [outsideEx verify]; [outsideEx release]; outsideEx = nil;
+  [self waitAndVerify];
 }
 
 @end
