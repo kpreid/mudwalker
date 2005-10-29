@@ -196,7 +196,8 @@ void MWLinkLog(NSString *format, ...) {
   [super dealloc];
 }
 
-- (void)send:(id <NSObject>)obj from:(id<MWLinkable, NSObject>)sender {
+// Use send:from: instead of this.
+- (void)sendNow:(id <NSObject>)obj from:(id<MWLinkable, NSObject>)sender {
   id <MWLinkable, NSObject> targ;
   NSString *targLinkName;
   
@@ -231,6 +232,28 @@ void MWLinkLog(NSString *format, ...) {
     [[MWRegistry defaultRegistry] reportCaughtException:localException caughtBy:self caughtFrom:targ caughtBecause:MWLocalizedStringHere(@"BecauseExceptionInLinkProbing")];
   NS_ENDHANDLER
   return nil;
+}
+
+- (void)send:(id <NSObject>)obj from:(id<MWLinkable, NSObject>)sender {
+  [self sendNow:obj from:sender];
+// Doesn't work: run loop performSelector doesn't guarantee FIFO order
+#if 0
+  NSInvocation *const i = [NSInvocation invocationWithMethodSignature:[self methodSignatureForSelector:@selector(sendNow:from:)]];
+  [i setSelector:@selector(sendNow:from:)];
+  [i setArgument:&obj atIndex:2];
+  [i setArgument:&sender atIndex:3];
+  [i retainArguments];
+  [[NSRunLoop currentRunLoop] 
+    performSelector:@selector(invokeWithTarget:)
+    target:i
+    argument:self
+    order:1 /* ??? */ 
+    modes: [NSArray arrayWithObjects:
+      NSDefaultRunLoopMode,
+      @"NSModalPanelRunLoopMode",
+      @"NSEventTrackingRunLoopMode",
+      nil]];
+#endif
 }
 
 - (id <MWLinkable>)otherObject:(id <MWLinkable>)sender {

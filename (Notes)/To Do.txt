@@ -48,6 +48,8 @@
   * Way to disable inherited keyboard macros, e.g. disable checkboxes like for triggers.
   * "Another ability Rapscallion has - to grab selection from the terminal window into a variable."
   * Scriptable trigger enabling/disabling.
+  * Larger trigger field (my interpretation: resizable settings panes)
+  * Trigger categories (see under New features below)
 
 ### ### User-visible missing functionality:
   * Documentation:
@@ -122,6 +124,7 @@
   * Make CFSocket connection able to distinguish between connection failure and EOF.
 
 ### ### New features:
+  * Resizable settings panes
   * Allow scripts to execute from key macros. Maybe merge key macros and aliases.
   * Allow user entry of web-site fields in document config.
   * GIW:
@@ -135,6 +138,8 @@
         * Ordering is forced to match categories.
         * Ordering is independent of categories, and there is a UI toggle for category-order/config-order
         * Ordering is independent, and categories appear more than once as necessary.
+      * Ability to disable all triggers in a category (user-requested)
+        * Preferably as category-is-disabled, not touching the trigger's flag? More complicated, though.
     * Send prefixes and continuation match for channels
     * Text styling, highlighting via triggers
     * Speech and dock-bounce notifications
@@ -158,11 +163,14 @@
     * Selectable location, with option to datestamp log files. (Malicious document problem here--overwriting important files)
   * TWin:
     * Support menus, Frame, Numeric, Separator
+  * MacMOOSE protocol support
+      http://www.cc.gatech.edu/~asb/MacMOOSE/
+      http://www.cc.gatech.edu/classes/cs3302_98_spring/teams/team-b1/moose_oob.txt
   * Text input in output window (no GIW)
   * Transparent SSH connections, direct and port-forwarding.
   * TLS/SSL layering for telnet connections.
   * Inline HTML support (Pueblo extensions?) (implemented with new WebKit framework?).
- * MXP support.
+  * MXP support.
   * MCCP (compression) support.
   * Local shell connection
   * To support potentially-dangerous features in documents, store hashes of saved documents in defaults db and warn user if a document is opened that doesn't match a known hash.
