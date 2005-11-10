@@ -101,7 +101,8 @@
   }
 }
 
-- (NSArray *)linesForSendingWithAuthenticationKey:(NSString *)authKey {  
+// authKey may be nil, if this is a negotiation message
+- (NSArray *)linesForSendingWithAuthenticationKey:(NSString *)authKey {
   NSMutableString *outArgsString = [NSMutableString string];
   NSMutableArray *outLines = [NSMutableArray array];
 
@@ -155,7 +156,7 @@
     [outArgsString appendString:dataTag];
   }
   
-  [outLines insertObject:[NSString stringWithFormat:@"#$#%@ %@%@", [self messageName], authKey, outArgsString] atIndex:0];
+  [outLines insertObject:[NSString stringWithFormat:@"#$#%@ %@%@", [self messageName], (authKey ? authKey : @""), outArgsString] atIndex:0];
   return outLines;
 }
 
