@@ -1002,7 +1002,7 @@
 		03056FC600FFB07CC0A80001 /* MWDocumentSettingsWinController.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = MWDocumentSettingsWinController.m; sourceTree = "<group>"; };
 		089C1660FE840EACC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; lineEnding = 0; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1058C7A7FEA54F5311CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
-		1758732AFF379DA111CA2CBB /* MudWalker.app */ = {isa = PBXFileReference; lastKnownFileType = wrapper.application; path = MudWalker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1758732AFF379DA111CA2CBB /* MudWalker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; path = MudWalker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A37F4ACFDCFA73011CA2CEA /* MWConnectionDocument.m */ = {isa = PBXFileReference; fileEncoding = 30; indentWidth = 1; lastKnownFileType = sourcecode.c.objc; path = MWConnectionDocument.m; sourceTree = "<group>"; tabWidth = 8; usesTabs = 0; };
 		2A37F4AEFDCFA73011CA2CEA /* MWConnectionDocument.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = MWConnectionDocument.h; sourceTree = "<group>"; };
 		2A37F4B0FDCFA73011CA2CEA /* ApplicationMain.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = ApplicationMain.m; sourceTree = "<group>"; };

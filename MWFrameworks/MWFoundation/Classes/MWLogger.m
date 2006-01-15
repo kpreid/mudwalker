@@ -9,6 +9,7 @@
 #import "MWLineString.h"
 #import "MWConfigPath.h"
 #import "MWConfigTree.h"
+#import "MWConstants.h"
 
 @interface MWLogger (Private)
 
@@ -37,7 +38,11 @@
   if ([obj isKindOfClass:[NSString class]]) {
     type = @"s";
   } else if ([obj isKindOfClass:[MWLineString class]]) {
-    obj = [obj string];
+    if ([[obj role] isEqual:MWPasswordRole]) {
+      obj = @"************";
+    } else {
+      obj = [obj string];
+    }
     type = @":";
   } else {
     type = @" ";
@@ -78,6 +83,12 @@
     [fileHandle seekToEndOfFile];
     [self writeString:[NSString stringWithFormat:@"--- Starting log file (%@) (pid %u)\n", [self linkableUserDescription], [[NSProcessInfo processInfo] processIdentifier]]];
   }
+}
+
+// --- For testing ---
+
+- (void)flush {
+  [fileHandle synchronizeFile];
 }
 
 // --- Configuration ---

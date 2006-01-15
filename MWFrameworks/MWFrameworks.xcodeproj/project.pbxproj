@@ -123,6 +123,7 @@
 		2B1EB71D0680BA7700942DC2 /* MWTerminalPane.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B1EB71B0680BA7700942DC2 /* MWTerminalPane.m */; };
 		2B20DD4B04A8C90D00A80004 /* MWScriptLanguage.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B20DD4A04A8C90D00A80004 /* MWScriptLanguage.m */; };
 		2B41D55004DC1BED00A80004 /* MWAppRegistryTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B41D54F04DC1BED00A80004 /* MWAppRegistryTest.m */; };
+		2B610647097A8EBD00C918A7 /* MWLoggerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B610646097A8EBD00C918A7 /* MWLoggerTest.m */; };
 		2B914F9F047EC05F00A80004 /* MWHasConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B914F9E047EC05F00A80004 /* MWHasConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2B914FA2047FB56800A80004 /* MWIdentityLanguage.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B914FA0047FB56800A80004 /* MWIdentityLanguage.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2B914FA3047FB56800A80004 /* MWIdentityLanguage.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B914FA1047FB56800A80004 /* MWIdentityLanguage.m */; };
@@ -494,6 +495,7 @@
 		2B1EB71B0680BA7700942DC2 /* MWTerminalPane.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWTerminalPane.m; sourceTree = "<group>"; };
 		2B20DD4A04A8C90D00A80004 /* MWScriptLanguage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWScriptLanguage.m; sourceTree = "<group>"; };
 		2B41D54F04DC1BED00A80004 /* MWAppRegistryTest.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = MWAppRegistryTest.m; sourceTree = "<group>"; };
+		2B610646097A8EBD00C918A7 /* MWLoggerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MWLoggerTest.m; path = MWFoundation/Sources/MWLoggerTest.m; sourceTree = SOURCE_ROOT; };
 		2B914F9E047EC05F00A80004 /* MWHasConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWHasConfig.h; sourceTree = "<group>"; };
 		2B914FA0047FB56800A80004 /* MWIdentityLanguage.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = MWIdentityLanguage.h; sourceTree = "<group>"; };
 		2B914FA1047FB56800A80004 /* MWIdentityLanguage.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = MWIdentityLanguage.m; sourceTree = "<group>"; };
@@ -578,7 +580,7 @@
 		F567087202C210C801A80004 /* MWConfigTree.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = MWConfigTree.m; sourceTree = "<group>"; };
 		F567087602C2197301A80004 /* MWConfigPath.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = MWConfigPath.h; sourceTree = "<group>"; };
 		F567087702C2197301A80004 /* MWConfigPath.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = MWConfigPath.m; sourceTree = "<group>"; };
-		F568144602798ABA01A80004 /* Test MWAppKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; path = "Test MWAppKit.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F568144602798ABA01A80004 /* Test MWAppKit.app */ = {isa = PBXFileReference; lastKnownFileType = wrapper.application; path = "Test MWAppKit.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F568145102798E5601A80004 /* ApplicationMain.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = ApplicationMain.m; sourceTree = "<group>"; };
 		F568145402798FC601A80004 /* MainMenu.nib */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; path = MainMenu.nib; sourceTree = "<group>"; };
 		F56814580279B7AA01A80004 /* MWTGraphViewWinController.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = MWTGraphViewWinController.h; sourceTree = "<group>"; };
@@ -641,7 +643,7 @@
 		F5E70BB001C5335801A80004 /* MudWalker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MudWalker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5ECD286021AC01701A80004 /* LookupHandler.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = LookupHandler.h; sourceTree = "<group>"; };
 		F5ECD287021AC01701A80004 /* LookupHandler.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = LookupHandler.m; sourceTree = "<group>"; };
-		F5ECD288021AC01701A80004 /* LookupHandler */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = LookupHandler; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5ECD288021AC01701A80004 /* LookupHandler */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = LookupHandler; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworkTarget section */
@@ -1170,6 +1172,7 @@
 			children = (
 				F55E8511024822D801A80004 /* MWLogger.h */,
 				F55E8512024822D801A80004 /* MWLogger.m */,
+				2B610646097A8EBD00C918A7 /* MWLoggerTest.m */,
 				F55E850D02479C4301A80004 /* MWTeeFilter.h */,
 				F55E850E02479C4301A80004 /* MWTeeFilter.m */,
 				2B1A5FAE0532410400A80004 /* MWMockLinkable.h */,
@@ -1473,6 +1476,7 @@
 				F519B96B0348FC4F01A80004 /* MWURLFormatterTest.m in Sources */,
 				2BFF6B960472706D00A80004 /* MWScriptTest.m in Sources */,
 				2BEA74360484063400A80004 /* MWTokenTest.m in Sources */,
+				2B610647097A8EBD00C918A7 /* MWLoggerTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,5 +1,33 @@
 // !$*UTF8*$!
 {
+	011D3B6900743E167F000001 /* MWTextOutputWinController.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {495, 2976}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRect = "{{0, 259}, {495, 409}}";
+		};
+	};
+	013EAEE900F67B15C0A80001 /* MWGlobalInputWinController.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {535, 7008}}";
+			sepNavSelRange = "{920, 0}";
+			sepNavVisRect = "{{0, 273}, {535, 306}}";
+		};
+	};
+	0171474F0100EEFAC0A80001 /* MWOutputWinController.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {535, 9612}}";
+			sepNavSelRange = "{8134, 56}";
+			sepNavVisRect = "{{0, 2697}, {535, 306}}";
+		};
+	};
+	03056FC500FFB07CC0A80001 /* MWDocumentSettingsWinController.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {535, 372}}";
+			sepNavSelRange = "{539, 0}";
+			sepNavVisRect = "{{0, 0}, {535, 306}}";
+		};
+	};
 	089C1660FE840EACC02AAC07 /* English */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {740, 132}}";
@@ -15,6 +43,7 @@
 		addToTargets = (
 			2A37F4C6FDCFA73011CA2CEA /* MudWalker App */,
 		);
+		breakpointsGroup = 2B61070B097AAED100C918A7 /* XCBreakpointsBucket */;
 		codeSenseManager = 2BE5B7980883123C0006D1B3 /* Code sense */;
 		executables = (
 			2BE5B782088312130006D1B3 /* mw_icnstool */,
@@ -26,7 +55,7 @@
 				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
 				PBXFileTableDataSourceColumnWidthsKey = (
 					20,
-					230,
+					284,
 					20,
 					61,
 					43,
@@ -101,7 +130,7 @@
 					PBXFileDataSource_Warnings_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 159024814;
+			PBXPerProjectTemplateStateSaveDate = 159028035;
 			PBXPrepackagedSmartGroups_v2 = (
 				{
 					PBXTransientLocationAtTop = bottom;
@@ -623,10 +652,25 @@
 				PBXModuleWindowStatusBarHidden = YES;
 				RubberWindowFrame = "139 272 745 464 0 0 1024 746 ";
 			};
-			PBXWorkspaceStateSaveDate = 159024814;
+			PBXWorkspaceStateSaveDate = 159028035;
+		};
+		perUserProjectItems = {
+			2B610703097AAED100C918A7 /* PBXTextBookmark */ = 2B610703097AAED100C918A7 /* PBXTextBookmark */;
+			2B610705097AAED100C918A7 /* PBXTextBookmark */ = 2B610705097AAED100C918A7 /* PBXTextBookmark */;
+			2B610726097AB14D00C918A7 /* PBXTextBookmark */ = 2B610726097AB14D00C918A7 /* PBXTextBookmark */;
+			2B610727097AB14D00C918A7 /* PBXBookmark */ = 2B610727097AB14D00C918A7 /* PBXBookmark */;
+			2B610728097AB14D00C918A7 /* PBXTextBookmark */ = 2B610728097AB14D00C918A7 /* PBXTextBookmark */;
+			2B61072E097AB23900C918A7 /* PBXTextBookmark */ = 2B61072E097AB23900C918A7 /* PBXTextBookmark */;
 		};
 		sourceControlManager = 2BE5B7970883123C0006D1B3 /* Source Control */;
 		userBuildSettings = {
+		};
+	};
+	2A37F4AEFDCFA73011CA2CEA /* MWConnectionDocument.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {495, 756}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRect = "{{0, 0}, {495, 409}}";
 		};
 	};
 	2A37F4C6FDCFA73011CA2CEA /* MudWalker App */ = {
@@ -652,6 +696,66 @@
 	2B20DDB304AB664D00A80004 /* TestRun Plugin */ = {
 		activeExec = 0;
 	};
+	2B610703097AAED100C918A7 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2BF0312A04CB7AD700A80004 /* MWTriggerFilterTest.m */;
+		name = "MWTriggerFilterTest.m: 233";
+		rLen = 0;
+		rLoc = 8823;
+		rType = 0;
+		vrLen = 828;
+		vrLoc = 8187;
+	};
+	2B610705097AAED100C918A7 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2BF0312A04CB7AD700A80004 /* MWTriggerFilterTest.m */;
+		name = "MWTriggerFilterTest.m: 233";
+		rLen = 0;
+		rLoc = 8823;
+		rType = 0;
+		vrLen = 828;
+		vrLoc = 8187;
+	};
+	2B61070B097AAED100C918A7 /* XCBreakpointsBucket */ = {
+		isa = XCBreakpointsBucket;
+		name = "Project Breakpoints";
+		objects = (
+		);
+	};
+	2B610726097AB14D00C918A7 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 011D3B6900743E167F000001 /* MWTextOutputWinController.m */;
+		name = "MWTextOutputWinController.m: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 963;
+		vrLoc = 481;
+	};
+	2B610727097AB14D00C918A7 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 2A37F4AEFDCFA73011CA2CEA /* MWConnectionDocument.h */;
+	};
+	2B610728097AB14D00C918A7 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 011D3B6900743E167F000001 /* MWTextOutputWinController.m */;
+		name = "MWTextOutputWinController.m: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 963;
+		vrLoc = 481;
+	};
+	2B61072E097AB23900C918A7 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2A37F4AEFDCFA73011CA2CEA /* MWConnectionDocument.h */;
+		name = "MWConnectionDocument.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1016;
+		vrLoc = 0;
+	};
 	2B66313904AB7A1100A80004 /* MWAppTestRunner.m */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {536, 575}}";
@@ -664,6 +768,13 @@
 			sepNavIntBoundsRect = "{{0, 0}, {417, 1872}}";
 			sepNavSelRange = "{0, 0}";
 			sepNavVisRect = "{{0, 0}, {417, 443}}";
+		};
+	};
+	2B9511C704C9ED1A00A80004 /* IconFamily.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {505, 18612}}";
+			sepNavSelRange = "{44771, 0}";
+			sepNavVisRect = "{{0, 16468}, {505, 316}}";
 		};
 	};
 	2B9511C904C9ED3700A80004 /* main.m */ = {
@@ -692,9 +803,9 @@
 	};
 	2B9CF5280472BE4B00A80004 /* MWLuaState.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {459, 4955}}";
-			sepNavSelRange = "{4478, 0}";
-			sepNavVisRect = "{{0, 1968}, {459, 207}}";
+			sepNavIntBoundsRect = "{{0, 0}, {535, 4848}}";
+			sepNavSelRange = "{8227, 0}";
+			sepNavVisRect = "{{0, 3285}, {535, 306}}";
 		};
 	};
 	2BE5B782088312130006D1B3 /* mw_icnstool */ = {
@@ -758,16 +869,16 @@
 	};
 	2BF0312A04CB7AD700A80004 /* MWTriggerFilterTest.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {536, 3348}}";
-			sepNavSelRange = "{5678, 0}";
-			sepNavVisRect = "{{0, 1594}, {536, 497}}";
+			sepNavIntBoundsRect = "{{0, 0}, {495, 3504}}";
+			sepNavSelRange = "{8823, 0}";
+			sepNavVisRect = "{{0, 3095}, {495, 409}}";
 		};
 	};
 	2BFF6BAD0472B5E000A80004 /* MWLuaLanguage.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {417, 1464}}";
-			sepNavSelRange = "{514, 0}";
-			sepNavVisRect = "{{0, 0}, {417, 443}}";
+			sepNavIntBoundsRect = "{{0, 0}, {535, 1344}}";
+			sepNavSelRange = "{2977, 0}";
+			sepNavVisRect = "{{0, 1005}, {535, 306}}";
 		};
 	};
 	2BFF6BB30472B9AC00A80004 /* Lua Plugin */ = {
@@ -872,6 +983,13 @@
 			sepNavVisRect = "{{0, 0}, {527, 497}}";
 		};
 	};
+	F5D04DEB01CEBF3C01A80004 /* MWMudLibrary.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {535, 4680}}";
+			sepNavSelRange = "{896, 0}";
+			sepNavVisRect = "{{0, 315}, {535, 306}}";
+		};
+	};
 	F5E23F8A01DD65D901A80004 /* License.txt */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {740, 179}}";
@@ -888,9 +1006,9 @@
 	};
 	F5E70BA001C52CC101A80004 /* MWTelnetFilter.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {536, 8183}}";
-			sepNavSelRange = "{21296, 12}";
-			sepNavVisRect = "{{0, 4505}, {536, 497}}";
+			sepNavIntBoundsRect = "{{0, 0}, {535, 8184}}";
+			sepNavSelRange = "{9762, 0}";
+			sepNavVisRect = "{{0, 3615}, {535, 306}}";
 		};
 	};
 }

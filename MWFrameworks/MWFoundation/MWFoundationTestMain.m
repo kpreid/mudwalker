@@ -19,6 +19,7 @@
  
   [suite addTest:[TestSuite suiteWithClass:NSClassFromString(@"MWConfigTreeTest")]];
   [suite addTest:[TestSuite suiteWithClass:NSClassFromString(@"MWConfigStackerTest")]];
+  [suite addTest:[TestSuite suiteWithClass:NSClassFromString(@"MWLoggerTest")]];
   [suite addTest:[TestSuite suiteWithClass:NSClassFromString(@"MWNSStringAdditionsTest")]];
   [suite addTest:[TestSuite suiteWithClass:NSClassFromString(@"MWNSScannerAdditionsTest")]];
   [suite addTest:[TestSuite suiteWithClass:NSClassFromString(@"MWRegistryTest")]];

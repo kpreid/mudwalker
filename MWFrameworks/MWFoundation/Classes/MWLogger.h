@@ -13,4 +13,6 @@
   NSFileHandle *fileHandle;
 }
 
+- (void)flush;
+
 @end
