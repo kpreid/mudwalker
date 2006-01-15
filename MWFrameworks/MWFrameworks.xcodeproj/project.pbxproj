@@ -1,0 +1,2624 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		F55E85150248415F01A80004 /* Build All */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 2B6431A8097A86CB00E36736 /* Build configuration list for PBXAggregateTarget "Build All" */;
+			buildPhases = (
+			);
+			buildSettings = {
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "Build Most";
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			dependencies = (
+				F55E85160248418101A80004 /* PBXTargetDependency */,
+				F55E85170248418101A80004 /* PBXTargetDependency */,
+				F56C5B13034CD9ED01A80004 /* PBXTargetDependency */,
+				F57A0259031FE47C01A80004 /* PBXTargetDependency */,
+				F56C5B12034CD9ED01A80004 /* PBXTargetDependency */,
+				F56F0409034F426A01A80004 /* PBXTargetDependency */,
+			);
+			name = "Build All";
+			productName = "Build All";
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXApplicationTarget section */
+		F568144802798ABA01A80004 /* Test MWAppKit */ = {
+			isa = PBXApplicationTarget;
+			buildConfigurationList = 2B6431A4097A86CB00E36736 /* Build configuration list for PBXApplicationTarget "Test MWAppKit" */;
+			buildPhases = (
+				F568144A02798ABA01A80004 /* Headers */,
+				F568144B02798ABA01A80004 /* Resources */,
+				F568144C02798ABA01A80004 /* Sources */,
+				F568144D02798ABA01A80004 /* Frameworks */,
+				F566A466033E360B01A80004 /* CopyFiles */,
+			);
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = /Users/kpreid/Library/Frameworks;
+				OPTIMIZATION_CFLAGS = "-O0";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = "Test MWAppKit";
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Werror",
+					"-Wall",
+					"-Wmost",
+					"-Wunknown-pragmas",
+					"-Wpointer-arith",
+					"-Wno-cast-qual",
+					"-Wcast-align",
+					"-Wwrite-strings",
+					"-Wno-strict-prototypes",
+					"-Wno-redundant-decls",
+					"-Wnested-externs",
+					"-Winline",
+				);
+				WRAPPER_EXTENSION = app;
+			};
+			dependencies = (
+				F568144902798ABA01A80004 /* PBXTargetDependency */,
+			);
+			name = "Test MWAppKit";
+			productInstallPath = "$(USER_APPS_DIR)";
+			productName = "Test MWAppKit";
+			productReference = F568144602798ABA01A80004 /* Test MWAppKit.app */;
+			productSettingsXML = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>
+<!DOCTYPE plist PUBLIC \"-//Apple Computer//DTD PLIST 1.0//EN\" \"http://www.apple.com/DTDs/PropertyList-1.0.dtd\">
+<plist version=\"1.0\">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleExecutable</key>
+	<string>Test MWAppKit</string>
+	<key>CFBundleGetInfoString</key>
+	<string>0.3.2</string>
+	<key>CFBundleIconFile</key>
+	<string></string>
+	<key>CFBundleIdentifier</key>
+	<string>org.cubik.mudwalker.appkit.test</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string></string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>0.3.2</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleVersion</key>
+	<string>0.3.2</string>
+	<key>NSMainNibFile</key>
+	<string>MainMenu.nib</string>
+	<key>NSPrincipalClass</key>
+	<string>NSApplication</string>
+</dict>
+</plist>
+";
+		};
+/* End PBXApplicationTarget section */
+
+/* Begin PBXBuildFile section */
+		2B1A5FB00532410400A80004 /* MWMockLinkable.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B1A5FAE0532410400A80004 /* MWMockLinkable.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2B1A5FB10532410400A80004 /* MWMockLinkable.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B1A5FAF0532410400A80004 /* MWMockLinkable.m */; };
+		2B1EB71C0680BA7700942DC2 /* MWTerminalPane.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B1EB71A0680BA7700942DC2 /* MWTerminalPane.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2B1EB71D0680BA7700942DC2 /* MWTerminalPane.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B1EB71B0680BA7700942DC2 /* MWTerminalPane.m */; };
+		2B20DD4B04A8C90D00A80004 /* MWScriptLanguage.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B20DD4A04A8C90D00A80004 /* MWScriptLanguage.m */; };
+		2B41D55004DC1BED00A80004 /* MWAppRegistryTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B41D54F04DC1BED00A80004 /* MWAppRegistryTest.m */; };
+		2B914F9F047EC05F00A80004 /* MWHasConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B914F9E047EC05F00A80004 /* MWHasConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2B914FA2047FB56800A80004 /* MWIdentityLanguage.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B914FA0047FB56800A80004 /* MWIdentityLanguage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2B914FA3047FB56800A80004 /* MWIdentityLanguage.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B914FA1047FB56800A80004 /* MWIdentityLanguage.m */; };
+		2BE5409E0477BE2900A80004 /* MWScriptPanel.nib in Resources */ = {isa = PBXBuildFile; fileRef = 2BE5409C0477BE2900A80004 /* MWScriptPanel.nib */; };
+		2BE540A10477BEB200A80004 /* MWScriptPanelController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BE5409F0477BEB200A80004 /* MWScriptPanelController.m */; };
+		2BE540A20477BEB200A80004 /* MWScriptPanelController.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BE540A00477BEB200A80004 /* MWScriptPanelController.h */; settings = {ATTRIBUTES = (); }; };
+		2BE5B77B088311290006D1B3 /* ObjcUnit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BE5B77A088311290006D1B3 /* ObjcUnit.framework */; };
+		2BE5B77C088311290006D1B3 /* ObjcUnit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BE5B77A088311290006D1B3 /* ObjcUnit.framework */; };
+		2BEA74360484063400A80004 /* MWTokenTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BEA74350484063400A80004 /* MWTokenTest.m */; };
+		2BF0312704CB146900A80004 /* MWConfigScriptTextViewAdapterTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BF0312604CB146900A80004 /* MWConfigScriptTextViewAdapterTest.m */; };
+		2BFF6B960472706D00A80004 /* MWScriptTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BFF6B950472706D00A80004 /* MWScriptTest.m */; };
+		2BFF6B990472738100A80004 /* MWScript.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BFF6B970472738100A80004 /* MWScript.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2BFF6B9A0472738100A80004 /* MWScript.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BFF6B980472738100A80004 /* MWScript.m */; };
+		2BFF6BA4047293E000A80004 /* MWScriptLanguage.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BFF6BA2047293B600A80004 /* MWScriptLanguage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2BFF6BA90472AB9300A80004 /* MWScriptContexts.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BFF6BA70472AB9300A80004 /* MWScriptContexts.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2BFF6BAA0472AB9300A80004 /* MWScriptContexts.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BFF6BA80472AB9300A80004 /* MWScriptContexts.m */; };
+		F501337501C861EA01A80004 /* MWBSDSocketConnection.h in Headers */ = {isa = PBXBuildFile; fileRef = F501337301C861EA01A80004 /* MWBSDSocketConnection.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F501337601C861EA01A80004 /* MWBSDSocketConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = F501337401C861EA01A80004 /* MWBSDSocketConnection.m */; };
+		F5081C9201E0D4CC01A80004 /* MWConstants.tokens in Headers */ = {isa = PBXBuildFile; fileRef = F565AA9901CBA81601A80004 /* MWConstants.tokens */; settings = {ATTRIBUTES = (Private, ); }; };
+		F5087111034B1F7D01A80004 /* MWConfigViewAdapter.h in Headers */ = {isa = PBXBuildFile; fileRef = F508710D034AB11B01A80004 /* MWConfigViewAdapter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F5087112034B1F7D01A80004 /* MWConfigViewAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = F508710E034AB11B01A80004 /* MWConfigViewAdapter.m */; };
+		F5087117034B5CAA01A80004 /* MWAppKitPalette.h in Headers */ = {isa = PBXBuildFile; fileRef = F5087116034B5CAA01A80004 /* MWAppKitPalette.h */; };
+		F5087118034B5CAA01A80004 /* palette.table in Resources */ = {isa = PBXBuildFile; fileRef = F5087113034B5CAA01A80004 /* palette.table */; };
+		F5087119034B5CAA01A80004 /* MWAppKitPaletteNib.nib in Resources */ = {isa = PBXBuildFile; fileRef = F5087114034B5CAA01A80004 /* MWAppKitPaletteNib.nib */; };
+		F508711A034B5CAA01A80004 /* MWAppKitPalette.m in Sources */ = {isa = PBXBuildFile; fileRef = F5087115034B5CAA01A80004 /* MWAppKitPalette.m */; };
+		F508711C034B5F1901A80004 /* InterfaceBuilder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F508711B034B5F1901A80004 /* InterfaceBuilder.framework */; };
+		F508711E034B61AC01A80004 /* MWAppKitPaletteIcon.icns in Resources */ = {isa = PBXBuildFile; fileRef = F508711D034B61AC01A80004 /* MWAppKitPaletteIcon.icns */; };
+		F508711F034B620601A80004 /* MWAppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F55C41920241631B01A80004 /* MWAppKit.framework */; };
+		F5087120034B620601A80004 /* MudWalker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5E70BB001C5335801A80004 /* MudWalker.framework */; };
+		F5087121034B625201A80004 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A7FEA54F5311CA2CBB /* Cocoa.framework */; };
+		F519B96B0348FC4F01A80004 /* MWURLFormatterTest.m in Sources */ = {isa = PBXBuildFile; fileRef = F519B9690348F87801A80004 /* MWURLFormatterTest.m */; };
+		F51C88D401C536FF01A80004 /* MWConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 013A5151010123ACC0A80001 /* MWConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F51C88D601C536FF01A80004 /* MWConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 013A5153010123D0C0A80001 /* MWConstants.m */; };
+		F51C88E301C53A3301A80004 /* MWLink.h in Headers */ = {isa = PBXBuildFile; fileRef = F5D2D9E6018858A601A80004 /* MWLink.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F51C88E401C53A3301A80004 /* MWConcreteLinkable.h in Headers */ = {isa = PBXBuildFile; fileRef = F56979E501B9377C01A80004 /* MWConcreteLinkable.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F51C88E501C53A3301A80004 /* MWLinkPruner.h in Headers */ = {isa = PBXBuildFile; fileRef = F5790AE001BA834A01A80004 /* MWLinkPruner.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F51C88E601C53A3301A80004 /* MWLink.m in Sources */ = {isa = PBXBuildFile; fileRef = F5D2D9EA018859CE01A80004 /* MWLink.m */; };
+		F51C88E701C53A3301A80004 /* MWConcreteLinkable.m in Sources */ = {isa = PBXBuildFile; fileRef = F56979E601B9377C01A80004 /* MWConcreteLinkable.m */; };
+		F51C88E801C53A3301A80004 /* MWLinkPruner.m in Sources */ = {isa = PBXBuildFile; fileRef = F5790AE101BA834A01A80004 /* MWLinkPruner.m */; };
+		F51C88F001C53C2201A80004 /* MWToken.h in Headers */ = {isa = PBXBuildFile; fileRef = F51C88EE01C53C2201A80004 /* MWToken.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F51C88F101C53C2201A80004 /* MWLineString.h in Headers */ = {isa = PBXBuildFile; fileRef = F51C88EC01C53C2201A80004 /* MWLineString.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F51C88F201C53C2201A80004 /* MWLineData.h in Headers */ = {isa = PBXBuildFile; fileRef = F51C88EA01C53C2201A80004 /* MWLineData.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F51C88F301C53C2201A80004 /* MWToken.m in Sources */ = {isa = PBXBuildFile; fileRef = F51C88EF01C53C2201A80004 /* MWToken.m */; };
+		F51C88F401C53C2201A80004 /* MWLineString.m in Sources */ = {isa = PBXBuildFile; fileRef = F51C88ED01C53C2201A80004 /* MWLineString.m */; };
+		F51C88F501C53C2201A80004 /* MWLineData.m in Sources */ = {isa = PBXBuildFile; fileRef = F51C88EB01C53C2201A80004 /* MWLineData.m */; };
+		F51C88F701C578C001A80004 /* MWUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = F51C88F601C578C001A80004 /* MWUtilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F529E9CE01C6C20401A80004 /* MudWalker.h in Headers */ = {isa = PBXBuildFile; fileRef = F529E9CD01C6C20301A80004 /* MudWalker.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F5462723032AE20E01A80004 /* MWURLFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = F5462721032AE20E01A80004 /* MWURLFormatter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F5462724032AE20E01A80004 /* MWURLFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = F5462722032AE20E01A80004 /* MWURLFormatter.m */; };
+		F554182C0280A8AD01A80004 /* MWFoundationTestMain.m in Sources */ = {isa = PBXBuildFile; fileRef = F554181A0280952901A80004 /* MWFoundationTestMain.m */; };
+		F554182E0280A8AD01A80004 /* MudWalker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5E70BB001C5335801A80004 /* MudWalker.framework */; };
+		F556D0600333733F01A80004 /* MWRegistryTest.m in Sources */ = {isa = PBXBuildFile; fileRef = F556D05F0333733F01A80004 /* MWRegistryTest.m */; };
+		F55C419B0241649A01A80004 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A37F4C5FDCFA73011CA2CEA /* Foundation.framework */; };
+		F55C419C0241649A01A80004 /* MudWalker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5E70BB001C5335801A80004 /* MudWalker.framework */; };
+		F55C419D0241649A01A80004 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A7FEA54F5311CA2CBB /* Cocoa.framework */; };
+		F55C41A00241660901A80004 /* MWAppKit.h in Headers */ = {isa = PBXBuildFile; fileRef = F55C419F0241660901A80004 /* MWAppKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F55E850F02479C4301A80004 /* MWTeeFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = F55E850D02479C4301A80004 /* MWTeeFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F55E851002479C4301A80004 /* MWTeeFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = F55E850E02479C4301A80004 /* MWTeeFilter.m */; };
+		F55E8513024822D801A80004 /* MWLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = F55E8511024822D801A80004 /* MWLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F55E8514024822D801A80004 /* MWLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = F55E8512024822D801A80004 /* MWLogger.m */; };
+		F55EAAB70263BEC801A80004 /* MWNSFileHandleConnection.h in Headers */ = {isa = PBXBuildFile; fileRef = F55EAAB50263BEC801A80004 /* MWNSFileHandleConnection.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F55EAAB80263BEC801A80004 /* MWNSFileHandleConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = F55EAAB60263BEC801A80004 /* MWNSFileHandleConnection.m */; };
+		F55EE6D6024246EF01A80004 /* MWValidatedButton.h in Headers */ = {isa = PBXBuildFile; fileRef = F55EE6D1024246EE01A80004 /* MWValidatedButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F55EE6D8024246EF01A80004 /* MWOutputTextView.h in Headers */ = {isa = PBXBuildFile; fileRef = F55EE6D5024246EE01A80004 /* MWOutputTextView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F55EE6D9024246EF01A80004 /* MWOutputTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = F55EE6D0024246EE01A80004 /* MWOutputTextView.m */; };
+		F55EE6DA024246EF01A80004 /* MWValidatedButton.m in Sources */ = {isa = PBXBuildFile; fileRef = F55EE6D3024246EE01A80004 /* MWValidatedButton.m */; };
+		F55EE6DE024293B301A80004 /* MWRegistry.h in Headers */ = {isa = PBXBuildFile; fileRef = F55EE6DC024293B301A80004 /* MWRegistry.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F55EE6DF024293B301A80004 /* MWRegistry.m in Sources */ = {isa = PBXBuildFile; fileRef = F55EE6DD024293B301A80004 /* MWRegistry.m */; };
+		F55EE6E0024299A401A80004 /* MWPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = F529E9CA01C66D5B01A80004 /* MWPlugin.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F55EE6E70242E19401A80004 /* MWConfigPane.h in Headers */ = {isa = PBXBuildFile; fileRef = F55EE6E50242E19401A80004 /* MWConfigPane.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F55EE6E80242E19401A80004 /* MWConfigPane.m in Sources */ = {isa = PBXBuildFile; fileRef = F55EE6E60242E19401A80004 /* MWConfigPane.m */; };
+		F55EE6EB0242E54401A80004 /* PreferencePanes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F55EE6EA0242E54401A80004 /* PreferencePanes.framework */; };
+		F55F29B60274384C01A80004 /* MWToolbars.h in Headers */ = {isa = PBXBuildFile; fileRef = F55D1B8201C3B68901A80004 /* MWToolbars.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F55F619F0245147701A80004 /* MWCustomBindingsTextView.h in Headers */ = {isa = PBXBuildFile; fileRef = F55F619D0245147701A80004 /* MWCustomBindingsTextView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F55F61A00245147701A80004 /* MWCustomBindingsTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = F55F619E0245147701A80004 /* MWCustomBindingsTextView.m */; };
+		F560274B0246250D01A80004 /* MWNSStringAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = F56027490246250D01A80004 /* MWNSStringAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F560274C0246250D01A80004 /* MWNSStringAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = F560274A0246250D01A80004 /* MWNSStringAdditions.m */; };
+		F5623AC3025E314E01A80004 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5623AC2025E314E01A80004 /* CoreFoundation.framework */; };
+		F5623AC7025E351201A80004 /* MWAbstractConnection.h in Headers */ = {isa = PBXBuildFile; fileRef = F5623AC5025E351101A80004 /* MWAbstractConnection.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F5623AC8025E351201A80004 /* MWAbstractConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = F5623AC6025E351201A80004 /* MWAbstractConnection.m */; };
+		F5623ACB025E37EE01A80004 /* MWTCPConnection.h in Headers */ = {isa = PBXBuildFile; fileRef = F5623AC9025E37EE01A80004 /* MWTCPConnection.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F5623ACC025E37EE01A80004 /* MWTCPConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = F5623ACA025E37EE01A80004 /* MWTCPConnection.m */; };
+		F5623ACF025E4B6B01A80004 /* MWCFSocketConnection.h in Headers */ = {isa = PBXBuildFile; fileRef = F5623ACD025E4B6B01A80004 /* MWCFSocketConnection.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F5623AD0025E4B6B01A80004 /* MWCFSocketConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = F5623ACE025E4B6B01A80004 /* MWCFSocketConnection.m */; };
+		F564788A0241A54B01A80004 /* MWLinearLayoutView.h in Headers */ = {isa = PBXBuildFile; fileRef = F575109401C082E701A80004 /* MWLinearLayoutView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F564788B0241A54B01A80004 /* MWGenericTableViewDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = F558C95F01F65BEC01A80004 /* MWGenericTableViewDataSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F564788C0241A54B01A80004 /* MWLayoutView.m in Sources */ = {isa = PBXBuildFile; fileRef = F558C96401F66C6601A80004 /* MWLayoutView.m */; };
+		F564788D0241A54B01A80004 /* MWLinearLayoutView.m in Sources */ = {isa = PBXBuildFile; fileRef = F575109501C082E701A80004 /* MWLinearLayoutView.m */; };
+		F564788E0241A54B01A80004 /* MWGenericTableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = F558C96001F65BEC01A80004 /* MWGenericTableViewDataSource.m */; };
+		F566A467033E360B01A80004 /* MudWalker.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = F5E70BB001C5335801A80004 /* MudWalker.framework */; };
+		F566A468033E360B01A80004 /* MWAppKit.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = F55C41920241631B01A80004 /* MWAppKit.framework */; };
+		F567087302C210C801A80004 /* MWConfigTree.h in Headers */ = {isa = PBXBuildFile; fileRef = F567087102C210C801A80004 /* MWConfigTree.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F567087402C210C801A80004 /* MWConfigTree.m in Sources */ = {isa = PBXBuildFile; fileRef = F567087202C210C801A80004 /* MWConfigTree.m */; };
+		F567087802C2197301A80004 /* MWConfigPath.h in Headers */ = {isa = PBXBuildFile; fileRef = F567087602C2197301A80004 /* MWConfigPath.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F567087902C2197301A80004 /* MWConfigPath.m in Sources */ = {isa = PBXBuildFile; fileRef = F567087702C2197301A80004 /* MWConfigPath.m */; };
+		F568145002798B3F01A80004 /* MWAppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F55C41920241631B01A80004 /* MWAppKit.framework */; };
+		F568145202798E5601A80004 /* ApplicationMain.m in Sources */ = {isa = PBXBuildFile; fileRef = F568145102798E5601A80004 /* ApplicationMain.m */; };
+		F568145302798E7B01A80004 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A7FEA54F5311CA2CBB /* Cocoa.framework */; };
+		F568145502798FC701A80004 /* MainMenu.nib in Resources */ = {isa = PBXBuildFile; fileRef = F568145402798FC601A80004 /* MainMenu.nib */; };
+		F56814560279AB1E01A80004 /* MWGraphView.h in Headers */ = {isa = PBXBuildFile; fileRef = F5A5892E02622B5B01A80004 /* MWGraphView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F56814570279AB1F01A80004 /* MWGraphView.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A5892F02622B5B01A80004 /* MWGraphView.m */; };
+		F568145A0279B7AA01A80004 /* MWTGraphViewWinController.h in Headers */ = {isa = PBXBuildFile; fileRef = F56814580279B7AA01A80004 /* MWTGraphViewWinController.h */; };
+		F568145B0279B7AA01A80004 /* MWTGraphViewWinController.m in Sources */ = {isa = PBXBuildFile; fileRef = F56814590279B7AA01A80004 /* MWTGraphViewWinController.m */; };
+		F56860BA0258CD3201A80004 /* MWNSTextStorageAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = F56860B80258CD3101A80004 /* MWNSTextStorageAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F56860BB0258CD3201A80004 /* MWNSTextStorageAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = F56860B90258CD3101A80004 /* MWNSTextStorageAdditions.m */; };
+		F569D932033D135501A80004 /* MWImageAndTextCell.h in Headers */ = {isa = PBXBuildFile; fileRef = F569D930033D135501A80004 /* MWImageAndTextCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F569D933033D135501A80004 /* MWImageAndTextCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F569D931033D135501A80004 /* MWImageAndTextCell.m */; };
+		F569DAD902E76C7C01A80004 /* MWNSScannerAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = F569DAD702E76C7B01A80004 /* MWNSScannerAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F569DADA02E76C7C01A80004 /* MWNSScannerAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = F569DAD802E76C7B01A80004 /* MWNSScannerAdditions.m */; };
+		F56A42A6032E745801A80004 /* MWRawConfigPane.nib in Resources */ = {isa = PBXBuildFile; fileRef = F56A42A5032E745801A80004 /* MWRawConfigPane.nib */; };
+		F56B531D033D639901A80004 /* MWConfigDirectoryEditPane.h in Headers */ = {isa = PBXBuildFile; fileRef = F56B531B033D639901A80004 /* MWConfigDirectoryEditPane.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F56B531E033D639901A80004 /* MWConfigDirectoryEditPane.m in Sources */ = {isa = PBXBuildFile; fileRef = F56B531C033D639901A80004 /* MWConfigDirectoryEditPane.m */; };
+		F56B5321033D641701A80004 /* MWTableViewForDirectoryEdit.h in Headers */ = {isa = PBXBuildFile; fileRef = F56B531F033D641701A80004 /* MWTableViewForDirectoryEdit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F56B5322033D641701A80004 /* MWTableViewForDirectoryEdit.m in Sources */ = {isa = PBXBuildFile; fileRef = F56B5320033D641701A80004 /* MWTableViewForDirectoryEdit.m */; };
+		F56C596F031D294401A80004 /* MWConfigTreeTest.m in Sources */ = {isa = PBXBuildFile; fileRef = F56C596E031D294401A80004 /* MWConfigTreeTest.m */; };
+		F56C5975031D4C9701A80004 /* MWConfigSupplier.h in Headers */ = {isa = PBXBuildFile; fileRef = F56C5974031D4C9701A80004 /* MWConfigSupplier.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F56C5976031D560E01A80004 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A37F4C5FDCFA73011CA2CEA /* Foundation.framework */; };
+		F56C597A031DA2F501A80004 /* MWConfigStackerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = F56C5977031D5D1701A80004 /* MWConfigStackerTest.m */; };
+		F56C597D031DA6BD01A80004 /* MWConfigStacker.h in Headers */ = {isa = PBXBuildFile; fileRef = F56C597B031DA6BD01A80004 /* MWConfigStacker.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F56C597E031DA6BD01A80004 /* MWConfigStacker.m in Sources */ = {isa = PBXBuildFile; fileRef = F56C597C031DA6BD01A80004 /* MWConfigStacker.m */; };
+		F56C5B15034CE81201A80004 /* MWConfigViewAdapterInspectorNib.nib in Resources */ = {isa = PBXBuildFile; fileRef = F56C5B14034CE81101A80004 /* MWConfigViewAdapterInspectorNib.nib */; };
+		F56C5B18034CE86E01A80004 /* MWConfigViewAdapterInspector.h in Headers */ = {isa = PBXBuildFile; fileRef = F56C5B16034CE86E01A80004 /* MWConfigViewAdapterInspector.h */; };
+		F56C5B19034CE86E01A80004 /* MWConfigViewAdapterInspector.m in Sources */ = {isa = PBXBuildFile; fileRef = F56C5B17034CE86E01A80004 /* MWConfigViewAdapterInspector.m */; };
+		F56C5B20034D19F601A80004 /* MWConfigViewAdapter.ibclassdescription in Resources */ = {isa = PBXBuildFile; fileRef = F56C5B1F034D19F601A80004 /* MWConfigViewAdapter.ibclassdescription */; };
+		F56C5B27034DF19C01A80004 /* MWURLLaunchRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = F56C5B26034DF19C01A80004 /* MWURLLaunchRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F56C5B28034DF19C01A80004 /* MWURLLaunchRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = F56C5B25034DF19C01A80004 /* MWURLLaunchRequest.m */; };
+		F56C5B2B034DF1D701A80004 /* MWURLLaunchRequest.nib in Resources */ = {isa = PBXBuildFile; fileRef = F56C5B29034DF1D601A80004 /* MWURLLaunchRequest.nib */; };
+		F5707F5903269A6701A80004 /* MWRawConfigPane.h in Headers */ = {isa = PBXBuildFile; fileRef = F5707F5703269A6701A80004 /* MWRawConfigPane.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F5707F5A03269A6701A80004 /* MWRawConfigPane.m in Sources */ = {isa = PBXBuildFile; fileRef = F5707F5803269A6701A80004 /* MWRawConfigPane.m */; };
+		F5707F6203269D3601A80004 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F5707F6003269D3601A80004 /* Localizable.strings */; };
+		F57838FF039C2F6A01A80004 /* MWKeyCapturingPanel.h in Headers */ = {isa = PBXBuildFile; fileRef = F57838FB039C2F6A01A80004 /* MWKeyCapturingPanel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F5783900039C2F6A01A80004 /* MWKeyCapturingPanel.nib in Resources */ = {isa = PBXBuildFile; fileRef = F57838FC039C2F6A01A80004 /* MWKeyCapturingPanel.nib */; };
+		F5783902039C2F6B01A80004 /* MWKeyCapturingPanel.m in Sources */ = {isa = PBXBuildFile; fileRef = F57838FA039C2F6A01A80004 /* MWKeyCapturingPanel.m */; };
+		F5783905039C312201A80004 /* MWAppUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = F5783903039C312201A80004 /* MWAppUtilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F5783906039C312201A80004 /* MWAppUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = F5783904039C312201A80004 /* MWAppUtilities.m */; };
+		F5783909039C37C501A80004 /* MWKeyCodeCell.h in Headers */ = {isa = PBXBuildFile; fileRef = F5783907039C37C401A80004 /* MWKeyCodeCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F578390A039C37C501A80004 /* MWKeyCodeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F5783908039C37C401A80004 /* MWKeyCodeCell.m */; };
+		F578390B039C38F401A80004 /* MWLayoutView.h in Headers */ = {isa = PBXBuildFile; fileRef = F558C96301F66C6601A80004 /* MWLayoutView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F5783910039D02C201A80004 /* MWMiscTestController.h in Headers */ = {isa = PBXBuildFile; fileRef = F578390E039D02C201A80004 /* MWMiscTestController.h */; };
+		F5783911039D02C201A80004 /* MWMiscTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = F578390F039D02C201A80004 /* MWMiscTestController.m */; };
+		F5783912039D076D01A80004 /* MudWalker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5E70BB001C5335801A80004 /* MudWalker.framework */; };
+		F57CD1E0027DCC0B01A80004 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F57CD1DF027DCC0B01A80004 /* Localizable.strings */; };
+		F57DDA5A032FADA301A80004 /* MWNSStringAdditionsTest.m in Sources */ = {isa = PBXBuildFile; fileRef = F57DDA59032FADA301A80004 /* MWNSStringAdditionsTest.m */; };
+		F57FD28802E47E5401A80004 /* MWURLLoadingImageView.h in Headers */ = {isa = PBXBuildFile; fileRef = F57FD28602E47E5401A80004 /* MWURLLoadingImageView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F57FD28902E47E5401A80004 /* MWURLLoadingImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = F57FD28702E47E5401A80004 /* MWURLLoadingImageView.m */; };
+		F59B316D0330C86701A80004 /* MWExtInput.h in Headers */ = {isa = PBXBuildFile; fileRef = F570FC590221745101A80004 /* MWExtInput.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F5C7E7AE03479E3B01A80004 /* MWNSScannerAdditionsTest.m in Sources */ = {isa = PBXBuildFile; fileRef = F5C7E7AC03479E0F01A80004 /* MWNSScannerAdditionsTest.m */; };
+		F5C7E7B40348889301A80004 /* MWFontSelectorView.h in Headers */ = {isa = PBXBuildFile; fileRef = F5C7E7B20348889301A80004 /* MWFontSelectorView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F5C7E7B50348889301A80004 /* MWFontSelectorView.m in Sources */ = {isa = PBXBuildFile; fileRef = F5C7E7B30348889301A80004 /* MWFontSelectorView.m */; };
+		F5CF515D02E9E43E01A80004 /* MWToolbarController.h in Headers */ = {isa = PBXBuildFile; fileRef = F5CF515B02E9E43E01A80004 /* MWToolbarController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F5CF515E02E9E43E01A80004 /* MWToolbarController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5CF515C02E9E43E01A80004 /* MWToolbarController.m */; };
+		F5ECD28C021AC01701A80004 /* LookupHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = F5ECD286021AC01701A80004 /* LookupHandler.h */; };
+		F5ECD28E021AC01701A80004 /* LookupHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = F5ECD287021AC01701A80004 /* LookupHandler.m */; };
+		F5ECD293021AC08101A80004 /* LookupHandler in CopyFiles */ = {isa = PBXBuildFile; fileRef = F5ECD288021AC01701A80004 /* LookupHandler */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildStyle section */
+		4A9504D0FFE6A4CB11CA0CBA /* Development */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				OPTIMIZATION_CFLAGS = "-O0";
+				ZERO_LINK = YES;
+			};
+			name = Development;
+		};
+		4A9504D1FFE6A4CB11CA0CBA /* Deployment */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				ZERO_LINK = NO;
+			};
+			name = Deployment;
+		};
+/* End PBXBuildStyle section */
+
+/* Begin PBXBundleTarget section */
+		F57A0253031FD2CF01A80004 /* MWAppKit Palette */ = {
+			isa = PBXBundleTarget;
+			buildConfigurationList = 2B64319C097A86CB00E36736 /* Build configuration list for PBXBundleTarget "MWAppKit Palette" */;
+			buildPhases = (
+				F57A0254031FD2CF01A80004 /* Headers */,
+				F57A0255031FD2CF01A80004 /* Resources */,
+				F57A0256031FD2CF01A80004 /* Sources */,
+				F57A0257031FD2CF01A80004 /* Frameworks */,
+			);
+			buildSettings = {
+				INSTALL_PATH = "$(HOME)/Developer/Palettes";
+				OPTIMIZATION_CFLAGS = "-O1";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "-bundle";
+				OTHER_REZFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = "MWAppKit Palette";
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Werror",
+					"-Wall",
+					"-Wmost",
+					"-Wunknown-pragmas",
+					"-Wpointer-arith",
+					"-Wno-cast-qual",
+					"-Wcast-align",
+					"-Wwrite-strings",
+					"-Wno-strict-prototypes",
+					"-Wno-redundant-decls",
+					"-Wnested-externs",
+					"-Winline",
+				);
+				WRAPPER_EXTENSION = palette;
+			};
+			dependencies = (
+				F56F0408034F426A01A80004 /* PBXTargetDependency */,
+			);
+			name = "MWAppKit Palette";
+			productInstallPath = "$(HOME)/Developer/Palettes";
+			productName = "MWAppKit Palette";
+			productReference = F57A0252031FD2CF01A80004 /* MWAppKit Palette.palette */;
+			productSettingsXML = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>
+<!DOCTYPE plist PUBLIC \"-//Apple Computer//DTD PLIST 1.0//EN\" \"http://www.apple.com/DTDs/PropertyList-1.0.dtd\">
+<plist version=\"1.0\">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleExecutable</key>
+	<string></string>
+	<key>CFBundleGetInfoString</key>
+	<string>0.3.2</string>
+	<key>CFBundleIconFile</key>
+	<string></string>
+	<key>CFBundleIdentifier</key>
+	<string>org.cubik.mudwalker.appkit.ibpalette</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string></string>
+	<key>CFBundlePackageType</key>
+	<string>BNDL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>0.3.2</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleVersion</key>
+	<string>0.3.2</string>
+</dict>
+</plist>
+";
+		};
+/* End PBXBundleTarget section */
+
+/* Begin PBXContainerItemProxy section */
+		2BF836F7057B805500BF4147 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A37F4A9FDCFA73011CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F5E70BB101C5335901A80004;
+			remoteInfo = MWFoundation;
+		};
+		2BF836F8057B805500BF4147 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A37F4A9FDCFA73011CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F55418280280A8AD01A80004;
+			remoteInfo = "Test MWFoundation";
+		};
+		2BF836F9057B805500BF4147 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A37F4A9FDCFA73011CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F5E70BB101C5335901A80004;
+			remoteInfo = MWFoundation;
+		};
+		2BF836FA057B805500BF4147 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A37F4A9FDCFA73011CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F55C41930241631B01A80004;
+			remoteInfo = MWAppKit;
+		};
+		2BF836FB057B805500BF4147 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A37F4A9FDCFA73011CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F568144802798ABA01A80004;
+			remoteInfo = "Test MWAppKit";
+		};
+		2BF836FC057B805500BF4147 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A37F4A9FDCFA73011CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F56F0407034F3F8E01A80004;
+			remoteInfo = "Copy Frameworks";
+		};
+		2BF836FD057B805500BF4147 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A37F4A9FDCFA73011CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F5E70BB101C5335901A80004;
+			remoteInfo = MWFoundation;
+		};
+		2BF836FE057B805500BF4147 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A37F4A9FDCFA73011CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F5ECD28A021AC01701A80004;
+			remoteInfo = LookupHandler;
+		};
+		2BF836FF057B805500BF4147 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A37F4A9FDCFA73011CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F55C41930241631B01A80004;
+			remoteInfo = MWAppKit;
+		};
+		2BF83700057B805500BF4147 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A37F4A9FDCFA73011CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F57A0253031FD2CF01A80004;
+			remoteInfo = "MWAppKit Palette";
+		};
+		2BF83701057B805500BF4147 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A37F4A9FDCFA73011CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F56F0407034F3F8E01A80004;
+			remoteInfo = "Copy Frameworks";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F566A466033E360B01A80004 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F566A467033E360B01A80004 /* MudWalker.framework in CopyFiles */,
+				F566A468033E360B01A80004 /* MWAppKit.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5ECD292021AC08101A80004 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 6;
+			files = (
+				F5ECD293021AC08101A80004 /* LookupHandler in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		013A5151010123ACC0A80001 /* MWConstants.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = MWConstants.h; sourceTree = "<group>"; };
+		013A5153010123D0C0A80001 /* MWConstants.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = MWConstants.m; sourceTree = "<group>"; };
+		1058C7A7FEA54F5311CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		2A37F4C4FDCFA73011CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		2A37F4C5FDCFA73011CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		2B1A5FAE0532410400A80004 /* MWMockLinkable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWMockLinkable.h; sourceTree = "<group>"; };
+		2B1A5FAF0532410400A80004 /* MWMockLinkable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWMockLinkable.m; sourceTree = "<group>"; };
+		2B1EB71A0680BA7700942DC2 /* MWTerminalPane.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWTerminalPane.h; sourceTree = "<group>"; };
+		2B1EB71B0680BA7700942DC2 /* MWTerminalPane.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWTerminalPane.m; sourceTree = "<group>"; };
+		2B20DD4A04A8C90D00A80004 /* MWScriptLanguage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWScriptLanguage.m; sourceTree = "<group>"; };
+		2B41D54F04DC1BED00A80004 /* MWAppRegistryTest.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = MWAppRegistryTest.m; sourceTree = "<group>"; };
+		2B914F9E047EC05F00A80004 /* MWHasConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWHasConfig.h; sourceTree = "<group>"; };
+		2B914FA0047FB56800A80004 /* MWIdentityLanguage.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = MWIdentityLanguage.h; sourceTree = "<group>"; };
+		2B914FA1047FB56800A80004 /* MWIdentityLanguage.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = MWIdentityLanguage.m; sourceTree = "<group>"; };
+		2BA1004E06DFAAC70019EC02 /* README before building.txt */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; name = "README before building.txt"; path = "../README before building.txt"; sourceTree = "<group>"; };
+		2BE5409D0477BE2900A80004 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = MWAppKit/Resources/English.lproj/MWScriptPanel.nib; sourceTree = SOURCE_ROOT; };
+		2BE5409F0477BEB200A80004 /* MWScriptPanelController.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = MWScriptPanelController.m; sourceTree = "<group>"; };
+		2BE540A00477BEB200A80004 /* MWScriptPanelController.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = MWScriptPanelController.h; sourceTree = "<group>"; };
+		2BE5B77A088311290006D1B3 /* ObjcUnit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjcUnit.framework; path = /Library/Frameworks/ObjcUnit.framework; sourceTree = "<absolute>"; };
+		2BEA74350484063400A80004 /* MWTokenTest.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = MWTokenTest.m; sourceTree = "<group>"; };
+		2BF0312604CB146900A80004 /* MWConfigScriptTextViewAdapterTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWConfigScriptTextViewAdapterTest.m; sourceTree = "<group>"; };
+		2BF83714057B80D300BF4147 /* copyframeworks */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.script.sh; path = copyframeworks; sourceTree = "<group>"; };
+		2BFF6B950472706D00A80004 /* MWScriptTest.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = MWScriptTest.m; sourceTree = "<group>"; };
+		2BFF6B970472738100A80004 /* MWScript.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWScript.h; sourceTree = "<group>"; };
+		2BFF6B980472738100A80004 /* MWScript.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWScript.m; sourceTree = "<group>"; };
+		2BFF6BA2047293B600A80004 /* MWScriptLanguage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MWScriptLanguage.h; path = MWFoundation/Sources/MWScriptLanguage.h; sourceTree = SOURCE_ROOT; };
+		2BFF6BA70472AB9300A80004 /* MWScriptContexts.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = MWScriptContexts.h; sourceTree = "<group>"; };
+		2BFF6BA80472AB9300A80004 /* MWScriptContexts.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = MWScriptContexts.m; sourceTree = "<group>"; };
+		F501337301C861EA01A80004 /* MWBSDSocketConnection.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = MWBSDSocketConnection.h; sourceTree = "<group>"; };
+		F501337401C861EA01A80004 /* MWBSDSocketConnection.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = MWBSDSocketConnection.m; sourceTree = "<group>"; };
+		F508710D034AB11B01A80004 /* MWConfigViewAdapter.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = MWConfigViewAdapter.h; sourceTree = "<group>"; };
+		F508710E034AB11B01A80004 /* MWConfigViewAdapter.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = MWConfigViewAdapter.m; sourceTree = "<group>"; };
+		F5087113034B5CAA01A80004 /* palette.table */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.xml; path = palette.table; sourceTree = "<group>"; };
+		F5087114034B5CAA01A80004 /* MWAppKitPaletteNib.nib */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; path = MWAppKitPaletteNib.nib; sourceTree = "<group>"; };
+		F5087115034B5CAA01A80004 /* MWAppKitPalette.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = MWAppKitPalette.m; sourceTree = "<group>"; };
+		F5087116034B5CAA01A80004 /* MWAppKitPalette.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = MWAppKitPalette.h; sourceTree = "<group>"; };
+		F508711B034B5F1901A80004 /* InterfaceBuilder.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = InterfaceBuilder.framework; path = /System/Library/Frameworks/InterfaceBuilder.framework; sourceTree = "<absolute>"; };
+		F508711D034B61AC01A80004 /* MWAppKitPaletteIcon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = MWAppKitPaletteIcon.icns; sourceTree = "<group>"; };
+		F519B9690348F87801A80004 /* MWURLFormatterTest.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = MWURLFormatterTest.m; sourceTree = "<group>"; };
+		F51C88EA01C53C2201A80004 /* MWLineData.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = MWLineData.h; sourceTree = "<group>"; };
+		F51C88EB01C53C2201A80004 /* MWLineData.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = MWLineData.m; sourceTree = "<group>"; };
+		F51C88EC01C53C2201A80004 /* MWLineString.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = MWLineString.h; sourceTree = "<group>"; };
+		F51C88ED01C53C2201A80004 /* MWLineString.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = MWLineString.m; sourceTree = "<group>"; };
+		F51C88EE01C53C2201A80004 /* MWToken.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = MWToken.h; sourceTree = "<group>"; };
+		F51C88EF01C53C2201A80004 /* MWToken.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = MWToken.m; sourceTree = "<group>"; };
+		F51C88F601C578C001A80004 /* MWUtilities.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = MWUtilities.h; sourceTree = "<group>"; };
+		F529E9CA01C66D5B01A80004 /* MWPlugin.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = MWPlugin.h; sourceTree = "<group>"; };
+		F529E9CD01C6C20301A80004 /* MudWalker.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = MudWalker.h; sourceTree = "<group>"; };
+		F5462721032AE20E01A80004 /* MWURLFormatter.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = MWURLFormatter.h; sourceTree = "<group>"; };
+		F5462722032AE20E01A80004 /* MWURLFormatter.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = MWURLFormatter.m; sourceTree = "<group>"; };
+		F554181A0280952901A80004 /* MWFoundationTestMain.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = MWFoundationTestMain.m; sourceTree = "<group>"; };
+		F55418270280A8AD01A80004 /* Test MWFoundation */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = "Test MWFoundation"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F556D05F0333733F01A80004 /* MWRegistryTest.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = MWRegistryTest.m; sourceTree = "<group>"; };
+		F558C95F01F65BEC01A80004 /* MWGenericTableViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = MWGenericTableViewDataSource.h; sourceTree = "<group>"; };
+		F558C96001F65BEC01A80004 /* MWGenericTableViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = MWGenericTableViewDataSource.m; sourceTree = "<group>"; };
+		F558C96301F66C6601A80004 /* MWLayoutView.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = MWLayoutView.h; sourceTree = "<group>"; };
+		F558C96401F66C6601A80004 /* MWLayoutView.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = MWLayoutView.m; sourceTree = "<group>"; };
+		F55C41920241631B01A80004 /* MWAppKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MWAppKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F55C419F0241660901A80004 /* MWAppKit.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = MWAppKit.h; sourceTree = "<group>"; };
+		F55D1B8201C3B68901A80004 /* MWToolbars.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = MWToolbars.h; sourceTree = "<group>"; };
+		F55E850D02479C4301A80004 /* MWTeeFilter.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = MWTeeFilter.h; sourceTree = "<group>"; };
+		F55E850E02479C4301A80004 /* MWTeeFilter.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = MWTeeFilter.m; sourceTree = "<group>"; };
+		F55E8511024822D801A80004 /* MWLogger.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = MWLogger.h; sourceTree = "<group>"; };
+		F55E8512024822D801A80004 /* MWLogger.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = MWLogger.m; sourceTree = "<group>"; };
+		F55EAAB50263BEC801A80004 /* MWNSFileHandleConnection.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = MWNSFileHandleConnection.h; sourceTree = "<group>"; };
+		F55EAAB60263BEC801A80004 /* MWNSFileHandleConnection.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = MWNSFileHandleConnection.m; sourceTree = "<group>"; };
+		F55EE6D0024246EE01A80004 /* MWOutputTextView.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = MWOutputTextView.m; sourceTree = "<group>"; };
+		F55EE6D1024246EE01A80004 /* MWValidatedButton.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = MWValidatedButton.h; sourceTree = "<group>"; };
+		F55EE6D3024246EE01A80004 /* MWValidatedButton.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = MWValidatedButton.m; sourceTree = "<group>"; };
+		F55EE6D5024246EE01A80004 /* MWOutputTextView.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = MWOutputTextView.h; sourceTree = "<group>"; };
+		F55EE6DC024293B301A80004 /* MWRegistry.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = MWRegistry.h; sourceTree = "<group>"; };
+		F55EE6DD024293B301A80004 /* MWRegistry.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = MWRegistry.m; sourceTree = "<group>"; };
+		F55EE6E50242E19401A80004 /* MWConfigPane.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = MWConfigPane.h; sourceTree = "<group>"; };
+		F55EE6E60242E19401A80004 /* MWConfigPane.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = MWConfigPane.m; sourceTree = "<group>"; };
+		F55EE6EA0242E54401A80004 /* PreferencePanes.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PreferencePanes.framework; path = /System/Library/Frameworks/PreferencePanes.framework; sourceTree = "<absolute>"; };
+		F55F619D0245147701A80004 /* MWCustomBindingsTextView.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = MWCustomBindingsTextView.h; sourceTree = "<group>"; };
+		F55F619E0245147701A80004 /* MWCustomBindingsTextView.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = MWCustomBindingsTextView.m; sourceTree = "<group>"; };
+		F5600FC702BCC94A01A80004 /* To Do.txt */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = "To Do.txt"; sourceTree = "<group>"; };
+		F5600FC802BCC94A01A80004 /* Change Log.txt */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = "Change Log.txt"; sourceTree = "<group>"; };
+		F5600FC902BCC94A01A80004 /* Architecture & Other Notes.txt */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = "Architecture & Other Notes.txt"; sourceTree = "<group>"; };
+		F56027490246250D01A80004 /* MWNSStringAdditions.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = MWNSStringAdditions.h; sourceTree = "<group>"; };
+		F560274A0246250D01A80004 /* MWNSStringAdditions.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = MWNSStringAdditions.m; sourceTree = "<group>"; };
+		F5623AC2025E314E01A80004 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = /System/Library/Frameworks/CoreFoundation.framework; sourceTree = "<absolute>"; };
+		F5623AC5025E351101A80004 /* MWAbstractConnection.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = MWAbstractConnection.h; sourceTree = "<group>"; };
+		F5623AC6025E351201A80004 /* MWAbstractConnection.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = MWAbstractConnection.m; sourceTree = "<group>"; };
+		F5623AC9025E37EE01A80004 /* MWTCPConnection.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = MWTCPConnection.h; sourceTree = "<group>"; };
+		F5623ACA025E37EE01A80004 /* MWTCPConnection.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = MWTCPConnection.m; sourceTree = "<group>"; };
+		F5623ACD025E4B6B01A80004 /* MWCFSocketConnection.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = MWCFSocketConnection.h; sourceTree = "<group>"; };
+		F5623ACE025E4B6B01A80004 /* MWCFSocketConnection.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = MWCFSocketConnection.m; sourceTree = "<group>"; };
+		F5623AD1025E809F01A80004 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; lineEnding = 0; name = Localizable.strings; path = English.lproj/Localizable.strings; sourceTree = "<group>"; };
+		F565AA9901CBA81601A80004 /* MWConstants.tokens */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = MWConstants.tokens; sourceTree = "<group>"; };
+		F567087102C210C801A80004 /* MWConfigTree.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = MWConfigTree.h; sourceTree = "<group>"; };
+		F567087202C210C801A80004 /* MWConfigTree.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = MWConfigTree.m; sourceTree = "<group>"; };
+		F567087602C2197301A80004 /* MWConfigPath.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = MWConfigPath.h; sourceTree = "<group>"; };
+		F567087702C2197301A80004 /* MWConfigPath.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = MWConfigPath.m; sourceTree = "<group>"; };
+		F568144602798ABA01A80004 /* Test MWAppKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; path = "Test MWAppKit.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F568145102798E5601A80004 /* ApplicationMain.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = ApplicationMain.m; sourceTree = "<group>"; };
+		F568145402798FC601A80004 /* MainMenu.nib */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; path = MainMenu.nib; sourceTree = "<group>"; };
+		F56814580279B7AA01A80004 /* MWTGraphViewWinController.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = MWTGraphViewWinController.h; sourceTree = "<group>"; };
+		F56814590279B7AA01A80004 /* MWTGraphViewWinController.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = MWTGraphViewWinController.m; sourceTree = "<group>"; };
+		F56860B80258CD3101A80004 /* MWNSTextStorageAdditions.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = MWNSTextStorageAdditions.h; sourceTree = "<group>"; };
+		F56860B90258CD3101A80004 /* MWNSTextStorageAdditions.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = MWNSTextStorageAdditions.m; sourceTree = "<group>"; };
+		F56979E501B9377C01A80004 /* MWConcreteLinkable.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = MWConcreteLinkable.h; sourceTree = "<group>"; };
+		F56979E601B9377C01A80004 /* MWConcreteLinkable.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = MWConcreteLinkable.m; sourceTree = "<group>"; };
+		F569D930033D135501A80004 /* MWImageAndTextCell.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = MWImageAndTextCell.h; sourceTree = "<group>"; };
+		F569D931033D135501A80004 /* MWImageAndTextCell.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = MWImageAndTextCell.m; sourceTree = "<group>"; };
+		F569DAD702E76C7B01A80004 /* MWNSScannerAdditions.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = MWNSScannerAdditions.h; sourceTree = "<group>"; };
+		F569DAD802E76C7B01A80004 /* MWNSScannerAdditions.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = MWNSScannerAdditions.m; sourceTree = "<group>"; };
+		F56B531B033D639901A80004 /* MWConfigDirectoryEditPane.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = MWConfigDirectoryEditPane.h; sourceTree = "<group>"; };
+		F56B531C033D639901A80004 /* MWConfigDirectoryEditPane.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = MWConfigDirectoryEditPane.m; sourceTree = "<group>"; };
+		F56B531F033D641701A80004 /* MWTableViewForDirectoryEdit.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = MWTableViewForDirectoryEdit.h; sourceTree = "<group>"; };
+		F56B5320033D641701A80004 /* MWTableViewForDirectoryEdit.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = MWTableViewForDirectoryEdit.m; sourceTree = "<group>"; };
+		F56C596E031D294401A80004 /* MWConfigTreeTest.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = MWConfigTreeTest.m; sourceTree = "<group>"; };
+		F56C5974031D4C9701A80004 /* MWConfigSupplier.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = MWConfigSupplier.h; sourceTree = "<group>"; };
+		F56C5977031D5D1701A80004 /* MWConfigStackerTest.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = MWConfigStackerTest.m; sourceTree = "<group>"; };
+		F56C597B031DA6BD01A80004 /* MWConfigStacker.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = MWConfigStacker.h; sourceTree = "<group>"; };
+		F56C597C031DA6BD01A80004 /* MWConfigStacker.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = MWConfigStacker.m; sourceTree = "<group>"; };
+		F56C5B14034CE81101A80004 /* MWConfigViewAdapterInspectorNib.nib */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; path = MWConfigViewAdapterInspectorNib.nib; sourceTree = "<group>"; };
+		F56C5B16034CE86E01A80004 /* MWConfigViewAdapterInspector.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = MWConfigViewAdapterInspector.h; sourceTree = "<group>"; };
+		F56C5B17034CE86E01A80004 /* MWConfigViewAdapterInspector.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = MWConfigViewAdapterInspector.m; sourceTree = "<group>"; };
+		F56C5B1F034D19F601A80004 /* MWConfigViewAdapter.ibclassdescription */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = MWConfigViewAdapter.ibclassdescription; sourceTree = "<group>"; };
+		F56C5B25034DF19C01A80004 /* MWURLLaunchRequest.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = MWURLLaunchRequest.m; sourceTree = "<group>"; };
+		F56C5B26034DF19C01A80004 /* MWURLLaunchRequest.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = MWURLLaunchRequest.h; sourceTree = "<group>"; };
+		F56C5B2A034DF1D601A80004 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = MWAppKit/Resources/English.lproj/MWURLLaunchRequest.nib; sourceTree = SOURCE_ROOT; };
+		F5707F5703269A6701A80004 /* MWRawConfigPane.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = MWRawConfigPane.h; sourceTree = "<group>"; };
+		F5707F5803269A6701A80004 /* MWRawConfigPane.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = MWRawConfigPane.m; sourceTree = "<group>"; };
+		F5707F5B03269A7401A80004 /* MWRawConfigPane.nib */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = MWRawConfigPane.nib; path = English.lproj/MWRawConfigPane.nib; sourceTree = "<group>"; };
+		F5707F6103269D3601A80004 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; lineEnding = 0; name = English; path = English.lproj/Localizable.strings; sourceTree = "<group>"; };
+		F570FC590221745101A80004 /* MWExtInput.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = MWExtInput.h; sourceTree = "<group>"; };
+		F575109401C082E701A80004 /* MWLinearLayoutView.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = MWLinearLayoutView.h; sourceTree = "<group>"; };
+		F575109501C082E701A80004 /* MWLinearLayoutView.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = MWLinearLayoutView.m; sourceTree = "<group>"; };
+		F57838FA039C2F6A01A80004 /* MWKeyCapturingPanel.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = MWKeyCapturingPanel.m; sourceTree = "<group>"; };
+		F57838FB039C2F6A01A80004 /* MWKeyCapturingPanel.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = MWKeyCapturingPanel.h; sourceTree = "<group>"; };
+		F57838FD039C2F6A01A80004 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = MWAppKit/Resources/English.lproj/MWKeyCapturingPanel.nib; sourceTree = SOURCE_ROOT; };
+		F5783903039C312201A80004 /* MWAppUtilities.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = MWAppUtilities.h; sourceTree = "<group>"; };
+		F5783904039C312201A80004 /* MWAppUtilities.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = MWAppUtilities.m; sourceTree = "<group>"; };
+		F5783907039C37C401A80004 /* MWKeyCodeCell.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = MWKeyCodeCell.h; sourceTree = "<group>"; };
+		F5783908039C37C401A80004 /* MWKeyCodeCell.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = MWKeyCodeCell.m; sourceTree = "<group>"; };
+		F578390E039D02C201A80004 /* MWMiscTestController.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = MWMiscTestController.h; sourceTree = "<group>"; };
+		F578390F039D02C201A80004 /* MWMiscTestController.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = MWMiscTestController.m; sourceTree = "<group>"; };
+		F5790AE001BA834A01A80004 /* MWLinkPruner.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = MWLinkPruner.h; sourceTree = "<group>"; };
+		F5790AE101BA834A01A80004 /* MWLinkPruner.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = MWLinkPruner.m; sourceTree = "<group>"; };
+		F57A0252031FD2CF01A80004 /* MWAppKit Palette.palette */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = "MWAppKit Palette.palette"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F57DDA59032FADA301A80004 /* MWNSStringAdditionsTest.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = MWNSStringAdditionsTest.m; sourceTree = "<group>"; };
+		F57FD28602E47E5401A80004 /* MWURLLoadingImageView.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = MWURLLoadingImageView.h; sourceTree = "<group>"; };
+		F57FD28702E47E5401A80004 /* MWURLLoadingImageView.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = MWURLLoadingImageView.m; sourceTree = "<group>"; };
+		F5A5892E02622B5B01A80004 /* MWGraphView.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = MWGraphView.h; sourceTree = "<group>"; };
+		F5A5892F02622B5B01A80004 /* MWGraphView.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = MWGraphView.m; sourceTree = "<group>"; };
+		F5C7E7AC03479E0F01A80004 /* MWNSScannerAdditionsTest.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = MWNSScannerAdditionsTest.m; sourceTree = "<group>"; };
+		F5C7E7B20348889301A80004 /* MWFontSelectorView.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = MWFontSelectorView.h; sourceTree = "<group>"; };
+		F5C7E7B30348889301A80004 /* MWFontSelectorView.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = MWFontSelectorView.m; sourceTree = "<group>"; };
+		F5CF515B02E9E43E01A80004 /* MWToolbarController.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = MWToolbarController.h; sourceTree = "<group>"; };
+		F5CF515C02E9E43E01A80004 /* MWToolbarController.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = MWToolbarController.m; sourceTree = "<group>"; };
+		F5D2D9E6018858A601A80004 /* MWLink.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = MWLink.h; sourceTree = "<group>"; };
+		F5D2D9EA018859CE01A80004 /* MWLink.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = MWLink.m; sourceTree = "<group>"; };
+		F5E70BB001C5335801A80004 /* MudWalker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MudWalker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5ECD286021AC01701A80004 /* LookupHandler.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = LookupHandler.h; sourceTree = "<group>"; };
+		F5ECD287021AC01701A80004 /* LookupHandler.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = LookupHandler.m; sourceTree = "<group>"; };
+		F5ECD288021AC01701A80004 /* LookupHandler */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = LookupHandler; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworkTarget section */
+		F55C41930241631B01A80004 /* MWAppKit */ = {
+			isa = PBXFrameworkTarget;
+			buildConfigurationList = 2B643194097A86CB00E36736 /* Build configuration list for PBXFrameworkTarget "MWAppKit" */;
+			buildPhases = (
+				F55C41940241631B01A80004 /* Headers */,
+				F55C41960241631B01A80004 /* Resources */,
+				F55C41970241631B01A80004 /* Sources */,
+				F55C41980241631B01A80004 /* Frameworks */,
+			);
+			buildSettings = {
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_SEARCH_PATHS = "";
+				FRAMEWORK_VERSION = A;
+				INSTALL_PATH = "@executable_path/../Frameworks";
+				OPTIMIZATION_CFLAGS = "-O3";
+				OTHER_CFLAGS = "-DBUILDING_MUDWALKER_APPKIT";
+				OTHER_LDFLAGS = (
+					"-seg1addr",
+					0x31000000,
+				);
+				OTHER_LIBTOOL_FLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRINCIPAL_CLASS = "";
+				PRODUCT_NAME = MWAppKit;
+				SECTORDER_FLAGS = "";
+				SKIP_INSTALL = YES;
+				WARNING_CFLAGS = (
+					"-Werror",
+					"-Wall",
+					"-Wmost",
+					"-Wunknown-pragmas",
+					"-Wpointer-arith",
+					"-Wno-cast-qual",
+					"-Wcast-align",
+					"-Wwrite-strings",
+					"-Wno-strict-prototypes",
+					"-Wno-redundant-decls",
+					"-Wnested-externs",
+					"-Winline",
+				);
+				WRAPPER_EXTENSION = framework;
+			};
+			dependencies = (
+				F56478870241A08501A80004 /* PBXTargetDependency */,
+			);
+			name = MWAppKit;
+			productInstallPath = "@executable_path/../Frameworks";
+			productName = MWAppKit;
+			productReference = F55C41920241631B01A80004 /* MWAppKit.framework */;
+			productSettingsXML = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>
+<!DOCTYPE plist PUBLIC \"-//Apple Computer//DTD PLIST 1.0//EN\" \"http://www.apple.com/DTDs/PropertyList-1.0.dtd\">
+<plist version=\"1.0\">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleExecutable</key>
+	<string>MWAppKit</string>
+	<key>CFBundleGetInfoString</key>
+	<string>0.3.2</string>
+	<key>CFBundleIconFile</key>
+	<string></string>
+	<key>CFBundleIdentifier</key>
+	<string>org.cubik.mudwalker.appkit</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string></string>
+	<key>CFBundlePackageType</key>
+	<string>FMWK</string>
+	<key>CFBundleShortVersionString</key>
+	<string>0.3.2</string>
+	<key>CFBundleSignature</key>
+	<string>MWal</string>
+	<key>CFBundleVersion</key>
+	<string>0.3.2</string>
+</dict>
+</plist>
+";
+		};
+		F5E70BB101C5335901A80004 /* MWFoundation */ = {
+			isa = PBXFrameworkTarget;
+			buildConfigurationList = 2B643190097A86CB00E36736 /* Build configuration list for PBXFrameworkTarget "MWFoundation" */;
+			buildPhases = (
+				F5E70BB201C5335901A80004 /* Headers */,
+				F5E70BB401C5335901A80004 /* Sources */,
+				F5E70BB301C5335901A80004 /* Resources */,
+				F5E70BB501C5335901A80004 /* Frameworks */,
+				F5ECD292021AC08101A80004 /* CopyFiles */,
+			);
+			buildSettings = {
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				HEADER_SEARCH_PATHS = "";
+				INSTALL_PATH = "@executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = "-DBUILDING_MUDWALKER_FRAMEWORK";
+				OTHER_LDFLAGS = (
+					"-seg1addr",
+					0x29000000,
+				);
+				OTHER_LIBTOOL_FLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRINCIPAL_CLASS = "";
+				PRODUCT_NAME = MudWalker;
+				SECTORDER_FLAGS = "";
+				SKIP_INSTALL = YES;
+				WARNING_CFLAGS = (
+					"-Werror",
+					"-Wall",
+					"-Wmost",
+					"-Wunknown-pragmas",
+					"-Wpointer-arith",
+					"-Wno-cast-qual",
+					"-Wcast-align",
+					"-Wwrite-strings",
+					"-Wno-strict-prototypes",
+					"-Wno-redundant-decls",
+					"-Wnested-externs",
+					"-Winline",
+				);
+				WRAPPER_EXTENSION = framework;
+			};
+			dependencies = (
+				F5ECD289021AC01701A80004 /* PBXTargetDependency */,
+			);
+			name = MWFoundation;
+			productInstallPath = "@executable_path/../Frameworks";
+			productName = MWFramework;
+			productReference = F5E70BB001C5335801A80004 /* MudWalker.framework */;
+			productSettingsXML = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>
+<!DOCTYPE plist PUBLIC \"-//Apple Computer//DTD PLIST 1.0//EN\" \"http://www.apple.com/DTDs/PropertyList-1.0.dtd\">
+<plist version=\"1.0\">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleExecutable</key>
+	<string>MudWalker</string>
+	<key>CFBundleGetInfoString</key>
+	<string>0.3.2</string>
+	<key>CFBundleIconFile</key>
+	<string></string>
+	<key>CFBundleIdentifier</key>
+	<string>org.cubik.mudwalker.framework</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string></string>
+	<key>CFBundlePackageType</key>
+	<string>FMWK</string>
+	<key>CFBundleShortVersionString</key>
+	<string>0.3.2</string>
+	<key>CFBundleSignature</key>
+	<string>MWal</string>
+	<key>CFBundleVersion</key>
+	<string>0.3.2</string>
+</dict>
+</plist>
+";
+		};
+/* End PBXFrameworkTarget section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F554182D0280A8AD01A80004 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F554182E0280A8AD01A80004 /* MudWalker.framework in Frameworks */,
+				F56C5976031D560E01A80004 /* Foundation.framework in Frameworks */,
+				2BE5B77B088311290006D1B3 /* ObjcUnit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F55C41980241631B01A80004 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F55C419C0241649A01A80004 /* MudWalker.framework in Frameworks */,
+				F55C419D0241649A01A80004 /* Cocoa.framework in Frameworks */,
+				F55EE6EB0242E54401A80004 /* PreferencePanes.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F568144D02798ABA01A80004 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5783912039D076D01A80004 /* MudWalker.framework in Frameworks */,
+				F568145002798B3F01A80004 /* MWAppKit.framework in Frameworks */,
+				F568145302798E7B01A80004 /* Cocoa.framework in Frameworks */,
+				2BE5B77C088311290006D1B3 /* ObjcUnit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F57A0257031FD2CF01A80004 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F508711C034B5F1901A80004 /* InterfaceBuilder.framework in Frameworks */,
+				F508711F034B620601A80004 /* MWAppKit.framework in Frameworks */,
+				F5087120034B620601A80004 /* MudWalker.framework in Frameworks */,
+				F5087121034B625201A80004 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5E70BB501C5335901A80004 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F55C419B0241649A01A80004 /* Foundation.framework in Frameworks */,
+				F5623AC3025E314E01A80004 /* CoreFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5ECD28F021AC01701A80004 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		19C28FB0FE9D524F11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F5ECD288021AC01701A80004 /* LookupHandler */,
+				F5E70BB001C5335801A80004 /* MudWalker.framework */,
+				F55C41920241631B01A80004 /* MWAppKit.framework */,
+				F57A0252031FD2CF01A80004 /* MWAppKit Palette.palette */,
+				F55418270280A8AD01A80004 /* Test MWFoundation */,
+				F568144602798ABA01A80004 /* Test MWAppKit.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2A37F4AAFDCFA73011CA2CEA /* mudclient */ = {
+			isa = PBXGroup;
+			children = (
+				2BA1004E06DFAAC70019EC02 /* README before building.txt */,
+				F5600FC602BCC94A01A80004 /* (Notes) */,
+				F55C419A0241649A01A80004 /* MW Foundation */,
+				F5ECD285021AC01701A80004 /* LookupHandler */,
+				F55C419E0241659A01A80004 /* MW AppKit */,
+				F57A0251031FD29901A80004 /* MW AppKit Palette */,
+				F568144502798A6901A80004 /* MW AppKit Tests */,
+				2BF83714057B80D300BF4147 /* copyframeworks */,
+				2A37F4C3FDCFA73011CA2CEA /* Frameworks */,
+				19C28FB0FE9D524F11CA2CBB /* Products */,
+			);
+			name = mudclient;
+			sourceTree = "<group>";
+		};
+		2A37F4C3FDCFA73011CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A7FEA54F5311CA2CBB /* Cocoa.framework */,
+				F55EE6EA0242E54401A80004 /* PreferencePanes.framework */,
+				2A37F4C5FDCFA73011CA2CEA /* Foundation.framework */,
+				2A37F4C4FDCFA73011CA2CEA /* AppKit.framework */,
+				F5623AC2025E314E01A80004 /* CoreFoundation.framework */,
+				2BE5B77A088311290006D1B3 /* ObjcUnit.framework */,
+				F508711B034B5F1901A80004 /* InterfaceBuilder.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2BFF6B940472702800A80004 /* Scripting */ = {
+			isa = PBXGroup;
+			children = (
+				2BFF6BA2047293B600A80004 /* MWScriptLanguage.h */,
+				2B20DD4A04A8C90D00A80004 /* MWScriptLanguage.m */,
+				2BFF6B970472738100A80004 /* MWScript.h */,
+				2BFF6B980472738100A80004 /* MWScript.m */,
+				2BFF6B950472706D00A80004 /* MWScriptTest.m */,
+				2BFF6BA70472AB9300A80004 /* MWScriptContexts.h */,
+				2BFF6BA80472AB9300A80004 /* MWScriptContexts.m */,
+				2B914FA0047FB56800A80004 /* MWIdentityLanguage.h */,
+				2B914FA1047FB56800A80004 /* MWIdentityLanguage.m */,
+			);
+			name = Scripting;
+			sourceTree = "<group>";
+		};
+		F508710C034AAE8901A80004 /* Config View Adapters */ = {
+			isa = PBXGroup;
+			children = (
+				F508710D034AB11B01A80004 /* MWConfigViewAdapter.h */,
+				F508710E034AB11B01A80004 /* MWConfigViewAdapter.m */,
+				2BF0312604CB146900A80004 /* MWConfigScriptTextViewAdapterTest.m */,
+				2BE540A00477BEB200A80004 /* MWScriptPanelController.h */,
+				2BE5409F0477BEB200A80004 /* MWScriptPanelController.m */,
+				2BE5409C0477BE2900A80004 /* MWScriptPanel.nib */,
+			);
+			name = "Config View Adapters";
+			sourceTree = "<group>";
+		};
+		F519B9680348DDB901A80004 /* String & Scanner */ = {
+			isa = PBXGroup;
+			children = (
+				F56027490246250D01A80004 /* MWNSStringAdditions.h */,
+				F560274A0246250D01A80004 /* MWNSStringAdditions.m */,
+				F57DDA59032FADA301A80004 /* MWNSStringAdditionsTest.m */,
+				F569DAD702E76C7B01A80004 /* MWNSScannerAdditions.h */,
+				F569DAD802E76C7B01A80004 /* MWNSScannerAdditions.m */,
+				F5C7E7AC03479E0F01A80004 /* MWNSScannerAdditionsTest.m */,
+			);
+			name = "String & Scanner";
+			sourceTree = "<group>";
+		};
+		F51C88D101C536FF01A80004 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				F55EE6DC024293B301A80004 /* MWRegistry.h */,
+				F55EE6DD024293B301A80004 /* MWRegistry.m */,
+				F556D05F0333733F01A80004 /* MWRegistryTest.m */,
+				F567087502C2114201A80004 /* Configuration */,
+				F51C88E901C53A8801A80004 /* Data Types */,
+				F5D2D9E5018857F901A80004 /* Link Basics */,
+				F56C596D031D291301A80004 /* Link Fittings */,
+				F5623AC4025E351101A80004 /* Connections */,
+				F519B9680348DDB901A80004 /* String & Scanner */,
+				F5462721032AE20E01A80004 /* MWURLFormatter.h */,
+				F5462722032AE20E01A80004 /* MWURLFormatter.m */,
+				F519B9690348F87801A80004 /* MWURLFormatterTest.m */,
+				2BFF6B940472702800A80004 /* Scripting */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		F51C88D201C536FF01A80004 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				F51C88F601C578C001A80004 /* MWUtilities.h */,
+				013A5151010123ACC0A80001 /* MWConstants.h */,
+				013A5153010123D0C0A80001 /* MWConstants.m */,
+				F565AA9901CBA81601A80004 /* MWConstants.tokens */,
+			);
+			path = "Other Sources";
+			sourceTree = "<group>";
+		};
+		F51C88E901C53A8801A80004 /* Data Types */ = {
+			isa = PBXGroup;
+			children = (
+				F51C88EA01C53C2201A80004 /* MWLineData.h */,
+				F51C88EB01C53C2201A80004 /* MWLineData.m */,
+				F51C88EC01C53C2201A80004 /* MWLineString.h */,
+				F51C88ED01C53C2201A80004 /* MWLineString.m */,
+				F51C88EE01C53C2201A80004 /* MWToken.h */,
+				F51C88EF01C53C2201A80004 /* MWToken.m */,
+				2BEA74350484063400A80004 /* MWTokenTest.m */,
+			);
+			name = "Data Types";
+			sourceTree = "<group>";
+		};
+		F55C419A0241649A01A80004 /* MW Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				F529E9CD01C6C20301A80004 /* MudWalker.h */,
+				F51C88D101C536FF01A80004 /* Classes */,
+				F570FC580221735D01A80004 /* Protocols */,
+				F51C88D201C536FF01A80004 /* Other Sources */,
+				F57CD1DF027DCC0B01A80004 /* Localizable.strings */,
+				F554181A0280952901A80004 /* MWFoundationTestMain.m */,
+			);
+			name = "MW Foundation";
+			path = MWFoundation;
+			sourceTree = "<group>";
+		};
+		F55C419E0241659A01A80004 /* MW AppKit */ = {
+			isa = PBXGroup;
+			children = (
+				F55C419F0241660901A80004 /* MWAppKit.h */,
+				F56478880241A37701A80004 /* Sources */,
+				F5707F5603269A5401A80004 /* Resources */,
+			);
+			name = "MW AppKit";
+			path = MWAppKit;
+			sourceTree = "<group>";
+		};
+		F5600FC602BCC94A01A80004 /* (Notes) */ = {
+			isa = PBXGroup;
+			children = (
+				F5600FC702BCC94A01A80004 /* To Do.txt */,
+				F5600FC802BCC94A01A80004 /* Change Log.txt */,
+				F5600FC902BCC94A01A80004 /* Architecture & Other Notes.txt */,
+			);
+			name = "(Notes)";
+			path = "../(Notes)";
+			sourceTree = SOURCE_ROOT;
+		};
+		F5623AC4025E351101A80004 /* Connections */ = {
+			isa = PBXGroup;
+			children = (
+				F5623AC5025E351101A80004 /* MWAbstractConnection.h */,
+				F5623AC6025E351201A80004 /* MWAbstractConnection.m */,
+				F55EAAB50263BEC801A80004 /* MWNSFileHandleConnection.h */,
+				F55EAAB60263BEC801A80004 /* MWNSFileHandleConnection.m */,
+				F5623AC9025E37EE01A80004 /* MWTCPConnection.h */,
+				F5623ACA025E37EE01A80004 /* MWTCPConnection.m */,
+				F501337301C861EA01A80004 /* MWBSDSocketConnection.h */,
+				F501337401C861EA01A80004 /* MWBSDSocketConnection.m */,
+				F5623ACD025E4B6B01A80004 /* MWCFSocketConnection.h */,
+				F5623ACE025E4B6B01A80004 /* MWCFSocketConnection.m */,
+			);
+			name = Connections;
+			sourceTree = "<group>";
+		};
+		F56478880241A37701A80004 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				F566A465033E2D0001A80004 /* Config Panes */,
+				F508710C034AAE8901A80004 /* Config View Adapters */,
+				F566A464033E2D0001A80004 /* Controllers & Data Sources */,
+				F569602601ED4FFE01A80004 /* Misc Views */,
+				2B41D54F04DC1BED00A80004 /* MWAppRegistryTest.m */,
+				F5783903039C312201A80004 /* MWAppUtilities.h */,
+				F5783904039C312201A80004 /* MWAppUtilities.m */,
+				F570FC590221745101A80004 /* MWExtInput.h */,
+				F57838FB039C2F6A01A80004 /* MWKeyCapturingPanel.h */,
+				F57838FA039C2F6A01A80004 /* MWKeyCapturingPanel.m */,
+				F57838FC039C2F6A01A80004 /* MWKeyCapturingPanel.nib */,
+				F56860B80258CD3101A80004 /* MWNSTextStorageAdditions.h */,
+				F56860B90258CD3101A80004 /* MWNSTextStorageAdditions.m */,
+				2B1EB71A0680BA7700942DC2 /* MWTerminalPane.h */,
+				2B1EB71B0680BA7700942DC2 /* MWTerminalPane.m */,
+				F55D1B8201C3B68901A80004 /* MWToolbars.h */,
+				F56C5B26034DF19C01A80004 /* MWURLLaunchRequest.h */,
+				F56C5B25034DF19C01A80004 /* MWURLLaunchRequest.m */,
+				F56C5B29034DF1D601A80004 /* MWURLLaunchRequest.nib */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		F566A464033E2D0001A80004 /* Controllers & Data Sources */ = {
+			isa = PBXGroup;
+			children = (
+				F558C95F01F65BEC01A80004 /* MWGenericTableViewDataSource.h */,
+				F558C96001F65BEC01A80004 /* MWGenericTableViewDataSource.m */,
+				F5CF515B02E9E43E01A80004 /* MWToolbarController.h */,
+				F5CF515C02E9E43E01A80004 /* MWToolbarController.m */,
+			);
+			name = "Controllers & Data Sources";
+			sourceTree = "<group>";
+		};
+		F566A465033E2D0001A80004 /* Config Panes */ = {
+			isa = PBXGroup;
+			children = (
+				F55EE6E50242E19401A80004 /* MWConfigPane.h */,
+				F55EE6E60242E19401A80004 /* MWConfigPane.m */,
+				F56B531B033D639901A80004 /* MWConfigDirectoryEditPane.h */,
+				F56B531C033D639901A80004 /* MWConfigDirectoryEditPane.m */,
+				F56B531F033D641701A80004 /* MWTableViewForDirectoryEdit.h */,
+				F56B5320033D641701A80004 /* MWTableViewForDirectoryEdit.m */,
+				F5707F5703269A6701A80004 /* MWRawConfigPane.h */,
+				F5707F5803269A6701A80004 /* MWRawConfigPane.m */,
+				F56A42A5032E745801A80004 /* MWRawConfigPane.nib */,
+			);
+			name = "Config Panes";
+			sourceTree = "<group>";
+		};
+		F567087502C2114201A80004 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				F56C5974031D4C9701A80004 /* MWConfigSupplier.h */,
+				2B914F9E047EC05F00A80004 /* MWHasConfig.h */,
+				F567087102C210C801A80004 /* MWConfigTree.h */,
+				F567087202C210C801A80004 /* MWConfigTree.m */,
+				F56C596E031D294401A80004 /* MWConfigTreeTest.m */,
+				F56C597B031DA6BD01A80004 /* MWConfigStacker.h */,
+				F56C597C031DA6BD01A80004 /* MWConfigStacker.m */,
+				F56C5977031D5D1701A80004 /* MWConfigStackerTest.m */,
+				F567087602C2197301A80004 /* MWConfigPath.h */,
+				F567087702C2197301A80004 /* MWConfigPath.m */,
+			);
+			name = Configuration;
+			sourceTree = "<group>";
+		};
+		F568144502798A6901A80004 /* MW AppKit Tests */ = {
+			isa = PBXGroup;
+			children = (
+				F568145102798E5601A80004 /* ApplicationMain.m */,
+				F568145402798FC601A80004 /* MainMenu.nib */,
+				F578390E039D02C201A80004 /* MWMiscTestController.h */,
+				F578390F039D02C201A80004 /* MWMiscTestController.m */,
+				F56814580279B7AA01A80004 /* MWTGraphViewWinController.h */,
+				F56814590279B7AA01A80004 /* MWTGraphViewWinController.m */,
+			);
+			name = "MW AppKit Tests";
+			path = "Test MWAppKit";
+			sourceTree = "<group>";
+		};
+		F569602601ED4FFE01A80004 /* Misc Views */ = {
+			isa = PBXGroup;
+			children = (
+				F55F619D0245147701A80004 /* MWCustomBindingsTextView.h */,
+				F55F619E0245147701A80004 /* MWCustomBindingsTextView.m */,
+				F55EE6D5024246EE01A80004 /* MWOutputTextView.h */,
+				F55EE6D0024246EE01A80004 /* MWOutputTextView.m */,
+				F569D930033D135501A80004 /* MWImageAndTextCell.h */,
+				F569D931033D135501A80004 /* MWImageAndTextCell.m */,
+				F5783907039C37C401A80004 /* MWKeyCodeCell.h */,
+				F5783908039C37C401A80004 /* MWKeyCodeCell.m */,
+				F5A5892E02622B5B01A80004 /* MWGraphView.h */,
+				F5A5892F02622B5B01A80004 /* MWGraphView.m */,
+				F558C96301F66C6601A80004 /* MWLayoutView.h */,
+				F558C96401F66C6601A80004 /* MWLayoutView.m */,
+				F575109401C082E701A80004 /* MWLinearLayoutView.h */,
+				F575109501C082E701A80004 /* MWLinearLayoutView.m */,
+				F55EE6D1024246EE01A80004 /* MWValidatedButton.h */,
+				F55EE6D3024246EE01A80004 /* MWValidatedButton.m */,
+				F57FD28602E47E5401A80004 /* MWURLLoadingImageView.h */,
+				F57FD28702E47E5401A80004 /* MWURLLoadingImageView.m */,
+				F5C7E7B20348889301A80004 /* MWFontSelectorView.h */,
+				F5C7E7B30348889301A80004 /* MWFontSelectorView.m */,
+			);
+			name = "Misc Views";
+			sourceTree = "<group>";
+		};
+		F56C596D031D291301A80004 /* Link Fittings */ = {
+			isa = PBXGroup;
+			children = (
+				F55E8511024822D801A80004 /* MWLogger.h */,
+				F55E8512024822D801A80004 /* MWLogger.m */,
+				F55E850D02479C4301A80004 /* MWTeeFilter.h */,
+				F55E850E02479C4301A80004 /* MWTeeFilter.m */,
+				2B1A5FAE0532410400A80004 /* MWMockLinkable.h */,
+				2B1A5FAF0532410400A80004 /* MWMockLinkable.m */,
+			);
+			name = "Link Fittings";
+			sourceTree = "<group>";
+		};
+		F5707F5603269A5401A80004 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F5707F6003269D3601A80004 /* Localizable.strings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		F570FC580221735D01A80004 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				F529E9CA01C66D5B01A80004 /* MWPlugin.h */,
+			);
+			name = Protocols;
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		F57A0251031FD29901A80004 /* MW AppKit Palette */ = {
+			isa = PBXGroup;
+			children = (
+				F5087116034B5CAA01A80004 /* MWAppKitPalette.h */,
+				F5087115034B5CAA01A80004 /* MWAppKitPalette.m */,
+				F5087113034B5CAA01A80004 /* palette.table */,
+				F5087114034B5CAA01A80004 /* MWAppKitPaletteNib.nib */,
+				F508711D034B61AC01A80004 /* MWAppKitPaletteIcon.icns */,
+				F56C5B16034CE86E01A80004 /* MWConfigViewAdapterInspector.h */,
+				F56C5B17034CE86E01A80004 /* MWConfigViewAdapterInspector.m */,
+				F56C5B14034CE81101A80004 /* MWConfigViewAdapterInspectorNib.nib */,
+				F56C5B1F034D19F601A80004 /* MWConfigViewAdapter.ibclassdescription */,
+			);
+			name = "MW AppKit Palette";
+			path = "MWAppKit Palette";
+			sourceTree = "<group>";
+		};
+		F5D2D9E5018857F901A80004 /* Link Basics */ = {
+			isa = PBXGroup;
+			children = (
+				F5D2D9E6018858A601A80004 /* MWLink.h */,
+				F5D2D9EA018859CE01A80004 /* MWLink.m */,
+				F56979E501B9377C01A80004 /* MWConcreteLinkable.h */,
+				F56979E601B9377C01A80004 /* MWConcreteLinkable.m */,
+				F5790AE001BA834A01A80004 /* MWLinkPruner.h */,
+				F5790AE101BA834A01A80004 /* MWLinkPruner.m */,
+			);
+			name = "Link Basics";
+			sourceTree = "<group>";
+		};
+		F5ECD285021AC01701A80004 /* LookupHandler */ = {
+			isa = PBXGroup;
+			children = (
+				F5ECD286021AC01701A80004 /* LookupHandler.h */,
+				F5ECD287021AC01701A80004 /* LookupHandler.m */,
+			);
+			path = LookupHandler;
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		F554182A0280A8AD01A80004 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F55C41940241631B01A80004 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F55C41A00241660901A80004 /* MWAppKit.h in Headers */,
+				F564788A0241A54B01A80004 /* MWLinearLayoutView.h in Headers */,
+				F564788B0241A54B01A80004 /* MWGenericTableViewDataSource.h in Headers */,
+				F55EE6D6024246EF01A80004 /* MWValidatedButton.h in Headers */,
+				F55EE6D8024246EF01A80004 /* MWOutputTextView.h in Headers */,
+				F55EE6E70242E19401A80004 /* MWConfigPane.h in Headers */,
+				F55F619F0245147701A80004 /* MWCustomBindingsTextView.h in Headers */,
+				F56860BA0258CD3201A80004 /* MWNSTextStorageAdditions.h in Headers */,
+				F55F29B60274384C01A80004 /* MWToolbars.h in Headers */,
+				F56814560279AB1E01A80004 /* MWGraphView.h in Headers */,
+				F57FD28802E47E5401A80004 /* MWURLLoadingImageView.h in Headers */,
+				F5CF515D02E9E43E01A80004 /* MWToolbarController.h in Headers */,
+				F5707F5903269A6701A80004 /* MWRawConfigPane.h in Headers */,
+				F59B316D0330C86701A80004 /* MWExtInput.h in Headers */,
+				F569D932033D135501A80004 /* MWImageAndTextCell.h in Headers */,
+				F56B531D033D639901A80004 /* MWConfigDirectoryEditPane.h in Headers */,
+				F56B5321033D641701A80004 /* MWTableViewForDirectoryEdit.h in Headers */,
+				F5C7E7B40348889301A80004 /* MWFontSelectorView.h in Headers */,
+				F5087111034B1F7D01A80004 /* MWConfigViewAdapter.h in Headers */,
+				F56C5B27034DF19C01A80004 /* MWURLLaunchRequest.h in Headers */,
+				F57838FF039C2F6A01A80004 /* MWKeyCapturingPanel.h in Headers */,
+				F5783905039C312201A80004 /* MWAppUtilities.h in Headers */,
+				F5783909039C37C501A80004 /* MWKeyCodeCell.h in Headers */,
+				F578390B039C38F401A80004 /* MWLayoutView.h in Headers */,
+				2BE540A20477BEB200A80004 /* MWScriptPanelController.h in Headers */,
+				2B1EB71C0680BA7700942DC2 /* MWTerminalPane.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F568144A02798ABA01A80004 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F568145A0279B7AA01A80004 /* MWTGraphViewWinController.h in Headers */,
+				F5783910039D02C201A80004 /* MWMiscTestController.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F57A0254031FD2CF01A80004 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5087117034B5CAA01A80004 /* MWAppKitPalette.h in Headers */,
+				F56C5B18034CE86E01A80004 /* MWConfigViewAdapterInspector.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5E70BB201C5335901A80004 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F529E9CE01C6C20401A80004 /* MudWalker.h in Headers */,
+				F51C88E301C53A3301A80004 /* MWLink.h in Headers */,
+				F51C88E401C53A3301A80004 /* MWConcreteLinkable.h in Headers */,
+				F51C88E501C53A3301A80004 /* MWLinkPruner.h in Headers */,
+				F51C88F001C53C2201A80004 /* MWToken.h in Headers */,
+				F51C88F101C53C2201A80004 /* MWLineString.h in Headers */,
+				F51C88F201C53C2201A80004 /* MWLineData.h in Headers */,
+				F501337501C861EA01A80004 /* MWBSDSocketConnection.h in Headers */,
+				F55EE6DE024293B301A80004 /* MWRegistry.h in Headers */,
+				F560274B0246250D01A80004 /* MWNSStringAdditions.h in Headers */,
+				F55E850F02479C4301A80004 /* MWTeeFilter.h in Headers */,
+				F55E8513024822D801A80004 /* MWLogger.h in Headers */,
+				F5623AC7025E351201A80004 /* MWAbstractConnection.h in Headers */,
+				F5623ACB025E37EE01A80004 /* MWTCPConnection.h in Headers */,
+				F55EE6E0024299A401A80004 /* MWPlugin.h in Headers */,
+				F51C88D401C536FF01A80004 /* MWConstants.h in Headers */,
+				F51C88F701C578C001A80004 /* MWUtilities.h in Headers */,
+				F5081C9201E0D4CC01A80004 /* MWConstants.tokens in Headers */,
+				F5623ACF025E4B6B01A80004 /* MWCFSocketConnection.h in Headers */,
+				F55EAAB70263BEC801A80004 /* MWNSFileHandleConnection.h in Headers */,
+				F567087302C210C801A80004 /* MWConfigTree.h in Headers */,
+				F567087802C2197301A80004 /* MWConfigPath.h in Headers */,
+				F569DAD902E76C7C01A80004 /* MWNSScannerAdditions.h in Headers */,
+				F56C5975031D4C9701A80004 /* MWConfigSupplier.h in Headers */,
+				F56C597D031DA6BD01A80004 /* MWConfigStacker.h in Headers */,
+				F5462723032AE20E01A80004 /* MWURLFormatter.h in Headers */,
+				2BFF6B990472738100A80004 /* MWScript.h in Headers */,
+				2BFF6BA4047293E000A80004 /* MWScriptLanguage.h in Headers */,
+				2BFF6BA90472AB9300A80004 /* MWScriptContexts.h in Headers */,
+				2B914F9F047EC05F00A80004 /* MWHasConfig.h in Headers */,
+				2B914FA2047FB56800A80004 /* MWIdentityLanguage.h in Headers */,
+				2B1A5FB00532410400A80004 /* MWMockLinkable.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5ECD28B021AC01701A80004 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5ECD28C021AC01701A80004 /* LookupHandler.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXLegacyTarget section */
+		F56F0407034F3F8E01A80004 /* Copy Frameworks */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "copyframeworks $ACTION";
+			buildConfigurationList = 2B643198097A86CB00E36736 /* Build configuration list for PBXLegacyTarget "Copy Frameworks" */;
+			buildPhases = (
+			);
+			buildSettings = {
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "Copy Frameworks";
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			buildToolPath = /bin/sh;
+			buildWorkingDirectory = "";
+			dependencies = (
+			);
+			name = "Copy Frameworks";
+			passBuildSettingsInEnvironment = 1;
+			productName = "Copy Frameworks";
+		};
+/* End PBXLegacyTarget section */
+
+/* Begin PBXProject section */
+		2A37F4A9FDCFA73011CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 2B6431AC097A86CB00E36736 /* Build configuration list for PBXProject "MWFrameworks" */;
+			buildSettings = {
+			};
+			buildStyles = (
+				4A9504D0FFE6A4CB11CA0CBA /* Development */,
+				4A9504D1FFE6A4CB11CA0CBA /* Deployment */,
+			);
+			hasScannedForEncodings = 1;
+			mainGroup = 2A37F4AAFDCFA73011CA2CEA /* mudclient */;
+			projectDirPath = "";
+			targets = (
+				F55E85150248415F01A80004 /* Build All */,
+				F5E70BB101C5335901A80004 /* MWFoundation */,
+				F55C41930241631B01A80004 /* MWAppKit */,
+				F57A0253031FD2CF01A80004 /* MWAppKit Palette */,
+				F5ECD28A021AC01701A80004 /* LookupHandler */,
+				F55418280280A8AD01A80004 /* Test MWFoundation */,
+				F568144802798ABA01A80004 /* Test MWAppKit */,
+				F56F0407034F3F8E01A80004 /* Copy Frameworks */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F55C41960241631B01A80004 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F56A42A6032E745801A80004 /* MWRawConfigPane.nib in Resources */,
+				F5707F6203269D3601A80004 /* Localizable.strings in Resources */,
+				F56C5B2B034DF1D701A80004 /* MWURLLaunchRequest.nib in Resources */,
+				F5783900039C2F6A01A80004 /* MWKeyCapturingPanel.nib in Resources */,
+				2BE5409E0477BE2900A80004 /* MWScriptPanel.nib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F568144B02798ABA01A80004 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F568145502798FC701A80004 /* MainMenu.nib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F57A0255031FD2CF01A80004 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5087118034B5CAA01A80004 /* palette.table in Resources */,
+				F5087119034B5CAA01A80004 /* MWAppKitPaletteNib.nib in Resources */,
+				F508711E034B61AC01A80004 /* MWAppKitPaletteIcon.icns in Resources */,
+				F56C5B15034CE81201A80004 /* MWConfigViewAdapterInspectorNib.nib in Resources */,
+				F56C5B20034D19F601A80004 /* MWConfigViewAdapter.ibclassdescription in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5E70BB301C5335901A80004 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F57CD1E0027DCC0B01A80004 /* Localizable.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXRezBuildPhase section */
+		F554182F0280A8AD01A80004 /* Rez */ = {
+			isa = PBXRezBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5ECD290021AC01701A80004 /* Rez */ = {
+			isa = PBXRezBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXRezBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F554182B0280A8AD01A80004 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F554182C0280A8AD01A80004 /* MWFoundationTestMain.m in Sources */,
+				F56C596F031D294401A80004 /* MWConfigTreeTest.m in Sources */,
+				F56C597A031DA2F501A80004 /* MWConfigStackerTest.m in Sources */,
+				F57DDA5A032FADA301A80004 /* MWNSStringAdditionsTest.m in Sources */,
+				F556D0600333733F01A80004 /* MWRegistryTest.m in Sources */,
+				F5C7E7AE03479E3B01A80004 /* MWNSScannerAdditionsTest.m in Sources */,
+				F519B96B0348FC4F01A80004 /* MWURLFormatterTest.m in Sources */,
+				2BFF6B960472706D00A80004 /* MWScriptTest.m in Sources */,
+				2BEA74360484063400A80004 /* MWTokenTest.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F55C41970241631B01A80004 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F564788C0241A54B01A80004 /* MWLayoutView.m in Sources */,
+				F564788D0241A54B01A80004 /* MWLinearLayoutView.m in Sources */,
+				F564788E0241A54B01A80004 /* MWGenericTableViewDataSource.m in Sources */,
+				F55EE6D9024246EF01A80004 /* MWOutputTextView.m in Sources */,
+				F55EE6DA024246EF01A80004 /* MWValidatedButton.m in Sources */,
+				F55EE6E80242E19401A80004 /* MWConfigPane.m in Sources */,
+				F55F61A00245147701A80004 /* MWCustomBindingsTextView.m in Sources */,
+				F56860BB0258CD3201A80004 /* MWNSTextStorageAdditions.m in Sources */,
+				F56814570279AB1F01A80004 /* MWGraphView.m in Sources */,
+				F57FD28902E47E5401A80004 /* MWURLLoadingImageView.m in Sources */,
+				F5CF515E02E9E43E01A80004 /* MWToolbarController.m in Sources */,
+				F5707F5A03269A6701A80004 /* MWRawConfigPane.m in Sources */,
+				F569D933033D135501A80004 /* MWImageAndTextCell.m in Sources */,
+				F56B531E033D639901A80004 /* MWConfigDirectoryEditPane.m in Sources */,
+				F56B5322033D641701A80004 /* MWTableViewForDirectoryEdit.m in Sources */,
+				F5C7E7B50348889301A80004 /* MWFontSelectorView.m in Sources */,
+				F5087112034B1F7D01A80004 /* MWConfigViewAdapter.m in Sources */,
+				F56C5B28034DF19C01A80004 /* MWURLLaunchRequest.m in Sources */,
+				F5783902039C2F6B01A80004 /* MWKeyCapturingPanel.m in Sources */,
+				F5783906039C312201A80004 /* MWAppUtilities.m in Sources */,
+				F578390A039C37C501A80004 /* MWKeyCodeCell.m in Sources */,
+				2BE540A10477BEB200A80004 /* MWScriptPanelController.m in Sources */,
+				2B1EB71D0680BA7700942DC2 /* MWTerminalPane.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F568144C02798ABA01A80004 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F568145202798E5601A80004 /* ApplicationMain.m in Sources */,
+				F568145B0279B7AA01A80004 /* MWTGraphViewWinController.m in Sources */,
+				F5783911039D02C201A80004 /* MWMiscTestController.m in Sources */,
+				2BF0312704CB146900A80004 /* MWConfigScriptTextViewAdapterTest.m in Sources */,
+				2B41D55004DC1BED00A80004 /* MWAppRegistryTest.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F57A0256031FD2CF01A80004 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F508711A034B5CAA01A80004 /* MWAppKitPalette.m in Sources */,
+				F56C5B19034CE86E01A80004 /* MWConfigViewAdapterInspector.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5E70BB401C5335901A80004 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F51C88D601C536FF01A80004 /* MWConstants.m in Sources */,
+				F51C88E601C53A3301A80004 /* MWLink.m in Sources */,
+				F51C88E701C53A3301A80004 /* MWConcreteLinkable.m in Sources */,
+				F51C88E801C53A3301A80004 /* MWLinkPruner.m in Sources */,
+				F51C88F301C53C2201A80004 /* MWToken.m in Sources */,
+				F51C88F401C53C2201A80004 /* MWLineString.m in Sources */,
+				F51C88F501C53C2201A80004 /* MWLineData.m in Sources */,
+				F501337601C861EA01A80004 /* MWBSDSocketConnection.m in Sources */,
+				F55EE6DF024293B301A80004 /* MWRegistry.m in Sources */,
+				F560274C0246250D01A80004 /* MWNSStringAdditions.m in Sources */,
+				F55E851002479C4301A80004 /* MWTeeFilter.m in Sources */,
+				F55E8514024822D801A80004 /* MWLogger.m in Sources */,
+				F5623AC8025E351201A80004 /* MWAbstractConnection.m in Sources */,
+				F5623ACC025E37EE01A80004 /* MWTCPConnection.m in Sources */,
+				F5623AD0025E4B6B01A80004 /* MWCFSocketConnection.m in Sources */,
+				F55EAAB80263BEC801A80004 /* MWNSFileHandleConnection.m in Sources */,
+				F567087402C210C801A80004 /* MWConfigTree.m in Sources */,
+				F567087902C2197301A80004 /* MWConfigPath.m in Sources */,
+				F569DADA02E76C7C01A80004 /* MWNSScannerAdditions.m in Sources */,
+				F56C597E031DA6BD01A80004 /* MWConfigStacker.m in Sources */,
+				F5462724032AE20E01A80004 /* MWURLFormatter.m in Sources */,
+				2BFF6B9A0472738100A80004 /* MWScript.m in Sources */,
+				2BFF6BAA0472AB9300A80004 /* MWScriptContexts.m in Sources */,
+				2B914FA3047FB56800A80004 /* MWIdentityLanguage.m in Sources */,
+				2B20DD4B04A8C90D00A80004 /* MWScriptLanguage.m in Sources */,
+				2B1A5FB10532410400A80004 /* MWMockLinkable.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5ECD28D021AC01701A80004 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5ECD28E021AC01701A80004 /* LookupHandler.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F55418290280A8AD01A80004 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F5E70BB101C5335901A80004 /* MWFoundation */;
+			targetProxy = 2BF836FD057B805500BF4147 /* PBXContainerItemProxy */;
+		};
+		F55E85160248418101A80004 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F5E70BB101C5335901A80004 /* MWFoundation */;
+			targetProxy = 2BF836F9057B805500BF4147 /* PBXContainerItemProxy */;
+		};
+		F55E85170248418101A80004 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F55C41930241631B01A80004 /* MWAppKit */;
+			targetProxy = 2BF836FF057B805500BF4147 /* PBXContainerItemProxy */;
+		};
+		F56478870241A08501A80004 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F5E70BB101C5335901A80004 /* MWFoundation */;
+			targetProxy = 2BF836F7057B805500BF4147 /* PBXContainerItemProxy */;
+		};
+		F568144902798ABA01A80004 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F55C41930241631B01A80004 /* MWAppKit */;
+			targetProxy = 2BF836FA057B805500BF4147 /* PBXContainerItemProxy */;
+		};
+		F56C5B12034CD9ED01A80004 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F568144802798ABA01A80004 /* Test MWAppKit */;
+			targetProxy = 2BF836FB057B805500BF4147 /* PBXContainerItemProxy */;
+		};
+		F56C5B13034CD9ED01A80004 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F57A0253031FD2CF01A80004 /* MWAppKit Palette */;
+			targetProxy = 2BF83700057B805500BF4147 /* PBXContainerItemProxy */;
+		};
+		F56F0408034F426A01A80004 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F56F0407034F3F8E01A80004 /* Copy Frameworks */;
+			targetProxy = 2BF83701057B805500BF4147 /* PBXContainerItemProxy */;
+		};
+		F56F0409034F426A01A80004 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F56F0407034F3F8E01A80004 /* Copy Frameworks */;
+			targetProxy = 2BF836FC057B805500BF4147 /* PBXContainerItemProxy */;
+		};
+		F57A0259031FE47C01A80004 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F55418280280A8AD01A80004 /* Test MWFoundation */;
+			targetProxy = 2BF836F8057B805500BF4147 /* PBXContainerItemProxy */;
+		};
+		F5ECD289021AC01701A80004 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F5ECD28A021AC01701A80004 /* LookupHandler */;
+			targetProxy = 2BF836FE057B805500BF4147 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXToolTarget section */
+		F55418280280A8AD01A80004 /* Test MWFoundation */ = {
+			isa = PBXToolTarget;
+			buildConfigurationList = 2B6431A0097A86CB00E36736 /* Build configuration list for PBXToolTarget "Test MWFoundation" */;
+			buildPhases = (
+				F554182A0280A8AD01A80004 /* Headers */,
+				F554182B0280A8AD01A80004 /* Sources */,
+				F554182D0280A8AD01A80004 /* Frameworks */,
+				F554182F0280A8AD01A80004 /* Rez */,
+			);
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = /Users/kpreid/Library/Frameworks;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = "Test MWFoundation";
+				REZ_EXECUTABLE = YES;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Werror",
+					"-Wall",
+					"-Wmost",
+					"-Wunknown-pragmas",
+					"-Wpointer-arith",
+					"-Wno-cast-qual",
+					"-Wcast-align",
+					"-Wwrite-strings",
+					"-Wno-strict-prototypes",
+					"-Wno-redundant-decls",
+					"-Wnested-externs",
+					"-Winline",
+				);
+			};
+			dependencies = (
+				F55418290280A8AD01A80004 /* PBXTargetDependency */,
+			);
+			name = "Test MWFoundation";
+			productInstallPath = /usr/local/bin;
+			productName = "Test MWFoundation";
+			productReference = F55418270280A8AD01A80004 /* Test MWFoundation */;
+		};
+		F5ECD28A021AC01701A80004 /* LookupHandler */ = {
+			isa = PBXToolTarget;
+			buildConfigurationList = 2B64318C097A86CB00E36736 /* Build configuration list for PBXToolTarget "LookupHandler" */;
+			buildPhases = (
+				F5ECD28B021AC01701A80004 /* Headers */,
+				F5ECD28D021AC01701A80004 /* Sources */,
+				F5ECD28F021AC01701A80004 /* Frameworks */,
+				F5ECD290021AC01701A80004 /* Rez */,
+			);
+			buildSettings = {
+				OPTIMIZATION_CFLAGS = "-O3";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = LookupHandler;
+				REZ_EXECUTABLE = YES;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Werror",
+					"-Wall",
+					"-Wmost",
+					"-Wunknown-pragmas",
+					"-Wpointer-arith",
+					"-Wbad-function-cast",
+					"-Wno-cast-qual",
+					"-Wcast-align",
+					"-Wwrite-strings",
+					"-Wno-strict-prototypes",
+					"-Wno-redundant-decls",
+					"-Wnested-externs",
+					"-Winline",
+				);
+			};
+			dependencies = (
+			);
+			name = LookupHandler;
+			productInstallPath = /usr/local/bin;
+			productName = LookupHandler;
+			productReference = F5ECD288021AC01701A80004 /* LookupHandler */;
+		};
+/* End PBXToolTarget section */
+
+/* Begin PBXVariantGroup section */
+		2BE5409C0477BE2900A80004 /* MWScriptPanel.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2BE5409D0477BE2900A80004 /* English */,
+			);
+			name = MWScriptPanel.nib;
+			sourceTree = "<group>";
+		};
+		F56A42A5032E745801A80004 /* MWRawConfigPane.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F5707F5B03269A7401A80004 /* MWRawConfigPane.nib */,
+			);
+			name = MWRawConfigPane.nib;
+			path = MWAppKit/Resources;
+			sourceTree = SOURCE_ROOT;
+		};
+		F56C5B29034DF1D601A80004 /* MWURLLaunchRequest.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F56C5B2A034DF1D601A80004 /* English */,
+			);
+			name = MWURLLaunchRequest.nib;
+			sourceTree = "<group>";
+		};
+		F5707F6003269D3601A80004 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F5707F6103269D3601A80004 /* English */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		F57838FC039C2F6A01A80004 /* MWKeyCapturingPanel.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F57838FD039C2F6A01A80004 /* English */,
+			);
+			name = MWKeyCapturingPanel.nib;
+			sourceTree = "<group>";
+		};
+		F57CD1DF027DCC0B01A80004 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F5623AD1025E809F01A80004 /* Localizable.strings */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2B64318D097A86CB00E36736 /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				OPTIMIZATION_CFLAGS = "-O0";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = LookupHandler;
+				REZ_EXECUTABLE = YES;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Werror",
+					"-Wall",
+					"-Wmost",
+					"-Wunknown-pragmas",
+					"-Wpointer-arith",
+					"-Wbad-function-cast",
+					"-Wno-cast-qual",
+					"-Wcast-align",
+					"-Wwrite-strings",
+					"-Wno-strict-prototypes",
+					"-Wno-redundant-decls",
+					"-Wnested-externs",
+					"-Winline",
+				);
+				ZERO_LINK = YES;
+			};
+			name = Development;
+		};
+		2B64318E097A86CB00E36736 /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				OPTIMIZATION_CFLAGS = "-O3";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = LookupHandler;
+				REZ_EXECUTABLE = YES;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Werror",
+					"-Wall",
+					"-Wmost",
+					"-Wunknown-pragmas",
+					"-Wpointer-arith",
+					"-Wbad-function-cast",
+					"-Wno-cast-qual",
+					"-Wcast-align",
+					"-Wwrite-strings",
+					"-Wno-strict-prototypes",
+					"-Wno-redundant-decls",
+					"-Wnested-externs",
+					"-Winline",
+				);
+				ZERO_LINK = NO;
+			};
+			name = Deployment;
+		};
+		2B64318F097A86CB00E36736 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OPTIMIZATION_CFLAGS = "-O3";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = LookupHandler;
+				REZ_EXECUTABLE = YES;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Werror",
+					"-Wall",
+					"-Wmost",
+					"-Wunknown-pragmas",
+					"-Wpointer-arith",
+					"-Wbad-function-cast",
+					"-Wno-cast-qual",
+					"-Wcast-align",
+					"-Wwrite-strings",
+					"-Wno-strict-prototypes",
+					"-Wno-redundant-decls",
+					"-Wnested-externs",
+					"-Winline",
+				);
+			};
+			name = Default;
+		};
+		2B643191097A86CB00E36736 /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				HEADER_SEARCH_PATHS = "";
+				INSTALL_PATH = "@executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = "";
+				OPTIMIZATION_CFLAGS = "-O0";
+				OTHER_CFLAGS = "-DBUILDING_MUDWALKER_FRAMEWORK";
+				OTHER_LDFLAGS = (
+					"-seg1addr",
+					0x29000000,
+				);
+				OTHER_LIBTOOL_FLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRINCIPAL_CLASS = "";
+				PRODUCT_NAME = MudWalker;
+				SECTORDER_FLAGS = "";
+				SKIP_INSTALL = YES;
+				WARNING_CFLAGS = (
+					"-Werror",
+					"-Wall",
+					"-Wmost",
+					"-Wunknown-pragmas",
+					"-Wpointer-arith",
+					"-Wno-cast-qual",
+					"-Wcast-align",
+					"-Wwrite-strings",
+					"-Wno-strict-prototypes",
+					"-Wno-redundant-decls",
+					"-Wnested-externs",
+					"-Winline",
+				);
+				WRAPPER_EXTENSION = framework;
+				ZERO_LINK = YES;
+			};
+			name = Development;
+		};
+		2B643192097A86CB00E36736 /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				HEADER_SEARCH_PATHS = "";
+				INSTALL_PATH = "@executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = "-DBUILDING_MUDWALKER_FRAMEWORK";
+				OTHER_LDFLAGS = (
+					"-seg1addr",
+					0x29000000,
+				);
+				OTHER_LIBTOOL_FLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRINCIPAL_CLASS = "";
+				PRODUCT_NAME = MudWalker;
+				SECTORDER_FLAGS = "";
+				SKIP_INSTALL = YES;
+				WARNING_CFLAGS = (
+					"-Werror",
+					"-Wall",
+					"-Wmost",
+					"-Wunknown-pragmas",
+					"-Wpointer-arith",
+					"-Wno-cast-qual",
+					"-Wcast-align",
+					"-Wwrite-strings",
+					"-Wno-strict-prototypes",
+					"-Wno-redundant-decls",
+					"-Wnested-externs",
+					"-Winline",
+				);
+				WRAPPER_EXTENSION = framework;
+				ZERO_LINK = NO;
+			};
+			name = Deployment;
+		};
+		2B643193097A86CB00E36736 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				HEADER_SEARCH_PATHS = "";
+				INSTALL_PATH = "@executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = "-DBUILDING_MUDWALKER_FRAMEWORK";
+				OTHER_LDFLAGS = (
+					"-seg1addr",
+					0x29000000,
+				);
+				OTHER_LIBTOOL_FLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRINCIPAL_CLASS = "";
+				PRODUCT_NAME = MudWalker;
+				SECTORDER_FLAGS = "";
+				SKIP_INSTALL = YES;
+				WARNING_CFLAGS = (
+					"-Werror",
+					"-Wall",
+					"-Wmost",
+					"-Wunknown-pragmas",
+					"-Wpointer-arith",
+					"-Wno-cast-qual",
+					"-Wcast-align",
+					"-Wwrite-strings",
+					"-Wno-strict-prototypes",
+					"-Wno-redundant-decls",
+					"-Wnested-externs",
+					"-Winline",
+				);
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Default;
+		};
+		2B643195097A86CB00E36736 /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_SEARCH_PATHS = "";
+				FRAMEWORK_VERSION = A;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INSTALL_PATH = "@executable_path/../Frameworks";
+				OPTIMIZATION_CFLAGS = "-O0";
+				OTHER_CFLAGS = "-DBUILDING_MUDWALKER_APPKIT";
+				OTHER_LDFLAGS = (
+					"-seg1addr",
+					0x31000000,
+				);
+				OTHER_LIBTOOL_FLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRINCIPAL_CLASS = "";
+				PRODUCT_NAME = MWAppKit;
+				SECTORDER_FLAGS = "";
+				SKIP_INSTALL = YES;
+				WARNING_CFLAGS = (
+					"-Werror",
+					"-Wall",
+					"-Wmost",
+					"-Wunknown-pragmas",
+					"-Wpointer-arith",
+					"-Wno-cast-qual",
+					"-Wcast-align",
+					"-Wwrite-strings",
+					"-Wno-strict-prototypes",
+					"-Wno-redundant-decls",
+					"-Wnested-externs",
+					"-Winline",
+				);
+				WRAPPER_EXTENSION = framework;
+				ZERO_LINK = YES;
+			};
+			name = Development;
+		};
+		2B643196097A86CB00E36736 /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_SEARCH_PATHS = "";
+				FRAMEWORK_VERSION = A;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				INSTALL_PATH = "@executable_path/../Frameworks";
+				OPTIMIZATION_CFLAGS = "-O3";
+				OTHER_CFLAGS = "-DBUILDING_MUDWALKER_APPKIT";
+				OTHER_LDFLAGS = (
+					"-seg1addr",
+					0x31000000,
+				);
+				OTHER_LIBTOOL_FLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRINCIPAL_CLASS = "";
+				PRODUCT_NAME = MWAppKit;
+				SECTORDER_FLAGS = "";
+				SKIP_INSTALL = YES;
+				WARNING_CFLAGS = (
+					"-Werror",
+					"-Wall",
+					"-Wmost",
+					"-Wunknown-pragmas",
+					"-Wpointer-arith",
+					"-Wno-cast-qual",
+					"-Wcast-align",
+					"-Wwrite-strings",
+					"-Wno-strict-prototypes",
+					"-Wno-redundant-decls",
+					"-Wnested-externs",
+					"-Winline",
+				);
+				WRAPPER_EXTENSION = framework;
+				ZERO_LINK = NO;
+			};
+			name = Deployment;
+		};
+		2B643197097A86CB00E36736 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_SEARCH_PATHS = "";
+				FRAMEWORK_VERSION = A;
+				INSTALL_PATH = "@executable_path/../Frameworks";
+				OPTIMIZATION_CFLAGS = "-O3";
+				OTHER_CFLAGS = "-DBUILDING_MUDWALKER_APPKIT";
+				OTHER_LDFLAGS = (
+					"-seg1addr",
+					0x31000000,
+				);
+				OTHER_LIBTOOL_FLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRINCIPAL_CLASS = "";
+				PRODUCT_NAME = MWAppKit;
+				SECTORDER_FLAGS = "";
+				SKIP_INSTALL = YES;
+				WARNING_CFLAGS = (
+					"-Werror",
+					"-Wall",
+					"-Wmost",
+					"-Wunknown-pragmas",
+					"-Wpointer-arith",
+					"-Wno-cast-qual",
+					"-Wcast-align",
+					"-Wwrite-strings",
+					"-Wno-strict-prototypes",
+					"-Wno-redundant-decls",
+					"-Wnested-externs",
+					"-Winline",
+				);
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Default;
+		};
+		2B643199097A86CB00E36736 /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				OPTIMIZATION_CFLAGS = "-O0";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "Copy Frameworks";
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				ZERO_LINK = YES;
+			};
+			name = Development;
+		};
+		2B64319A097A86CB00E36736 /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "Copy Frameworks";
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				ZERO_LINK = NO;
+			};
+			name = Deployment;
+		};
+		2B64319B097A86CB00E36736 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "Copy Frameworks";
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Default;
+		};
+		2B64319D097A86CB00E36736 /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INSTALL_PATH = "$(HOME)/Developer/Palettes";
+				OPTIMIZATION_CFLAGS = "-O0";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "-bundle";
+				OTHER_REZFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = "MWAppKit Palette";
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Werror",
+					"-Wall",
+					"-Wmost",
+					"-Wunknown-pragmas",
+					"-Wpointer-arith",
+					"-Wno-cast-qual",
+					"-Wcast-align",
+					"-Wwrite-strings",
+					"-Wno-strict-prototypes",
+					"-Wno-redundant-decls",
+					"-Wnested-externs",
+					"-Winline",
+				);
+				WRAPPER_EXTENSION = palette;
+				ZERO_LINK = YES;
+			};
+			name = Development;
+		};
+		2B64319E097A86CB00E36736 /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				INSTALL_PATH = "$(HOME)/Developer/Palettes";
+				OPTIMIZATION_CFLAGS = "-O1";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "-bundle";
+				OTHER_REZFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = "MWAppKit Palette";
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Werror",
+					"-Wall",
+					"-Wmost",
+					"-Wunknown-pragmas",
+					"-Wpointer-arith",
+					"-Wno-cast-qual",
+					"-Wcast-align",
+					"-Wwrite-strings",
+					"-Wno-strict-prototypes",
+					"-Wno-redundant-decls",
+					"-Wnested-externs",
+					"-Winline",
+				);
+				WRAPPER_EXTENSION = palette;
+				ZERO_LINK = NO;
+			};
+			name = Deployment;
+		};
+		2B64319F097A86CB00E36736 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INSTALL_PATH = "$(HOME)/Developer/Palettes";
+				OPTIMIZATION_CFLAGS = "-O1";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "-bundle";
+				OTHER_REZFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = "MWAppKit Palette";
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Werror",
+					"-Wall",
+					"-Wmost",
+					"-Wunknown-pragmas",
+					"-Wpointer-arith",
+					"-Wno-cast-qual",
+					"-Wcast-align",
+					"-Wwrite-strings",
+					"-Wno-strict-prototypes",
+					"-Wno-redundant-decls",
+					"-Wnested-externs",
+					"-Winline",
+				);
+				WRAPPER_EXTENSION = palette;
+			};
+			name = Default;
+		};
+		2B6431A1097A86CB00E36736 /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = /Users/kpreid/Library/Frameworks;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				OPTIMIZATION_CFLAGS = "-O0";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = "Test MWFoundation";
+				REZ_EXECUTABLE = YES;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Werror",
+					"-Wall",
+					"-Wmost",
+					"-Wunknown-pragmas",
+					"-Wpointer-arith",
+					"-Wno-cast-qual",
+					"-Wcast-align",
+					"-Wwrite-strings",
+					"-Wno-strict-prototypes",
+					"-Wno-redundant-decls",
+					"-Wnested-externs",
+					"-Winline",
+				);
+				ZERO_LINK = YES;
+			};
+			name = Development;
+		};
+		2B6431A2097A86CB00E36736 /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = /Users/kpreid/Library/Frameworks;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = "Test MWFoundation";
+				REZ_EXECUTABLE = YES;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Werror",
+					"-Wall",
+					"-Wmost",
+					"-Wunknown-pragmas",
+					"-Wpointer-arith",
+					"-Wno-cast-qual",
+					"-Wcast-align",
+					"-Wwrite-strings",
+					"-Wno-strict-prototypes",
+					"-Wno-redundant-decls",
+					"-Wnested-externs",
+					"-Winline",
+				);
+				ZERO_LINK = NO;
+			};
+			name = Deployment;
+		};
+		2B6431A3097A86CB00E36736 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = /Users/kpreid/Library/Frameworks;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = "Test MWFoundation";
+				REZ_EXECUTABLE = YES;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Werror",
+					"-Wall",
+					"-Wmost",
+					"-Wunknown-pragmas",
+					"-Wpointer-arith",
+					"-Wno-cast-qual",
+					"-Wcast-align",
+					"-Wwrite-strings",
+					"-Wno-strict-prototypes",
+					"-Wno-redundant-decls",
+					"-Wnested-externs",
+					"-Winline",
+				);
+			};
+			name = Default;
+		};
+		2B6431A5097A86CB00E36736 /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = /Users/kpreid/Library/Frameworks;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				OPTIMIZATION_CFLAGS = "-O0";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = "Test MWAppKit";
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Werror",
+					"-Wall",
+					"-Wmost",
+					"-Wunknown-pragmas",
+					"-Wpointer-arith",
+					"-Wno-cast-qual",
+					"-Wcast-align",
+					"-Wwrite-strings",
+					"-Wno-strict-prototypes",
+					"-Wno-redundant-decls",
+					"-Wnested-externs",
+					"-Winline",
+				);
+				WRAPPER_EXTENSION = app;
+				ZERO_LINK = YES;
+			};
+			name = Development;
+		};
+		2B6431A6097A86CB00E36736 /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = /Users/kpreid/Library/Frameworks;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				OPTIMIZATION_CFLAGS = "-O0";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = "Test MWAppKit";
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Werror",
+					"-Wall",
+					"-Wmost",
+					"-Wunknown-pragmas",
+					"-Wpointer-arith",
+					"-Wno-cast-qual",
+					"-Wcast-align",
+					"-Wwrite-strings",
+					"-Wno-strict-prototypes",
+					"-Wno-redundant-decls",
+					"-Wnested-externs",
+					"-Winline",
+				);
+				WRAPPER_EXTENSION = app;
+				ZERO_LINK = NO;
+			};
+			name = Deployment;
+		};
+		2B6431A7097A86CB00E36736 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = /Users/kpreid/Library/Frameworks;
+				OPTIMIZATION_CFLAGS = "-O0";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = "Test MWAppKit";
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Werror",
+					"-Wall",
+					"-Wmost",
+					"-Wunknown-pragmas",
+					"-Wpointer-arith",
+					"-Wno-cast-qual",
+					"-Wcast-align",
+					"-Wwrite-strings",
+					"-Wno-strict-prototypes",
+					"-Wno-redundant-decls",
+					"-Wnested-externs",
+					"-Winline",
+				);
+				WRAPPER_EXTENSION = app;
+			};
+			name = Default;
+		};
+		2B6431A9097A86CB00E36736 /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				OPTIMIZATION_CFLAGS = "-O0";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "Build Most";
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				ZERO_LINK = YES;
+			};
+			name = Development;
+		};
+		2B6431AA097A86CB00E36736 /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "Build Most";
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				ZERO_LINK = NO;
+			};
+			name = Deployment;
+		};
+		2B6431AB097A86CB00E36736 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "Build Most";
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Default;
+		};
+		2B6431AD097A86CB00E36736 /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Development;
+		};
+		2B6431AE097A86CB00E36736 /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Deployment;
+		};
+		2B6431AF097A86CB00E36736 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Default;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2B64318C097A86CB00E36736 /* Build configuration list for PBXToolTarget "LookupHandler" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B64318D097A86CB00E36736 /* Development */,
+				2B64318E097A86CB00E36736 /* Deployment */,
+				2B64318F097A86CB00E36736 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		2B643190097A86CB00E36736 /* Build configuration list for PBXFrameworkTarget "MWFoundation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B643191097A86CB00E36736 /* Development */,
+				2B643192097A86CB00E36736 /* Deployment */,
+				2B643193097A86CB00E36736 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		2B643194097A86CB00E36736 /* Build configuration list for PBXFrameworkTarget "MWAppKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B643195097A86CB00E36736 /* Development */,
+				2B643196097A86CB00E36736 /* Deployment */,
+				2B643197097A86CB00E36736 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		2B643198097A86CB00E36736 /* Build configuration list for PBXLegacyTarget "Copy Frameworks" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B643199097A86CB00E36736 /* Development */,
+				2B64319A097A86CB00E36736 /* Deployment */,
+				2B64319B097A86CB00E36736 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		2B64319C097A86CB00E36736 /* Build configuration list for PBXBundleTarget "MWAppKit Palette" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B64319D097A86CB00E36736 /* Development */,
+				2B64319E097A86CB00E36736 /* Deployment */,
+				2B64319F097A86CB00E36736 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		2B6431A0097A86CB00E36736 /* Build configuration list for PBXToolTarget "Test MWFoundation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B6431A1097A86CB00E36736 /* Development */,
+				2B6431A2097A86CB00E36736 /* Deployment */,
+				2B6431A3097A86CB00E36736 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		2B6431A4097A86CB00E36736 /* Build configuration list for PBXApplicationTarget "Test MWAppKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B6431A5097A86CB00E36736 /* Development */,
+				2B6431A6097A86CB00E36736 /* Deployment */,
+				2B6431A7097A86CB00E36736 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		2B6431A8097A86CB00E36736 /* Build configuration list for PBXAggregateTarget "Build All" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B6431A9097A86CB00E36736 /* Development */,
+				2B6431AA097A86CB00E36736 /* Deployment */,
+				2B6431AB097A86CB00E36736 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		2B6431AC097A86CB00E36736 /* Build configuration list for PBXProject "MWFrameworks" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B6431AD097A86CB00E36736 /* Development */,
+				2B6431AE097A86CB00E36736 /* Deployment */,
+				2B6431AF097A86CB00E36736 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2A37F4A9FDCFA73011CA2CEA /* Project object */;
+}

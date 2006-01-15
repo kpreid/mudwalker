@@ -19,7 +19,9 @@
   * Alias argument text all goes into arg[1] and is not split.
 
 ### User-requested new features:
-  * Selectable logging directory.
+  * Logging:
+    * Selectable logging directory.
+    * Don't log passwords.
   * Command link script should be run at link click time, not when the trigger matches.
   * Key macro pane should allow capturing a keystroke
   * Timing in scripts (tickers, delays, time functions)
