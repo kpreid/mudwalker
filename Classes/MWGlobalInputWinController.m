@@ -29,7 +29,7 @@ static NSString *MWGlobalInputWindowContinuousSpellCheckingKey = @"MWGlobalInput
 
 - (void)updateHistoryFromView;
 - (void)updateViewFromHistory;
-- (void)mainWindowFrameChanged:(id)notif;
+- (void)mainWindowFrameChanged:(NSNotification *)notif;
 - (void)startFading;
 - (void)stepFading:(NSTimer *)t;
 - (MWExtInputManagerForGIW *)extInputManagerForClient:(id <MWExtInputClient>)client;
@@ -281,7 +281,8 @@ static NSString *MWGlobalInputWindowContinuousSpellCheckingKey = @"MWGlobalInput
   [self updateViewFromHistory];
 }
 
-- (IBAction)enterPassword:(NSTextField *)field {
+- (IBAction)enterPassword:(id)sender {
+  NSTextField *field = sender;
   [self privatePassInputString:[field stringValue] role:MWPasswordRole];
   [field setStringValue:@""];
   [[self window] makeFirstResponder:field];

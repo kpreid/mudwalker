@@ -61,7 +61,7 @@
 
   lua_pushstring(state, "_MWScriptInit");
   lua_gettable(state, LUA_GLOBALSINDEX);
-  switch (lua_pcall(state, 0, 0, NULL)) {
+  switch (lua_pcall(state, 0, 0, 0)) {
     case 0:
       break;
     default:
@@ -83,7 +83,7 @@
     }
   }
   
-  switch (lua_pcall(state, 0, 1, NULL)) {
+  switch (lua_pcall(state, 0, 1, 0)) {
     case 0: {
       id value = MWObjectFromLuaStackIndex(state, -1);
       lua_pop(state, 1);

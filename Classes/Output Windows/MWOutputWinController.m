@@ -23,7 +23,7 @@
 - (void)updateCharacterMenu;
 - (void)updateCharacterSelection;
 - (id)selectedCharacter;
-- (void)setSelectedCharacter:(id)newVal;
+- (void)setSelectedCharacter:(NSString *)newVal;
 - (void)doneLinkedAlertSheet:(NSWindow *)sheet returnCode:(int)returnCode contextInfo:(void *)contextInfo;
 - (void)connectionClosedCallback:(BOOL)didDisconnect;
 - (void)releaseWindowFrameAutosaveName;
@@ -159,7 +159,7 @@
 // --- Character popup menu ---
 
 - (unsigned)indexOfSelectedItemInAnAccountMenu {
-  MWConfigTree *const config = [[self document] config];
+  MWConfigTree *const config = (MWConfigTree *)[[self document] config];
   NSString *const selectedCharacterKey = [self selectedCharacter];
   return selectedCharacterKey 
     ? [[config allKeysAtPath:[MWConfigPath pathWithComponent:@"Accounts"]] indexOfObject:selectedCharacterKey] 
@@ -167,7 +167,7 @@
 }
 
 - (void)updateCharacterSelection {
-  MWConfigTree *const config = [[self document] config];
+  MWConfigTree *const config = (MWConfigTree *)[[self document] config];
   NSString *const selectedCharacterKey = [self selectedCharacter];
   NSString *selectedCharacterName = selectedCharacterKey ? [config objectAtPath:[MWConfigPath pathWithComponents:@"Accounts", selectedCharacterKey, @"name", nil]] : nil;
   NSToolbarItem *const charTBI = [toolbarItems objectForKey:@"mwSelectCharacter"];
@@ -185,7 +185,7 @@
 }
 
 - (void)updateAnAccountMenu:(NSMenu *)menu {
-  MWConfigTree *const config = [self config];
+  MWConfigTree *const config = (MWConfigTree *)[self config];
 
   while ([menu numberOfItems]) {
     [menu removeItemAtIndex:0];
@@ -214,7 +214,7 @@
 }
 
 - (IBAction)mwSelectCharacter:(id)sender {
-  MWConfigTree *config = [self config];
+  MWConfigTree *config = (MWConfigTree *)[self config];
   int index;
   if ([sender isKindOfClass:[NSPopUpButton class]]) {
     index = [sender indexOfSelectedItem];

@@ -19,7 +19,7 @@
   NSPreferencePane *currentPane;
 }
 
-- (MWDocumentSettingsWinController *)init;
+- (id)init;
 
 - (BOOL)paneSwitch:(NSPreferencePane *)pane;
 

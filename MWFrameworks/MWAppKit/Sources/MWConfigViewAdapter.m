@@ -395,7 +395,7 @@ static const int currentVersionTV = versionTV2;
   [control setEditable:newVal];
 }
 - (id)control { return control; }
-- (void)setControl:(id)nc {
+- (void)setControl:(NSTextView *)nc {
   [control setDelegate:nil];
   control = nc;
   [control setDelegate:self];
@@ -438,7 +438,7 @@ static const int currentVersionTV = versionTV2;
   [control setEnabled:newVal];
 }
 - (id)control { return control; }
-- (void)setControl:(id)nc {
+- (void)setControl:(NSTextField *)nc {
   [control setTarget:nil];
   [control setAction:NULL];
   [control setDelegate:nil];

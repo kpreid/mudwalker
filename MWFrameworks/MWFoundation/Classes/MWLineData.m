@@ -22,7 +22,7 @@
   return [self initWithData:d role:nil];
 }
 
-- (MWLineData *)copyWithZone:(NSZone *)z {
+- (id)copyWithZone:(NSZone *)z {
   return [[[self class] allocWithZone:z] initWithData:data role:role];
 }
 

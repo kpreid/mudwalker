@@ -169,8 +169,8 @@
   [self reloadData];
 }
 
-- (id)nodeCell { return nodeCell; }
-- (void)setNodeCell:(id)newVal {
+- (NSCell *)nodeCell { return nodeCell; }
+- (void)setNodeCell:(NSCell *)newVal {
   [nodeCell autorelease];
   nodeCell = [newVal retain];
   [self setNeedsDisplay:YES];

@@ -83,7 +83,7 @@ static MWConfigPath *singleEmptyPath = nil;
       foundRange;
     while ((foundRange = [scomp rangeOfString:@"%" options:NSLiteralSearch range:searchRange]).length) {
       NSString *hex = nil;
-      int chi;
+      unsigned int chi;
       unichar ch;
       if (foundRange.location + 3 > [scomp length]) {
         [self release];

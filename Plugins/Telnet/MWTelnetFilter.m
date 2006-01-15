@@ -292,11 +292,11 @@ static __inline__ BOOL weSupportOption(MWTelnetFilter *self, unsigned const char
           sep = *(scan++);
           for (scanend = scan; scanend < end; scanend++) {
             if (*scanend == sep) {
-              [theirEncodingNames addObject:[NSString stringWithCString:scan length:scanend - scan]];
+              [theirEncodingNames addObject:[NSString stringWithCString:(char *)scan length:scanend - scan]];
               scan = scanend + 1;
             }
           }
-          [theirEncodingNames addObject:[NSString stringWithCString:scan length:scanend - scan]];
+          [theirEncodingNames addObject:[NSString stringWithCString:(char *)scan length:scanend - scan]];
           // Done parsing the subnegotiation, now we act on it
           
           {

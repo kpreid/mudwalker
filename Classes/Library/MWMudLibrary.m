@@ -32,7 +32,7 @@ NSString *MWLibraryDidChangeNotification = @"MWLibraryDidChangeNotification";
   ]];
 }
 
-- (MWMudLibrary *)initWithUserDefaults:(NSUserDefaults *)ud { // designated initializer
+- (id)initWithUserDefaults:(NSUserDefaults *)ud { // designated initializer
   if (!(self = [super init])) return nil;
 
   userDefaults = [ud retain];

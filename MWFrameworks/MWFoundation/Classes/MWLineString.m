@@ -53,7 +53,7 @@
   return [self initWithAttributedString:s role:nil];
 }
 
-- (MWLineString *)copyWithZone:(NSZone *)z {
+- (id)copyWithZone:(NSZone *)z {
   MWLineString *copy = [[[self class] allocWithZone:z] init];
   copy->plainString = [plainString retain];
   copy->attrString = [attrString retain];

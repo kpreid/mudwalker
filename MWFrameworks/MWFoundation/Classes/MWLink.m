@@ -256,7 +256,7 @@ void MWLinkLog(NSString *format, ...) {
 #endif
 }
 
-- (id <MWLinkable>)otherObject:(id <MWLinkable>)sender {
+- (id <MWLinkable>)otherObject:(id <MWLinkable, NSObject>)sender {
   // On being given the wrong object here we raise an exception, unlike send and probe.
   if      (sender == objA) return objB;
   else if (sender == objB) return objA;

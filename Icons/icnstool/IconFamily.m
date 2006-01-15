@@ -361,7 +361,7 @@
     pRawBitmapDataEnd = pRawBitmapData + pixelsWide * pixelsWide;
     if (hRawMaskData) {
         HLock( hRawMaskData );
-        pRawMaskData = *hRawMaskData;
+        pRawMaskData = (unsigned char *)*hRawMaskData;
         // kpreid: fixing possible undefined behavior
         while (pRawBitmapData < pRawBitmapDataEnd)
             *pRawBitmapData = (*pRawBitmapData << 8) | *pRawMaskData++;
@@ -1004,7 +1004,7 @@
 		hRawData = NewHandle( rawDataSize );
 		if (hRawData == NULL)
 			return NULL;
-		pRawData = *hRawData;
+		pRawData = (unsigned char *)*hRawData;
 	
 		pSrc = bitmapData;
 		pDest = pRawData;
@@ -1098,7 +1098,7 @@
 		hRawData = NewHandle( rawDataSize );
 		if (hRawData == NULL)
 			return NULL;
-		pRawData = *hRawData;
+		pRawData = (unsigned char *)*hRawData;
 		
 		cgPal = CGPaletteCreateDefaultColorPalette();
 		
@@ -1188,7 +1188,7 @@
 		hRawData = NewHandle( rawDataSize );
 		if (hRawData == NULL)
 			return NULL;
-		pRawData = *hRawData;
+		pRawData = (unsigned char *)*hRawData;
 	
 		pSrc = bitmapData;
 		pDest = pRawData;
@@ -1265,7 +1265,7 @@
 		hRawData = NewHandle( rawDataSize );
 		if (hRawData == NULL)
 			return NULL;
-		pRawData = *hRawData;
+		pRawData = (unsigned char *)*hRawData;
 	
 		pSrc = bitmapData;
 		pDest = pRawData;

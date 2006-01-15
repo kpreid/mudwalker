@@ -70,7 +70,7 @@ static const int currentVersion = version1;
   return [other isKindOfClass:[MWScript class]]
     && [[other source] isEqualToString:[self source]]
     && ([[other languageIdentifier] isEqualToString:[self languageIdentifier]]
-        || [other languageIdentifier] == nil && [self languageIdentifier] == nil);
+        || ([other languageIdentifier] == nil && [self languageIdentifier] == nil));
 }
 
 - (unsigned)hash { return [[self source] hash] ^ [[self languageIdentifier] hash]; }

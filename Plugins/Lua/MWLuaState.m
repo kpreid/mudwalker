@@ -265,7 +265,7 @@ static int myLua_speak(lua_State *L) {
         [owningContexts postDebugMessage:[NSString stringWithFormat:@"Could not load Lua MudWalker library: %@", MWObjectFromLuaStackIndex(state, -1)]];
     lua_pop(state, 1);
   } else {
-    switch (lua_pcall(state, 0, 0, NULL)) {
+    switch (lua_pcall(state, 0, 0, 0)) {
       case 0:
         break;
       default:

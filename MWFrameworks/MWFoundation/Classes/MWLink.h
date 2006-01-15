@@ -112,13 +112,13 @@ extern void MWLinkLog(NSString *format, ...);
 - (void)unlink;
 /* Disconnect the link. */
 
-- (void)send:(id <NSObject>)obj from:(id <MWLinkable>)sender;
+- (void)send:(id <NSObject>)obj from:(id <MWLinkable, NSObject>)sender;
 /* Call the object-which-isn't-sender's -receive:fromLinkFor: with  obj. */
 
-- (id)probe:(SEL)sel from:(id <MWLinkable>)sender;
+- (id)probe:(SEL)sel from:(id <MWLinkable, NSObject>)sender;
 /* Call the object-which-isn't-sender's -probe:fromLinkFor: with sel. */
 
-- (id <MWLinkable>)otherObject:(id <MWLinkable>)sender;
+- (id <MWLinkable>)otherObject:(id <MWLinkable, NSObject>)sender;
 /* Return the other object of the link. */
 
 @end
