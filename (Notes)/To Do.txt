@@ -52,6 +52,7 @@
   * Scriptable trigger enabling/disabling.
   * Larger trigger field (my interpretation: resizable settings panes)
   * Trigger categories (see under New features below)
+  * Tab-completion from recent output.
 
 ### ### User-visible missing functionality:
   * Documentation:
@@ -186,3 +187,4 @@
   * Command to delete all line breaks from input window (poor man's @|)
   * Undo support in library, particularly for deletion.
   * Notify user in-GUI if a plugin fails to load.
+  * XMPP/Jabber support?
