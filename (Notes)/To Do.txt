@@ -53,6 +53,7 @@
   * Larger trigger field (my interpretation: resizable settings panes)
   * Trigger categories (see under New features below)
   * Tab-completion from recent output.
+  * Zoom for output windows should, if the output window is set to move with them, either leave room for the input window or move it to on top of the output window.
 
 ### ### User-visible missing functionality:
   * Documentation:
