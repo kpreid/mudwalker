@@ -24,7 +24,8 @@
 
   // NOTE: uhm, we want XBM support. ought to be able to provide a translator for NSImage to use automatically but the interface is not public
   
-  if (!memcmp([data bytes], "#define ", 8)) {
+  const char *marker = "#define ";
+  if (!memcmp([data bytes], marker, MIN([data length], strlen(marker)))) {
     // it's an XBM, probably.
 
 #   if CHAR_BIT != 8
